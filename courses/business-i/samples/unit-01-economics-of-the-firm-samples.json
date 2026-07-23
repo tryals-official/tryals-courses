@@ -1,0 +1,149 @@
+[
+  {
+    "id": "biz1_u01_l01_q01",
+    "type": "interactive_scene",
+    "question": "A furniture maker buys wood for **40€** and sells a finished table for **150€**. Drag the value-added bar to show how much value the firm created — the split animates when you send.",
+    "sceneId": "biz_u01_value_added",
+    "sceneParams": {
+      "inputCost": 40,
+      "revenue": 150,
+      "start": 60
+    },
+    "correctAnswer": {
+      "v": 110
+    },
+    "tolerance": 5,
+    "hints": [
+      "Value added is what the firm layered on top of what it bought in.",
+      "Revenue 150€ minus intermediate inputs 40€."
+    ],
+    "explanation": "Value added = $150 - 40 = 110$€: the wage, profit, rent, and interest the firm can pay out all come from this slice — not from the revenue total."
+  },
+  {
+    "id": "biz1_u01_l01_q02",
+    "type": "matrix_grid",
+    "question": "Classify each resource used by a pizzeria as a production factor.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "The wood-fired oven"
+      },
+      {
+        "id": "r2",
+        "label": "The chef’s working hours"
+      },
+      {
+        "id": "r3",
+        "label": "The rented street-corner plot"
+      },
+      {
+        "id": "r4",
+        "label": "The delivery scooter"
+      }
+    ],
+    "columns": [
+      {
+        "id": "c1",
+        "label": "Land"
+      },
+      {
+        "id": "c2",
+        "label": "Labor"
+      },
+      {
+        "id": "c3",
+        "label": "Capital"
+      }
+    ],
+    "correctMapping": {
+      "r1": "c3",
+      "r2": "c2",
+      "r3": "c1",
+      "r4": "c3"
+    },
+    "explanation": "Produced means of production (oven, scooter) are capital; human effort is labor; natural or spatial resources (the plot) are land."
+  },
+  {
+    "id": "biz1_u01_l01_q03",
+    "type": "category_sort",
+    "question": "Sort each item: is it an **intermediate input** the firm buys, or **value the firm adds**?",
+    "categories": [
+      "Intermediate input",
+      "Value added by the firm"
+    ],
+    "items": [
+      {
+        "id": "u01l01q03_i0",
+        "label": "Flour bought from the mill",
+        "correctCategory": "Intermediate input"
+      },
+      {
+        "id": "u01l01q03_i1",
+        "label": "The baker’s kneading skill",
+        "correctCategory": "Value added by the firm"
+      },
+      {
+        "id": "u01l01q03_i2",
+        "label": "Electricity from the grid",
+        "correctCategory": "Intermediate input"
+      },
+      {
+        "id": "u01l01q03_i3",
+        "label": "The recipe perfected in-house",
+        "correctCategory": "Value added by the firm"
+      },
+      {
+        "id": "u01l01q03_i4",
+        "label": "Packaging bought wholesale",
+        "correctCategory": "Intermediate input"
+      },
+      {
+        "id": "u01l01q03_i5",
+        "label": "The brand customers trust",
+        "correctCategory": "Value added by the firm"
+      }
+    ],
+    "explanation": "Everything purchased from other firms is an intermediate input; skill, know-how, and reputation are how the firm transforms those inputs into something worth more."
+  },
+  {
+    "id": "biz1_u01_l01_q04",
+    "type": "matching",
+    "question": "Match each core role of the firm to its description.",
+    "pairs": [
+      {
+        "left": "Coordination",
+        "right": "Directing production factors under one authority"
+      },
+      {
+        "left": "Value creation",
+        "right": "Making output worth more than the inputs"
+      },
+      {
+        "left": "Risk-bearing",
+        "right": "Paying factor incomes before revenue is known"
+      },
+      {
+        "left": "Innovation",
+        "right": "Introducing new products and processes"
+      }
+    ],
+    "explanation": "The firm replaces market haggling with managed coordination, and it earns its profit by bearing the risk that revenue may not cover committed costs."
+  },
+  {
+    "id": "biz1_u01_l01_q05",
+    "type": "multiple_choice",
+    "question": "According to Coase, why does production happen inside firms instead of through individual market contracts for every task?",
+    "options": [
+      "Using the market has transaction costs that internal coordination can avoid",
+      "Firms can always produce at lower physical cost than individuals",
+      "Governments require production to be organized in firms",
+      "Workers refuse to sell services without long-term employment"
+    ],
+    "correctAnswer": 0,
+    "hints": [
+      "Think about what it costs just to *use* the price mechanism: searching, negotiating, enforcing.",
+      "The firm forms when doing a task internally is cheaper than contracting for it."
+    ],
+    "explanation": "Coase (1937): firms exist because market exchange itself is costly. When internal coordination beats the transaction costs of contracting, the task moves inside the firm."
+  }
+]

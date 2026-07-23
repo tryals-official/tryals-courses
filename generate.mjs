@@ -15,6 +15,7 @@ const COURSE_FILES = [
 ];
 
 const QUESTIONS_PER_LESSON = 3;
+const SAMPLE_JSONS_PER_UNIT = 5;
 
 function slugify(s) {
   return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
@@ -68,6 +69,44 @@ function formatQuestion(q, idx) {
   return md;
 }
 
+function pickDiverseJsonSamples(units) {
+  const all = [];
+  for (const u of units) {
+    for (const l of u.lessons) {
+      for (const q of (l.questions || [])) {
+        all.push(q);
+      }
+    }
+  }
+  const byType = new Map();
+  for (const q of all) {
+    if (!byType.has(q.type)) byType.set(q.type, []);
+    byType.get(q.type).push(q);
+  }
+  return byType;
+}
+
+function pickUnitSamples(unit) {
+  const allQs = unit.lessons.flatMap(l => l.questions || []);
+  const seen = new Set();
+  const picked = [];
+  for (const q of allQs) {
+    if (!seen.has(q.type) && picked.length < SAMPLE_JSONS_PER_UNIT) {
+      seen.add(q.type);
+      picked.push(q);
+    }
+  }
+  if (picked.length < SAMPLE_JSONS_PER_UNIT) {
+    for (const q of allQs) {
+      if (picked.length >= SAMPLE_JSONS_PER_UNIT) break;
+      if (!picked.includes(q)) {
+        picked.push(q);
+      }
+    }
+  }
+  return picked;
+}
+
 function generateCourse(filename) {
   const raw = fs.readFileSync(path.join(COURSES_DIR, filename), 'utf8');
   const course = JSON.parse(raw);
@@ -100,6 +139,10 @@ function generateCourse(filename) {
 | # | Unit |
 |---|------|
 ${unitRows.join('\n')}
+
+## Sample question data
+
+Each unit has sample questions in JSON format under [\`samples/\`](samples/) — see the [Question Format](../../docs/question-format.md) and [Question Types](../../docs/question-types.md) docs for the full schema.
 
 ---
 
@@ -141,6 +184,14 @@ ${unitRows.join('\n')}
 
     md += `*Part of [${title}](README.md) — [Open University Courses by Tryals](../../README.md)*\n`;
     fs.writeFileSync(path.join(courseDir, `${uSlug}.md`), md);
+
+    const samples = pickUnitSamples(unit);
+    if (samples.length > 0) {
+      const samplesDir = path.join(courseDir, 'samples');
+      fs.mkdirSync(samplesDir, { recursive: true });
+      const samplesFile = path.join(samplesDir, `${uSlug}-samples.json`);
+      fs.writeFileSync(samplesFile, JSON.stringify(samples, null, 2) + '\n');
+    }
   }
 
   console.log(`  ${title}: ${units.length} units, ${totalLessons} lessons, ${totalQuestions} questions`);
@@ -190,7 +241,13 @@ ${tableRows.join('\n')}
 
 Each unit file contains:
 - **Explanatory lessons** — clear, concise text with LaTeX mathematics (renders natively on GitHub)
-- **Practice previews** — sample questions from each lesson showing the variety of interactive formats (${results.length > 50 ? '75+' : '70+'} question types including numerical input, code analysis, matching, ordering, data analysis, crosswords, and more)
+- **Practice previews** — sample questions from each lesson showing the variety of interactive formats (70+ question types including numerical input, code analysis, matching, ordering, data analysis, crosswords, and more)
+- **Sample question JSON** — real question data in the format used by the Tryals engine (see [docs/](docs/))
+
+## Documentation
+
+- [**Question Format**](docs/question-format.md) — the JSON schema for courses, units, lessons, and questions
+- [**Question Types**](docs/question-types.md) — catalog of all 70+ interactive question types
 
 ## What Tryals adds
 

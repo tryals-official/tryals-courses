@@ -19,6 +19,10 @@
 | 09 | [Scientific Programming](unit-09-scientific-programming.md) |
 | 10 | [Physics](unit-10-physics.md) |
 
+## Sample question data
+
+Each unit has sample questions in JSON format under [`samples/`](samples/) — see the [Question Format](../../docs/question-format.md) and [Question Types](../../docs/question-types.md) docs for the full schema.
+
 ---
 
 *Part of [Open University Courses by Tryals](../../README.md)*

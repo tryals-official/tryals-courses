@@ -1,0 +1,169 @@
+[
+  {
+    "id": "cs_u01_l01_q01",
+    "type": "number_base",
+    "question": "A file header stores the value 45. Write that value in binary.",
+    "sourceNumber": "45",
+    "sourceBase": 10,
+    "targetBase": 2,
+    "correctResult": "101101",
+    "hints": [
+      "Work down through the place values 32, 16, 8, 4, 2, 1, taking each one you can.",
+      "45 is more than 32 but less than 64, so the answer is six bits long and starts with 1."
+    ],
+    "explanation": "45 = 32 + 8 + 4 + 1, so the 32, 8, 4 and 1 columns hold a 1 and the 16 and 2 columns hold a 0, giving 101101. Checking a binary answer by adding its place values back up is the cheapest way to catch a slip."
+  },
+  {
+    "id": "cs_u01_l01_q03",
+    "type": "numerical_input",
+    "question": "How many distinct values can be represented using 10 bits?",
+    "correctAnswer": 1024,
+    "tolerance": 0,
+    "hints": [
+      "Each bit is independently 0 or 1, so multiply the choices together.",
+      "That is 2 multiplied by itself 10 times."
+    ],
+    "explanation": "Each of the 10 bits doubles the number of possible patterns, so there are $2^{10} = 1024$ of them. In general n bits give $2^{n}$ combinations, which is why a byte gives 256 and not 255 — the count of patterns, not the largest value."
+  },
+  {
+    "id": "cs_u01_l01_q04",
+    "type": "table_completion",
+    "question": "Complete the table of byte values. Write the hexadecimal entries using capital letters and no prefix.",
+    "rows": [
+      [
+        {
+          "content": "00001111"
+        },
+        {
+          "content": "15"
+        },
+        {
+          "content": "___"
+        }
+      ],
+      [
+        {
+          "content": "10000000"
+        },
+        {
+          "content": "___"
+        },
+        {
+          "content": "80"
+        }
+      ],
+      [
+        {
+          "content": "11111111"
+        },
+        {
+          "content": "___"
+        },
+        {
+          "content": "___"
+        }
+      ]
+    ],
+    "headers": [
+      "Byte",
+      "Decimal",
+      "Hexadecimal"
+    ],
+    "answers": [
+      "0F",
+      "128",
+      "255",
+      "FF"
+    ],
+    "hints": [
+      "For the hex column, split each byte into two groups of four bits.",
+      "For the decimal column, add the place values 128, 64, 32, 16, 8, 4, 2, 1 wherever a 1 appears."
+    ],
+    "explanation": "00001111 is 0000 and 1111, so 0 and F, and 8 + 4 + 2 + 1 = 15. 10000000 has only the 128 column set. 11111111 sets every column, giving 128 + 64 + 32 + 16 + 8 + 4 + 2 + 1 = 255, which is FF — the largest value one byte can hold."
+  },
+  {
+    "id": "cs_u01_l01_q05",
+    "type": "pattern_sequence",
+    "question": "Reading a binary number from right to left, each position is worth twice the one before. Fill in the missing place value.",
+    "sequence": [
+      "1",
+      "2",
+      "4",
+      "8",
+      "?",
+      "32",
+      "64"
+    ],
+    "missingIndices": [
+      4
+    ],
+    "optionsPerMissing": [
+      [
+        "12",
+        "16",
+        "24"
+      ]
+    ],
+    "correctValues": [
+      "16"
+    ],
+    "hints": [
+      "The place values are the powers of two, not multiples of a fixed step.",
+      "The gap sits between 8 and 32, and each position doubles the previous one."
+    ],
+    "explanation": "The positions are $2^{0}, 2^{1}, 2^{2}, \\dots$, so after 8 comes 16, not 12. Reading them as an arithmetic sequence with a constant gap is the classic slip; binary place values double, which is exactly why n bits reach $2^{n}$ values."
+  },
+  {
+    "id": "cs_u01_l01_q06",
+    "type": "matrix_grid",
+    "question": "Each row is an 8-bit pattern read as an ordinary unsigned number. Put each one in the range it falls into.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "00111111"
+      },
+      {
+        "id": "r2",
+        "label": "01000000"
+      },
+      {
+        "id": "r3",
+        "label": "10000001"
+      },
+      {
+        "id": "r4",
+        "label": "01111111"
+      },
+      {
+        "id": "r5",
+        "label": "00000001"
+      }
+    ],
+    "columns": [
+      {
+        "id": "c1",
+        "label": "0 to 63"
+      },
+      {
+        "id": "c2",
+        "label": "64 to 127"
+      },
+      {
+        "id": "c3",
+        "label": "128 to 255"
+      }
+    ],
+    "correctMapping": {
+      "r1": "c1",
+      "r2": "c2",
+      "r3": "c3",
+      "r4": "c2",
+      "r5": "c1"
+    },
+    "hints": [
+      "The leading bits do most of the work: the top bit alone is worth 128 and the next is worth 64.",
+      "Two of these patterns differ by only one bit yet land in different bands."
+    ],
+    "explanation": "00111111 = 63 and 01000000 = 64: one bit apart, but they straddle a boundary. 01111111 = 127 is the largest value with the top bit clear, and 10000001 = 129 needs that top bit. 00000001 = 1. Judging size by counting how many 1s appear, rather than which columns they occupy, is the trap here."
+  }
+]

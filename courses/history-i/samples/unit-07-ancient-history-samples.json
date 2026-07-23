@@ -1,0 +1,127 @@
+[
+  {
+    "id": "his1_u07_l01_q01",
+    "type": "interactive_scene",
+    "question": "Thirty sheep, one sealed clay ball of tokens, and a merchant who cannot check the count without destroying the evidence. **Work the sequence forward** and find the step where writing appears.",
+    "sceneId": "hist_u07_token_to_text",
+    "sceneParams": {
+      "steps": [
+        "Tokens sealed in a bulla",
+        "Tokens impressed on the surface, then sealed",
+        "Marks kept, tokens discarded",
+        "Wedges abstract into cuneiform"
+      ]
+    },
+    "correctAnswer": {
+      "step": 2
+    },
+    "tolerance": 0.4,
+    "hints": [
+      "The bulla is a container that destroys itself when read.",
+      "Once the outside tells you the inside, what is the inside for?"
+    ],
+    "explanation": "Step 2 — the moment the tokens get thrown away. Impressing them on the shell was only a workaround for a container that destroyed itself when read; the leap is realizing that if the marks report the contents, the contents are redundant. Keep the marks, discard the sheep-shaped clay, and you have writing. The first tablets are receipts, and literature is a thousand years behind them."
+  },
+  {
+    "id": "his1_u07_l01_q02",
+    "type": "ordering",
+    "question": "Put the origin of writing in order.",
+    "items": [
+      "Clay tokens, one shape per commodity",
+      "Tokens sealed inside a hollow clay bulla",
+      "Tokens impressed on the bulla’s surface before sealing",
+      "The tokens discarded; the marks kept",
+      "Impressions abstracted into cuneiform wedges"
+    ],
+    "correctOrder": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "explanation": "Each step solves the previous step’s flaw, and the fourth throws away the thing everyone thought was the point. The most consequential invention in human history was a filing improvement."
+  },
+  {
+    "id": "his1_u07_l01_q03",
+    "type": "multiple_choice",
+    "question": "What were the earliest Mesopotamian texts?",
+    "options": [
+      "Receipts — barley, sheep, oil, beer, with quantities and owners",
+      "Hymns to the city gods",
+      "Royal genealogies",
+      "Legal judgments from the courts"
+    ],
+    "correctAnswer": 0,
+    "hints": [
+      "Who invented writing, and what was their job?",
+      "Literature arrives about a thousand years later."
+    ],
+    "explanation": "Accountancy. Writing was invented to stop people stealing grain, and every other thing it has ever done — poetry, law, scripture, this sentence — is a side effect of a tool built for inventory control."
+  },
+  {
+    "id": "his1_u07_l01_q04",
+    "type": "multi_select",
+    "question": "Why did cities emerge in southern Mesopotamia despite its poverty in materials?",
+    "options": [
+      "Irrigation demanded coordination beyond a single family",
+      "Every stone, timber, and metal had to be imported, forcing long-distance trade",
+      "Agricultural surplus required storage, guards, and records",
+      "The region’s abundant natural resources supported dense settlement"
+    ],
+    "correctAnswers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "The poverty is the engine. Good soil and water and nothing else means everything must be organized, imported, and accounted for — and Uruk reached perhaps 40,000 people, an object no human had ever seen."
+  },
+  {
+    "id": "his1_u07_l01_q06",
+    "type": "matrix_grid",
+    "question": "Match each Mesopotamian institution to what it actually was.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "Temple"
+      },
+      {
+        "id": "r2",
+        "label": "Lugal"
+      },
+      {
+        "id": "r3",
+        "label": "Ensi"
+      },
+      {
+        "id": "r4",
+        "label": "Stele of laws"
+      }
+    ],
+    "columns": [
+      {
+        "id": "c1",
+        "label": "The earliest large landowner, employer, and bank"
+      },
+      {
+        "id": "c2",
+        "label": "A war leader whose emergency command became permanent"
+      },
+      {
+        "id": "c3",
+        "label": "A city-governor and priest-administrator"
+      },
+      {
+        "id": "c4",
+        "label": "A king’s advertisement of his own justice"
+      }
+    ],
+    "correctMapping": {
+      "r1": "c1",
+      "r2": "c2",
+      "r3": "c3",
+      "r4": "c4"
+    },
+    "explanation": "Note the lugal: \"big man\" is a temporary emergency office that forgot to end. A great deal of kingship, everywhere, is that sentence."
+  }
+]

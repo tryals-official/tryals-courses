@@ -1,0 +1,120 @@
+[
+  {
+    "id": "biz1_u05_l01_q01",
+    "type": "interactive_scene",
+    "question": "Career outcomes of thousands of individuals stream by as dots — until a hidden **structural break** (a labor-law reform) bends the whole pattern. **Drag the year marker** to where the _general_ changes beneath the particulars.",
+    "sceneId": "biz_u05_structure_kink",
+    "sceneParams": {
+      "kinkYear": 1984,
+      "startYear": 1970,
+      "endYear": 2000,
+      "min": 1970,
+      "max": 2000,
+      "start": 1972
+    },
+    "correctAnswer": {
+      "year": 1984
+    },
+    "tolerance": 1,
+    "hints": [
+      "Ignore single dots; watch the cloud’s trend.",
+      "The slope of the pattern changes in one year."
+    ],
+    "explanation": "The dots never stop scattering — individuals always vary — but the *cloud* bends at 1984. That bend is a social fact: no biography explains it, and every biography after it is shaped by it. You just used the sociological imagination as an instrument."
+  },
+  {
+    "id": "biz1_u05_l01_q02",
+    "type": "category_sort",
+    "question": "Personal trouble or public issue? Sort each situation the way Mills would.",
+    "categories": [
+      "Personal trouble",
+      "Public issue"
+    ],
+    "items": [
+      {
+        "id": "u05l01q02_i0",
+        "label": "One cashier is dismissed after repeated no-shows",
+        "correctCategory": "Personal trouble"
+      },
+      {
+        "id": "u05l01q02_i1",
+        "label": "Youth unemployment sits at 30% for a decade",
+        "correctCategory": "Public issue"
+      },
+      {
+        "id": "u05l01q02_i2",
+        "label": "A couple divorces over money disputes",
+        "correctCategory": "Personal trouble"
+      },
+      {
+        "id": "u05l01q02_i3",
+        "label": "Half of all marriages in a country end in divorce",
+        "correctCategory": "Public issue"
+      },
+      {
+        "id": "u05l01q02_i4",
+        "label": "Women hold 8% of executive seats economy-wide",
+        "correctCategory": "Public issue"
+      }
+    ],
+    "explanation": "The test is scale and pattern: when an outcome repeats across thousands of unrelated biographies, its causes live in the structure, not in the individuals."
+  },
+  {
+    "id": "biz1_u05_l01_q03",
+    "type": "matching",
+    "question": "Match each paradigm to its core image of society.",
+    "pairs": [
+      {
+        "left": "Structural functionalism",
+        "right": "A system of parts performing functions"
+      },
+      {
+        "left": "Conflict theory",
+        "right": "An arena of groups competing for resources"
+      },
+      {
+        "left": "Symbolic interactionism",
+        "right": "A fabric of everyday meanings and encounters"
+      },
+      {
+        "left": "Sociological imagination",
+        "right": "Linking private troubles to public issues"
+      }
+    ],
+    "explanation": "Three lenses plus the master skill: zoom out to functions, follow the power, zoom in to meanings — and always connect the case to the pattern."
+  },
+  {
+    "id": "biz1_u05_l01_q04",
+    "type": "multiple_choice",
+    "question": "A retail chain’s churn is 40% yearly. HR files each exit as \"personal reasons.\" What would Durkheim say?",
+    "options": [
+      "A stable 40% rate is a social fact — its causes are structural, not 400 private coincidences",
+      "HR is right: only individuals resign, so only individual explanations exist",
+      "The rate will fix itself once the wrong individuals leave",
+      "Churn cannot be studied scientifically"
+    ],
+    "correctAnswer": 0,
+    "hints": [
+      "What stays constant while all the individuals change?",
+      "Rates that persist as people rotate belong to the system."
+    ],
+    "explanation": "The employees change every year; the *rate* does not. A pattern that survives complete turnover of its participants is a property of the structure — schedules, pay ladders, management — and that is where the fix lives."
+  },
+  {
+    "id": "biz1_u05_l01_q05",
+    "type": "multi_select",
+    "question": "Which are social facts in Durkheim’s sense?",
+    "options": [
+      "A country’s stable yearly marriage rate",
+      "The norm of shaking hands when meeting a client",
+      "One founder’s personal fondness for spreadsheets",
+      "The persistent gender gap in engineering enrollment"
+    ],
+    "correctAnswers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Social facts are external to any individual and coercive on all: rates, norms, and patterned gaps qualify. A private taste, however strong, binds no one else."
+  }
+]

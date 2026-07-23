@@ -1,0 +1,76 @@
+[
+  {
+    "id": "phys1_u07_l01_q01",
+    "type": "true_false",
+    "question": "The domain of $f(x,y) = \\sqrt{1 - x^{2} - y^{2}}$ is the closed unit disk $x^{2}$ + $y^{2} \\leq 1$.",
+    "explanation": "The expression under the square root must $be \\geq 0$, so $x^{2}$ + $y^{2} \\leq 1$.",
+    "correctAnswer": "True"
+  },
+  {
+    "id": "phys1_u07_l01_q02",
+    "explanation": "At the centre $\\nabla f = 0$, but it is neither max nor min: the surface climbs along one axis and falls along the other — a saddle point.",
+    "type": "interactive_scene",
+    "question": "Probe the surface: place the marker at the one point that is critical in every direction — the saddle of this contour map.",
+    "sceneId": "u07_surface",
+    "sceneParams": {},
+    "correctAnswer": {
+      "x": 0,
+      "y": 0
+    },
+    "tolerance": 0.7,
+    "submitLabel": "Find the point",
+    "hints": [
+      "Where do the two contour families meet?",
+      "The crossing of the asymptotes."
+    ]
+  },
+  {
+    "id": "phys1_u07_l01_q03",
+    "type": "numerical_input",
+    "question": "For $f(x,y) = x^{2} + 2y^{2}$, what is $f(1, 2)$?",
+    "tolerance": 0.1,
+    "explanation": "$f(1,2) = 1^{2} + 2(2^{2}) = 1 + 8 = 9$.",
+    "correctAnswer": 9
+  },
+  {
+    "id": "phys1_u07_l01_q04",
+    "type": "matching",
+    "question": "Match each surface to its equation.",
+    "pairs": [
+      {
+        "left": "Paraboloid",
+        "right": "$z = x^{2} + y^{2}$"
+      },
+      {
+        "left": "Sphere",
+        "right": "$x^{2}$ + $y^{2}$ + $z^{2}$ = $r^{2}$"
+      },
+      {
+        "left": "Cone",
+        "right": "$z^{2}$ = $x^{2}$ + $y^{2}$"
+      },
+      {
+        "left": "Plane",
+        "right": "ax + by + cz = d"
+      }
+    ],
+    "explanation": "These are the standard quadric surfaces in ℝ³."
+  },
+  {
+    "id": "phys1_u07_l01_q05",
+    "type": "multi_select",
+    "question": "Which of the following are functions of two variables?",
+    "options": [
+      "$f(x,y) = \\sin(xy)$",
+      "$g(t) = t^{3} + 1$",
+      "$h(x,y) = e^{x+y}$",
+      "$T(x,y) = x^{2} - 3y$"
+    ],
+    "explanation": "$g(t)$ is a function of one variable only.",
+    "correctAnswers": [
+      0,
+      2,
+      3
+    ]
+  }
+]

@@ -1,0 +1,167 @@
+[
+  {
+    "id": "psy_u03_l01_q01",
+    "type": "matrix_grid",
+    "question": "Classify each research aim by the school it belongs to.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "Breaking a conscious experience into its basic sensations and feelings"
+      },
+      {
+        "id": "r2",
+        "label": "Asking what purpose a mental process serves in helping an organism adapt"
+      },
+      {
+        "id": "r3",
+        "label": "Relying on trained introspection of responses to controlled stimuli"
+      },
+      {
+        "id": "r4",
+        "label": "Treating consciousness as a continuous stream that resists being split into elements"
+      },
+      {
+        "id": "r5",
+        "label": "Opening the way to study learning, individual differences, and applied psychology"
+      }
+    ],
+    "columns": [
+      {
+        "id": "cS",
+        "label": "Structuralism"
+      },
+      {
+        "id": "cF",
+        "label": "Functionalism"
+      }
+    ],
+    "correctMapping": {
+      "r1": "cS",
+      "r2": "cF",
+      "r3": "cS",
+      "r4": "cF",
+      "r5": "cF"
+    },
+    "hints": [
+      "Structuralism asks what the mind is MADE OF; functionalism asks what it is FOR.",
+      "Decomposition and introspection are structuralist; purpose, adaptation, and the stream of consciousness are functionalist."
+    ],
+    "explanation": "Structuralism decomposes experience into elements via introspection; functionalism asks what mental processes are for and how they aid adaptation - which is why it opened up learning and applied psychology. The made-of versus for-what distinction sorts every aim here."
+  },
+  {
+    "id": "psy_u03_l01_q02",
+    "type": "category_sort",
+    "question": "Sort each research question by which school would ask it.",
+    "categories": [
+      "What the mind is MADE OF (Structuralism)",
+      "What the mind is FOR (Functionalism)"
+    ],
+    "items": [
+      {
+        "id": "s1",
+        "label": "What are the elementary sensations involved in tasting a lemon?",
+        "correctCategory": "What the mind is MADE OF (Structuralism)"
+      },
+      {
+        "id": "s2",
+        "label": "How does memory help a person adapt to their environment?",
+        "correctCategory": "What the mind is FOR (Functionalism)"
+      },
+      {
+        "id": "s3",
+        "label": "Can an emotion be decomposed into simpler feeling-components?",
+        "correctCategory": "What the mind is MADE OF (Structuralism)"
+      },
+      {
+        "id": "s4",
+        "label": "Why did the capacity for sustained attention evolve?",
+        "correctCategory": "What the mind is FOR (Functionalism)"
+      }
+    ],
+    "hints": [
+      "Listen for whether the question hunts for COMPONENTS or for a PURPOSE.",
+      "Decomposition questions are structuralist; adaptive-purpose questions are functionalist."
+    ],
+    "explanation": "Questions seeking the mind's components (elementary sensations, decomposing emotion) are structuralist; questions about purpose and adaptation (how memory helps, why attention evolved) are functionalist. The two schools differ in the QUESTION they ask, not in disputed facts."
+  },
+  {
+    "id": "psy_u03_l01_q03",
+    "type": "error_highlight",
+    "question": "A student compares the two founding schools. Highlight the one incorrect statement.",
+    "tokens": [
+      {
+        "id": "t1",
+        "text": "Structuralism sought the mind's basic elements using introspection. "
+      },
+      {
+        "id": "t2",
+        "text": "Functionalism asked what mental processes are for, influenced by Darwin. "
+      },
+      {
+        "id": "t3",
+        "text": "The two schools were mainly competing answers to the same question about what the mind contains. "
+      },
+      {
+        "id": "t4",
+        "text": "William James described consciousness as a continuous stream. "
+      },
+      {
+        "id": "t5",
+        "text": "Functionalism's question proved more fruitful for psychology's later growth."
+      }
+    ],
+    "incorrectTokenIds": [
+      "t3"
+    ],
+    "hints": [
+      "Four statements are correct; one mistakes the nature of the disagreement.",
+      "Did the schools dispute the same facts, or ask different questions entirely?"
+    ],
+    "explanation": "The error is t3. Structuralism and functionalism were not rival answers to one question - they asked DIFFERENT questions (what the mind is made of versus what it is for). Framing them as competing over the same facts is the named pitfall."
+  },
+  {
+    "id": "psy_u03_l01_q04",
+    "type": "cloze_bank",
+    "question": "Interpret William James's view of consciousness.",
+    "correctAnswers": [
+      0
+    ],
+    "segments": [
+      "James described consciousness as a ",
+      ", directly opposing the structuralist project of breaking it into elements."
+    ],
+    "wordBank": [
+      "continuous, ever-shifting stream that resists being split into static parts",
+      "fixed set of discrete elements that can be catalogued",
+      "blank slate written entirely by experience",
+      "collection of repressed unconscious drives"
+    ],
+    "hints": [
+      "James's phrase captures flow and continuity, not fixed pieces.",
+      "The whole point was that consciousness cannot be frozen into static building blocks."
+    ],
+    "explanation": "James's 'stream of consciousness' emphasized continuous flow that cannot be decomposed into static elements - the opposite of structuralism. The 'discrete elements' option is exactly the structuralist view James rejected, and the other options belong to other schools."
+  },
+  {
+    "id": "psy_u03_l01_q05",
+    "type": "formula_builder",
+    "question": "Arrange these milestones in the order psychology developed as a discipline.",
+    "tokens": [
+      "Wundt opens the first psychology laboratory (Leipzig, 1879)",
+      "His method is developed into Structuralism by Titchener",
+      "Functionalism arises, asking instead what the mind is FOR",
+      "Hall founds the APA (1892), institutionalizing the field"
+    ],
+    "correctOrder": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "hints": [
+      "The first experimental laboratory is the starting point.",
+      "Structuralism grows from Wundt's method; functionalism responds to it; then the field is institutionalized."
+    ],
+    "explanation": "Wundt's 1879 lab founded experimental psychology, Titchener built structuralism from it, functionalism arose as an alternative asking what the mind is for, and Hall's APA (1892) institutionalized the discipline. The sequence traces the field from method to school to profession."
+  }
+]

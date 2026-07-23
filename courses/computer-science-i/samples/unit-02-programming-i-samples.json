@@ -1,0 +1,188 @@
+[
+  {
+    "id": "cs_u02_l01_q01",
+    "type": "numerical_input",
+    "question": "In most languages multiplication binds tighter than addition. Evaluate the expression 3 + 4 * 2.",
+    "correctAnswer": 11,
+    "tolerance": 0,
+    "hints": [
+      "Operator precedence decides which operation happens first, exactly as in ordinary arithmetic.",
+      "Do the multiplication before the addition, not left to right."
+    ],
+    "explanation": "Multiplication is done first: 4 * 2 = 8, then 3 + 8 = 11. Reading strictly left to right would give (3 + 4) * 2 = 14, which is the classic precedence error the parentheses in the next question exist to fix."
+  },
+  {
+    "id": "cs_u02_l01_q03",
+    "type": "matrix_grid",
+    "question": "Assign each value to its type.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "42"
+      },
+      {
+        "id": "r2",
+        "label": "3.14"
+      },
+      {
+        "id": "r3",
+        "label": "true"
+      },
+      {
+        "id": "r4",
+        "label": "\"hello\""
+      },
+      {
+        "id": "r5",
+        "label": "-7"
+      },
+      {
+        "id": "r6",
+        "label": "\"42\""
+      }
+    ],
+    "columns": [
+      {
+        "id": "c1",
+        "label": "Integer"
+      },
+      {
+        "id": "c2",
+        "label": "Float"
+      },
+      {
+        "id": "c3",
+        "label": "Boolean"
+      },
+      {
+        "id": "c4",
+        "label": "String"
+      }
+    ],
+    "correctMapping": {
+      "r1": "c1",
+      "r2": "c2",
+      "r3": "c3",
+      "r4": "c4",
+      "r5": "c1",
+      "r6": "c4"
+    },
+    "hints": [
+      "Whole numbers are integers; anything in quotation marks is text.",
+      "The quotation marks around a run of digits matter more than the digits themselves."
+    ],
+    "explanation": "42 and -7 are integers; 3.14 has a decimal point, so it is a float; true is a boolean; both \"hello\" and \"42\" are strings because they are quoted. Reading \"42\" as an integer is the trap — the quotes make it text, and text does not do arithmetic."
+  },
+  {
+    "id": "cs_u02_l01_q04",
+    "type": "category_sort",
+    "question": "The operator + adds two numbers but joins two strings. Sort each expression by what it evaluates to.",
+    "categories": [
+      "Evaluates to a number",
+      "Evaluates to a string"
+    ],
+    "items": [
+      {
+        "id": "e1",
+        "label": "3 + 4",
+        "correctCategory": "Evaluates to a number"
+      },
+      {
+        "id": "e2",
+        "label": "\"3\" + \"4\"",
+        "correctCategory": "Evaluates to a string"
+      },
+      {
+        "id": "e3",
+        "label": "10 - 3",
+        "correctCategory": "Evaluates to a number"
+      },
+      {
+        "id": "e4",
+        "label": "\"ab\" + \"cd\"",
+        "correctCategory": "Evaluates to a string"
+      },
+      {
+        "id": "e5",
+        "label": "2 * 5",
+        "correctCategory": "Evaluates to a number"
+      },
+      {
+        "id": "e6",
+        "label": "\"1\" + \"1\"",
+        "correctCategory": "Evaluates to a string"
+      }
+    ],
+    "hints": [
+      "Look at whether the operands are numbers or quoted text before deciding what + does.",
+      "\"1\" + \"1\" joins two pieces of text; it does not add two numbers."
+    ],
+    "explanation": "With numeric operands + adds; with string operands it concatenates. So \"3\" + \"4\" is \"34\" and \"1\" + \"1\" is \"11\", not 7 or 2. The operator is the same symbol; the operand types decide what it means — mixing them carelessly is a frequent source of bugs."
+  },
+  {
+    "id": "cs_u02_l01_q05",
+    "type": "table_completion",
+    "question": "Assignment stores the right-hand side into the name on the left, using the current value. Trace the value of x line by line.",
+    "rows": [
+      [
+        {
+          "content": "x = 5"
+        },
+        {
+          "content": "5"
+        }
+      ],
+      [
+        {
+          "content": "x = x + 1"
+        },
+        {
+          "content": "___"
+        }
+      ],
+      [
+        {
+          "content": "x = x * 2"
+        },
+        {
+          "content": "___"
+        }
+      ]
+    ],
+    "headers": [
+      "Line",
+      "x afterwards"
+    ],
+    "answers": [
+      "6",
+      "12"
+    ],
+    "hints": [
+      "Each line reads the current x first, computes, then stores the result back into x.",
+      "By the third line x is no longer 5 — use the value the second line left behind."
+    ],
+    "explanation": "x = x + 1 reads 5, adds 1, stores 6; x = x * 2 then reads 6 and stores 12. Reading x = x + 1 as a false equation is the pitfall: it is a command that evaluates the right side using the old x before overwriting it."
+  },
+  {
+    "id": "cs_u02_l01_q06",
+    "type": "annotation_text",
+    "question": "Assignment is directional. Highlight the span describing what happens first.",
+    "passage": "In an assignment the right-hand side is evaluated first, and only then is the result stored into the name on the left.",
+    "correctSpans": [
+      {
+        "start": 17,
+        "end": 55,
+        "label": "Happens first"
+      }
+    ],
+    "availableLabels": [
+      "Happens first",
+      "Happens second"
+    ],
+    "hints": [
+      "An assignment has two actions; the question asks for the earlier one.",
+      "The value must exist before it can be stored anywhere."
+    ],
+    "explanation": "The right-hand side is computed before anything is stored, which is exactly why x = x + 1 is not a contradiction: the old value of x is read to form the new one, and only then is x overwritten."
+  }
+]

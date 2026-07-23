@@ -1,0 +1,169 @@
+[
+  {
+    "id": "psy_u05_l01_q01",
+    "type": "category_sort",
+    "question": "Popper's criterion: a scientific hypothesis must be falsifiable - some possible observation could count against it. Sort each claim.",
+    "categories": [
+      "Falsifiable (can be scientific)",
+      "Unfalsifiable (outside science)"
+    ],
+    "items": [
+      {
+        "id": "s1",
+        "label": "People with more social support recover faster from surgery",
+        "correctCategory": "Falsifiable (can be scientific)"
+      },
+      {
+        "id": "s2",
+        "label": "Everything that happens does so for a hidden reason we could never possibly detect",
+        "correctCategory": "Unfalsifiable (outside science)"
+      },
+      {
+        "id": "s3",
+        "label": "This therapy lowers anxiety scores more than a placebo does",
+        "correctCategory": "Falsifiable (can be scientific)"
+      },
+      {
+        "id": "s4",
+        "label": "An invisible force with no measurable effect guides every human choice",
+        "correctCategory": "Unfalsifiable (outside science)"
+      },
+      {
+        "id": "s5",
+        "label": "Sleep deprivation slows reaction times on a driving task",
+        "correctCategory": "Falsifiable (can be scientific)"
+      }
+    ],
+    "hints": [
+      "Ask of each claim: is there ANY result you could imagine that would count as evidence against it?",
+      "If a claim is rigged so that no conceivable observation could ever contradict it, it is unfalsifiable."
+    ],
+    "explanation": "A claim is falsifiable only if some possible observation could count against it. The two 'hidden/undetectable force' claims are built so nothing could ever disprove them, placing them outside science - however intuitively appealing they feel. That is Popper's dividing line."
+  },
+  {
+    "id": "psy_u05_l01_q02",
+    "type": "matrix_grid",
+    "question": "Classify each piece of reasoning as inductive (specific observations up to a general pattern) or deductive (general theory down to a specific prediction).",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "After 200 anxious patients improved on the drug, a researcher proposes it reduces anxiety generally"
+      },
+      {
+        "id": "r2",
+        "label": "The theory says extraverts seek stimulation, so THIS extravert should choose the louder room"
+      },
+      {
+        "id": "r3",
+        "label": "Every session tested showed the effect, so it probably holds across sessions in general"
+      },
+      {
+        "id": "r4",
+        "label": "If the theory is true, then this particular experiment must come out this specific way"
+      }
+    ],
+    "columns": [
+      {
+        "id": "cI",
+        "label": "Inductive"
+      },
+      {
+        "id": "cD",
+        "label": "Deductive"
+      }
+    ],
+    "correctMapping": {
+      "r1": "cI",
+      "r2": "cD",
+      "r3": "cI",
+      "r4": "cD"
+    },
+    "hints": [
+      "Which direction does the arrow of reasoning point - from many cases up to a rule, or from a rule down to one case?",
+      "Building a general claim FROM specific cases is inductive; deriving a specific prediction FROM a general theory is deductive."
+    ],
+    "explanation": "Rows 1 and 3 generalize upward from specific cases (inductive); rows 2 and 4 derive a specific prediction from a general theory (deductive). Science cycles between the two - induction proposes patterns, deduction tests them."
+  },
+  {
+    "id": "psy_u05_l01_q03",
+    "type": "ordering",
+    "question": "Put the stages of the scientific method in the order a researcher actually moves through them.",
+    "items": [
+      "Notice a pattern or phenomenon worth explaining (observation)",
+      "Propose a testable, falsifiable hypothesis to explain it",
+      "Derive a specific prediction the hypothesis commits you to",
+      "Run a study and collect data to test that prediction",
+      "Draw a conclusion, then invite others to replicate it"
+    ],
+    "correctOrder": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "hints": [
+      "The prediction is what the hypothesis COMMITS you to - so it must come after the hypothesis, not before.",
+      "Replication by others is the final safeguard, so it comes at the very end."
+    ],
+    "explanation": "Observation seeds a hypothesis, which yields a testable prediction, which a study checks, ending in a conclusion others can replicate. Deriving the prediction before committing to a hypothesis, or 'replicating' before concluding, would break the logic of the cycle."
+  },
+  {
+    "id": "psy_u05_l01_q04",
+    "type": "error_highlight",
+    "question": "A student explains theory versus hypothesis. Highlight the one incorrect statement.",
+    "tokens": [
+      {
+        "id": "t1",
+        "text": "A hypothesis is a specific, testable prediction. "
+      },
+      {
+        "id": "t2",
+        "text": "A theory is a broad framework already supported by extensive converging evidence. "
+      },
+      {
+        "id": "t3",
+        "text": "In science, a theory is just an untested guess - weaker and more tentative than a hypothesis. "
+      },
+      {
+        "id": "t4",
+        "text": "Theories are built up from many replicated hypothesis tests. "
+      },
+      {
+        "id": "t5",
+        "text": "To be scientific, a hypothesis must be falsifiable."
+      }
+    ],
+    "incorrectTokenIds": [
+      "t3"
+    ],
+    "hints": [
+      "Four statements are correct; one repeats the everyday 'it's just a theory' misuse of the word.",
+      "In science, which is the STRONGER claim - a single hypothesis or a well-supported theory?"
+    ],
+    "explanation": "The error is t3. In science a theory is a STRONGER claim than a hypothesis - a broad framework backed by extensive evidence - not a weaker guess. Importing the casual 'just a theory' meaning is the classic pitfall this lesson flags."
+  },
+  {
+    "id": "psy_u05_l01_q05",
+    "type": "cloze_bank",
+    "question": "Apply Popper's criterion to a novel claim.",
+    "correctAnswers": [
+      0
+    ],
+    "segments": [
+      "A colleague insists her claim is especially strong because no possible observation could ever contradict it. By Popper's criterion this actually means the claim ",
+      "."
+    ],
+    "wordBank": [
+      "is unfalsifiable, and so lies outside science entirely",
+      "is the strongest kind of scientific hypothesis",
+      "has therefore already been proven true",
+      "is a theory rather than a hypothesis"
+    ],
+    "hints": [
+      "Being impossible to disprove is not a strength in science - it is disqualifying.",
+      "If nothing could ever count against a claim, no test could ever support it either."
+    ],
+    "explanation": "Immunity to any possible disproof makes a claim unfalsifiable, and therefore unscientific - the opposite of a strength. The tempting distractor treats 'can't be disproven' as power, which is exactly the reasoning Popper's criterion rejects."
+  }
+]

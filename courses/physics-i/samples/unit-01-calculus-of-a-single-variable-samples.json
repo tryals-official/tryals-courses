@@ -1,0 +1,90 @@
+[
+  {
+    "type": "number_line_placement",
+    "question": "The function $f(x) = \\dfrac{1}{x-2}$ is defined for every real number except one. **Place the marker on the excluded value.**",
+    "min": -3,
+    "max": 7,
+    "step": 1,
+    "tolerance": 0.25,
+    "markers": [
+      {
+        "id": "m1",
+        "label": "Excluded from domain",
+        "targetValue": 2
+      }
+    ],
+    "hints": [
+      "A fraction breaks down exactly where its denominator becomes zero.",
+      "Solve $x - 2 = 0$."
+    ],
+    "explanation": "At $x = 2$ the denominator vanishes and the value $1/0$ is undefined — a single puncture in an otherwise complete number line. Domains are about finding exactly these forbidden points.",
+    "id": "phys1_u01_l01_q01"
+  },
+  {
+    "id": "phys1_u01_l01_q02",
+    "type": "interactive_scene",
+    "question": "On the parabola $f(x)=x^2$ over $[1,3]$: the secant line is drawn. Find the point $c$ where the tangent is **parallel** to the secant — the tangent draws when you send.",
+    "sceneId": "u01_mvt",
+    "sceneParams": {
+      "start": 1.5
+    },
+    "correctAnswer": {
+      "c": 2
+    },
+    "tolerance": 0.2,
+    "explanation": "The secant slope is $(9-1)/(3-1)=4$. Setting $f'(c)=2c=4$ gives $c=2$ — the Mean Value Theorem guarantees this point exists.",
+    "hints": [
+      "Secant slope = (f(3)−f(1))/(3−1).",
+      "f'(c) = 2c = 4."
+    ]
+  },
+  {
+    "type": "numerical_input",
+    "id": "phys1_u01_l01_q03",
+    "question": "Evaluate $f(4)$ where $f(x) = 3x - 7$.",
+    "correctAnswer": 5,
+    "tolerance": 0.01,
+    "explanation": "$f(4) = 3(4) - 7 = 12 - 7 = 5$."
+  },
+  {
+    "type": "matching",
+    "id": "phys1_u01_l01_q04",
+    "question": "Match each function representation to its form.",
+    "pairs": [
+      {
+        "left": "$y = 3x + 2$",
+        "right": "Explicit formula"
+      },
+      {
+        "left": "$x^{2}$ + $y^{2}$ = 9",
+        "right": "Implicit equation"
+      },
+      {
+        "left": "{(1,2),(2,4),(3,6)}",
+        "right": "Set of ordered pairs"
+      },
+      {
+        "left": "t↦(cos t, sin t)",
+        "right": "Parametric form"
+      }
+    ],
+    "explanation": "Functions can be represented in multiple equivalent ways."
+  },
+  {
+    "type": "multi_select",
+    "id": "phys1_u01_l01_q05",
+    "question": "Which are properties of odd functions?",
+    "options": [
+      "$f(-x) = -f(x)$",
+      "Graph is symmetric about the origin",
+      "$f(0)$ = 0 whenever 0 is in the domain",
+      "Graph is symmetric about the y-axis"
+    ],
+    "correctAnswers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Symmetry about the y-axis defines even functions, not odd."
+  }
+]

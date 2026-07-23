@@ -25,6 +25,12 @@ Covers STEM, humanities, and social sciences.
 Each unit file contains:
 - **Explanatory lessons** — clear, concise text with LaTeX mathematics (renders natively on GitHub)
 - **Practice previews** — sample questions from each lesson showing the variety of interactive formats (70+ question types including numerical input, code analysis, matching, ordering, data analysis, crosswords, and more)
+- **Sample question JSON** — real question data in the format used by the Tryals engine (see [docs/](docs/))
+
+## Documentation
+
+- [**Question Format**](docs/question-format.md) — the JSON schema for courses, units, lessons, and questions
+- [**Question Types**](docs/question-types.md) — catalog of all 70+ interactive question types
 
 ## What Tryals adds
 

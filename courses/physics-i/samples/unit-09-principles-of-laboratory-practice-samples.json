@@ -1,0 +1,82 @@
+[
+  {
+    "id": "phys1_u09_l01_q01",
+    "type": "true_false",
+    "question": "A scientific hypothesis must be testable and falsifiable.",
+    "explanation": "Falsifiability is the hallmark of a scientific hypothesis; it must make predictions that can be proven wrong.",
+    "correctAnswer": "True"
+  },
+  {
+    "id": "phys1_u09_l01_q02",
+    "explanation": "Vernier reading = main-scale millimetres before the vernier zero, plus 0.1 mm × the index of the vernier tick that coincides with a main-scale mark: $3 + 7 \\times 0.1 = 3.7$ mm.",
+    "type": "interactive_scene",
+    "question": "Set the caliper to exactly **3.7 mm** with no digital readout: vernier zero just past 3 on the main scale, and the 7th vernier tick lined up with a main-scale mark.",
+    "sceneId": "u09_caliper",
+    "sceneParams": {
+      "reading": 3.7,
+      "startReading": 1.5
+    },
+    "correctAnswer": {
+      "reading": 3.7
+    },
+    "tolerance": 0.05,
+    "submitLabel": "Take the reading",
+    "hints": [
+      "The vernier zero gives the whole millimetres.",
+      "The coinciding tick gives the tenths."
+    ]
+  },
+  {
+    "type": "slider_estimate",
+    "id": "phys1_u09_l01_q03",
+    "question": "An experiment yields five measurements: 10.2, 10.5, 10.3, 10.4, 10.1. What is their mean? **Set the slider to your answer.**",
+    "min": 0,
+    "max": 30,
+    "targetValue": 10.3,
+    "tolerance": 0.309,
+    "minLabel": "0",
+    "maxLabel": "30",
+    "explanation": "Mean = (10.2 + 10.5 + 10.3 + 10.4 + 10.1)/5 = 51.5/5 = 10.3."
+  },
+  {
+    "id": "phys1_u09_l01_q04",
+    "type": "matching",
+    "question": "Match each step of the scientific method to its description.",
+    "pairs": [
+      {
+        "left": "Observation",
+        "right": "Noticing a phenomenon or pattern in nature"
+      },
+      {
+        "left": "Hypothesis",
+        "right": "A testable proposed explanation"
+      },
+      {
+        "left": "Experiment",
+        "right": "A controlled test of the hypothesis"
+      },
+      {
+        "left": "Conclusion",
+        "right": "Interpretation of results and evaluation of hypothesis"
+      }
+    ],
+    "explanation": "The scientific method proceeds from observation through hypothesis, experiment, and conclusion."
+  },
+  {
+    "id": "phys1_u09_l01_q05",
+    "type": "multi_select",
+    "question": "Which are essential features of a well-designed controlled experiment?",
+    "options": [
+      "A control group for comparison",
+      "Only one independent variable changed at a time",
+      "As many variables changed simultaneously as possible",
+      "Repeated trials for reliability"
+    ],
+    "explanation": "Controlled experiments isolate one variable, include a control group, and use repeated trials.",
+    "correctAnswers": [
+      0,
+      1,
+      3
+    ]
+  }
+]

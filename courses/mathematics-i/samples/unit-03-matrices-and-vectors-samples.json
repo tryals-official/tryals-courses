@@ -1,0 +1,172 @@
+[
+  {
+    "id": "math_u03_l01_q01",
+    "type": "numerical_input",
+    "question": "Compute the magnitude of the vector u = (3, -4).",
+    "correctAnswer": 5,
+    "tolerance": 0,
+    "hints": [
+      "The magnitude comes from Pythagoras: the square root of the sum of the squared components.",
+      "Squaring removes the minus sign, so you need the square root of 9 + 16."
+    ],
+    "explanation": "The magnitude is the square root of 9 + 16 = 25, which is 5. Note the negative component contributes +16, not -16 — magnitude is a length and can never come out negative. Adding the components instead would give -1, which is meaningless as a length."
+  },
+  {
+    "id": "math_u03_l01_q02",
+    "type": "table_completion",
+    "question": "Complete the vector arithmetic. Vectors add and scale componentwise.",
+    "rows": [
+      [
+        {
+          "content": "(1, 2) + (3, 4)"
+        },
+        {
+          "content": "(4, 6)"
+        }
+      ],
+      [
+        {
+          "content": "(5, -1) - (2, 3)"
+        },
+        {
+          "content": "___"
+        }
+      ],
+      [
+        {
+          "content": "3 x (2, -1)"
+        },
+        {
+          "content": "___"
+        }
+      ],
+      [
+        {
+          "content": "2 x (1, 3) + (0, -2)"
+        },
+        {
+          "content": "___"
+        }
+      ]
+    ],
+    "headers": [
+      "Expression",
+      "Result"
+    ],
+    "answers": [
+      "(3, -4)",
+      "(6, -3)",
+      "(2, 4)"
+    ],
+    "hints": [
+      "Handle the first components together and the second components together — they never mix.",
+      "In the last row do the scaling before the addition."
+    ],
+    "explanation": "(5, -1) - (2, 3) = (3, -4); 3(2, -1) = (6, -3); and 2(1, 3) + (0, -2) = (2, 6) + (0, -2) = (2, 4). Every operation acts slot by slot, which is what makes the geometry of arrows carry over unchanged into dimensions you cannot draw."
+  },
+  {
+    "id": "math_u03_l01_q05",
+    "type": "number_line_placement",
+    "question": "Let u = (3, 4) and v = (6, 8). **Place the marker on the magnitude of u + v.**",
+    "min": 0,
+    "max": 20,
+    "step": 1,
+    "tolerance": 0.3,
+    "markers": [
+      {
+        "id": "m1",
+        "label": "magnitude of u + v",
+        "targetValue": 15
+      }
+    ],
+    "hints": [
+      "Add componentwise first, then take the magnitude of the result.",
+      "u + v = (9, 12), and 81 + 144 = 225."
+    ],
+    "explanation": "u + v = (9, 12), whose magnitude is the square root of 225, namely 15. Here that equals the magnitude of u plus that of v (5 + 10) because v points in exactly the same direction as u. That equality is the exceptional case — in general the magnitude of a sum is strictly less."
+  },
+  {
+    "id": "math_u03_l01_q06",
+    "type": "matrix_grid",
+    "question": "Classify each quantity as a scalar or a vector.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "u + v"
+      },
+      {
+        "id": "r2",
+        "label": "the magnitude of u"
+      },
+      {
+        "id": "r3",
+        "label": "c times u, for a number c"
+      },
+      {
+        "id": "r4",
+        "label": "the distance between two points"
+      },
+      {
+        "id": "r5",
+        "label": "the unit vector in the direction of u"
+      }
+    ],
+    "columns": [
+      {
+        "id": "c1",
+        "label": "Scalar"
+      },
+      {
+        "id": "c2",
+        "label": "Vector"
+      }
+    ],
+    "correctMapping": {
+      "r1": "c2",
+      "r2": "c1",
+      "r3": "c2",
+      "r4": "c1",
+      "r5": "c2"
+    },
+    "hints": [
+      "Ask whether the answer is a single number or a list of components with a direction.",
+      "Anything described as a length or a distance is a single number."
+    ],
+    "explanation": "Adding or scaling vectors returns vectors, and normalizing returns a vector of length 1. Magnitude and distance are single numbers with no direction attached. Confusing a vector with its magnitude — treating (3, 4) as if it were 5 — destroys all the directional information."
+  },
+  {
+    "id": "math_u03_l01_q07",
+    "type": "error_highlight",
+    "question": "A student summarises vector operations. Highlight the one incorrect statement.",
+    "tokens": [
+      {
+        "id": "t1",
+        "text": "Vectors are added componentwise. "
+      },
+      {
+        "id": "t2",
+        "text": "Multiplying by a negative scalar reverses a vector's direction. "
+      },
+      {
+        "id": "t3",
+        "text": "The magnitude of a sum equals the sum of the magnitudes. "
+      },
+      {
+        "id": "t4",
+        "text": "A unit vector has magnitude 1 and encodes pure direction. "
+      },
+      {
+        "id": "t5",
+        "text": "Sliding a vector without turning or stretching it leaves it unchanged."
+      }
+    ],
+    "incorrectTokenIds": [
+      "t3"
+    ],
+    "hints": [
+      "Test the suspect claim on two vectors pointing in opposite directions.",
+      "Take u = (3, 4) and v = (-3, -4): what is the magnitude of the sum?"
+    ],
+    "explanation": "The error is t3. With u = (3, 4) and v = (-3, -4) the sum is the zero vector, of magnitude 0, while the magnitudes add to 10. In general the magnitude of a sum is at most the sum of the magnitudes, with equality only when the vectors point the same way."
+  }
+]

@@ -1,0 +1,172 @@
+[
+  {
+    "id": "psy_u06_l01_q01",
+    "type": "ordering",
+    "question": "Trace the life cycle of one conditioned association, in order.",
+    "items": [
+      "Acquisition: a tone is repeatedly paired with food until it triggers salivation",
+      "The tone is now a conditioned stimulus reliably producing salivation",
+      "Extinction: the tone is presented alone many times and salivation fades",
+      "A rest period passes with no tone presented at all",
+      "Spontaneous recovery: the tone briefly triggers weak salivation again"
+    ],
+    "correctOrder": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "hints": [
+      "Learning must be established before it can be extinguished.",
+      "Spontaneous recovery can only follow a REST after extinction - it cannot come before extinction."
+    ],
+    "explanation": "Acquisition builds the CS-CR link, extinction weakens it when the CS appears alone, and after a rest spontaneous recovery briefly revives it. That revival, coming AFTER extinction and a delay, is what proves the association was suppressed rather than erased."
+  },
+  {
+    "id": "psy_u06_l01_q02",
+    "type": "matrix_grid",
+    "question": "Classify each scenario by the conditioning process it illustrates.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "Little Albert, taught to fear a white rat, now also fears a white fuzzy rabbit"
+      },
+      {
+        "id": "r2",
+        "label": "A dog salivates to a 1000 Hz tone but learns NOT to salivate to a 1200 Hz tone"
+      },
+      {
+        "id": "r3",
+        "label": "After many tone-alone trials, the dog stops salivating to the tone"
+      },
+      {
+        "id": "r4",
+        "label": "Weeks later, with no retraining, the tone alone briefly makes the dog salivate again"
+      }
+    ],
+    "columns": [
+      {
+        "id": "cG",
+        "label": "Generalization"
+      },
+      {
+        "id": "cD",
+        "label": "Discrimination"
+      },
+      {
+        "id": "cE",
+        "label": "Extinction"
+      },
+      {
+        "id": "cS",
+        "label": "Spontaneous recovery"
+      }
+    ],
+    "correctMapping": {
+      "r1": "cG",
+      "r2": "cD",
+      "r3": "cE",
+      "r4": "cS"
+    },
+    "hints": [
+      "Ask whether the response is SPREADING to similar cues, NARROWING to one cue, FADING, or briefly RETURNING.",
+      "Fearing similar objects is generalization; responding to only one specific cue is discrimination."
+    ],
+    "explanation": "Spreading to similar cues is generalization, narrowing to one cue is discrimination, fading with CS-alone trials is extinction, and a brief unretrained return is spontaneous recovery. Each scenario is placed by what is happening to the response, not by a definition."
+  },
+  {
+    "id": "psy_u06_l01_q03",
+    "type": "category_sort",
+    "question": "Sort each described response by whether it shows generalization or discrimination.",
+    "categories": [
+      "Generalization",
+      "Discrimination"
+    ],
+    "items": [
+      {
+        "id": "s1",
+        "label": "A combat veteran flinches at fireworks, thunder, and any sudden loud bang",
+        "correctCategory": "Generalization"
+      },
+      {
+        "id": "s2",
+        "label": "A cat comes running only to ITS own can opener, ignoring similar kitchen sounds",
+        "correctCategory": "Discrimination"
+      },
+      {
+        "id": "s3",
+        "label": "A baby scared by one barking dog now cries at every dog",
+        "correctCategory": "Generalization"
+      },
+      {
+        "id": "s4",
+        "label": "A child learns to fear only the neighbor's specific dog, not other dogs",
+        "correctCategory": "Discrimination"
+      }
+    ],
+    "hints": [
+      "Generalization SPREADS the response to similar stimuli; discrimination CONFINES it to the exact CS.",
+      "'Any loud bang' and 'every dog' signal spreading; 'only its own' and 'only the specific one' signal confining."
+    ],
+    "explanation": "Responding to a whole class of similar cues is generalization; responding only to the precise original cue is discrimination. The giveaway is whether the response has spread outward or been narrowed to one specific stimulus."
+  },
+  {
+    "id": "psy_u06_l01_q04",
+    "type": "error_highlight",
+    "question": "A student explains extinction. Highlight the one incorrect statement.",
+    "tokens": [
+      {
+        "id": "t1",
+        "text": "Extinction weakens the conditioned response when the CS is presented alone. "
+      },
+      {
+        "id": "t2",
+        "text": "Spontaneous recovery shows the response can briefly return after a rest. "
+      },
+      {
+        "id": "t3",
+        "text": "Extinction permanently erases the original learned association. "
+      },
+      {
+        "id": "t4",
+        "text": "Because the association is suppressed rather than erased, relapse remains a real clinical concern. "
+      },
+      {
+        "id": "t5",
+        "text": "Acquisition works best when the neutral stimulus slightly precedes the US."
+      }
+    ],
+    "incorrectTokenIds": [
+      "t3"
+    ],
+    "hints": [
+      "Four statements are correct; one contradicts what spontaneous recovery demonstrates.",
+      "If the association were truly erased, the response could never spontaneously recover."
+    ],
+    "explanation": "The error is t3. Extinction suppresses rather than erases the association - which is exactly why spontaneous recovery (and clinical relapse) can happen. Treating extinction as permanent deletion is the named pitfall of this lesson."
+  },
+  {
+    "id": "psy_u06_l01_q05",
+    "type": "cloze_bank",
+    "question": "Interpret a relapse after therapy.",
+    "correctAnswers": [
+      0
+    ],
+    "segments": [
+      "A therapist successfully extinguishes a client's phobia, yet weeks later the fear briefly returns on its own. This spontaneous recovery shows that extinction ",
+      "."
+    ],
+    "wordBank": [
+      "suppressed the association rather than erasing it",
+      "permanently deleted the association",
+      "never actually took hold",
+      "turned the fear into an unconditioned response"
+    ],
+    "hints": [
+      "A truly erased association could not come back by itself.",
+      "The return of the fear points to suppression, not deletion."
+    ],
+    "explanation": "Spontaneous recovery of the fear shows extinction suppressed the association rather than erasing it - the learning was still there, merely inhibited. This is precisely why relapse after 'extinguished' fears or cravings is a genuine clinical concern."
+  }
+]

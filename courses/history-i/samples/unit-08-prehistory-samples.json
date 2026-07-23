@@ -1,0 +1,103 @@
+[
+  {
+    "id": "his1_u08_l01_q01",
+    "type": "interactive_scene",
+    "question": "Two dials, six million years: posture and brain size. **Drag the timeline** and find how many millions of years we walked upright before the brain began to expand.",
+    "sceneId": "hist_u08_feet_before_brains",
+    "sceneParams": {
+      "startMa": 6,
+      "endMa": 0,
+      "bipedalAtMa": 4,
+      "brainClimbsAtMa": 2
+    },
+    "correctAnswer": {
+      "gapMillionYears": 2
+    },
+    "tolerance": 0.6,
+    "hints": [
+      "Lucy walked fully upright at 3.2 Ma on a 400 cc brain — chimpanzee range.",
+      "The brain dial does not start climbing steeply until around 2 Ma."
+    ],
+    "explanation": "Roughly two million years, and by some measures three. Bipedalism locks in by about 4 Ma and the brain only accelerates around 2 Ma — an enormous stretch of walking upright with an ape-sized skull. The expected story (big brain → tools → walking) has the sequence exactly backwards, and the Laetoli footprints settle the argument: a human stride pressed into ash 3.6 million years before anyone had a human brain to think about it."
+  },
+  {
+    "id": "his1_u08_l01_q02",
+    "type": "multiple_choice",
+    "question": "What do the Laetoli footprints (3.6 Ma) prove?",
+    "options": [
+      "Fully upright walking existed long before brain expansion began",
+      "Early hominins used stone tools to hunt large game",
+      "Fire was controlled by Australopithecus",
+      "Brain size and posture evolved simultaneously"
+    ],
+    "correctAnswer": 0,
+    "hints": [
+      "A human heel-strike, a human arch, no knuckle-marks.",
+      "What was the brain doing at 3.6 Ma? Almost nothing new."
+    ],
+    "explanation": "Three individuals crossed wet volcanic ash, the ash hardened, and their gait fossilized. A modern stride with a 400 cc brain — the single cleanest refutation of the brain-first story."
+  },
+  {
+    "id": "his1_u08_l01_q03",
+    "type": "true_false",
+    "question": "Brain enlargement in hominins preceded the evolution of upright walking.",
+    "correctAnswer": "False",
+    "explanation": "The reverse, by millions of years. Lucy walked upright on a chimp-sized brain. Feet first; the skull inflated late."
+  },
+  {
+    "id": "his1_u08_l01_q04",
+    "type": "multi_select",
+    "question": "What plausibly paid the energy bill for a brain that burns ~20% of resting metabolism?",
+    "options": [
+      "Meat and marrow — dense calories unlocked by stone tools",
+      "Cooking, which predigests food and lets the gut shrink",
+      "Social complexity driving an arms race in mind-reading",
+      "A dramatic reduction in overall body activity"
+    ],
+    "correctAnswers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "The brain is 2% of body weight and eats a fifth of resting energy. Marrow, fire, and the social arms race are the leading candidates — and note our guts are small for a primate our size, exactly as the cooking hypothesis predicts."
+  },
+  {
+    "id": "his1_u08_l01_q06",
+    "type": "matrix_grid",
+    "question": "Match each stage of hominization to its brain size.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "Bipedalism established (4+ Ma)"
+      },
+      {
+        "id": "r2",
+        "label": "First flaked stone tools (3.3–2.6 Ma)"
+      },
+      {
+        "id": "r3",
+        "label": "Modern Homo sapiens"
+      }
+    ],
+    "columns": [
+      {
+        "id": "c1",
+        "label": "~400 cc — chimpanzee range"
+      },
+      {
+        "id": "c2",
+        "label": "~500–600 cc"
+      },
+      {
+        "id": "c3",
+        "label": "~1,350 cc"
+      }
+    ],
+    "correctMapping": {
+      "r1": "c1",
+      "r2": "c2",
+      "r3": "c3"
+    },
+    "explanation": "Read the table downward and the whole argument is there: the posture arrives at ape brain size, and the skull triples only afterwards."
+  }
+]

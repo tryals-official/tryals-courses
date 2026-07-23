@@ -1,0 +1,162 @@
+[
+  {
+    "id": "math_u05_l01_q01",
+    "type": "numerical_input",
+    "question": "Compute the limit of $(x^{2} - 9)/(x - 3)$ as x approaches 3.",
+    "correctAnswer": 6,
+    "tolerance": 0,
+    "hints": [
+      "Substitution gives the indeterminate form 0/0, so factor before you substitute.",
+      "The numerator factors as (x - 3)(x + 3)."
+    ],
+    "explanation": "Cancelling the common factor leaves x + 3, whose value at 3 is 6. The cancellation is legitimate because the limit never uses x = 3 itself, only values near it — which is exactly why a function undefined at a point can still have a limit there."
+  },
+  {
+    "id": "math_u05_l01_q03",
+    "type": "table_completion",
+    "question": "Let f(x) = $(x^{2} - 4)/(x - 2)$. Complete the table of values. Write 'undefined' where the function has no value.",
+    "rows": [
+      [
+        {
+          "content": "1.9"
+        },
+        {
+          "content": "3.9"
+        }
+      ],
+      [
+        {
+          "content": "1.99"
+        },
+        {
+          "content": "___"
+        }
+      ],
+      [
+        {
+          "content": "2"
+        },
+        {
+          "content": "___"
+        }
+      ],
+      [
+        {
+          "content": "2.01"
+        },
+        {
+          "content": "___"
+        }
+      ]
+    ],
+    "headers": [
+      "x",
+      "f(x)"
+    ],
+    "answers": [
+      "3.99",
+      "undefined",
+      "4.01"
+    ],
+    "hints": [
+      "For every x other than 2 the expression simplifies to x + 2.",
+      "At x = 2 the denominator is zero, so the fraction has no value at all."
+    ],
+    "explanation": "Away from 2 the function IS x + 2, so the values close in on 4 from both sides while the function has no value at 2 itself. The limit is 4 even though f(2) does not exist — the clearest possible illustration that a limit ignores the point it is aimed at."
+  },
+  {
+    "id": "math_u05_l01_q04",
+    "type": "matrix_grid",
+    "question": "Let f(x) be the absolute value of x divided by x, defined for every x other than 0. Give the value of each limit.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "The limit as x approaches 0 from the left"
+      },
+      {
+        "id": "r2",
+        "label": "The limit as x approaches 0 from the right"
+      },
+      {
+        "id": "r3",
+        "label": "The two-sided limit as x approaches 0"
+      },
+      {
+        "id": "r4",
+        "label": "The limit as x approaches 5"
+      }
+    ],
+    "columns": [
+      {
+        "id": "c1",
+        "label": "-1"
+      },
+      {
+        "id": "c2",
+        "label": "1"
+      },
+      {
+        "id": "c3",
+        "label": "Does not exist"
+      }
+    ],
+    "correctMapping": {
+      "r1": "c1",
+      "r2": "c2",
+      "r3": "c3",
+      "r4": "c2"
+    },
+    "hints": [
+      "For negative x the absolute value equals -x, and for positive x it equals x.",
+      "A two-sided limit exists only when the two one-sided limits agree."
+    ],
+    "explanation": "Left of 0 the quotient is -x/x = -1; right of 0 it is x/x = 1. Both one-sided limits exist yet disagree, so the two-sided limit fails — that disagreement is precisely what a jump in the graph looks like. Near 5 nothing is happening and the value is simply 1."
+  },
+  {
+    "id": "math_u05_l01_q05",
+    "type": "cloze_bank",
+    "question": "Complete the existence criterion for a two-sided limit.",
+    "correctAnswers": [
+      1
+    ],
+    "segments": [
+      "The limit of f(x) as x approaches a exists exactly when ",
+      "."
+    ],
+    "wordBank": [
+      "f is defined at a",
+      "both one-sided limits exist and are equal",
+      "f is continuous at a",
+      "the function is a polynomial"
+    ],
+    "hints": [
+      "Two of the options mention the value of f AT the point, which the limit never consults.",
+      "Recall the quotient of the absolute value by x at 0."
+    ],
+    "explanation": "The limit is decided entirely by the two approaches. Being defined at a is irrelevant — the factored quotient had a limit without a value — and continuity is a STRONGER condition that the next lesson builds on top of the limit."
+  },
+  {
+    "id": "math_u05_l01_q06",
+    "type": "ordering",
+    "question": "Order the steps of evaluating the limit of $(x^{2} - 4)/(x - 2)$ as x approaches 2.",
+    "items": [
+      "Substitute x = 2 and obtain the indeterminate form 0/0",
+      "Factor the numerator as (x - 2)(x + 2)",
+      "Cancel the common factor x - 2, which is legitimate because x is never equal to 2",
+      "Substitute x = 2 into the simplified expression x + 2",
+      "Report the limit as 4"
+    ],
+    "correctOrder": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "hints": [
+      "Try substitution first; the algebra is only needed when substitution fails.",
+      "The cancellation must be justified before the second substitution is allowed."
+    ],
+    "explanation": "Substitution is always the first move, and the 0/0 outcome is what licenses the algebra. The justification in step 3 matters: cancelling x - 2 changes the function AT x = 2, but the limit never looks there, so the two functions have the same limit."
+  }
+]

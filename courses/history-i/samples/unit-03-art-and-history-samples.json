@@ -1,0 +1,126 @@
+[
+  {
+    "id": "his1_u03_l01_q01",
+    "type": "interactive_scene",
+    "question": "A painting shows a woman holding a wheel. **Drag the analysis dial through Panofsky’s levels** until you reach the reading that explains why this saint, for this guild, in this year.",
+    "sceneId": "hist_u03_panofsky_dial",
+    "sceneParams": {
+      "levels": [
+        "Pre-iconographic: a woman holding a wheel",
+        "Iconographic: Saint Catherine, known by her attribute",
+        "Iconological: the guild’s patron, asserting civic piety"
+      ]
+    },
+    "correctAnswer": {
+      "level": 2
+    },
+    "tolerance": 0.4,
+    "hints": [
+      "Each level needs more outside knowledge than the last.",
+      "\"Why this, here, now?\" is the deepest question."
+    ],
+    "explanation": "Level 0 describes, level 1 identifies, level 2 explains. Only the iconological reading connects the wheel to a guild, a rivalry, and a year — the dial’s last stop is where art history becomes history."
+  },
+  {
+    "id": "his1_u03_l01_q02",
+    "type": "matrix_grid",
+    "question": "File each question under the method that answers it.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "How does the diagonal composition drive the eye?"
+      },
+      {
+        "id": "r2",
+        "label": "Which saint is the figure with the wheel?"
+      },
+      {
+        "id": "r3",
+        "label": "Who commissioned this altarpiece and why?"
+      },
+      {
+        "id": "r4",
+        "label": "What did this image do for the city’s politics?"
+      }
+    ],
+    "columns": [
+      {
+        "id": "c1",
+        "label": "Formal analysis"
+      },
+      {
+        "id": "c2",
+        "label": "Iconography"
+      },
+      {
+        "id": "c3",
+        "label": "Patronage study"
+      },
+      {
+        "id": "c4",
+        "label": "Social art history"
+      }
+    ],
+    "correctMapping": {
+      "r1": "c1",
+      "r2": "c2",
+      "r3": "c3",
+      "r4": "c4"
+    },
+    "explanation": "Composition, identification, commission, function: four lenses, each blind where the others see. Serious work uses all four on the same object."
+  },
+  {
+    "id": "his1_u03_l01_q03",
+    "type": "timeline_ordering",
+    "question": "Order Panofsky’s levels from the least to the most interpretive.",
+    "events": [
+      {
+        "id": "e1",
+        "label": "Describe what is literally visible: forms, figures, colors",
+        "correctPosition": 0
+      },
+      {
+        "id": "e2",
+        "label": "Identify the subject via conventions and texts",
+        "correctPosition": 1
+      },
+      {
+        "id": "e3",
+        "label": "Explain why this subject took this form in this moment",
+        "correctPosition": 2
+      }
+    ],
+    "explanation": "Description → identification → explanation. Skip the first two and \"interpretation\" becomes free association with footnotes."
+  },
+  {
+    "id": "his1_u03_l01_q04",
+    "type": "matching",
+    "question": "Match each attribute to the figure it identifies.",
+    "pairs": [
+      {
+        "left": "Wheel",
+        "right": "Saint Catherine of Alexandria"
+      },
+      {
+        "left": "Keys",
+        "right": "Saint Peter"
+      },
+      {
+        "left": "Lion",
+        "right": "Saint Mark"
+      },
+      {
+        "left": "Arrows",
+        "right": "Saint Sebastian"
+      }
+    ],
+    "explanation": "Attributes are the iconographer’s dictionary: pre-modern viewers read them instantly, the way we read a logo. Learn the dictionary and the pictures start talking."
+  },
+  {
+    "id": "his1_u03_l01_q05",
+    "type": "true_false",
+    "question": "Egyptian tomb paintings of overflowing granaries are reliable evidence that famine never occurred.",
+    "correctAnswer": "False",
+    "explanation": "Tomb art depicts the eternal abundance the deceased wished for, not the harvest record. Famine appears in administrative texts and skeletons — never in the paintings that were commissioned to deny it."
+  }
+]

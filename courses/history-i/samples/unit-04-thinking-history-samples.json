@@ -1,0 +1,130 @@
+[
+  {
+    "id": "his1_u04_l01_q01",
+    "type": "interactive_scene",
+    "question": "The past is delivering millions of events per second. **Drag the selection filter** until what survives is actually a history — not a transcript, and not a slogan.",
+    "sceneId": "hist_u04_selection_filter",
+    "sceneParams": {
+      "filterRange": [
+        0,
+        1
+      ],
+      "eventStream": "french_revolution"
+    },
+    "correctAnswer": {
+      "filter": 0.5
+    },
+    "tolerance": 0.25,
+    "hints": [
+      "Let everything through and you have a transcript longer than the Revolution itself.",
+      "Filter almost everything and you have one sentence that explains nothing."
+    ],
+    "explanation": "Wide open, the events pile past unreadably — a record that reproduces the past instead of explaining it. Clamped shut, three events survive and the causes vanish. In the middle the stream resolves into an argument: enough kept to support a claim, enough discarded to make one. Selection is not contamination of history; it is the operation that produces it."
+  },
+  {
+    "id": "his1_u04_l01_q02",
+    "type": "matrix_grid",
+    "question": "File each question under the branch of philosophy of history it belongs to.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "Is history moving toward the realization of freedom?"
+      },
+      {
+        "id": "r2",
+        "label": "Can a historical explanation ever be objective?"
+      },
+      {
+        "id": "r3",
+        "label": "Do civilizations pass through seasons like organisms?"
+      },
+      {
+        "id": "r4",
+        "label": "What kind of thing is a historical cause?"
+      }
+    ],
+    "columns": [
+      {
+        "id": "c1",
+        "label": "Speculative"
+      },
+      {
+        "id": "c2",
+        "label": "Analytic (critical)"
+      }
+    ],
+    "correctMapping": {
+      "r1": "c1",
+      "r2": "c2",
+      "r3": "c1",
+      "r4": "c2"
+    },
+    "explanation": "Speculative asks where history is going; analytic asks how we could possibly know. The nineteenth century did the first; professionals now do the second."
+  },
+  {
+    "id": "his1_u04_l01_q03",
+    "type": "multiple_choice",
+    "question": "What is the fundamental distinction between the past and history?",
+    "options": [
+      "The past is what happened; history is an account built in the present from surviving traces",
+      "The past is recent; history is what happened long ago",
+      "The past is subjective memory; history is the objective record",
+      "They are the same thing described in different registers"
+    ],
+    "correctAnswer": 0,
+    "hints": [
+      "German splits the word: Geschehen vs Geschichte.",
+      "What of the past actually exists right now?"
+    ],
+    "explanation": "The past is gone and stored nowhere. What exists are traces, and history is what a historian builds from them, now, for readers with questions. Every argument in historiography lives in that gap."
+  },
+  {
+    "id": "his1_u04_l01_q04",
+    "type": "category_sort",
+    "question": "Sort each claim: **speculative** philosophy of history or **analytic**?",
+    "categories": [
+      "Speculative",
+      "Analytic (critical)"
+    ],
+    "items": [
+      {
+        "id": "u04l01q04_i0",
+        "label": "History is the progress of the consciousness of freedom",
+        "correctCategory": "Speculative"
+      },
+      {
+        "id": "u04l01q04_i1",
+        "label": "Historical claims can be falsified but never proved",
+        "correctCategory": "Analytic (critical)"
+      },
+      {
+        "id": "u04l01q04_i2",
+        "label": "Class struggle drives history through determinate stages",
+        "correctCategory": "Speculative"
+      },
+      {
+        "id": "u04l01q04_i3",
+        "label": "Selection is unavoidable and requires an explicit criterion",
+        "correctCategory": "Analytic (critical)"
+      },
+      {
+        "id": "u04l01q04_i4",
+        "label": "Every civilization has a spring, summer, autumn, and winter",
+        "correctCategory": "Speculative"
+      },
+      {
+        "id": "u04l01q04_i5",
+        "label": "Explanation in history differs in kind from explanation in physics",
+        "correctCategory": "Analytic (critical)"
+      }
+    ],
+    "explanation": "One column asserts a plot; the other interrogates the method. Note that the speculative claims are grander, more memorable, and much harder to argue with — which is precisely the objection."
+  },
+  {
+    "id": "his1_u04_l01_q06",
+    "type": "true_false",
+    "question": "A historian can select which facts to include without any criterion of selection.",
+    "correctAnswer": "False",
+    "explanation": "Selection requires a criterion; a criterion comes from questions; questions come from the historian’s present. There is no view from nowhere. Honesty means making the criteria explicit enough to be argued with — not pretending they are absent."
+  }
+]

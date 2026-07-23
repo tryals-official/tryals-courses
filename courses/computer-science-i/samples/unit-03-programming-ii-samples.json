@@ -1,0 +1,183 @@
+[
+  {
+    "id": "cs_u03_l01_q01",
+    "type": "flow_chart",
+    "question": "This chart shows one of the three structured control constructs, used to add up a list of items. Fill the two empty boxes, choosing from these four phrases: 'Any items left?', 'Add the next item to the total', 'Sort the items', 'Set the total to zero'. Two phrases are never used.",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "start",
+        "text": "Start with total = 0",
+        "nextIds": [
+          "n2"
+        ]
+      },
+      {
+        "id": "n2",
+        "type": "decision",
+        "text": "",
+        "nextIds": [
+          "n3",
+          "n4"
+        ]
+      },
+      {
+        "id": "n3",
+        "type": "process",
+        "text": "",
+        "nextIds": [
+          "n2"
+        ]
+      },
+      {
+        "id": "n4",
+        "type": "end",
+        "text": "Report the total",
+        "nextIds": []
+      }
+    ],
+    "correctFills": {
+      "n2": "Any items left?",
+      "n3": "Add the next item to the total"
+    },
+    "hints": [
+      "Find the box that an arrow returns to — whatever is repeated is the loop body, and whatever it returns to is the test.",
+      "A decision box must contain a question that can be answered yes or no."
+    ],
+    "explanation": "The arrow leaving the process box goes back up, so this is iteration: the test is asked, the body runs, and the test is asked again. The diamond must hold the question and the rectangle the repeated work; putting the work in the diamond would give a shape with no way to stop."
+  },
+  {
+    "id": "cs_u03_l01_q02",
+    "type": "category_sort",
+    "question": "Structured programming allows only three control constructs. Sort each code shape into the construct it is.",
+    "categories": [
+      "Sequence",
+      "Selection",
+      "Iteration"
+    ],
+    "items": [
+      {
+        "id": "s1",
+        "label": "Read a value, then double it, then print it",
+        "correctCategory": "Sequence"
+      },
+      {
+        "id": "s2",
+        "label": "If the score is 50 or more print pass, otherwise print fail",
+        "correctCategory": "Selection"
+      },
+      {
+        "id": "s3",
+        "label": "While there are lines left, process the next line",
+        "correctCategory": "Iteration"
+      },
+      {
+        "id": "s4",
+        "label": "For each name in the list, print a greeting",
+        "correctCategory": "Iteration"
+      },
+      {
+        "id": "s5",
+        "label": "Open the file, then close the file",
+        "correctCategory": "Sequence"
+      },
+      {
+        "id": "s6",
+        "label": "Choose the larger of two numbers and keep it",
+        "correctCategory": "Selection"
+      }
+    ],
+    "hints": [
+      "Ask of each: does it just run in order, does it pick between paths, or does it repeat?",
+      "A for loop and a while loop are the same construct wearing different clothes."
+    ],
+    "explanation": "Sequence runs statements in order, selection picks one of several paths, iteration repeats a block. The structured program theorem says these three suffice for any computation, so every fragment here must be one of them — and both loop forms are the same construct."
+  },
+  {
+    "id": "cs_u03_l01_q03",
+    "type": "numerical_input",
+    "question": "A function contains three if/else selections written one after another, none of them nested inside another, and each has a then-branch and an else-branch. How many distinct execution paths run through the whole function?",
+    "correctAnswer": 8,
+    "tolerance": 0,
+    "hints": [
+      "Each selection is an independent choice, and the choices combine.",
+      "Two ways at the first, times two at the second, times two at the third."
+    ],
+    "explanation": "The choices multiply: $2 \\times 2 \\times 2 = 8$ paths. Adding them instead of multiplying gives 6, the classic error — the branches are not alternatives to each other but independent decisions made in turn, which is exactly why testing effort explodes as selections are added."
+  },
+  {
+    "id": "cs_u03_l01_q04",
+    "type": "matrix_grid",
+    "question": "Classify each proposed change to a program by what it mainly improves.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "Split a 300-line function that parses, validates and prints into three named functions"
+      },
+      {
+        "id": "r2",
+        "label": "Replace a global variable that two functions both read and write with an explicit parameter"
+      },
+      {
+        "id": "r3",
+        "label": "Move date-formatting code out of the payroll routine and into a date module"
+      },
+      {
+        "id": "r4",
+        "label": "Stop one module from reading another module's internal variables directly"
+      },
+      {
+        "id": "r5",
+        "label": "Rename a variable from x to tax_rate"
+      }
+    ],
+    "columns": [
+      {
+        "id": "c1",
+        "label": "Raises cohesion"
+      },
+      {
+        "id": "c2",
+        "label": "Lowers coupling"
+      },
+      {
+        "id": "c3",
+        "label": "Neither"
+      }
+    ],
+    "correctMapping": {
+      "r1": "c1",
+      "r2": "c2",
+      "r3": "c1",
+      "r4": "c2",
+      "r5": "c3"
+    },
+    "hints": [
+      "Cohesion is about what happens INSIDE one unit; coupling is about the links BETWEEN units.",
+      "One of these changes is a genuine readability improvement that alters neither measure."
+    ],
+    "explanation": "Splitting a many-jobs function, and moving unrelated code out of a routine, both make each unit do one thing — cohesion. Removing a shared global and stopping cross-module peeking both cut the links between units — coupling. Renaming a variable helps a reader but changes neither structure, and mistaking readability for structure is exactly the pitfall the lesson names."
+  },
+  {
+    "id": "cs_u03_l01_q05",
+    "type": "multi_select",
+    "question": "Select every statement that is a consequence of the structured program theorem as the lesson states it.",
+    "options": [
+      "Any computation can be expressed using only sequence, selection and iteration",
+      "A program built from the three constructs is guaranteed to be free of bugs",
+      "Arbitrary jumps are never necessary, however complicated the task",
+      "A structured program always runs faster than an unstructured one",
+      "A goto-free program can still be badly designed"
+    ],
+    "correctAnswers": [
+      0,
+      2,
+      4
+    ],
+    "hints": [
+      "The theorem is a claim about what CAN be expressed, not about quality or speed.",
+      "Ask which options add a promise the theorem never made."
+    ],
+    "explanation": "The theorem says the three constructs are sufficient, so jumps are never needed — but sufficiency says nothing about correctness or speed, and a goto-free program can still have terrible cohesion and coupling. Reading 'structured' as 'good' is the pitfall: structure is measured by cohesion, coupling and single-entry blocks, not by the absence of one keyword."
+  }
+]

@@ -1,0 +1,150 @@
+[
+  {
+    "id": "biz1_u02_l01_q01",
+    "type": "interactive_scene",
+    "question": "You have **100€**. Books cost **10€**, games **20€**, and you already grabbed **2 games**. **Drag the book counter** to spend the budget exactly — the spending bar fills to the line, never past it.",
+    "sceneId": "biz_u02_budget_line",
+    "sceneParams": {
+      "budget": 100,
+      "priceA": 10,
+      "priceB": 20,
+      "qB": 2,
+      "min": 0,
+      "max": 10,
+      "start": 1
+    },
+    "correctAnswer": {
+      "qA": 6
+    },
+    "tolerance": 0.5,
+    "hints": [
+      "The games already claim $2 \\cdot 20 = 40$€.",
+      "How many 10€ books fit in the remaining 60€?"
+    ],
+    "explanation": "The games take 40€, leaving 60€ — exactly **6 books**. The bar stopping dead at 100€ *is* the budget constraint: scarcity is the wall, and every extra game would push books off the shelf."
+  },
+  {
+    "id": "biz1_u02_l01_q02",
+    "type": "matrix_grid",
+    "question": "Classify each item as a free good or an economic good.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "Sunlight on a beach"
+      },
+      {
+        "id": "r2",
+        "label": "Drinking water piped to a city"
+      },
+      {
+        "id": "r3",
+        "label": "A surgeon’s hour"
+      },
+      {
+        "id": "r4",
+        "label": "Air for breathing"
+      }
+    ],
+    "columns": [
+      {
+        "id": "c1",
+        "label": "Free good"
+      },
+      {
+        "id": "c2",
+        "label": "Economic good"
+      }
+    ],
+    "correctMapping": {
+      "r1": "c1",
+      "r2": "c2",
+      "r3": "c2",
+      "r4": "c1"
+    },
+    "explanation": "The test is scarcity, not usefulness: piped water needs treatment plants and pipes; a surgeon’s hour excludes every other patient. Sunlight and air (so far) deprive no one."
+  },
+  {
+    "id": "biz1_u02_l01_q03",
+    "type": "category_sort",
+    "question": "Sort each resource into its classical factor of production.",
+    "categories": [
+      "Land",
+      "Labor",
+      "Capital"
+    ],
+    "items": [
+      {
+        "id": "u02l01q03_i0",
+        "label": "An iron ore deposit",
+        "correctCategory": "Land"
+      },
+      {
+        "id": "u02l01q03_i1",
+        "label": "A welder’s workday",
+        "correctCategory": "Labor"
+      },
+      {
+        "id": "u02l01q03_i2",
+        "label": "A delivery van fleet",
+        "correctCategory": "Capital"
+      },
+      {
+        "id": "u02l01q03_i3",
+        "label": "Farmland in the Ebro valley",
+        "correctCategory": "Land"
+      },
+      {
+        "id": "u02l01q03_i4",
+        "label": "A robotic assembly line",
+        "correctCategory": "Capital"
+      },
+      {
+        "id": "u02l01q03_i5",
+        "label": "A programmer writing code",
+        "correctCategory": "Labor"
+      }
+    ],
+    "explanation": "Land is what nature provides, labor is human effort, capital is produced means of production — machines and tools made to make other things."
+  },
+  {
+    "id": "biz1_u02_l01_q04",
+    "type": "matching",
+    "question": "Match each of the three economic questions to a real decision.",
+    "pairs": [
+      {
+        "left": "What to produce?",
+        "right": "A region debates hospitals versus highways"
+      },
+      {
+        "left": "How to produce?",
+        "right": "A factory chooses robots over manual assembly"
+      },
+      {
+        "left": "For whom to produce?",
+        "right": "A tax system redistributes income"
+      },
+      {
+        "left": "The underlying cause",
+        "right": "Resources are scarce relative to wants"
+      }
+    ],
+    "explanation": "What, how, and for whom — three questions no economy escapes, all forced by the same underlying scarcity."
+  },
+  {
+    "id": "biz1_u02_l01_q05",
+    "type": "multiple_choice",
+    "question": "Why does scarcity apply even to a billionaire?",
+    "options": [
+      "Time, attention, and unique goods remain limited no matter the income",
+      "Billionaires cannot legally buy everything",
+      "It does not — scarcity only affects the poor",
+      "Banks limit how much money can be withdrawn"
+    ],
+    "correctAnswer": 0,
+    "hints": [
+      "Scarcity is about limited resources, not low income.",
+      "How many hours does a billionaire’s day have?"
+    ],
+    "explanation": "Scarcity is the gap between unlimited wants and finite resources. Money loosens one constraint but not the 24-hour day, the single front-row seat, or the one original painting — choice never disappears."
+  }
+]

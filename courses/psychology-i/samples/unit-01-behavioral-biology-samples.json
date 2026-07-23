@@ -1,0 +1,132 @@
+[
+  {
+    "id": "psy_u01_l01_q01",
+    "type": "numerical_input",
+    "question": "The sodium-potassium pump ejects 3 Na+ and admits 2 K+ per cycle, so each cycle leaves a net of one extra positive charge outside the cell. Purely from this pumping, how many net positive charges are moved out of the cell over 12 complete cycles?",
+    "correctAnswer": 12,
+    "tolerance": 0,
+    "hints": [
+      "Find the NET charge moved per cycle before multiplying: 3 out minus 2 in.",
+      "Net is 1 positive charge out per cycle, so multiply 1 by the number of cycles."
+    ],
+    "explanation": "Each cycle exports 3 positive charges and imports 2, a net of 1 positive charge out, so 12 cycles move 12 net charges out. This unequal 3:2 exchange is why the pump is _electrogenic_ - it adds a small extra negativity on top of the diffusion potential."
+  },
+  {
+    "id": "psy_u01_l01_q02",
+    "type": "category_sort",
+    "question": "Sort each ion by where it is more concentrated across the membrane of a resting neuron.",
+    "categories": [
+      "More concentrated OUTSIDE",
+      "More concentrated INSIDE"
+    ],
+    "items": [
+      {
+        "id": "s1",
+        "label": "Na+ (sodium)",
+        "correctCategory": "More concentrated OUTSIDE"
+      },
+      {
+        "id": "s2",
+        "label": "Cl- (chloride)",
+        "correctCategory": "More concentrated OUTSIDE"
+      },
+      {
+        "id": "s3",
+        "label": "K+ (potassium)",
+        "correctCategory": "More concentrated INSIDE"
+      },
+      {
+        "id": "s4",
+        "label": "A- (large organic anions)",
+        "correctCategory": "More concentrated INSIDE"
+      }
+    ],
+    "hints": [
+      "Two ions are kept high outside and two high inside - the pump and trapped anions maintain the split.",
+      "Potassium and the big organic anions are the inside pair; sodium and chloride are the outside pair."
+    ],
+    "explanation": "Na+ and Cl- are concentrated outside; K+ and the impermeant organic anions (A-) are concentrated inside. These standing gradients are the stored energy the neuron later spends when it fires - not an accident but an actively held arrangement."
+  },
+  {
+    "id": "psy_u01_l01_q03",
+    "type": "error_highlight",
+    "question": "A student describes the resting neuron. Highlight the one incorrect statement.",
+    "tokens": [
+      {
+        "id": "t1",
+        "text": "The resting potential is about -70 mV, with the inside negative relative to the outside. "
+      },
+      {
+        "id": "t2",
+        "text": "It is an actively maintained state, not a passive accident. "
+      },
+      {
+        "id": "t3",
+        "text": "At rest the membrane carries no net charge and is electrically neutral. "
+      },
+      {
+        "id": "t4",
+        "text": "The resting membrane is far more permeable to K+ than to Na+. "
+      },
+      {
+        "id": "t5",
+        "text": "The sodium-potassium pump uses ATP to hold the ion gradients in place."
+      }
+    ],
+    "incorrectTokenIds": [
+      "t3"
+    ],
+    "hints": [
+      "Four statements restate the lesson correctly; one contradicts the very meaning of 'potential'.",
+      "A steady -70 mV is a real, held charge - ask whether 'neutral' can describe that."
+    ],
+    "explanation": "The error is t3. A resting neuron is NOT neutral - it sits at a steady -70 mV, held there by continuous active transport. Treating rest as 'no charge' is the classic pitfall; the charge is present and maintained, it is just not changing."
+  },
+  {
+    "id": "psy_u01_l01_q04",
+    "type": "cloze_bank",
+    "question": "Predict the consequence: reason from mechanism to outcome.",
+    "correctAnswers": [
+      1
+    ],
+    "segments": [
+      "If a metabolic poison halts ATP production so the sodium-potassium pump stops, the resting potential ",
+      "."
+    ],
+    "wordBank": [
+      "instantly disappears, leaving a neutral membrane",
+      "slowly decays toward zero as the ion gradients run down",
+      "immediately overshoots to about +40 mV",
+      "becomes steadily more negative than -70 mV"
+    ],
+    "hints": [
+      "The gradients still exist the moment the pump stops - what fades is the pump's upkeep of them.",
+      "With the pump off, K+ keeps leaking out and Na+ leaking in until the gradients collapse."
+    ],
+    "explanation": "The potential does not vanish instantly; it decays toward 0 over time as leaks erode the gradients the pump was maintaining. 'Instantly disappears' is the neutral-membrane pitfall, and +40 mV confuses rest with the action-potential peak."
+  },
+  {
+    "id": "psy_u01_l01_q05",
+    "type": "ordering",
+    "question": "Trace WHY the inside of the resting neuron ends up negative. Put the causal steps in order.",
+    "items": [
+      "Potassium (K+) is far more concentrated inside the neuron than outside.",
+      "The resting membrane is much more permeable to K+ than to Na+.",
+      "K+ diffuses out of the cell, down its concentration gradient.",
+      "Each K+ leaving carries positive charge out, making the inside more negative.",
+      "The membrane potential settles near the K+ equilibrium value, close to -70 mV."
+    ],
+    "correctOrder": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "hints": [
+      "Start with what is unequal (the gradient), then what the membrane lets through (permeability).",
+      "The negativity is a CONSEQUENCE of positive K+ leaving, so charge loss comes before the final voltage."
+    ],
+    "explanation": "Because the membrane leaks K+ readily and K+ is high inside, K+ exits and drags positive charge out, leaving the interior negative until the potential rests near the K+ equilibrium. This is why it settles near E_K rather than midway between the ions."
+  }
+]

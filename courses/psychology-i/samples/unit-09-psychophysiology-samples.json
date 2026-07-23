@@ -1,0 +1,195 @@
+[
+  {
+    "id": "psy_u09_l01_q01",
+    "type": "matrix_grid",
+    "question": "For each activity, which division of the nervous system is chiefly responsible? Classify each row.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "Integrating information and choosing a response inside the brain"
+      },
+      {
+        "id": "r2",
+        "label": "Consciously lifting your arm to wave at a friend"
+      },
+      {
+        "id": "r3",
+        "label": "Your heart speeding up automatically during a scare"
+      },
+      {
+        "id": "r4",
+        "label": "Feeling and reporting a pinprick on your fingertip"
+      },
+      {
+        "id": "r5",
+        "label": "Digesting a meal without any conscious control"
+      }
+    ],
+    "columns": [
+      {
+        "id": "cC",
+        "label": "Central nervous system"
+      },
+      {
+        "id": "cS",
+        "label": "Somatic nervous system"
+      },
+      {
+        "id": "cA",
+        "label": "Autonomic nervous system"
+      }
+    ],
+    "correctMapping": {
+      "r1": "cC",
+      "r2": "cS",
+      "r3": "cA",
+      "r4": "cS",
+      "r5": "cA"
+    },
+    "hints": [
+      "First ask: is this processing in the brain/cord, voluntary muscle/sensation, or automatic organ control?",
+      "Voluntary movement and conscious sensation are somatic; automatic organ functions are autonomic; integration is the CNS."
+    ],
+    "explanation": "Brain integration is the CNS; voluntary movement and conscious sensation are somatic; automatic heart and gut control are autonomic. The key split is voluntary/conscious (somatic) versus involuntary (autonomic), both riding on the PNS."
+  },
+  {
+    "id": "psy_u09_l01_q02",
+    "type": "category_sort",
+    "question": "Sort each bodily change by the autonomic branch driving it.",
+    "categories": [
+      "Sympathetic (fight-or-flight)",
+      "Parasympathetic (rest-and-digest)"
+    ],
+    "items": [
+      {
+        "id": "s1",
+        "label": "Pupils dilate as headlights swerve toward you",
+        "correctCategory": "Sympathetic (fight-or-flight)"
+      },
+      {
+        "id": "s2",
+        "label": "Salivating and digesting during a calm dinner",
+        "correctCategory": "Parasympathetic (rest-and-digest)"
+      },
+      {
+        "id": "s3",
+        "label": "Airways widen and heart pounds before a sprint",
+        "correctCategory": "Sympathetic (fight-or-flight)"
+      },
+      {
+        "id": "s4",
+        "label": "Heart rate settling as you drift toward sleep",
+        "correctCategory": "Parasympathetic (rest-and-digest)"
+      }
+    ],
+    "hints": [
+      "Sympathetic mobilizes energy for a threat; parasympathetic conserves it and runs digestion.",
+      "Digestion ramping up and heart slowing are rest-and-digest; pounding heart and dilated pupils are fight-or-flight."
+    ],
+    "explanation": "Dilated pupils and a pounding heart mobilize the body (sympathetic); active digestion and a slowing heart conserve it (parasympathetic). Digestion is the tell: it runs under parasympathetic control and halts under sympathetic."
+  },
+  {
+    "id": "psy_u09_l01_q03",
+    "type": "error_highlight",
+    "question": "A student describes the nervous system. Highlight the one incorrect statement.",
+    "tokens": [
+      {
+        "id": "t1",
+        "text": "The central nervous system is the brain and spinal cord. "
+      },
+      {
+        "id": "t2",
+        "text": "The somatic nervous system controls voluntary skeletal muscle. "
+      },
+      {
+        "id": "t3",
+        "text": "When the sympathetic branch is active, the parasympathetic branch is completely switched off. "
+      },
+      {
+        "id": "t4",
+        "text": "The two autonomic branches are antagonistic, keeping the body in balance. "
+      },
+      {
+        "id": "t5",
+        "text": "The autonomic system governs involuntary functions like heart rate and digestion."
+      }
+    ],
+    "incorrectTokenIds": [
+      "t3"
+    ],
+    "hints": [
+      "Four statements are correct; one treats the two branches as a single on/off switch.",
+      "Both branches are always active - what changes is the BALANCE, not one flipping fully off."
+    ],
+    "explanation": "The error is t3. Both autonomic branches are active at all times; arousal is a SHIFT in their balance toward the sympathetic side, not the parasympathetic branch switching off. Treating them as an on/off switch is the named pitfall."
+  },
+  {
+    "id": "psy_u09_l01_q04",
+    "type": "venn_diagram",
+    "question": "Place each feature where it belongs for the somatic versus the autonomic nervous system.",
+    "items": [
+      {
+        "id": "i1",
+        "label": "Controls voluntary skeletal muscle"
+      },
+      {
+        "id": "i2",
+        "label": "Governs involuntary organs (heart, gut, glands)"
+      },
+      {
+        "id": "i3",
+        "label": "Splits into sympathetic and parasympathetic branches"
+      },
+      {
+        "id": "i4",
+        "label": "Carries conscious sensation inward"
+      },
+      {
+        "id": "i5",
+        "label": "Is part of the peripheral nervous system"
+      },
+      {
+        "id": "i6",
+        "label": "Makes up the brain and spinal cord"
+      }
+    ],
+    "correctMapping": {
+      "i1": "a_only",
+      "i2": "b_only",
+      "i3": "b_only",
+      "i4": "a_only",
+      "i5": "both",
+      "i6": "neither"
+    },
+    "setALabel": "Somatic NS",
+    "setBLabel": "Autonomic NS",
+    "hints": [
+      "Voluntary muscle and conscious sensation are somatic; involuntary organs and the two branches are autonomic.",
+      "Both are peripheral (overlap); the brain and cord are the CENTRAL system, so that fits neither."
+    ],
+    "explanation": "The somatic system runs voluntary muscle and conscious sensation; the autonomic runs involuntary organs and divides into two branches. Both are part of the PNS (overlap). The brain and cord are the CNS, so that item belongs to neither."
+  },
+  {
+    "id": "psy_u09_l01_q05",
+    "type": "cloze_bank",
+    "question": "Predict which branch takes over.",
+    "correctAnswers": [
+      0
+    ],
+    "segments": [
+      "Once a threat has passed and the body needs to return to a calm, energy-conserving baseline, the ",
+      " branch takes over."
+    ],
+    "wordBank": [
+      "parasympathetic (rest-and-digest)",
+      "sympathetic (fight-or-flight)",
+      "somatic",
+      "central"
+    ],
+    "hints": [
+      "Recovery to calm is the job of the branch that conserves energy and resumes digestion.",
+      "The sympathetic branch mobilizes for threat; its opposite restores the baseline."
+    ],
+    "explanation": "The parasympathetic branch restores the calm, energy-conserving baseline after a threat, undoing the sympathetic arousal. The somatic and central systems are not the antagonistic partner that handles this return to rest."
+  }
+]

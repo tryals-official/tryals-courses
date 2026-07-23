@@ -1,0 +1,147 @@
+[
+  {
+    "id": "his1_u02_l01_q01",
+    "type": "interactive_scene",
+    "question": "A pit cuts down through three layers of this section. **Tap the context that must be the YOUNGEST** — the section will replay its formation to check you.",
+    "sceneId": "hist_u02_pit_cut",
+    "sceneParams": {
+      "contexts": [
+        "Topsoil layer",
+        "Roman floor",
+        "The pit and its fill",
+        "Bronze Age subsoil"
+      ],
+      "pitReachesBottom": true
+    },
+    "correctAnswer": {
+      "pick": 2
+    },
+    "tolerance": 0.4,
+    "hints": [
+      "A cut is younger than everything it cuts — regardless of how deep it goes.",
+      "The pit bottom lies below the Roman floor, but depth is not the clock."
+    ],
+    "explanation": "The replay shows it: every layer was already in place before the pit sliced through them, so the pit postdates them all — even though its bottom sits deeper than the Roman floor. Tap by depth and the animation catches the error in the act."
+  },
+  {
+    "id": "his1_u02_l01_q02",
+    "type": "timeline_ordering",
+    "question": "Replay this section’s formation. Order the events from first to last.",
+    "events": [
+      {
+        "id": "e1",
+        "label": "Natural subsoil forms the base",
+        "correctPosition": 0
+      },
+      {
+        "id": "e2",
+        "label": "A clay floor is laid on the subsoil",
+        "correctPosition": 1
+      },
+      {
+        "id": "e3",
+        "label": "Occupation debris builds up on the floor",
+        "correctPosition": 2
+      },
+      {
+        "id": "e4",
+        "label": "The building collapses over the debris",
+        "correctPosition": 3
+      },
+      {
+        "id": "e5",
+        "label": "A pit is cut down through collapse, debris, and floor",
+        "correctPosition": 4
+      },
+      {
+        "id": "e6",
+        "label": "The pit silts up with fill",
+        "correctPosition": 5
+      }
+    ],
+    "explanation": "Superposition orders the layers; the cutting rule slots the pit in after everything it truncates; the filling rule puts the fill last. Three principles, one readable biography of a patch of ground."
+  },
+  {
+    "id": "his1_u02_l01_q03",
+    "type": "matching",
+    "question": "Match each stratigraphic term to its definition.",
+    "pairs": [
+      {
+        "left": "Context",
+        "right": "A single depositional event — one layer, cut, or fill"
+      },
+      {
+        "left": "Cut",
+        "right": "The act of digging — younger than what it truncates"
+      },
+      {
+        "left": "Fill",
+        "right": "Material inside a cut — younger than the cut"
+      },
+      {
+        "left": "Harris matrix",
+        "right": "Flowchart of every older/younger relationship on site"
+      }
+    ],
+    "explanation": "Contexts are the atoms, cuts and fills the verbs, and the Harris matrix the grammar that binds a whole site into one temporal sentence."
+  },
+  {
+    "id": "his1_u02_l01_q04",
+    "type": "multiple_choice",
+    "question": "A sealed rubbish pit contains coins of 80 CE, 110 CE, and 235 CE. What does this date?",
+    "options": [
+      "The fill closed no earlier than 235 CE — the latest coin sets the TPQ",
+      "The fill closed around 80 CE — the earliest coin is decisive",
+      "The fill closed at the average, roughly 140 CE",
+      "Nothing — coins cannot date deposits"
+    ],
+    "correctAnswer": 0,
+    "hints": [
+      "Ask which coin is _impossible_ in a fill closed before its own minting.",
+      "Old coins linger in circulation; future coins do not exist yet."
+    ],
+    "explanation": "A coin of 235 cannot enter a fill closed in 200 — so the fill is 235 or later. The two older coins are just long-circulating residents. TPQ logic runs on the latest object, always."
+  },
+  {
+    "id": "his1_u02_l01_q05",
+    "type": "category_sort",
+    "question": "Each observation gives a **terminus post quem** or a **terminus ante quem** for the wall. Sort them.",
+    "categories": [
+      "TPQ (wall is no earlier than…)",
+      "TAQ (wall is no later than…)"
+    ],
+    "items": [
+      {
+        "id": "u02l01q05_i0",
+        "label": "A 350 CE coin sealed in the wall’s foundation trench",
+        "correctCategory": "TPQ (wall is no earlier than…)"
+      },
+      {
+        "id": "u02l01q05_i1",
+        "label": "The wall is buried beneath a datable 600 CE destruction layer",
+        "correctCategory": "TAQ (wall is no later than…)"
+      },
+      {
+        "id": "u02l01q05_i2",
+        "label": "Pottery of the 4th century mixed into the wall’s mortar",
+        "correctCategory": "TPQ (wall is no earlier than…)"
+      },
+      {
+        "id": "u02l01q05_i3",
+        "label": "A 550 CE grave is cut down through the wall’s ruins",
+        "correctCategory": "TAQ (wall is no later than…)"
+      },
+      {
+        "id": "u02l01q05_i4",
+        "label": "A timber felled in 380 CE reused in the wall’s base",
+        "correctCategory": "TPQ (wall is no earlier than…)"
+      },
+      {
+        "id": "u02l01q05_i5",
+        "label": "A 500 CE floor runs over the wall’s demolished stub",
+        "correctCategory": "TAQ (wall is no later than…)"
+      }
+    ],
+    "explanation": "Everything _inside or beneath_ the wall pushes its date later (TPQ); everything _sealing or cutting its ruins_ pulls the ceiling earlier (TAQ). Between the two termini lives the wall."
+  }
+]

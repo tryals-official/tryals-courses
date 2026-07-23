@@ -1,0 +1,161 @@
+[
+  {
+    "id": "psy_u08_l01_q01",
+    "type": "numerical_input",
+    "question": "Seven employees' annual salaries, in thousands, are 32, 35, 38, 40, 42, 45, and 220. Find the MEDIAN salary (in thousands).",
+    "correctAnswer": 40,
+    "tolerance": 0,
+    "hints": [
+      "The median is the middle value once the data are ordered - these already are.",
+      "With 7 values, the middle is the 4th one; the huge 220 does not change which value sits in the middle."
+    ],
+    "explanation": "The median is the 4th of 7 ordered values, 40. Note the mean would be 452/7 = 64.6, dragged far up by the single 220 - which is exactly why the median is the honest 'typical' salary here."
+  },
+  {
+    "id": "psy_u08_l01_q04",
+    "type": "matrix_grid",
+    "question": "For each situation, which measure of central tendency best represents the 'typical' value? Classify each row.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "Favorite ice-cream flavor reported by 300 children (chocolate, vanilla, ...)"
+      },
+      {
+        "id": "r2",
+        "label": "Annual incomes in a town where three billionaires live among modest earners"
+      },
+      {
+        "id": "r3",
+        "label": "Heights of 500 adult women, roughly symmetric with no extremes"
+      },
+      {
+        "id": "r4",
+        "label": "Marathon finish times, stretched by a few very slow finishers"
+      }
+    ],
+    "columns": [
+      {
+        "id": "cMean",
+        "label": "Mean"
+      },
+      {
+        "id": "cMed",
+        "label": "Median"
+      },
+      {
+        "id": "cMode",
+        "label": "Mode"
+      }
+    ],
+    "correctMapping": {
+      "r1": "cMode",
+      "r2": "cMed",
+      "r3": "cMean",
+      "r4": "cMed"
+    },
+    "hints": [
+      "Categorical (non-numeric) data leaves only one usable measure; skew or outliers rule out another.",
+      "Flavors -> mode; billionaire-skewed income -> median; symmetric heights -> mean; a few slow finishers -> median."
+    ],
+    "explanation": "Categorical flavors admit only the mode; skewed income and outlier-stretched finish times call for the outlier-robust median; symmetric height data is the one case where the mean is safe. Defaulting to the mean without checking for skew is the classic error."
+  },
+  {
+    "id": "psy_u08_l01_q05",
+    "type": "category_sort",
+    "question": "You add one extreme outlier to a data set. Sort each statistic by how much that single outlier moves it.",
+    "categories": [
+      "Strongly affected by the outlier",
+      "Barely affected by the outlier"
+    ],
+    "items": [
+      {
+        "id": "s1",
+        "label": "The mean",
+        "correctCategory": "Strongly affected by the outlier"
+      },
+      {
+        "id": "s2",
+        "label": "The median",
+        "correctCategory": "Barely affected by the outlier"
+      },
+      {
+        "id": "s3",
+        "label": "The range",
+        "correctCategory": "Strongly affected by the outlier"
+      },
+      {
+        "id": "s4",
+        "label": "The mode",
+        "correctCategory": "Barely affected by the outlier"
+      },
+      {
+        "id": "s5",
+        "label": "The standard deviation",
+        "correctCategory": "Strongly affected by the outlier"
+      }
+    ],
+    "hints": [
+      "Ask which statistics use every value's exact size (or the extremes) versus only position or frequency.",
+      "Mean, range, and SD all feed on the actual magnitudes; median and mode depend on position and frequency."
+    ],
+    "explanation": "The mean, range, and standard deviation all incorporate the outlier's raw magnitude, so they shift strongly; the median (a position) and mode (a frequency) barely move. This robustness split is the whole reason we ever prefer the median."
+  },
+  {
+    "id": "psy_u08_l01_q06",
+    "type": "error_highlight",
+    "question": "A student summarizes descriptive statistics. Highlight the one incorrect statement.",
+    "tokens": [
+      {
+        "id": "t1",
+        "text": "The mean is the sum of all values divided by the count. "
+      },
+      {
+        "id": "t2",
+        "text": "The median is the middle value once the data are ordered. "
+      },
+      {
+        "id": "t3",
+        "text": "Because it uses every value, the mean is more robust to outliers than the median. "
+      },
+      {
+        "id": "t4",
+        "text": "The mode is the only central-tendency measure usable for purely categorical data. "
+      },
+      {
+        "id": "t5",
+        "text": "Standard deviation expresses spread in the data's original units."
+      }
+    ],
+    "incorrectTokenIds": [
+      "t3"
+    ],
+    "hints": [
+      "Four statements are correct; one reverses which measure resists outliers.",
+      "Using every value is exactly why the mean is DRAGGED by an extreme - so it is less robust, not more."
+    ],
+    "explanation": "The error is t3. Using every value makes the mean SENSITIVE to outliers, not robust to them; the median, which ignores the magnitudes of extremes, is the outlier-resistant one. This reversal is the lesson's central pitfall."
+  },
+  {
+    "id": "psy_u08_l01_q07",
+    "type": "cloze_bank",
+    "question": "Choose the more representative summary and the reason.",
+    "correctAnswers": [
+      0
+    ],
+    "segments": [
+      "To describe the 'typical' home price in a neighborhood where one 10-million-dollar mansion sits among otherwise modest houses, you should report the ",
+      "."
+    ],
+    "wordBank": [
+      "median, because it is barely moved by the single extreme value",
+      "mean, because it uses every value including the mansion",
+      "range, because it captures the full spread of prices",
+      "mode, because house prices are categorical"
+    ],
+    "hints": [
+      "'Typical' means representative of most homes, so the lone mansion should not dominate.",
+      "The measure that ignores the magnitude of the one extreme is the median."
+    ],
+    "explanation": "The median resists the mansion's pull and represents what most homes actually cost; the mean would be inflated by the single extreme, the range only measures spread, and prices are numeric (not categorical), so the mode is inappropriate."
+  }
+]

@@ -1,0 +1,144 @@
+[
+  {
+    "id": "his1_u05_l01_q01",
+    "type": "interactive_scene",
+    "question": "One book — Gibbon’s _Decline and Fall_ (1776). **Rotate the question dial** and watch the same object change status. Find the question that makes Gibbon a primary source.",
+    "sceneId": "hist_u05_primary_relative",
+    "sceneParams": {
+      "questions": [
+        "What happened in the Roman Empire?",
+        "How did Enlightenment England view Rome?",
+        "What caused the fall of the West?"
+      ],
+      "source": "gibbon_1776"
+    },
+    "correctAnswer": {
+      "question": 1
+    },
+    "tolerance": 0.4,
+    "hints": [
+      "Ask when the book was written, and what that date makes it a direct witness of.",
+      "Gibbon was not present in Rome. What was he present at?"
+    ],
+    "explanation": "Ask what happened in Rome and Gibbon is secondary — he is 1,300 years late and working from other people’s sources. Ask how Enlightenment England viewed Rome and the same pages become direct, contemporary, first-hand evidence: Gibbon is not reporting that attitude, he _is_ it. The book never moved. The question did — which is why \"is this primary?\" is the wrong question and \"primary to what?\" is the right one."
+  },
+  {
+    "id": "his1_u05_l01_q02",
+    "type": "ordering",
+    "question": "Put the links of the chain from event to evidence in order.",
+    "items": [
+      "The event occurs",
+      "Someone present perceives part of it",
+      "Someone records a version of it, for a purpose",
+      "Copyists reproduce the record over generations",
+      "An institution preserves it and you read it"
+    ],
+    "correctOrder": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "explanation": "Five links, and every one is a chance for information to be lost, shaped, or invented. What lands on your desk survived all five — which is why \"the document says so\" is the beginning of an argument, not the end of one."
+  },
+  {
+    "id": "his1_u05_l01_q03",
+    "type": "multiple_choice",
+    "question": "Why is \"primary vs secondary\" best understood as relational rather than as a property of the object?",
+    "options": [
+      "The same source is primary to some questions and secondary to others",
+      "Older sources are always primary and newer ones always secondary",
+      "Only manuscripts can be primary; printed books never are",
+      "The classification depends on whether the author was an eyewitness"
+    ],
+    "correctAnswer": 0,
+    "hints": [
+      "Think about a 1950s textbook.",
+      "What is it secondary about, and what is it primary about?"
+    ],
+    "explanation": "A 1950s textbook is secondary on Napoleon and primary on what 1950s schoolchildren were taught to believe. Nothing about the book changed — the question did. Ask \"primary to what?\" and the confusion evaporates."
+  },
+  {
+    "id": "his1_u05_l01_q04",
+    "type": "matrix_grid",
+    "question": "For each source-and-question pairing, decide the status.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "Gibbon (1776), asked what happened in Rome"
+      },
+      {
+        "id": "r2",
+        "label": "Gibbon (1776), asked how Enlightenment England saw Rome"
+      },
+      {
+        "id": "r3",
+        "label": "A 2020 textbook, asked what caused the war"
+      },
+      {
+        "id": "r4",
+        "label": "A 2020 textbook, asked what is taught about the war today"
+      }
+    ],
+    "columns": [
+      {
+        "id": "c1",
+        "label": "Primary"
+      },
+      {
+        "id": "c2",
+        "label": "Secondary"
+      }
+    ],
+    "correctMapping": {
+      "r1": "c2",
+      "r2": "c1",
+      "r3": "c2",
+      "r4": "c1"
+    },
+    "explanation": "Two books, four questions, two statuses each. The grid only makes sense once you accept that the label describes a relationship, not an object."
+  },
+  {
+    "id": "his1_u05_l01_q05",
+    "type": "category_sort",
+    "question": "A medieval charter records the grant of a mill. Sort each item: **witting** testimony or **unwitting**?",
+    "categories": [
+      "Witting testimony",
+      "Unwitting testimony"
+    ],
+    "items": [
+      {
+        "id": "u05l01q05_i0",
+        "label": "Who is granted the mill and on what terms",
+        "correctCategory": "Witting testimony"
+      },
+      {
+        "id": "u05l01q05_i1",
+        "label": "The forms of address that reveal the social hierarchy",
+        "correctCategory": "Unwitting testimony"
+      },
+      {
+        "id": "u05l01q05_i2",
+        "label": "The pious formula asserting the grantor’s motive",
+        "correctCategory": "Witting testimony"
+      },
+      {
+        "id": "u05l01q05_i3",
+        "label": "The obligations everyone assumed and nobody explained",
+        "correctCategory": "Unwitting testimony"
+      },
+      {
+        "id": "u05l01q05_i4",
+        "label": "The named witnesses attesting the transaction",
+        "correctCategory": "Witting testimony"
+      },
+      {
+        "id": "u05l01q05_i5",
+        "label": "The categories of person the document takes for granted",
+        "correctCategory": "Unwitting testimony"
+      }
+    ],
+    "explanation": "The witting column is what the author wanted you to know — and where every motive to distort is concentrated. The unwitting column is what they could not help revealing. The second is usually more reliable and almost always more interesting."
+  }
+]

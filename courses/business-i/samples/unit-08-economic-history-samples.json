@@ -1,0 +1,151 @@
+[
+  {
+    "id": "biz1_u08_l01_q01",
+    "type": "interactive_scene",
+    "question": "In the Malthusian model, a better plough raises income temporarily. **Drag the population curve** to show what happens next — population rises until income falls back to subsistence.",
+    "sceneId": "biz_u08_malthus_trap",
+    "sceneParams": {
+      "subsistence": 1,
+      "shock": 1.5,
+      "growthRate": 0.03,
+      "min": 0,
+      "max": 3,
+      "start": 1
+    },
+    "correctAnswer": {
+      "population": 1.5
+    },
+    "tolerance": 0.15,
+    "hints": [
+      "Higher income → more surviving children → population rises.",
+      "Population grows until income per capita returns to subsistence."
+    ],
+    "explanation": "Population rises by 50% to absorb the productivity gain — income per capita returns to subsistence. The plough made more people, not richer people. That is the trap."
+  },
+  {
+    "id": "biz1_u08_l01_q02",
+    "type": "matrix_grid",
+    "question": "Malthusian dynamics: what happens after each shock?",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "A new high-yield crop is adopted"
+      },
+      {
+        "id": "r2",
+        "label": "A plague kills a third of the population"
+      },
+      {
+        "id": "r3",
+        "label": "Climate deterioration reduces harvests"
+      },
+      {
+        "id": "r4",
+        "label": "A new trade route opens"
+      }
+    ],
+    "columns": [
+      {
+        "id": "c1",
+        "label": "Income rises, then population absorbs it"
+      },
+      {
+        "id": "c2",
+        "label": "Income rises because fewer share the land"
+      },
+      {
+        "id": "c3",
+        "label": "Income falls, population eventually contracts"
+      },
+      {
+        "id": "c4",
+        "label": "Income rises, then population absorbs it"
+      }
+    ],
+    "correctMapping": {
+      "r1": "c1",
+      "r2": "c2",
+      "r3": "c3",
+      "r4": "c4"
+    },
+    "explanation": "Positive shocks raise income temporarily; negative shocks lower it. In all cases, population adjusts to return income toward subsistence — the Malthusian thermostat."
+  },
+  {
+    "id": "biz1_u08_l01_q03",
+    "type": "category_sort",
+    "question": "Organic or fossil-fuel economy?",
+    "categories": [
+      "Organic economy",
+      "Fossil-fuel economy"
+    ],
+    "items": [
+      {
+        "id": "u08l01q03_i0",
+        "label": "Energy from wood, wind, and muscle",
+        "correctCategory": "Organic economy"
+      },
+      {
+        "id": "u08l01q03_i1",
+        "label": "Steam engines burning coal",
+        "correctCategory": "Fossil-fuel economy"
+      },
+      {
+        "id": "u08l01q03_i2",
+        "label": "80% of the population in agriculture",
+        "correctCategory": "Organic economy"
+      },
+      {
+        "id": "u08l01q03_i3",
+        "label": "Factory system with powered machinery",
+        "correctCategory": "Fossil-fuel economy"
+      },
+      {
+        "id": "u08l01q03_i4",
+        "label": "Guild-based artisan production",
+        "correctCategory": "Organic economy"
+      }
+    ],
+    "explanation": "The dividing line is the energy source: organic economies run on recent photosynthesis; fossil-fuel economies tap millions of years of stored sunlight."
+  },
+  {
+    "id": "biz1_u08_l01_q04",
+    "type": "matching",
+    "question": "Match each pre-industrial concept to its definition.",
+    "pairs": [
+      {
+        "left": "Malthusian trap",
+        "right": "Population absorbs all productivity gains"
+      },
+      {
+        "left": "Subsistence",
+        "right": "The income floor that just sustains the population"
+      },
+      {
+        "left": "Proto-industrialisation",
+        "right": "Rural households producing for distant markets"
+      },
+      {
+        "left": "Organic economy",
+        "right": "All energy from recent photosynthesis"
+      }
+    ],
+    "explanation": "Four concepts that defined the world before 1750 — a world where progress meant more mouths, not richer mouths."
+  },
+  {
+    "id": "biz1_u08_l01_q05",
+    "type": "multiple_choice",
+    "question": "Medieval European population doubled between 1000 and 1300, then agricultural output per person barely changed. This pattern is best explained by:",
+    "options": [
+      "The Malthusian trap: more people divided the same land, returning income to subsistence",
+      "Technological stagnation — no innovations occurred",
+      "Government taxation consumed all surplus",
+      "Foreign invasion destroyed productivity"
+    ],
+    "correctAnswer": 0,
+    "hints": [
+      "Were there agricultural improvements between 1000 and 1300?",
+      "Yes — heavy plough, three-field rotation — but per-capita income didn't rise."
+    ],
+    "explanation": "Innovations happened (heavy plough, horseshoe, three-field rotation) but they translated into more people, not richer people — textbook Malthusian dynamics."
+  }
+]

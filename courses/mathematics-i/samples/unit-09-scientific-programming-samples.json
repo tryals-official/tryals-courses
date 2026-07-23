@@ -1,0 +1,165 @@
+[
+  {
+    "id": "math_u09_l01_q01",
+    "type": "matrix_grid",
+    "question": "Classify what a floating-point machine produces for each computation.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "1 divided by 0"
+      },
+      {
+        "id": "r2",
+        "label": "0 divided by 0"
+      },
+      {
+        "id": "r3",
+        "label": "0.1 + 0.2 - 0.3"
+      },
+      {
+        "id": "r4",
+        "label": "2.0 times 3.0"
+      }
+    ],
+    "columns": [
+      {
+        "id": "c1",
+        "label": "Infinity"
+      },
+      {
+        "id": "c2",
+        "label": "NaN"
+      },
+      {
+        "id": "c3",
+        "label": "A tiny nonzero remainder"
+      },
+      {
+        "id": "c4",
+        "label": "Exactly right"
+      }
+    ],
+    "correctMapping": {
+      "r1": "c1",
+      "r2": "c2",
+      "r3": "c3",
+      "r4": "c4"
+    },
+    "hints": [
+      "Two of these are the special values the standard defines; two are ordinary arithmetic.",
+      "0.1, 0.2 and 0.3 are each rounded, and the roundings do not cancel."
+    ],
+    "explanation": "Dividing a nonzero number by zero overflows to infinity while 0/0 is undefined and gives NaN. The third leaves a tiny nonzero residue instead of 0, and the fourth is exact because 2, 3 and 6 are all exactly representable. Small whole numbers are safe; tenths are not."
+  },
+  {
+    "id": "math_u09_l01_q02",
+    "type": "numerical_input",
+    "question": "A double carries about 16 significant decimal digits. If a stored number's integer part already uses 10 digits, how many digits after the decimal point remain reliable?",
+    "correctAnswer": 6,
+    "tolerance": 0,
+    "hints": [
+      "The digit budget is shared between the two sides of the point.",
+      "Subtract the digits already spent on the integer part."
+    ],
+    "explanation": "16 - 10 = 6. Precision is a fixed count of SIGNIFICANT digits, not of decimal places, so a large magnitude buys its size with accuracy after the point — which is why working in sensible units matters."
+  },
+  {
+    "id": "math_u09_l01_q03",
+    "type": "category_sort",
+    "question": "Sort each way of comparing two floating-point values.",
+    "categories": [
+      "Safe",
+      "Unsafe"
+    ],
+    "items": [
+      {
+        "id": "k1",
+        "label": "Test that the absolute difference is below 0.000000001",
+        "correctCategory": "Safe"
+      },
+      {
+        "id": "k2",
+        "label": "Test a == b",
+        "correctCategory": "Unsafe"
+      },
+      {
+        "id": "k3",
+        "label": "Test a != b",
+        "correctCategory": "Unsafe"
+      },
+      {
+        "id": "k4",
+        "label": "Test that the difference is below a small multiple of the larger magnitude",
+        "correctCategory": "Safe"
+      },
+      {
+        "id": "k5",
+        "label": "Loop while x is not exactly 1.0, increasing x by 0.1 each pass",
+        "correctCategory": "Unsafe"
+      }
+    ],
+    "hints": [
+      "Anything that demands the last bits agree is fragile.",
+      "Inequality is just as strict as equality — it too depends on the last bits."
+    ],
+    "explanation": "Both == and != depend on exact bit agreement, and the loop is worse still: adding 0.1 ten times does not land exactly on 1.0, so it never terminates. Absolute and relative tolerance tests are the safe forms."
+  },
+  {
+    "id": "math_u09_l01_q04",
+    "type": "cloze_bank",
+    "question": "Complete the rule for comparing floats.",
+    "correctAnswers": [
+      1
+    ],
+    "segments": [
+      "Two floating-point values should be treated as equal when ",
+      "."
+    ],
+    "wordBank": [
+      "they print the same",
+      "their difference is smaller than a chosen tolerance",
+      "they have the same exponent",
+      "their sum is zero"
+    ],
+    "hints": [
+      "Printing rounds the value before you ever see it, so it hides differences.",
+      "The test must have a margin built into it."
+    ],
+    "explanation": "Comparison within a tolerance is the standard technique. Printing is misleading precisely because the display rounds to a few digits, so two values that print identically can still fail an equality test."
+  },
+  {
+    "id": "math_u09_l01_q05",
+    "type": "error_highlight",
+    "question": "A student explains floating point. Highlight the one incorrect statement.",
+    "tokens": [
+      {
+        "id": "t1",
+        "text": "A float is stored as a sign, a mantissa and an exponent. "
+      },
+      {
+        "id": "t2",
+        "text": "Most real numbers fall between two representable values and are rounded. "
+      },
+      {
+        "id": "t3",
+        "text": "A double keeps roughly 15 to 16 significant decimal digits. "
+      },
+      {
+        "id": "t4",
+        "text": "Round-off error disappears if you print more decimal places. "
+      },
+      {
+        "id": "t5",
+        "text": "Dividing a positive number by zero gives infinity, which propagates onward."
+      }
+    ],
+    "incorrectTokenIds": [
+      "t4"
+    ],
+    "hints": [
+      "One line confuses how a number is DISPLAYED with how it is STORED.",
+      "Printing cannot recover digits that were never kept."
+    ],
+    "explanation": "The error is t4. The error was committed when the value was stored; printing more places just shows more of the already-wrong digits. Round-off is a property of the representation, not of the output format."
+  }
+]

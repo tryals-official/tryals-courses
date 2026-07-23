@@ -1,0 +1,160 @@
+[
+  {
+    "id": "math_u04_l01_q01",
+    "type": "category_sort",
+    "question": "A vector space must be closed under addition and scaling and must contain a zero vector. Sort each set, taken with its usual operations.",
+    "categories": [
+      "Is a vector space",
+      "Is not a vector space"
+    ],
+    "items": [
+      {
+        "id": "s1",
+        "label": "All polynomials of degree at most 3",
+        "correctCategory": "Is a vector space"
+      },
+      {
+        "id": "s2",
+        "label": "All polynomials of degree exactly 3",
+        "correctCategory": "Is not a vector space"
+      },
+      {
+        "id": "s3",
+        "label": "All 2x2 matrices",
+        "correctCategory": "Is a vector space"
+      },
+      {
+        "id": "s4",
+        "label": "All pairs (x, y) with x + y = 0",
+        "correctCategory": "Is a vector space"
+      },
+      {
+        "id": "s5",
+        "label": "All pairs (x, y) with x + y = 1",
+        "correctCategory": "Is not a vector space"
+      },
+      {
+        "id": "s6",
+        "label": "All functions from the reals to the reals",
+        "correctCategory": "Is a vector space"
+      }
+    ],
+    "hints": [
+      "Test the cheapest axiom first: does the set contain a zero object?",
+      "For 'degree exactly 3', add $x^{3}$ to $-x^{3} + x$ and look at the degree of the result."
+    ],
+    "explanation": "Degree-exactly-3 polynomials fail twice: the zero polynomial is missing, and $x^{3}$ plus $(-x^{3} + x)$ has degree 1. The set x + y = 1 misses (0, 0). Everything else is closed under addition and scaling, so all the remaining axioms are inherited."
+  },
+  {
+    "id": "math_u04_l01_q02",
+    "type": "numerical_input",
+    "question": "Work in the vector space of all 3x2 matrices. How many real numbers must you list to name one vector of this space?",
+    "correctAnswer": 6,
+    "tolerance": 0,
+    "hints": [
+      "A 'vector' here is an entire matrix, and every entry can be chosen freely.",
+      "Count the entries: 3 rows times 2 columns."
+    ],
+    "explanation": "A 3x2 matrix has 3 x 2 = 6 independently chosen entries, so 6 numbers name it. This is why the abstraction pays: a matrix behaves exactly like a 6-tuple under addition and scaling, so every theorem about tuples applies to it."
+  },
+  {
+    "id": "math_u04_l01_q03",
+    "type": "matrix_grid",
+    "question": "Decide whether each statement is true or false. Test each set against closure and the zero object.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "The 2x2 matrices with determinant 0 are closed under addition"
+      },
+      {
+        "id": "r2",
+        "label": "The polynomials of degree at most 3 form a vector space"
+      },
+      {
+        "id": "r3",
+        "label": "The polynomials of degree exactly 3 form a vector space"
+      },
+      {
+        "id": "r4",
+        "label": "The functions f with f(0) = 0 form a vector space"
+      },
+      {
+        "id": "r5",
+        "label": "The functions f with f(0) = 1 form a vector space"
+      }
+    ],
+    "columns": [
+      {
+        "id": "cT",
+        "label": "True"
+      },
+      {
+        "id": "cF",
+        "label": "False"
+      }
+    ],
+    "correctMapping": {
+      "r1": "cF",
+      "r2": "cT",
+      "r3": "cF",
+      "r4": "cT",
+      "r5": "cF"
+    },
+    "hints": [
+      "For r1, try adding two singular matrices and look at the determinant of the sum.",
+      "A condition like f(0) = 0 is preserved by sums and scalings; f(0) = 1 is not."
+    ],
+    "explanation": "Row 1 is false: the matrices [1, 0 ; 0, 0] and [0, 0 ; 0, 1] both have determinant 0 but sum to the identity, whose determinant is 1. Conditions that equal ZERO survive addition and scaling (r2, r4); conditions that pin a value to something nonzero, or fix a degree, do not (r3, r5)."
+  },
+  {
+    "id": "math_u04_l01_q04",
+    "type": "cloze_bank",
+    "question": "Complete the reason abstraction is worth the effort.",
+    "correctAnswers": [
+      1
+    ],
+    "segments": [
+      "A single theorem proved for abstract vector spaces applies at once to tuples, polynomials, matrices and functions because ",
+      "."
+    ],
+    "wordBank": [
+      "they are all made of tuples of numbers",
+      "they all satisfy the same axioms",
+      "they all have the same dimension",
+      "they can all be drawn as arrows"
+    ],
+    "hints": [
+      "Ask what the proof was actually allowed to use.",
+      "A proof that only invokes the axioms cannot tell the examples apart."
+    ],
+    "explanation": "A proof from the axioms alone never looks at what the objects are, so it holds for every set satisfying them. The other options are false of the list: polynomials are not tuples, function spaces are infinite-dimensional, and a function is not an arrow."
+  },
+  {
+    "id": "math_u04_l01_q05",
+    "type": "memory_pairs",
+    "question": "Match each vector-space axiom to the equation that states it.",
+    "pairs": [
+      {
+        "left": "Commutativity of addition",
+        "right": "u + v = v + u"
+      },
+      {
+        "left": "Existence of additive inverses",
+        "right": "For each v there is a w with v + w = 0"
+      },
+      {
+        "left": "Distributivity over vector addition",
+        "right": "c(u + v) = cu + cv"
+      },
+      {
+        "left": "Distributivity over scalar addition",
+        "right": "(c + d)v = cv + dv"
+      }
+    ],
+    "hints": [
+      "Two of these are distributive laws; look at which side of the equation carries the sum.",
+      "One distributive law adds vectors, the other adds scalars."
+    ],
+    "explanation": "The two distributive axioms look alike but differ in what is being added: c(u + v) distributes one scalar over a sum of VECTORS, while (c + d)v distributes one vector over a sum of SCALARS. Both are needed, and confusing them is the usual slip."
+  }
+]

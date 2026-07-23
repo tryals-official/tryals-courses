@@ -1,0 +1,108 @@
+[
+  {
+    "id": "phys1_u04_l01_q01",
+    "type": "true_false",
+    "question": "The zero vector has a well-defined direction.",
+    "correctAnswer": "False",
+    "explanation": "The zero vector has magnitude 0 and no unique direction."
+  },
+  {
+    "id": "phys1_u04_l01_q02",
+    "explanation": "$\\vec a \\cdot \\vec b = 3b_x + b_y$. Any $\\vec b$ on the line $3x + y = -5$ works — e.g. $(-2, 1)$: $3(-2) + 1 = -5$.",
+    "type": "interactive_scene",
+    "question": "$\\vec a = (3, 1)$. Drag $\\vec b$ so that $\\vec a \\cdot \\vec b = -5$. The dot-product readout is **off** — pick components that work.",
+    "sceneId": "u04_vector",
+    "sceneParams": {
+      "ax": 3,
+      "ay": 1,
+      "targetDot": -5,
+      "bx": 1,
+      "by": 2
+    },
+    "correctAnswer": {
+      "dot": -5
+    },
+    "tolerance": 0.8,
+    "submitLabel": "Make them square",
+    "hints": [
+      "$\\vec a \\cdot \\vec b = 3b_x + 1\\,b_y$.",
+      "Try $b_x = -2$ — what must $b_y$ be?"
+    ]
+  },
+  {
+    "type": "number_line_placement",
+    "id": "phys1_u04_l01_q03",
+    "question": "Find the magnitude of the vector (3, 4). **Place your answer on the number line.**",
+    "min": 0,
+    "max": 10,
+    "step": 1,
+    "tolerance": 0.49,
+    "markers": [
+      {
+        "id": "ans",
+        "label": "Answer",
+        "targetValue": 5
+      }
+    ],
+    "explanation": "‖(3,4)‖ = $\\sqrt{9+16}$ = $\\sqrt25$ = 5."
+  },
+  {
+    "id": "phys1_u04_l01_q04",
+    "type": "category_sort",
+    "question": "Sort each expression by what kind of object it produces ($u, v$ are vectors).",
+    "pairs": null,
+    "explanation": "Type-checking expressions — vector or scalar? — catches most linear-algebra errors before any arithmetic. Adding a scalar to a vector, for example, is as meaningless as adding seconds to metres.",
+    "categories": [
+      "Vector",
+      "Scalar"
+    ],
+    "items": [
+      {
+        "id": "i1",
+        "label": "$u + v$",
+        "correctCategory": "Vector"
+      },
+      {
+        "id": "i2",
+        "label": "$u \\cdot v$ (dot product)",
+        "correctCategory": "Scalar"
+      },
+      {
+        "id": "i3",
+        "label": "$3u$",
+        "correctCategory": "Vector"
+      },
+      {
+        "id": "i4",
+        "label": "$\\|u\\|$ (norm)",
+        "correctCategory": "Scalar"
+      },
+      {
+        "id": "i5",
+        "label": "$u \\times v$ (cross product, in 3D)",
+        "correctCategory": "Vector"
+      }
+    ],
+    "hints": [
+      "Ask of each result: does it have a direction?",
+      "The dot product collapses two directions into a single number; the cross product manufactures a new direction."
+    ]
+  },
+  {
+    "id": "phys1_u04_l01_q05",
+    "type": "multi_select",
+    "question": "Which properties hold for vector addition in ℝⁿ?",
+    "options": [
+      "Commutative: u + $v = v + u$",
+      "Associative: (u+v)+$w = u+(v+w)$",
+      "There exists an additive identity (zero vector)",
+      "Every vector has a multiplicative inverse"
+    ],
+    "correctAnswers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Vectors do not have multiplicative inverses; that concept applies to scalars."
+  }
+]

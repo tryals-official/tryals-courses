@@ -1,0 +1,160 @@
+[
+  {
+    "id": "cs_u06_l01_q01",
+    "type": "logic_gate",
+    "question": "The same two wires, both carrying 1, are fed into three separate gates: an AND, an OR and an XOR. Give the output bit of each gate, in that order.",
+    "inputs": [
+      true,
+      true
+    ],
+    "gates": [
+      {
+        "type": "AND"
+      },
+      {
+        "type": "OR"
+      },
+      {
+        "type": "XOR"
+      }
+    ],
+    "expectedOutputs": [
+      true,
+      true,
+      false
+    ],
+    "hints": [
+      "Take each gate's rule separately: AND wants all inputs 1, OR wants at least one 1, XOR wants the inputs to differ.",
+      "Two of these three gates agree on this input pair, and one does not — check the one that cares about difference."
+    ],
+    "explanation": "With both inputs 1, AND gives 1 (all inputs are 1) and OR gives 1 (at least one is), but XOR gives 0 because the inputs do not differ. The 'both are 1' row is precisely where OR and XOR part company, and it is the most common gate confusion in the whole unit."
+  },
+  {
+    "id": "cs_u06_l01_q02",
+    "type": "truth_table",
+    "question": "A NAND gate is an AND gate followed by an inverter. Complete its output column for both inputs.",
+    "variables": [
+      "A",
+      "B"
+    ],
+    "expression": "NOT (A AND B)",
+    "inputRows": [
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        true
+      ],
+      [
+        true,
+        false
+      ],
+      [
+        true,
+        true
+      ]
+    ],
+    "correctOutputs": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "hints": [
+      "Work out the AND column first, then flip every entry in it.",
+      "AND is true in exactly one row of four, so NAND must be false in exactly one row."
+    ],
+    "explanation": "AND gives 0, 0, 0, 1 down the table, and inverting each entry gives 1, 1, 1, 0. So NAND outputs 0 only when all inputs are 1 — the exact inverse of AND. Writing the AND column and forgetting to invert it is the usual slip."
+  },
+  {
+    "id": "cs_u06_l01_q03",
+    "type": "matrix_grid",
+    "question": "Two wires carry A = 1 and B = 0. Work out what each of these gates does with that pair, and put it in the right column.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "AND of A and B"
+      },
+      {
+        "id": "r2",
+        "label": "OR of A and B"
+      },
+      {
+        "id": "r3",
+        "label": "NOT applied to A"
+      },
+      {
+        "id": "r4",
+        "label": "NAND of A and B"
+      },
+      {
+        "id": "r5",
+        "label": "NOR of A and B"
+      },
+      {
+        "id": "r6",
+        "label": "XOR of A and B"
+      }
+    ],
+    "columns": [
+      {
+        "id": "c1",
+        "label": "Outputs 1"
+      },
+      {
+        "id": "c2",
+        "label": "Outputs 0"
+      }
+    ],
+    "correctMapping": {
+      "r1": "c2",
+      "r2": "c1",
+      "r3": "c2",
+      "r4": "c1",
+      "r5": "c2",
+      "r6": "c1"
+    },
+    "hints": [
+      "Do the plain gates first, then get NAND and NOR by inverting AND and OR.",
+      "A NOR gate outputs 1 only when every input is 0, so check whether that is the case here."
+    ],
+    "explanation": "AND gives 0 (not both 1), OR gives 1, NOT A gives 0, NAND gives 1 (the inverse of AND), NOR gives 0 (the inverse of OR, and not all inputs are 0), and XOR gives 1 because the inputs differ. Note that on this input pair OR and XOR happen to agree — they only disagree when both inputs are 1."
+  },
+  {
+    "id": "cs_u06_l01_q04",
+    "type": "numerical_input",
+    "question": "A three-input XOR gate outputs 1 when an odd number of its inputs are 1. Of its 8 possible input combinations, how many produce an output of 1?",
+    "correctAnswer": 4,
+    "tolerance": 0,
+    "hints": [
+      "List the combinations by how many 1s they contain: zero 1s, one 1, two 1s, three 1s.",
+      "There are three ways to have exactly one 1, and one way to have three 1s — count only the odd cases."
+    ],
+    "explanation": "The odd counts are one 1 (001, 010, 100 — three combinations) and three 1s (111 — one combination), giving 4 out of 8. Answering 1 treats XOR like AND, and answering 7 treats it like OR; XOR is a parity gate, not an 'at least one' gate."
+  },
+  {
+    "id": "cs_u06_l01_q06",
+    "type": "cloze_bank",
+    "question": "A designer has only NAND gates. They take a single signal A and wire it to BOTH inputs of one NAND gate. Complete the description of what that gate now behaves as.",
+    "correctAnswers": [
+      2
+    ],
+    "segments": [
+      "A NAND gate with the same signal on both inputs behaves as a ",
+      " gate."
+    ],
+    "wordBank": [
+      "AND",
+      "OR",
+      "NOT",
+      "XOR"
+    ],
+    "hints": [
+      "Substitute A for both inputs and work through the NAND rule: first AND them, then invert.",
+      "A value ANDed with itself is unchanged, so only the inversion is left."
+    ],
+    "explanation": "A AND A is just A, so NAND of A with itself is NOT A — the gate becomes an inverter. This trick is the first step in the proof that NAND is universal: once you can build NOT, you can build AND (a NAND followed by an inverter) and then OR, and from those anything at all."
+  }
+]

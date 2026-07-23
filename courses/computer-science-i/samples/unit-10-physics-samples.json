@@ -1,0 +1,192 @@
+[
+  {
+    "id": "cs_u10_l01_q01",
+    "type": "numerical_input",
+    "question": "An object starts with velocity 4 m/s and accelerates at a constant 3 m/s squared. What is its velocity after 5 seconds, in metres per second?",
+    "correctAnswer": 19,
+    "tolerance": 0,
+    "hints": [
+      "Use the equation for velocity under constant acceleration: final velocity is the initial velocity plus acceleration times time.",
+      "The acceleration contributes 3 times 5."
+    ],
+    "explanation": "4 + 3 times 5 = 19 m/s. The initial velocity is not something the acceleration replaces; it is the starting point the acceleration builds on, so leaving it out gives 15 and understates the answer."
+  },
+  {
+    "id": "cs_u10_l01_q03",
+    "type": "table_completion",
+    "question": "An object starts at 3 m/s and accelerates constantly at 2 m/s squared. Complete its velocity at each second.",
+    "rows": [
+      [
+        {
+          "content": "0"
+        },
+        {
+          "content": "3"
+        }
+      ],
+      [
+        {
+          "content": "1"
+        },
+        {
+          "content": "5"
+        }
+      ],
+      [
+        {
+          "content": "2"
+        },
+        {
+          "content": "___"
+        }
+      ],
+      [
+        {
+          "content": "3"
+        },
+        {
+          "content": "___"
+        }
+      ],
+      [
+        {
+          "content": "4"
+        },
+        {
+          "content": "___"
+        }
+      ]
+    ],
+    "headers": [
+      "Time (s)",
+      "Velocity (m/s)"
+    ],
+    "answers": [
+      "7",
+      "9",
+      "11"
+    ],
+    "hints": [
+      "Constant acceleration adds the same amount to the velocity every second.",
+      "Each row gains 2 m/s over the one above it."
+    ],
+    "explanation": "The velocities are 7, 9 and 11 m/s. Constant acceleration means the velocity changes at a constant rate, giving a straight line — velocity is the derivative of position and acceleration the derivative of velocity, exactly the chain from Unit 9."
+  },
+  {
+    "id": "cs_u10_l01_q04",
+    "type": "pattern_sequence",
+    "question": "A ball is dropped from rest with gravity taken as 10 m/s squared. The sequence gives the distance in metres it falls during each successive second: the first second, the second second, and so on. Fill the gap.",
+    "sequence": [
+      "5",
+      "15",
+      "25",
+      "?",
+      "45"
+    ],
+    "missingIndices": [
+      3
+    ],
+    "optionsPerMissing": [
+      [
+        "30",
+        "35",
+        "40"
+      ]
+    ],
+    "correctValues": [
+      "35"
+    ],
+    "hints": [
+      "Compute the total distance fallen by the end of each second, then take the differences.",
+      "Totals are 5, 20, 45, 80 and 125 metres."
+    ],
+    "explanation": "The totals 5, 20, 45, 80, 125 give per-second drops of 5, 15, 25, 35, 45. The distances grow by a constant 10 each second because the velocity is growing steadily — a falling body covers far more ground in its fourth second than in its first."
+  },
+  {
+    "id": "cs_u10_l01_q05",
+    "type": "matrix_grid",
+    "question": "Classify each situation by its velocity and its acceleration at the instant described.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "A ball at the very top of its flight after being thrown up"
+      },
+      {
+        "id": "r2",
+        "label": "A car cruising down a straight motorway at a steady 30 m/s"
+      },
+      {
+        "id": "r3",
+        "label": "A book lying still on a table"
+      },
+      {
+        "id": "r4",
+        "label": "A ball halfway down after being dropped"
+      }
+    ],
+    "columns": [
+      {
+        "id": "c1",
+        "label": "Velocity zero, acceleration zero"
+      },
+      {
+        "id": "c2",
+        "label": "Velocity zero, acceleration not zero"
+      },
+      {
+        "id": "c3",
+        "label": "Velocity not zero, acceleration zero"
+      },
+      {
+        "id": "c4",
+        "label": "Velocity not zero, acceleration not zero"
+      }
+    ],
+    "correctMapping": {
+      "r1": "c2",
+      "r2": "c3",
+      "r3": "c1",
+      "r4": "c4"
+    },
+    "hints": [
+      "Velocity and acceleration are independent: fix each one separately before choosing a column.",
+      "Gravity does not switch off at the top of a throw."
+    ],
+    "explanation": "At the top of a throw the ball is momentarily still but still accelerating downward at g — the classic case that shows the two quantities are independent. A cruising car has plenty of velocity and no acceleration, which is the reverse situation."
+  },
+  {
+    "id": "cs_u10_l01_q06",
+    "type": "error_highlight",
+    "question": "A student explains kinematics. Highlight the one incorrect statement.",
+    "tokens": [
+      {
+        "id": "t1",
+        "text": "Velocity is the rate at which position changes. "
+      },
+      {
+        "id": "t2",
+        "text": "Acceleration is the rate at which velocity changes. "
+      },
+      {
+        "id": "t3",
+        "text": "An object with zero velocity must have zero acceleration. "
+      },
+      {
+        "id": "t4",
+        "text": "Integrating acceleration recovers velocity. "
+      },
+      {
+        "id": "t5",
+        "text": "Constant velocity means the acceleration is zero."
+      }
+    ],
+    "incorrectTokenIds": [
+      "t3"
+    ],
+    "hints": [
+      "Four lines are exactly as taught; one confuses two independent quantities.",
+      "Think about a ball at the instant it stops rising."
+    ],
+    "explanation": "The error is t3. A ball at the peak of a toss has zero velocity yet is accelerating downward at the full value of g. Being instantaneously at rest says nothing about whether the velocity is changing, which is the whole distinction between the two quantities."
+  }
+]

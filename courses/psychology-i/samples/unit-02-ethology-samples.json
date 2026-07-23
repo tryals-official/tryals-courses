@@ -1,0 +1,213 @@
+[
+  {
+    "id": "psy_u02_l01_q01",
+    "type": "category_sort",
+    "question": "A red deer stag roars each autumn. Sort each explanation of the roar under the one Tinbergen question it answers.",
+    "categories": [
+      "Mechanism (how it works now)",
+      "Ontogeny (how it develops)",
+      "Function (survival/reproductive payoff)",
+      "Phylogeny (evolutionary history)"
+    ],
+    "items": [
+      {
+        "id": "s1",
+        "label": "Rising testosterone each autumn enlarges the larynx and drives the roar",
+        "correctCategory": "Mechanism (how it works now)"
+      },
+      {
+        "id": "s2",
+        "label": "A brainstem circuit generates the roar's rhythmic pulses",
+        "correctCategory": "Mechanism (how it works now)"
+      },
+      {
+        "id": "s3",
+        "label": "A young stag's roar deepens and quickens over his first years of life",
+        "correctCategory": "Ontogeny (how it develops)"
+      },
+      {
+        "id": "s4",
+        "label": "Immature males cannot yet produce the full adult roar",
+        "correctCategory": "Ontogeny (how it develops)"
+      },
+      {
+        "id": "s5",
+        "label": "Roaring intimidates rivals and attracts hinds, raising the stag's mating success",
+        "correctCategory": "Function (survival/reproductive payoff)"
+      },
+      {
+        "id": "s6",
+        "label": "Stags that roar more per minute secure more mates that season",
+        "correctCategory": "Function (survival/reproductive payoff)"
+      },
+      {
+        "id": "s7",
+        "label": "The roar descends from vocal signals shared with ancestral deer",
+        "correctCategory": "Phylogeny (evolutionary history)"
+      },
+      {
+        "id": "s8",
+        "label": "Related deer species show graded versions of the same display",
+        "correctCategory": "Phylogeny (evolutionary history)"
+      }
+    ],
+    "hints": [
+      "Split first by LEVEL: a 'how it works/develops now' answer is proximate; a 'why it evolved' answer is ultimate.",
+      "Within proximate, hormones-and-circuits-right-now is Mechanism while across-the-lifetime is Ontogeny; within ultimate, current payoff is Function while deep ancestry is Phylogeny."
+    ],
+    "explanation": "Mechanism (hormones/neural circuits now) and Ontogeny (development over a life) are the two proximate 'how' answers; Function (reproductive payoff) and Phylogeny (evolutionary lineage) are the two ultimate 'why' answers. The trap is conflating Mechanism with Ontogeny, or Function with Phylogeny - both pairs sit at the same level but ask different questions."
+  },
+  {
+    "id": "psy_u02_l01_q02",
+    "type": "matrix_grid",
+    "question": "For a honeybee's waggle dance, classify each research question by its level of analysis.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "Which muscles and neural signals produce the figure-eight movement?"
+      },
+      {
+        "id": "r2",
+        "label": "How does a young worker's dance accuracy improve with foraging experience?"
+      },
+      {
+        "id": "r3",
+        "label": "How does dancing raise the colony's rate of finding food?"
+      },
+      {
+        "id": "r4",
+        "label": "How did the dance evolve from ancestral bee orientation movements?"
+      }
+    ],
+    "columns": [
+      {
+        "id": "cP",
+        "label": "Proximate (how it works/develops)"
+      },
+      {
+        "id": "cU",
+        "label": "Ultimate (why it evolved)"
+      }
+    ],
+    "correctMapping": {
+      "r1": "cP",
+      "r2": "cP",
+      "r3": "cU",
+      "r4": "cU"
+    },
+    "hints": [
+      "Proximate questions ask about immediate causes and development; ultimate questions ask about evolutionary payoff and history.",
+      "Muscles/experience are proximate; payoff/evolutionary origin are ultimate."
+    ],
+    "explanation": "Muscles (Mechanism) and learning-with-experience (Ontogeny) are both proximate; raising food-finding (Function) and evolutionary origin (Phylogeny) are both ultimate. Grouping the four sub-questions into their two levels is the harder skill, and the whole point of Tinbergen's scheme."
+  },
+  {
+    "id": "psy_u02_l01_q03",
+    "type": "matching",
+    "question": "Match each empirical finding about a songbird to the one Tinbergen question it answers.",
+    "pairs": [
+      {
+        "left": "A chick raised with no adult tutors develops an abnormal, incomplete song",
+        "right": "Ontogeny (development)"
+      },
+      {
+        "left": "Blocking a seasonal hormone silences an adult male's singing",
+        "right": "Mechanism (physiological cause)"
+      },
+      {
+        "left": "Males that sing more hold larger territories and attract more mates",
+        "right": "Function (reproductive payoff)"
+      },
+      {
+        "left": "Closely related warbler species share a common ancestral song structure",
+        "right": "Phylogeny (evolutionary history)"
+      }
+    ],
+    "hints": [
+      "Work from each finding to the KIND of cause it reveals, not to a vocabulary word.",
+      "A tutoring/deprivation study is about development; a hormone-blocking study is about the immediate mechanism."
+    ],
+    "explanation": "A deprivation study reveals development (Ontogeny), a hormone manipulation reveals the immediate cause (Mechanism), a mating-success correlation reveals the payoff (Function), and a cross-species comparison reveals lineage (Phylogeny). Each method is tuned to answer a different one of the four questions."
+  },
+  {
+    "id": "psy_u02_l01_q04",
+    "type": "venn_diagram",
+    "question": "Place each statement about explaining a behavior under Proximate versus Ultimate levels of analysis.",
+    "items": [
+      {
+        "id": "i1",
+        "label": "Explains a behavior by the hormones and neural circuits causing it right now"
+      },
+      {
+        "id": "i2",
+        "label": "Explains a behavior by how it develops over the individual's lifetime"
+      },
+      {
+        "id": "i3",
+        "label": "Explains a behavior by the survival or reproductive advantage it gives"
+      },
+      {
+        "id": "i4",
+        "label": "Explains a behavior by its evolutionary history across related species"
+      },
+      {
+        "id": "i5",
+        "label": "Is a legitimate, complete explanation of the very same behavior"
+      },
+      {
+        "id": "i6",
+        "label": "Explains a behavior as a deliberate moral choice made by the animal"
+      }
+    ],
+    "correctMapping": {
+      "i1": "a_only",
+      "i2": "a_only",
+      "i3": "b_only",
+      "i4": "b_only",
+      "i5": "both",
+      "i6": "neither"
+    },
+    "setALabel": "Proximate level",
+    "setBLabel": "Ultimate level",
+    "hints": [
+      "Mechanism and Ontogeny are the proximate pair; Function and Phylogeny are the ultimate pair.",
+      "All four are valid explanations of the same behavior (the overlap); a 'moral choice' is not a Tinbergen question at all."
+    ],
+    "explanation": "Mechanism and Ontogeny are proximate; Function and Phylogeny are ultimate; all four are legitimate explanations of the same behavior (the overlap). 'A deliberate moral choice' is not any of Tinbergen's four questions, so it belongs to neither - a test of rejecting a tempting but non-Tinbergen answer."
+  },
+  {
+    "id": "psy_u02_l01_q05",
+    "type": "error_highlight",
+    "question": "A student explains Tinbergen's framework. Highlight the one incorrect statement.",
+    "tokens": [
+      {
+        "id": "t1",
+        "text": "A complete explanation of a behavior answers all four questions. "
+      },
+      {
+        "id": "t2",
+        "text": "A hormonal mechanism and a territorial function can both be true of the same behavior at once. "
+      },
+      {
+        "id": "t3",
+        "text": "The mechanism (how) answer is the real cause, and the function (why) answer is just an optional story. "
+      },
+      {
+        "id": "t4",
+        "text": "Mechanism and ontogeny are proximate; function and phylogeny are ultimate. "
+      },
+      {
+        "id": "t5",
+        "text": "Asking how a syrinx makes song and why singing evolved are complementary, not rival, questions."
+      }
+    ],
+    "incorrectTokenIds": [
+      "t3"
+    ],
+    "hints": [
+      "Four statements treat the four questions as complementary; one treats them as competing.",
+      "Ask whether a 'how' answer can ever make a 'why' answer unnecessary."
+    ],
+    "explanation": "The error is t3. A mechanism (how) answer does NOT compete with or override a function (why) answer - they explain the same behavior at different levels and are both true simultaneously. Treating one level as the 'real' explanation is the lesson's named pitfall."
+  }
+]

@@ -1,0 +1,184 @@
+[
+  {
+    "id": "biz1_u07_l01_q01",
+    "type": "interactive_scene",
+    "question": "A firm holds **assets of 500** financed partly by **liabilities of 300**. The beam is held level and will not weigh the sides for you — **set the equity block** to the value that makes Assets = Liabilities + Equity.",
+    "sceneId": "biz_u07_equation_balance",
+    "sceneParams": {
+      "assets": 500,
+      "liabilities": 300,
+      "min": 0,
+      "max": 500,
+      "start": 50
+    },
+    "correctAnswer": {
+      "equity": 200
+    },
+    "tolerance": 10,
+    "hints": [
+      "The accounting identity: Equity = Assets − Liabilities.",
+      "$500 - 300 = 200$."
+    ],
+    "explanation": "Equity is the residual: $500 - 300 = 200$. Any other value leaves a visible gap — and that gap is what accountants hunt when books don't balance: not a broken equation, a missing entry."
+  },
+  {
+    "id": "biz1_u07_l01_q02",
+    "type": "balance_scale",
+    "question": "The left pan holds **total assets of 120**. Load the right pan with claims that exactly balance it.",
+    "fixedLeft": [
+      {
+        "id": "L1",
+        "label": "Total assets 120",
+        "weight": 120
+      }
+    ],
+    "availableItems": [
+      {
+        "id": "w1",
+        "label": "Bank loan 50",
+        "weight": 50
+      },
+      {
+        "id": "w2",
+        "label": "Supplier invoices 20",
+        "weight": 20
+      },
+      {
+        "id": "w3",
+        "label": "Equity 50",
+        "weight": 50
+      },
+      {
+        "id": "w4",
+        "label": "Next year revenue 40",
+        "weight": 40
+      },
+      {
+        "id": "w5",
+        "label": "A signed order 30",
+        "weight": 30
+      }
+    ],
+    "targetWeight": 120,
+    "hints": [
+      "Only actual claims — debts and ownership — sit on the right pan.",
+      "Future revenue and unfilled orders are not claims on today's assets."
+    ],
+    "explanation": "Loan 50 + suppliers 20 + equity 50 = 120. The decoys are beginner traps: future revenue and signed orders are hopes, not claims — nothing finances today's assets until it has actually happened."
+  },
+  {
+    "id": "biz1_u07_l01_q04",
+    "type": "matching",
+    "question": "Match each term to its definition.",
+    "pairs": [
+      {
+        "left": "Asset",
+        "right": "A resource the firm controls that carries future benefit"
+      },
+      {
+        "left": "Liability",
+        "right": "A present obligation to transfer value to a creditor"
+      },
+      {
+        "left": "Equity",
+        "right": "The residual claim after all creditors are paid"
+      },
+      {
+        "left": "Insolvency",
+        "right": "Liabilities exceeding everything the firm owns"
+      }
+    ],
+    "explanation": "Resources, creditor claims, the owners' leftover — plus the state where the leftover turns negative."
+  },
+  {
+    "id": "biz1_u07_l01_q05",
+    "type": "category_sort",
+    "question": "Asset, liability, or equity? Sort each item.",
+    "categories": [
+      "Asset",
+      "Liability",
+      "Equity"
+    ],
+    "items": [
+      {
+        "id": "u07l01q05_i0",
+        "label": "Cash in the bank account",
+        "correctCategory": "Asset"
+      },
+      {
+        "id": "u07l01q05_i1",
+        "label": "Amounts customers still owe us",
+        "correctCategory": "Asset"
+      },
+      {
+        "id": "u07l01q05_i2",
+        "label": "An unpaid supplier invoice",
+        "correctCategory": "Liability"
+      },
+      {
+        "id": "u07l01q05_i3",
+        "label": "Retained profits left inside the firm",
+        "correctCategory": "Equity"
+      },
+      {
+        "id": "u07l01q05_i4",
+        "label": "A five-year bank loan",
+        "correctCategory": "Liability"
+      },
+      {
+        "id": "u07l01q05_i5",
+        "label": "The founders' initial capital",
+        "correctCategory": "Equity"
+      }
+    ],
+    "explanation": "Receivables are assets (a right to collect); payables are liabilities (an obligation to pay). Retained profits are equity — the owners chose to leave their money inside."
+  },
+  {
+    "id": "biz1_u07_l01_q06",
+    "type": "matrix_grid",
+    "question": "How does each event move the equation? Classify the effect.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "Take a 100 bank loan"
+      },
+      {
+        "id": "r2",
+        "label": "Buy a machine with cash"
+      },
+      {
+        "id": "r3",
+        "label": "Earn a 50 cash profit"
+      },
+      {
+        "id": "r4",
+        "label": "Pay a cash dividend"
+      }
+    ],
+    "columns": [
+      {
+        "id": "c1",
+        "label": "Assets up, liabilities up"
+      },
+      {
+        "id": "c2",
+        "label": "Assets unchanged (swap)"
+      },
+      {
+        "id": "c3",
+        "label": "Assets up, equity up"
+      },
+      {
+        "id": "c4",
+        "label": "Assets down, equity down"
+      }
+    ],
+    "correctMapping": {
+      "r1": "c1",
+      "r2": "c2",
+      "r3": "c3",
+      "r4": "c4"
+    },
+    "explanation": "Four archetypes: both sides up (borrow), asset swap (buy), equity up (earn), both down (distribute). The equation survives all of them."
+  }
+]

@@ -1,0 +1,147 @@
+[
+  {
+    "id": "biz1_u06_l01_q01",
+    "type": "interactive_scene",
+    "question": "Katz: as a manager rises, **technical** skill matters less and **conceptual** skill more. **Drag the level marker** to where conceptual skill overtakes technical on this career ladder.",
+    "sceneId": "biz_u06_skill_mix",
+    "sceneParams": {
+      "crossLevel": 6,
+      "min": 0,
+      "max": 10,
+      "start": 1
+    },
+    "correctAnswer": {
+      "level": 6
+    },
+    "tolerance": 0.5,
+    "hints": [
+      "Watch the two curves, not the axis labels.",
+      "The handover happens in middle management’s upper half."
+    ],
+    "explanation": "The curves cross at level **6** — upper-middle management, where the job stops being about doing the work better and starts being about seeing the system whole. Note the third line that never moved: human skill stays high at every altitude, which is why the best technician isn’t automatically the right promotion."
+  },
+  {
+    "id": "biz1_u06_l01_q02",
+    "type": "matrix_grid",
+    "question": "File each managerial moment under its Mintzberg role family.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "Cutting the ribbon at the new warehouse"
+      },
+      {
+        "id": "r2",
+        "label": "Briefing the team on what the board decided"
+      },
+      {
+        "id": "r3",
+        "label": "Deciding which project gets the freed-up budget"
+      },
+      {
+        "id": "r4",
+        "label": "Calming a public dispute between two department heads"
+      }
+    ],
+    "columns": [
+      {
+        "id": "c1",
+        "label": "Interpersonal"
+      },
+      {
+        "id": "c2",
+        "label": "Informational"
+      },
+      {
+        "id": "c3",
+        "label": "Decisional"
+      }
+    ],
+    "correctMapping": {
+      "r1": "c1",
+      "r2": "c2",
+      "r3": "c3",
+      "r4": "c3"
+    },
+    "explanation": "Figurehead is interpersonal, disseminator informational, resource allocator and disturbance handler both decisional — the dispute isn’t about feelings, it’s a decision about how the conflict resolves."
+  },
+  {
+    "id": "biz1_u06_l01_q03",
+    "type": "category_sort",
+    "question": "Which of Fayol’s functions is each activity? Sort them.",
+    "categories": [
+      "Planning",
+      "Organizing",
+      "Leading",
+      "Controlling"
+    ],
+    "items": [
+      {
+        "id": "u06l01q03_i0",
+        "label": "Setting next year’s sales targets",
+        "correctCategory": "Planning"
+      },
+      {
+        "id": "u06l01q03_i1",
+        "label": "Redrawing who reports to whom",
+        "correctCategory": "Organizing"
+      },
+      {
+        "id": "u06l01q03_i2",
+        "label": "Talking a discouraged team through a setback",
+        "correctCategory": "Leading"
+      },
+      {
+        "id": "u06l01q03_i3",
+        "label": "Comparing Q3 results against budget",
+        "correctCategory": "Controlling"
+      },
+      {
+        "id": "u06l01q03_i4",
+        "label": "Choosing between two market-entry strategies",
+        "correctCategory": "Planning"
+      }
+    ],
+    "explanation": "Forward-looking choices are planning, structure is organizing, people-work is leading, and measurement against the plan is controlling — the cycle’s four stations."
+  },
+  {
+    "id": "biz1_u06_l01_q04",
+    "type": "matching",
+    "question": "Match each thinker to their map of the managerial job.",
+    "pairs": [
+      {
+        "left": "Fayol",
+        "right": "Four functions forming a cycle"
+      },
+      {
+        "left": "Mintzberg",
+        "right": "Ten roles observed with a stopwatch"
+      },
+      {
+        "left": "Katz",
+        "right": "Technical, human, and conceptual skills by level"
+      },
+      {
+        "left": "Drucker",
+        "right": "Effectiveness before efficiency"
+      }
+    ],
+    "explanation": "The cycle, the stopwatch, the skill ladder, and the priority rule — four classics that still structure every management syllabus."
+  },
+  {
+    "id": "biz1_u06_l01_q05",
+    "type": "multiple_choice",
+    "question": "A plant produces flawless parts at record low cost — parts for a product the market stopped wanting a year ago. Drucker would call this…",
+    "options": [
+      "High efficiency, low effectiveness — doing well what should not be done at all",
+      "High effectiveness, low efficiency",
+      "Both effective and efficient",
+      "A controlling failure only"
+    ],
+    "correctAnswer": 0,
+    "hints": [
+      "Efficiency = doing things right; effectiveness = doing the right things.",
+      "The parts are perfect. Are they the right parts?"
+    ],
+    "explanation": "Efficiency without effectiveness is polished waste. The failure sits upstream in *planning* — the choice of what to produce — which no amount of downstream excellence can repair."
+  }
+]

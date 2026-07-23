@@ -1,0 +1,1028 @@
+[
+  {
+    "id": "biz1_u10_l01_q01",
+    "type": "interactive_scene",
+    "question": "An indifference curve through bundle $(4, 6)$ has $MRS = 2$. If the consumer gives up 1 unit of $y$, they need approximately **2 more units of $x$** to stay indifferent. **Drag the new bundle marker** to approximately $(6, 5)$.",
+    "sceneId": "biz_u10_mrs_tradeoff",
+    "sceneParams": {
+      "startX": 4,
+      "startY": 6,
+      "mrs": 2,
+      "min": 0,
+      "max": 10,
+      "start": 4
+    },
+    "correctAnswer": {
+      "newX": 6
+    },
+    "tolerance": 0.5,
+    "hints": [
+      "$MRS = \\Delta y / \\Delta x$, so $\\Delta x = \\Delta y / MRS$.",
+      "Giving up 1 unit of $y$: $\\Delta x = 1/2 \\approx 0.5$... wait, $MRS = MU_x/MU_y = 2$ means 1 unit of $x$ is worth 2 units of $y$. To give up 1 $y$, need 0.5 more $x$."
+    ],
+    "explanation": "With $MRS = 2$: one unit of $x$ is worth 2 units of $y$ to this consumer. Losing 1 unit of $y$ requires gaining $1/2$ unit of $x$, moving to approximately $(4.5, 5)$. The MRS is the exchange rate along the indifference curve."
+  },
+  {
+    "id": "biz1_u10_l01_q02",
+    "type": "function_graph",
+    "question": "Which curve shows a typical convex indifference curve — bowed toward the origin with diminishing MRS?",
+    "equation": "$y = 12/x$ (rectangular hyperbola)",
+    "parameters": [],
+    "minX": 0.5,
+    "maxX": 12,
+    "minY": 0,
+    "maxY": 12,
+    "series": [
+      {
+        "id": "A",
+        "label": "Convex: $y = 12/x$",
+        "isCorrect": true,
+        "points": [
+          {
+            "x": 0.5,
+            "y": 24
+          },
+          {
+            "x": 0.7875,
+            "y": 15.2381
+          },
+          {
+            "x": 1.075,
+            "y": 11.1628
+          },
+          {
+            "x": 1.3625,
+            "y": 8.8073
+          },
+          {
+            "x": 1.65,
+            "y": 7.2727
+          },
+          {
+            "x": 1.9375,
+            "y": 6.1935
+          },
+          {
+            "x": 2.225,
+            "y": 5.3933
+          },
+          {
+            "x": 2.5125,
+            "y": 4.7761
+          },
+          {
+            "x": 2.8,
+            "y": 4.2857
+          },
+          {
+            "x": 3.0875,
+            "y": 3.8866
+          },
+          {
+            "x": 3.375,
+            "y": 3.5556
+          },
+          {
+            "x": 3.6625,
+            "y": 3.2765
+          },
+          {
+            "x": 3.95,
+            "y": 3.038
+          },
+          {
+            "x": 4.2375,
+            "y": 2.8319
+          },
+          {
+            "x": 4.525,
+            "y": 2.6519
+          },
+          {
+            "x": 4.8125,
+            "y": 2.4935
+          },
+          {
+            "x": 5.1,
+            "y": 2.3529
+          },
+          {
+            "x": 5.3875,
+            "y": 2.2274
+          },
+          {
+            "x": 5.675,
+            "y": 2.1145
+          },
+          {
+            "x": 5.9625,
+            "y": 2.0126
+          },
+          {
+            "x": 6.25,
+            "y": 1.92
+          },
+          {
+            "x": 6.5375,
+            "y": 1.8356
+          },
+          {
+            "x": 6.825,
+            "y": 1.7582
+          },
+          {
+            "x": 7.1125,
+            "y": 1.6872
+          },
+          {
+            "x": 7.4,
+            "y": 1.6216
+          },
+          {
+            "x": 7.6875,
+            "y": 1.561
+          },
+          {
+            "x": 7.975,
+            "y": 1.5047
+          },
+          {
+            "x": 8.2625,
+            "y": 1.4523
+          },
+          {
+            "x": 8.55,
+            "y": 1.4035
+          },
+          {
+            "x": 8.8375,
+            "y": 1.3579
+          },
+          {
+            "x": 9.125,
+            "y": 1.3151
+          },
+          {
+            "x": 9.4125,
+            "y": 1.2749
+          },
+          {
+            "x": 9.7,
+            "y": 1.2371
+          },
+          {
+            "x": 9.9875,
+            "y": 1.2015
+          },
+          {
+            "x": 10.275,
+            "y": 1.1679
+          },
+          {
+            "x": 10.5625,
+            "y": 1.1361
+          },
+          {
+            "x": 10.85,
+            "y": 1.106
+          },
+          {
+            "x": 11.1375,
+            "y": 1.0774
+          },
+          {
+            "x": 11.425,
+            "y": 1.0503
+          },
+          {
+            "x": 11.7125,
+            "y": 1.0245
+          },
+          {
+            "x": 12,
+            "y": 1
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "label": "Straight line (perfect substitutes)",
+        "isCorrect": false,
+        "points": [
+          {
+            "x": 0.5,
+            "y": 7.5
+          },
+          {
+            "x": 0.6875,
+            "y": 7.3125
+          },
+          {
+            "x": 0.875,
+            "y": 7.125
+          },
+          {
+            "x": 1.0625,
+            "y": 6.9375
+          },
+          {
+            "x": 1.25,
+            "y": 6.75
+          },
+          {
+            "x": 1.4375,
+            "y": 6.5625
+          },
+          {
+            "x": 1.625,
+            "y": 6.375
+          },
+          {
+            "x": 1.8125,
+            "y": 6.1875
+          },
+          {
+            "x": 2,
+            "y": 6
+          },
+          {
+            "x": 2.1875,
+            "y": 5.8125
+          },
+          {
+            "x": 2.375,
+            "y": 5.625
+          },
+          {
+            "x": 2.5625,
+            "y": 5.4375
+          },
+          {
+            "x": 2.75,
+            "y": 5.25
+          },
+          {
+            "x": 2.9375,
+            "y": 5.0625
+          },
+          {
+            "x": 3.125,
+            "y": 4.875
+          },
+          {
+            "x": 3.3125,
+            "y": 4.6875
+          },
+          {
+            "x": 3.5,
+            "y": 4.5
+          },
+          {
+            "x": 3.6875,
+            "y": 4.3125
+          },
+          {
+            "x": 3.875,
+            "y": 4.125
+          },
+          {
+            "x": 4.0625,
+            "y": 3.9375
+          },
+          {
+            "x": 4.25,
+            "y": 3.75
+          },
+          {
+            "x": 4.4375,
+            "y": 3.5625
+          },
+          {
+            "x": 4.625,
+            "y": 3.375
+          },
+          {
+            "x": 4.8125,
+            "y": 3.1875
+          },
+          {
+            "x": 5,
+            "y": 3
+          },
+          {
+            "x": 5.1875,
+            "y": 2.8125
+          },
+          {
+            "x": 5.375,
+            "y": 2.625
+          },
+          {
+            "x": 5.5625,
+            "y": 2.4375
+          },
+          {
+            "x": 5.75,
+            "y": 2.25
+          },
+          {
+            "x": 5.9375,
+            "y": 2.0625
+          },
+          {
+            "x": 6.125,
+            "y": 1.875
+          },
+          {
+            "x": 6.3125,
+            "y": 1.6875
+          },
+          {
+            "x": 6.5,
+            "y": 1.5
+          },
+          {
+            "x": 6.6875,
+            "y": 1.3125
+          },
+          {
+            "x": 6.875,
+            "y": 1.125
+          },
+          {
+            "x": 7.0625,
+            "y": 0.9375
+          },
+          {
+            "x": 7.25,
+            "y": 0.75
+          },
+          {
+            "x": 7.4375,
+            "y": 0.5625
+          },
+          {
+            "x": 7.625,
+            "y": 0.375
+          },
+          {
+            "x": 7.8125,
+            "y": 0.1875
+          },
+          {
+            "x": 8,
+            "y": 0
+          }
+        ]
+      },
+      {
+        "id": "C",
+        "label": "Concave curve",
+        "isCorrect": false,
+        "points": [
+          {
+            "x": 0.5,
+            "y": 2.4495
+          },
+          {
+            "x": 0.7875,
+            "y": 3.0741
+          },
+          {
+            "x": 1.075,
+            "y": 3.5917
+          },
+          {
+            "x": 1.3625,
+            "y": 4.0435
+          },
+          {
+            "x": 1.65,
+            "y": 4.4497
+          },
+          {
+            "x": 1.9375,
+            "y": 4.8218
+          },
+          {
+            "x": 2.225,
+            "y": 5.1672
+          },
+          {
+            "x": 2.5125,
+            "y": 5.4909
+          },
+          {
+            "x": 2.8,
+            "y": 5.7966
+          },
+          {
+            "x": 3.0875,
+            "y": 6.0869
+          },
+          {
+            "x": 3.375,
+            "y": 6.364
+          },
+          {
+            "x": 3.6625,
+            "y": 6.6295
+          },
+          {
+            "x": 3.95,
+            "y": 6.8848
+          },
+          {
+            "x": 4.2375,
+            "y": 7.1309
+          },
+          {
+            "x": 4.525,
+            "y": 7.3689
+          },
+          {
+            "x": 4.8125,
+            "y": 7.5993
+          },
+          {
+            "x": 5.1,
+            "y": 7.823
+          },
+          {
+            "x": 5.3875,
+            "y": 8.0405
+          },
+          {
+            "x": 5.675,
+            "y": 8.2523
+          },
+          {
+            "x": 5.9625,
+            "y": 8.4587
+          },
+          {
+            "x": 6.25,
+            "y": 8.6603
+          },
+          {
+            "x": 6.5375,
+            "y": 8.8572
+          },
+          {
+            "x": 6.825,
+            "y": 9.0499
+          },
+          {
+            "x": 7.1125,
+            "y": 9.2385
+          },
+          {
+            "x": 7.4,
+            "y": 9.4234
+          },
+          {
+            "x": 7.6875,
+            "y": 9.6047
+          },
+          {
+            "x": 7.975,
+            "y": 9.7826
+          },
+          {
+            "x": 8.2625,
+            "y": 9.9574
+          },
+          {
+            "x": 8.55,
+            "y": 10.1292
+          },
+          {
+            "x": 8.8375,
+            "y": 10.2981
+          },
+          {
+            "x": 9.125,
+            "y": 10.4642
+          },
+          {
+            "x": 9.4125,
+            "y": 10.6278
+          },
+          {
+            "x": 9.7,
+            "y": 10.7889
+          },
+          {
+            "x": 9.9875,
+            "y": 10.9476
+          },
+          {
+            "x": 10.275,
+            "y": 11.1041
+          },
+          {
+            "x": 10.5625,
+            "y": 11.2583
+          },
+          {
+            "x": 10.85,
+            "y": 11.4105
+          },
+          {
+            "x": 11.1375,
+            "y": 11.5607
+          },
+          {
+            "x": 11.425,
+            "y": 11.709
+          },
+          {
+            "x": 11.7125,
+            "y": 11.8554
+          },
+          {
+            "x": 12,
+            "y": 12
+          }
+        ]
+      }
+    ],
+    "explanation": "The rectangular hyperbola $y = 12/x$ is convex to the origin — the classic indifference curve shape showing diminishing MRS. Perfect substitutes give straight lines; concave is not standard."
+  },
+  {
+    "id": "biz1_u10_l01_q03",
+    "type": "graph_identification",
+    "question": "Which graph shows indifference curves for **perfect complements** (left shoe, right shoe)?",
+    "correctOptionId": "A",
+    "xLabel": "Good x",
+    "yLabel": "Good y",
+    "options": [
+      {
+        "id": "A",
+        "label": "L-shaped: horizontal then vertical",
+        "isCorrect": true,
+        "points": [
+          {
+            "x": 0,
+            "y": 3
+          },
+          {
+            "x": 0.2,
+            "y": 3
+          },
+          {
+            "x": 0.4,
+            "y": 3
+          },
+          {
+            "x": 0.6,
+            "y": 3
+          },
+          {
+            "x": 0.8,
+            "y": 3
+          },
+          {
+            "x": 1,
+            "y": 3
+          },
+          {
+            "x": 1.2,
+            "y": 3
+          },
+          {
+            "x": 1.4,
+            "y": 3
+          },
+          {
+            "x": 1.6,
+            "y": 3
+          },
+          {
+            "x": 1.8,
+            "y": 3
+          },
+          {
+            "x": 2,
+            "y": 3
+          },
+          {
+            "x": 2.2,
+            "y": 3
+          },
+          {
+            "x": 2.4,
+            "y": 3
+          },
+          {
+            "x": 2.6,
+            "y": 3
+          },
+          {
+            "x": 2.8,
+            "y": 3
+          },
+          {
+            "x": 3,
+            "y": 3
+          },
+          {
+            "x": 3.2,
+            "y": 100
+          },
+          {
+            "x": 3.4,
+            "y": 100
+          },
+          {
+            "x": 3.6,
+            "y": 100
+          },
+          {
+            "x": 3.8,
+            "y": 100
+          },
+          {
+            "x": 4,
+            "y": 100
+          },
+          {
+            "x": 4.2,
+            "y": 100
+          },
+          {
+            "x": 4.4,
+            "y": 100
+          },
+          {
+            "x": 4.6,
+            "y": 100
+          },
+          {
+            "x": 4.8,
+            "y": 100
+          },
+          {
+            "x": 5,
+            "y": 100
+          },
+          {
+            "x": 5.2,
+            "y": 100
+          },
+          {
+            "x": 5.4,
+            "y": 100
+          },
+          {
+            "x": 5.6,
+            "y": 100
+          },
+          {
+            "x": 5.8,
+            "y": 100
+          },
+          {
+            "x": 6,
+            "y": 100
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "label": "Downward-sloping straight line",
+        "isCorrect": false,
+        "points": [
+          {
+            "x": 0,
+            "y": 6
+          },
+          {
+            "x": 0.2,
+            "y": 5.8
+          },
+          {
+            "x": 0.4,
+            "y": 5.6
+          },
+          {
+            "x": 0.6,
+            "y": 5.4
+          },
+          {
+            "x": 0.8,
+            "y": 5.2
+          },
+          {
+            "x": 1,
+            "y": 5
+          },
+          {
+            "x": 1.2,
+            "y": 4.8
+          },
+          {
+            "x": 1.4,
+            "y": 4.6
+          },
+          {
+            "x": 1.6,
+            "y": 4.4
+          },
+          {
+            "x": 1.8,
+            "y": 4.2
+          },
+          {
+            "x": 2,
+            "y": 4
+          },
+          {
+            "x": 2.2,
+            "y": 3.8
+          },
+          {
+            "x": 2.4,
+            "y": 3.6
+          },
+          {
+            "x": 2.6,
+            "y": 3.4
+          },
+          {
+            "x": 2.8,
+            "y": 3.2
+          },
+          {
+            "x": 3,
+            "y": 3
+          },
+          {
+            "x": 3.2,
+            "y": 2.8
+          },
+          {
+            "x": 3.4,
+            "y": 2.6
+          },
+          {
+            "x": 3.6,
+            "y": 2.4
+          },
+          {
+            "x": 3.8,
+            "y": 2.2
+          },
+          {
+            "x": 4,
+            "y": 2
+          },
+          {
+            "x": 4.2,
+            "y": 1.8
+          },
+          {
+            "x": 4.4,
+            "y": 1.6
+          },
+          {
+            "x": 4.6,
+            "y": 1.4
+          },
+          {
+            "x": 4.8,
+            "y": 1.2
+          },
+          {
+            "x": 5,
+            "y": 1
+          },
+          {
+            "x": 5.2,
+            "y": 0.8
+          },
+          {
+            "x": 5.4,
+            "y": 0.6
+          },
+          {
+            "x": 5.6,
+            "y": 0.4
+          },
+          {
+            "x": 5.8,
+            "y": 0.2
+          },
+          {
+            "x": 6,
+            "y": 0
+          }
+        ]
+      },
+      {
+        "id": "C",
+        "label": "Smooth convex curve",
+        "isCorrect": false,
+        "points": [
+          {
+            "x": 0.5,
+            "y": 18
+          },
+          {
+            "x": 0.6833,
+            "y": 13.1714
+          },
+          {
+            "x": 0.8667,
+            "y": 10.3842
+          },
+          {
+            "x": 1.05,
+            "y": 8.5714
+          },
+          {
+            "x": 1.2333,
+            "y": 7.2975
+          },
+          {
+            "x": 1.4167,
+            "y": 6.3528
+          },
+          {
+            "x": 1.6,
+            "y": 5.625
+          },
+          {
+            "x": 1.7833,
+            "y": 5.0468
+          },
+          {
+            "x": 1.9667,
+            "y": 4.5762
+          },
+          {
+            "x": 2.15,
+            "y": 4.186
+          },
+          {
+            "x": 2.3333,
+            "y": 3.8572
+          },
+          {
+            "x": 2.5167,
+            "y": 3.5761
+          },
+          {
+            "x": 2.7,
+            "y": 3.3333
+          },
+          {
+            "x": 2.8833,
+            "y": 3.1214
+          },
+          {
+            "x": 3.0667,
+            "y": 2.9348
+          },
+          {
+            "x": 3.25,
+            "y": 2.7692
+          },
+          {
+            "x": 3.4333,
+            "y": 2.6214
+          },
+          {
+            "x": 3.6167,
+            "y": 2.4885
+          },
+          {
+            "x": 3.8,
+            "y": 2.3684
+          },
+          {
+            "x": 3.9833,
+            "y": 2.2594
+          },
+          {
+            "x": 4.1667,
+            "y": 2.16
+          },
+          {
+            "x": 4.35,
+            "y": 2.069
+          },
+          {
+            "x": 4.5333,
+            "y": 1.9853
+          },
+          {
+            "x": 4.7167,
+            "y": 1.9081
+          },
+          {
+            "x": 4.9,
+            "y": 1.8367
+          },
+          {
+            "x": 5.0833,
+            "y": 1.7705
+          },
+          {
+            "x": 5.2667,
+            "y": 1.7088
+          },
+          {
+            "x": 5.45,
+            "y": 1.6514
+          },
+          {
+            "x": 5.6333,
+            "y": 1.5976
+          },
+          {
+            "x": 5.8167,
+            "y": 1.5473
+          },
+          {
+            "x": 6,
+            "y": 1.5
+          }
+        ]
+      }
+    ],
+    "explanation": "Perfect complements have L-shaped indifference curves — extra left shoes without right shoes add no utility. The kink is at the fixed-proportion ratio."
+  },
+  {
+    "id": "biz1_u10_l01_q04",
+    "type": "matching",
+    "question": "Match each preference axiom to its meaning.",
+    "pairs": [
+      {
+        "left": "Completeness",
+        "right": "Every pair of bundles can be ranked"
+      },
+      {
+        "left": "Transitivity",
+        "right": "No preference cycles: $A \\succsim B \\succsim C \\Rightarrow A \\succsim C$"
+      },
+      {
+        "left": "Non-satiation",
+        "right": "More is always better"
+      },
+      {
+        "left": "Convexity",
+        "right": "Mixtures are preferred to extremes"
+      }
+    ],
+    "explanation": "The four pillars of rational consumer theory — they generate well-behaved indifference curves."
+  },
+  {
+    "id": "biz1_u10_l01_q05",
+    "type": "matrix_grid",
+    "question": "Classify each indifference curve shape by its preference type.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "Smooth convex curves"
+      },
+      {
+        "id": "r2",
+        "label": "Straight lines"
+      },
+      {
+        "id": "r3",
+        "label": "L-shaped curves"
+      },
+      {
+        "id": "r4",
+        "label": "Concentric circles"
+      }
+    ],
+    "columns": [
+      {
+        "id": "c1",
+        "label": "Standard (diminishing MRS)"
+      },
+      {
+        "id": "c2",
+        "label": "Perfect substitutes"
+      },
+      {
+        "id": "c3",
+        "label": "Perfect complements"
+      },
+      {
+        "id": "c4",
+        "label": "Satiation (bliss point)"
+      }
+    ],
+    "correctMapping": {
+      "r1": "c1",
+      "r2": "c2",
+      "r3": "c3",
+      "r4": "c4"
+    },
+    "explanation": "Shape reveals preference structure: convex = normal; straight = perfect substitutes; L-shaped = complements; circles = satiation."
+  }
+]

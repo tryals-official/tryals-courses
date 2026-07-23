@@ -1,0 +1,158 @@
+[
+  {
+    "id": "biz1_u03_l01_q01",
+    "type": "interactive_scene",
+    "question": "A **ministerial regulation** (rank 4 on the pyramid) contradicts a **parliamentary statute** (rank 2). **Drag the highlight up the pyramid** to the rank of the norm that prevails — the losing norm shatters when you commit.",
+    "sceneId": "biz_u03_norm_hierarchy",
+    "sceneParams": {
+      "ranks": 5,
+      "conflictA": 4,
+      "conflictB": 2,
+      "start": 4
+    },
+    "correctAnswer": {
+      "rank": 2
+    },
+    "tolerance": 0.4,
+    "hints": [
+      "Lower number = higher rank on this pyramid.",
+      "Lex superior: hierarchy beats everything else."
+    ],
+    "explanation": "The statute (rank 2) wins — a regulation contradicting a law isn’t an alternative reading, it is **void**. Time and specialty never even enter the analysis when ranks differ."
+  },
+  {
+    "id": "biz1_u03_l01_q02",
+    "type": "ordering",
+    "question": "Order these norms from highest to lowest rank in the Spanish system.",
+    "items": [
+      "The Constitution",
+      "An international treaty published in Spain",
+      "An ordinary law passed by Parliament",
+      "A royal decree issued by the government",
+      "Local custom, proved in court"
+    ],
+    "correctOrder": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "hints": [
+      "Start from the norm every other norm must obey.",
+      "Custom only applies where all written law is silent."
+    ],
+    "explanation": "Constitution → treaties → laws → regulations → custom: each level draws its validity from the one above and can be struck down for contradicting it."
+  },
+  {
+    "id": "biz1_u03_l01_q03",
+    "type": "matrix_grid",
+    "question": "Classify each norm by its position in the hierarchy.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "Organic law on data protection"
+      },
+      {
+        "id": "r2",
+        "label": "Ministerial order detailing invoice formats"
+      },
+      {
+        "id": "r3",
+        "label": "Government decree-law on urgent energy measures"
+      },
+      {
+        "id": "r4",
+        "label": "Trade usage among grain merchants"
+      }
+    ],
+    "columns": [
+      {
+        "id": "c1",
+        "label": "Law / force of law"
+      },
+      {
+        "id": "c2",
+        "label": "Regulation"
+      },
+      {
+        "id": "c3",
+        "label": "Custom"
+      }
+    ],
+    "correctMapping": {
+      "r1": "c1",
+      "r2": "c2",
+      "r3": "c1",
+      "r4": "c3"
+    },
+    "explanation": "Organic laws and decree-laws share the rank of law; ministerial orders are executive regulations; merchant usage is custom — last in line and only if proved."
+  },
+  {
+    "id": "biz1_u03_l01_q04",
+    "type": "category_sort",
+    "question": "Sort each conflict by the criterion that resolves it.",
+    "categories": [
+      "Hierarchy (lex superior)",
+      "Specialty (lex specialis)",
+      "Time (lex posterior)"
+    ],
+    "items": [
+      {
+        "id": "u03l01q04_i0",
+        "label": "A regulation contradicts the statute it implements",
+        "correctCategory": "Hierarchy (lex superior)"
+      },
+      {
+        "id": "u03l01q04_i1",
+        "label": "Commercial sale rules vs general civil sale rules",
+        "correctCategory": "Specialty (lex specialis)"
+      },
+      {
+        "id": "u03l01q04_i2",
+        "label": "Two successive ordinary laws on the same tax",
+        "correctCategory": "Time (lex posterior)"
+      },
+      {
+        "id": "u03l01q04_i3",
+        "label": "Consumer-contract regime vs general contract law",
+        "correctCategory": "Specialty (lex specialis)"
+      },
+      {
+        "id": "u03l01q04_i4",
+        "label": "A ministerial order conflicts with the Constitution",
+        "correctCategory": "Hierarchy (lex superior)"
+      },
+      {
+        "id": "u03l01q04_i5",
+        "label": "This year’s VAT reform vs last year’s",
+        "correctCategory": "Time (lex posterior)"
+      }
+    ],
+    "explanation": "Different rank → hierarchy. Same rank, different scope → specialty. Same rank and scope → the later norm governs."
+  },
+  {
+    "id": "biz1_u03_l01_q05",
+    "type": "matching",
+    "question": "Match each source of law to its defining feature.",
+    "pairs": [
+      {
+        "left": "Organic law",
+        "right": "Requires an absolute parliamentary majority"
+      },
+      {
+        "left": "Decree-law",
+        "right": "Urgent government norm, later ratified by Parliament"
+      },
+      {
+        "left": "Regulation",
+        "right": "Executive rule that develops and details laws"
+      },
+      {
+        "left": "General principles",
+        "right": "Good faith and other values informing the whole system"
+      }
+    ],
+    "explanation": "Who makes the norm and under what conditions determines its rank — and its vulnerability to challenge."
+  }
+]

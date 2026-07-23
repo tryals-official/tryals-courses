@@ -1,0 +1,187 @@
+[
+  {
+    "id": "math_u02_l01_q01",
+    "type": "matrix_grid",
+    "question": "Place each number in the SMALLEST number system that contains it.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "7"
+      },
+      {
+        "id": "r2",
+        "label": "-4"
+      },
+      {
+        "id": "r3",
+        "label": "3/4"
+      },
+      {
+        "id": "r4",
+        "label": "the square root of 2"
+      },
+      {
+        "id": "r5",
+        "label": "the square root of 9"
+      }
+    ],
+    "columns": [
+      {
+        "id": "c1",
+        "label": "Natural"
+      },
+      {
+        "id": "c2",
+        "label": "Integer, not natural"
+      },
+      {
+        "id": "c3",
+        "label": "Rational, not integer"
+      },
+      {
+        "id": "c4",
+        "label": "Irrational"
+      }
+    ],
+    "correctMapping": {
+      "r1": "c1",
+      "r2": "c2",
+      "r3": "c3",
+      "r4": "c4",
+      "r5": "c1"
+    },
+    "hints": [
+      "The systems are nested, so ask where a number FIRST appears as you build outward from the naturals.",
+      "Simplify every expression before you classify it — a root sign does not guarantee an irrational."
+    ],
+    "explanation": "The square root of 9 is just 3, a natural number — the root sign is a disguise, not a classification. The square root of 2 genuinely is irrational. -4 needs the integers, 3/4 needs the rationals, and 7 is already natural."
+  },
+  {
+    "id": "math_u02_l01_q02",
+    "type": "category_sort",
+    "question": "Each extension of the number system is driven by closure. Sort each expression by the smallest system in which it is guaranteed to have an answer.",
+    "categories": [
+      "Defined in the integers",
+      "Needs the rationals",
+      "Needs the reals"
+    ],
+    "items": [
+      {
+        "id": "e1",
+        "label": "the difference of two integers",
+        "correctCategory": "Defined in the integers"
+      },
+      {
+        "id": "e2",
+        "label": "3 divided by 2",
+        "correctCategory": "Needs the rationals"
+      },
+      {
+        "id": "e3",
+        "label": "the square root of 2",
+        "correctCategory": "Needs the reals"
+      },
+      {
+        "id": "e4",
+        "label": "the product of two integers",
+        "correctCategory": "Defined in the integers"
+      },
+      {
+        "id": "e5",
+        "label": "1 divided by 7",
+        "correctCategory": "Needs the rationals"
+      },
+      {
+        "id": "e6",
+        "label": "pi",
+        "correctCategory": "Needs the reals"
+      }
+    ],
+    "hints": [
+      "Ask what operation the expression uses, then ask which system makes that operation always work.",
+      "Integers are closed under subtraction and multiplication but not division."
+    ],
+    "explanation": "Each enlargement exists to make one operation total: negatives make subtraction always work, fractions make division by a nonzero number always work, and the reals supply the roots and limits that fractions cannot reach. Closure is the engine of the whole hierarchy."
+  },
+  {
+    "id": "math_u02_l01_q03",
+    "type": "venn_diagram",
+    "question": "Place each number according to whether it is rational, an integer, both, or neither.",
+    "items": [
+      {
+        "id": "i1",
+        "label": "5"
+      },
+      {
+        "id": "i2",
+        "label": "-2/3"
+      },
+      {
+        "id": "i3",
+        "label": "the square root of 3"
+      },
+      {
+        "id": "i4",
+        "label": "0"
+      },
+      {
+        "id": "i5",
+        "label": "0.75"
+      },
+      {
+        "id": "i6",
+        "label": "pi"
+      }
+    ],
+    "correctMapping": {
+      "i1": "both",
+      "i2": "a_only",
+      "i3": "neither",
+      "i4": "both",
+      "i5": "a_only",
+      "i6": "neither"
+    },
+    "setALabel": "Rational",
+    "setBLabel": "Integer",
+    "hints": [
+      "Every integer can be written as a fraction with denominator 1.",
+      "The region for 'integer but not rational' should end up completely empty."
+    ],
+    "explanation": "The integers sit INSIDE the rationals, so nothing can be an integer without also being rational — the 'integer only' region is empty. 5 and 0 land in the overlap, -2/3 and 0.75 are rational non-integers, and the two irrationals fall outside both circles."
+  },
+  {
+    "id": "math_u02_l01_q04",
+    "type": "numerical_input",
+    "question": "How many of these seven numbers are irrational?  1/3,  the square root of 4,  the square root of 5,  0.101010... repeating forever,  pi,  -7,  22/7",
+    "correctAnswer": 2,
+    "tolerance": 0,
+    "hints": [
+      "Simplify each one first; then ask whether it can be written as a ratio of integers.",
+      "Two of these are deliberate traps: a root that comes out whole, and a famous approximation to pi."
+    ],
+    "explanation": "Only the square root of 5 and pi are irrational. The square root of 4 is 2, 0.101010... repeats so it is rational, and 22/7 is a ratio of integers — it approximates pi but is not pi. A number is rational if it CAN be written as a fraction, however it is presented."
+  },
+  {
+    "id": "math_u02_l01_q05",
+    "type": "cloze_bank",
+    "question": "Complete the decimal characterization of the rationals.",
+    "correctAnswers": [
+      1
+    ],
+    "segments": [
+      "A real number is rational exactly when its decimal expansion ",
+      "."
+    ],
+    "wordBank": [
+      "goes on forever",
+      "terminates or eventually repeats",
+      "never terminates",
+      "uses only the digits 0 to 9"
+    ],
+    "hints": [
+      "Think about the decimal expansions of 1/4, 1/3 and 1/7 — all three are rational.",
+      "One option describes irrationals, and one is true of every decimal ever written."
+    ],
+    "explanation": "Terminating-or-repeating is a complete characterization: it holds for every rational and fails for every irrational. Endlessness alone proves nothing — 1/3 = 0.333... runs forever yet is perfectly rational."
+  }
+]

@@ -1,0 +1,100 @@
+[
+  {
+    "type": "slider_estimate",
+    "question": "Two charges repel with **36 N**. You move them to **half** the original separation. Predict the new force.",
+    "min": 0,
+    "max": 200,
+    "targetValue": 144,
+    "tolerance": 10,
+    "minLabel": "0 N",
+    "maxLabel": "200 N",
+    "hints": [
+      "Coulomb’s law: $F \\propto 1/r^{2}$ — halving $r$ does more than double the force.",
+      "Half the distance → $(1/2)^{-2} = 4\\times$ the force."
+    ],
+    "explanation": "$36 \\times 4 = 144$ N. The inverse-square law punishes proximity quadratically — the same geometry that makes gravity soar near massive bodies makes electrostatics fierce at atomic distances.",
+    "id": "phys1_u08_l01_q01"
+  },
+  {
+    "id": "phys1_u08_l01_q02",
+    "type": "interactive_scene",
+    "question": "$R = 2$ kΩ, $C = 500$ μF: set the RC time constant — the charging curve draws after send.",
+    "sceneId": "u08_rc",
+    "sceneParams": {
+      "start": 0.5
+    },
+    "correctAnswer": {
+      "tau": 1
+    },
+    "tolerance": 0.15,
+    "explanation": "$\\tau = RC = 2000 \\times 0.0005 = 1.0$ s. At $t = \\tau$ the capacitor reaches 63 % of $V_0$.",
+    "hints": [
+      "Convert units: 2 kΩ = 2000 Ω, 500 μF = 0.0005 F.",
+      "τ = R × C."
+    ]
+  },
+  {
+    "id": "phys1_u08_l01_q04",
+    "type": "matching",
+    "question": "Match each charge-related concept to its description.",
+    "pairs": [
+      {
+        "left": "Elementary charge e",
+        "right": "1.6 $\\times 10$⁻¹⁹ C"
+      },
+      {
+        "left": "Coulomb's constant k",
+        "right": "8.99 × $10^{9}$ $N\\cdot m^{2}/C^{2}$"
+      },
+      {
+        "left": "Permittivity of free space $\\varepsilon_{0}$",
+        "right": "8.85 $\\times 10$⁻¹² $C^{2}$/($N\\cdot m^{2}$)"
+      },
+      {
+        "left": "Charge quantization",
+        "right": "Charge comes in multiples of e"
+      }
+    ],
+    "explanation": "These constants and principles underlie all of electrostatics."
+  },
+  {
+    "id": "phys1_u08_l01_q05",
+    "type": "multi_select",
+    "question": "Which statements about electric charge are true?",
+    "options": [
+      "Charge is conserved in all processes",
+      "Charge is quantized",
+      "Protons carry negative charge",
+      "Electrons can be transferred between objects"
+    ],
+    "explanation": "Protons are positive; charge is conserved and quantized.",
+    "correctAnswers": [
+      0,
+      1,
+      3
+    ]
+  },
+  {
+    "id": "phys1_u08_l01_q07",
+    "type": "error_highlight",
+    "question": "Find the error: 'Coulomb's law applies to both point charges and extended charge distributions directly without modification.'",
+    "explanation": "For extended bodies, one must integrate Coulomb's law over the charge distribution.",
+    "tokens": [
+      {
+        "id": "s1",
+        "text": "Coulomb's law applies to"
+      },
+      {
+        "id": "s2",
+        "text": "both point charges and extended charge distributions"
+      },
+      {
+        "id": "s3",
+        "text": "directly without modification."
+      }
+    ],
+    "incorrectTokenIds": [
+      "s3"
+    ]
+  }
+]

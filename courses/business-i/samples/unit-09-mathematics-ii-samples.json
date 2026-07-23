@@ -1,0 +1,519 @@
+[
+  {
+    "id": "biz1_u09_l01_q01",
+    "type": "interactive_scene",
+    "question": "For $f(x,y) = x^2 y$, at $(x,y)=(3,2)$: the partial with respect to $x$ is $2xy = 12$. **Drag the tangent-slope marker** to the correct value of $\\partial f / \\partial x$.",
+    "sceneId": "biz_u09_partial_slope",
+    "sceneParams": {
+      "fx": 12,
+      "min": 0,
+      "max": 20,
+      "start": 5
+    },
+    "correctAnswer": {
+      "slope": 12
+    },
+    "tolerance": 0.5,
+    "hints": [
+      "$\\partial f / \\partial x = 2xy$.",
+      "$2 \\times 3 \\times 2 = 12$."
+    ],
+    "explanation": "$\\partial f / \\partial x = 2xy = 2(3)(2) = 12$. At this point, nudging $x$ by a tiny amount changes $f$ by roughly 12 times that amount, while $y$ stays frozen at 2."
+  },
+  {
+    "id": "biz1_u09_l01_q02",
+    "type": "function_graph",
+    "question": "Which graph shows $\\partial f / \\partial x$ for $f(x,y) = x^2 + y^2$ as a function of $x$ (holding $y$ constant)?",
+    "equation": "$f_x = 2x$",
+    "parameters": [],
+    "minX": -3,
+    "maxX": 3,
+    "minY": -6,
+    "maxY": 6,
+    "series": [
+      {
+        "id": "A",
+        "label": "$f_x = 2x$",
+        "isCorrect": true,
+        "points": [
+          {
+            "x": -3,
+            "y": -6
+          },
+          {
+            "x": -2.8,
+            "y": -5.6
+          },
+          {
+            "x": -2.6,
+            "y": -5.2
+          },
+          {
+            "x": -2.4,
+            "y": -4.8
+          },
+          {
+            "x": -2.2,
+            "y": -4.4
+          },
+          {
+            "x": -2,
+            "y": -4
+          },
+          {
+            "x": -1.8,
+            "y": -3.6
+          },
+          {
+            "x": -1.6,
+            "y": -3.2
+          },
+          {
+            "x": -1.4,
+            "y": -2.8
+          },
+          {
+            "x": -1.2,
+            "y": -2.4
+          },
+          {
+            "x": -1,
+            "y": -2
+          },
+          {
+            "x": -0.8,
+            "y": -1.6
+          },
+          {
+            "x": -0.6,
+            "y": -1.2
+          },
+          {
+            "x": -0.4,
+            "y": -0.8
+          },
+          {
+            "x": -0.2,
+            "y": -0.4
+          },
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 0.2,
+            "y": 0.4
+          },
+          {
+            "x": 0.4,
+            "y": 0.8
+          },
+          {
+            "x": 0.6,
+            "y": 1.2
+          },
+          {
+            "x": 0.8,
+            "y": 1.6
+          },
+          {
+            "x": 1,
+            "y": 2
+          },
+          {
+            "x": 1.2,
+            "y": 2.4
+          },
+          {
+            "x": 1.4,
+            "y": 2.8
+          },
+          {
+            "x": 1.6,
+            "y": 3.2
+          },
+          {
+            "x": 1.8,
+            "y": 3.6
+          },
+          {
+            "x": 2,
+            "y": 4
+          },
+          {
+            "x": 2.2,
+            "y": 4.4
+          },
+          {
+            "x": 2.4,
+            "y": 4.8
+          },
+          {
+            "x": 2.6,
+            "y": 5.2
+          },
+          {
+            "x": 2.8,
+            "y": 5.6
+          },
+          {
+            "x": 3,
+            "y": 6
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "label": "$f_x = x^2$",
+        "isCorrect": false,
+        "points": [
+          {
+            "x": -3,
+            "y": 9
+          },
+          {
+            "x": -2.8,
+            "y": 7.84
+          },
+          {
+            "x": -2.6,
+            "y": 6.76
+          },
+          {
+            "x": -2.4,
+            "y": 5.76
+          },
+          {
+            "x": -2.2,
+            "y": 4.84
+          },
+          {
+            "x": -2,
+            "y": 4
+          },
+          {
+            "x": -1.8,
+            "y": 3.24
+          },
+          {
+            "x": -1.6,
+            "y": 2.56
+          },
+          {
+            "x": -1.4,
+            "y": 1.96
+          },
+          {
+            "x": -1.2,
+            "y": 1.44
+          },
+          {
+            "x": -1,
+            "y": 1
+          },
+          {
+            "x": -0.8,
+            "y": 0.64
+          },
+          {
+            "x": -0.6,
+            "y": 0.36
+          },
+          {
+            "x": -0.4,
+            "y": 0.16
+          },
+          {
+            "x": -0.2,
+            "y": 0.04
+          },
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 0.2,
+            "y": 0.04
+          },
+          {
+            "x": 0.4,
+            "y": 0.16
+          },
+          {
+            "x": 0.6,
+            "y": 0.36
+          },
+          {
+            "x": 0.8,
+            "y": 0.64
+          },
+          {
+            "x": 1,
+            "y": 1
+          },
+          {
+            "x": 1.2,
+            "y": 1.44
+          },
+          {
+            "x": 1.4,
+            "y": 1.96
+          },
+          {
+            "x": 1.6,
+            "y": 2.56
+          },
+          {
+            "x": 1.8,
+            "y": 3.24
+          },
+          {
+            "x": 2,
+            "y": 4
+          },
+          {
+            "x": 2.2,
+            "y": 4.84
+          },
+          {
+            "x": 2.4,
+            "y": 5.76
+          },
+          {
+            "x": 2.6,
+            "y": 6.76
+          },
+          {
+            "x": 2.8,
+            "y": 7.84
+          },
+          {
+            "x": 3,
+            "y": 9
+          }
+        ]
+      },
+      {
+        "id": "C",
+        "label": "$f_x = 2$",
+        "isCorrect": false,
+        "points": [
+          {
+            "x": -3,
+            "y": 2
+          },
+          {
+            "x": -2.8,
+            "y": 2
+          },
+          {
+            "x": -2.6,
+            "y": 2
+          },
+          {
+            "x": -2.4,
+            "y": 2
+          },
+          {
+            "x": -2.2,
+            "y": 2
+          },
+          {
+            "x": -2,
+            "y": 2
+          },
+          {
+            "x": -1.8,
+            "y": 2
+          },
+          {
+            "x": -1.6,
+            "y": 2
+          },
+          {
+            "x": -1.4,
+            "y": 2
+          },
+          {
+            "x": -1.2,
+            "y": 2
+          },
+          {
+            "x": -1,
+            "y": 2
+          },
+          {
+            "x": -0.8,
+            "y": 2
+          },
+          {
+            "x": -0.6,
+            "y": 2
+          },
+          {
+            "x": -0.4,
+            "y": 2
+          },
+          {
+            "x": -0.2,
+            "y": 2
+          },
+          {
+            "x": 0,
+            "y": 2
+          },
+          {
+            "x": 0.2,
+            "y": 2
+          },
+          {
+            "x": 0.4,
+            "y": 2
+          },
+          {
+            "x": 0.6,
+            "y": 2
+          },
+          {
+            "x": 0.8,
+            "y": 2
+          },
+          {
+            "x": 1,
+            "y": 2
+          },
+          {
+            "x": 1.2,
+            "y": 2
+          },
+          {
+            "x": 1.4,
+            "y": 2
+          },
+          {
+            "x": 1.6,
+            "y": 2
+          },
+          {
+            "x": 1.8,
+            "y": 2
+          },
+          {
+            "x": 2,
+            "y": 2
+          },
+          {
+            "x": 2.2,
+            "y": 2
+          },
+          {
+            "x": 2.4,
+            "y": 2
+          },
+          {
+            "x": 2.6,
+            "y": 2
+          },
+          {
+            "x": 2.8,
+            "y": 2
+          },
+          {
+            "x": 3,
+            "y": 2
+          }
+        ]
+      }
+    ],
+    "explanation": "$\\partial(x^2 + y^2)/\\partial x = 2x$ — a straight line through the origin. The $y^2$ term vanishes because $y$ is treated as a constant."
+  },
+  {
+    "id": "biz1_u09_l01_q03",
+    "type": "matrix_grid",
+    "question": "Match each function to its partial derivative with respect to $x$.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "$f = 3x^2 y$"
+      },
+      {
+        "id": "r2",
+        "label": "$f = xy + y^3$"
+      },
+      {
+        "id": "r3",
+        "label": "$f = e^{xy}$"
+      },
+      {
+        "id": "r4",
+        "label": "$f = \\ln(x) + y$"
+      }
+    ],
+    "columns": [
+      {
+        "id": "c1",
+        "label": "$6xy$"
+      },
+      {
+        "id": "c2",
+        "label": "$y$"
+      },
+      {
+        "id": "c3",
+        "label": "$ye^{xy}$"
+      },
+      {
+        "id": "c4",
+        "label": "$1/x$"
+      }
+    ],
+    "correctMapping": {
+      "r1": "c1",
+      "r2": "c2",
+      "r3": "c3",
+      "r4": "c4"
+    },
+    "explanation": "Treat $y$ as a constant: power rule, product rule, chain rule, and log rule — all the single-variable rules apply with other variables frozen."
+  },
+  {
+    "id": "biz1_u09_l01_q04",
+    "type": "matching",
+    "question": "Match each partial-derivative concept to its economic meaning.",
+    "pairs": [
+      {
+        "left": "$\\partial Q / \\partial L$",
+        "right": "Marginal product of labour"
+      },
+      {
+        "left": "$\\partial Q / \\partial K$",
+        "right": "Marginal product of capital"
+      },
+      {
+        "left": "$\\partial^2 Q / \\partial L \\partial K$",
+        "right": "Whether inputs are complements"
+      },
+      {
+        "left": "$\\nabla f = 0$",
+        "right": "First-order optimality condition"
+      }
+    ],
+    "explanation": "Partials give marginal products; cross-partials reveal complementarity; the zero gradient defines optima."
+  },
+  {
+    "id": "biz1_u09_l01_q05",
+    "type": "multiple_choice",
+    "question": "For $f(x,y) = 5x^3 y^2$, what is $\\partial f / \\partial y$?",
+    "options": [
+      "$10x^3 y$",
+      "$15x^2 y^2$",
+      "$5x^3$",
+      "$10xy$"
+    ],
+    "correctAnswer": 0,
+    "hints": [
+      "Treat $x$ as a constant.",
+      "Differentiate $5x^3 \\cdot y^2$ with respect to $y$."
+    ],
+    "explanation": "$\\partial(5x^3 y^2)/\\partial y = 5x^3 \\cdot 2y = 10x^3 y$. The $x^3$ factor passes through unchanged."
+  }
+]

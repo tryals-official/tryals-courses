@@ -1,0 +1,139 @@
+[
+  {
+    "id": "psy_u07_l01_q01",
+    "type": "numerical_input",
+    "question": "Under Terman's ratio formula, IQ = (mental age / chronological age) x 100. A child has a mental age of 9 and a chronological age of 12. What is the child's ratio IQ?",
+    "correctAnswer": 75,
+    "tolerance": 0,
+    "hints": [
+      "Divide mental age by chronological age first, then multiply by 100.",
+      "9 / 12 = 0.75, then times 100."
+    ],
+    "explanation": "9 / 12 x 100 = 75. The ratio formula compares mental to chronological age; a mental age below chronological age yields an IQ below 100. This worked for children but broke down for adults, whose mental-age growth plateaus."
+  },
+  {
+    "id": "psy_u07_l01_q02",
+    "type": "formula_builder",
+    "question": "Arrange Terman's ratio IQ formula in the correct order.",
+    "tokens": [
+      "IQ =",
+      "mental age",
+      "/ chronological age",
+      "x 100"
+    ],
+    "correctOrder": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "hints": [
+      "Mental age is the numerator; chronological age is the denominator.",
+      "The whole ratio is multiplied by 100 so that an average child scores 100."
+    ],
+    "explanation": "IQ = (mental age / chronological age) x 100. Multiplying by 100 sets the average at 100, so a child performing exactly at their age scores 100. Putting chronological age on top would invert the whole meaning of the score."
+  },
+  {
+    "id": "psy_u07_l01_q03",
+    "type": "ordering",
+    "question": "Order these figures by their historical contribution to measuring intelligence.",
+    "items": [
+      "Galton attempts to measure intelligence via sensory discrimination (largely unsuccessful)",
+      "Binet and Simon build the first practical test (1905) and introduce mental age",
+      "Terman adapts it into the Stanford-Binet and introduces the ratio IQ formula"
+    ],
+    "correctOrder": [
+      0,
+      1,
+      2
+    ],
+    "hints": [
+      "The sensory-discrimination attempt came first and failed; the practical test came next.",
+      "The ratio IQ formula was Terman's addition, built on Binet's mental-age idea."
+    ],
+    "explanation": "Galton's sensory approach came first and failed, Binet and Simon then built the first practical test with mental age, and Terman turned it into the Stanford-Binet with the ratio IQ. Each step built on the previous one's concept."
+  },
+  {
+    "id": "psy_u07_l01_q04",
+    "type": "error_highlight",
+    "question": "A student describes the history of intelligence testing. Highlight the one incorrect statement.",
+    "tokens": [
+      {
+        "id": "t1",
+        "text": "Galton tried to measure intelligence through sensory discrimination like reaction time. "
+      },
+      {
+        "id": "t2",
+        "text": "Galton's sensory measures correlated poorly with meaningful mental ability. "
+      },
+      {
+        "id": "t3",
+        "text": "Binet's original test was designed to rank children from smartest to least smart. "
+      },
+      {
+        "id": "t4",
+        "text": "Binet's test was commissioned to identify students needing extra academic support. "
+      },
+      {
+        "id": "t5",
+        "text": "Terman introduced the ratio IQ formula in the Stanford-Binet."
+      }
+    ],
+    "incorrectTokenIds": [
+      "t3"
+    ],
+    "hints": [
+      "Four statements are correct; one misstates the PURPOSE of Binet's test.",
+      "Binet's test was practical and applied, not built to create a general ranking."
+    ],
+    "explanation": "The error is t3. Binet's test was explicitly practical - commissioned to IDENTIFY children needing academic support - not to rank children from smartest to least. Reading it as a general-purpose intelligence ranking is the named pitfall."
+  },
+  {
+    "id": "psy_u07_l01_q06",
+    "type": "matrix_grid",
+    "question": "Match each contribution to the figure responsible for it.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "First attempt at scientific measurement via sensory discrimination"
+      },
+      {
+        "id": "r2",
+        "label": "First practical test (1905); introduced mental age"
+      },
+      {
+        "id": "r3",
+        "label": "Stanford-Binet; introduced the ratio IQ formula"
+      },
+      {
+        "id": "r4",
+        "label": "Commissioned to identify children needing academic support"
+      }
+    ],
+    "columns": [
+      {
+        "id": "cG",
+        "label": "Galton"
+      },
+      {
+        "id": "cB",
+        "label": "Binet and Simon"
+      },
+      {
+        "id": "cT",
+        "label": "Terman"
+      }
+    ],
+    "correctMapping": {
+      "r1": "cG",
+      "r2": "cB",
+      "r3": "cT",
+      "r4": "cB"
+    },
+    "hints": [
+      "Sensory discrimination is Galton; mental age and the school-support purpose are Binet and Simon; the ratio formula is Terman.",
+      "Two of these rows both describe Binet and Simon's practical test."
+    ],
+    "explanation": "Galton attempted sensory measurement, Binet and Simon built the practical 1905 test (introducing mental age, commissioned to identify students needing support), and Terman added the ratio IQ. Two rows both point to Binet's applied test."
+  }
+]

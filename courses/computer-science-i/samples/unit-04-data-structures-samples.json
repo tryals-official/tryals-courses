@@ -1,0 +1,210 @@
+[
+  {
+    "id": "cs_u04_l01_q01",
+    "type": "numerical_input",
+    "question": "A List ADT is implemented by a contiguous array holding 1000 elements. Removing the element at index 0 works by shifting every element after it one place towards the front. How many elements have to be moved?",
+    "correctAnswer": 999,
+    "tolerance": 0,
+    "hints": [
+      "Only the elements that come AFTER the removed one need to move.",
+      "The element being removed is not moved, it is overwritten."
+    ],
+    "explanation": "Indices 1 through 999 all shift down, which is 999 moves. This is why removal from the front of an array is linear in the size of the list — and why the identical List interface, implemented with linked nodes instead, can do the same removal in a constant number of steps."
+  },
+  {
+    "id": "cs_u04_l01_q02",
+    "type": "category_sort",
+    "question": "A List ADT is being documented. Sort each statement by whether it belongs to the interface or describes one implementation.",
+    "categories": [
+      "Part of the List interface",
+      "Part of one implementation"
+    ],
+    "items": [
+      {
+        "id": "a1",
+        "label": "get(i) returns the element currently at position i",
+        "correctCategory": "Part of the List interface"
+      },
+      {
+        "id": "a2",
+        "label": "The elements are held in one contiguous block of memory",
+        "correctCategory": "Part of one implementation"
+      },
+      {
+        "id": "a3",
+        "label": "size() returns how many elements the list holds",
+        "correctCategory": "Part of the List interface"
+      },
+      {
+        "id": "a4",
+        "label": "Each element is a node carrying a pointer to the next node",
+        "correctCategory": "Part of one implementation"
+      },
+      {
+        "id": "a5",
+        "label": "remove(i) deletes the element at position i and shortens the list",
+        "correctCategory": "Part of the List interface"
+      },
+      {
+        "id": "a6",
+        "label": "The block is reallocated at double size when it fills up",
+        "correctCategory": "Part of one implementation"
+      }
+    ],
+    "hints": [
+      "Ask of each statement whether it would still be true if the list were rebuilt the other way.",
+      "The interface says WHAT happens; an implementation says HOW and WHERE."
+    ],
+    "explanation": "get, size and remove describe behaviour that both an array-backed and a node-backed list must honour, so they are the interface. Contiguity, pointers and reallocation are the machinery of one choice or the other. Because callers depend only on the first group, the second can be swapped out to change performance without touching a single caller."
+  },
+  {
+    "id": "cs_u04_l01_q03",
+    "type": "matrix_grid",
+    "question": "Classify each name as an ADT, a concrete data structure, or an operation.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "List"
+      },
+      {
+        "id": "r2",
+        "label": "Contiguous array"
+      },
+      {
+        "id": "r3",
+        "label": "get(i)"
+      },
+      {
+        "id": "r4",
+        "label": "Chain of linked nodes"
+      },
+      {
+        "id": "r5",
+        "label": "Dictionary"
+      }
+    ],
+    "columns": [
+      {
+        "id": "c1",
+        "label": "Abstract data type"
+      },
+      {
+        "id": "c2",
+        "label": "Concrete data structure"
+      },
+      {
+        "id": "c3",
+        "label": "Operation"
+      }
+    ],
+    "correctMapping": {
+      "r1": "c1",
+      "r2": "c2",
+      "r3": "c3",
+      "r4": "c2",
+      "r5": "c1"
+    },
+    "hints": [
+      "An ADT names a set of promised behaviours; a data structure names an arrangement in memory.",
+      "Two of these five could each implement the same ADT."
+    ],
+    "explanation": "List and Dictionary are interfaces — sets of operations with promised behaviour. An array and a linked chain are arrangements of memory, either of which can implement List. get(i) is a single operation belonging to the interface. Saying 'a list is an array' collapses the first two columns, which is the pitfall the lesson names."
+  },
+  {
+    "id": "cs_u04_l01_q04",
+    "type": "venn_diagram",
+    "question": "A List ADT can be implemented by an array or by linked nodes. Place each statement according to which implementations it holds for.",
+    "items": [
+      {
+        "id": "v1",
+        "label": "get(i) returns the element at position i"
+      },
+      {
+        "id": "v2",
+        "label": "Elements sit next to each other in memory"
+      },
+      {
+        "id": "v3",
+        "label": "Each element carries a pointer to its successor"
+      },
+      {
+        "id": "v4",
+        "label": "size() reports how many elements are stored"
+      },
+      {
+        "id": "v5",
+        "label": "The elements are automatically kept in sorted order"
+      }
+    ],
+    "correctMapping": {
+      "v1": "both",
+      "v2": "a_only",
+      "v3": "b_only",
+      "v4": "both",
+      "v5": "neither"
+    },
+    "setALabel": "True of the array implementation",
+    "setBLabel": "True of the linked implementation",
+    "hints": [
+      "Anything the List interface promises must hold of every correct implementation, so it lands in the overlap.",
+      "One statement is a promise the List ADT never made at all."
+    ],
+    "explanation": "The overlap is exactly the interface: get and size behave identically whichever structure is underneath. Contiguity and pointers are what distinguish the two. Sorting belongs to neither — a List keeps elements in the positions you put them in, and expecting order the interface never promised is a common source of surprise."
+  },
+  {
+    "id": "cs_u04_l01_q05",
+    "type": "table_completion",
+    "question": "Complete the table comparing two implementations of the same List interface.",
+    "rows": [
+      [
+        {
+          "content": "Are elements stored contiguously?"
+        },
+        {
+          "content": "yes"
+        },
+        {
+          "content": "___"
+        }
+      ],
+      [
+        {
+          "content": "Can get(i) jump straight to position i?"
+        },
+        {
+          "content": "___"
+        },
+        {
+          "content": "no"
+        }
+      ],
+      [
+        {
+          "content": "Does it honour the List interface?"
+        },
+        {
+          "content": "___"
+        },
+        {
+          "content": "___"
+        }
+      ]
+    ],
+    "headers": [
+      "Question",
+      "Array implementation",
+      "Linked implementation"
+    ],
+    "answers": [
+      "no",
+      "yes",
+      "yes",
+      "yes"
+    ],
+    "hints": [
+      "The first two rows are about layout and therefore differ; ask what the last row must be if both are correct implementations.",
+      "Direct jumping is only possible when positions can be computed from the index."
+    ],
+    "explanation": "The layout rows differ — contiguity is exactly what allows a direct jump — but the final row must be yes for both, because that is what makes them implementations of the same ADT at all. That combination, same promises with different performance, is the whole point of separating interface from implementation."
+  }
+]

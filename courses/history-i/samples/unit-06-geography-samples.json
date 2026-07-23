@@ -1,0 +1,145 @@
+[
+  {
+    "id": "his1_u06_l01_q01",
+    "type": "interactive_scene",
+    "question": "A cargo of grain, a Roman price list, and two routes. **Drag the shipment along each route** until the costs match — how far inland does a whole Mediterranean crossing buy you?",
+    "sceneId": "hist_u06_transport_price",
+    "sceneParams": {
+      "seaRoute": "full_mediterranean",
+      "landRouteMaxKm": 400
+    },
+    "correctAnswer": {
+      "equivalentLandKm": 100
+    },
+    "tolerance": 30,
+    "hints": [
+      "Push the cargo inland until the cart cost catches the ship cost.",
+      "It happens embarrassingly early."
+    ],
+    "explanation": "The cart matches the entire sea crossing at roughly 100 km inland. That one ratio explains more about ancient settlement than any battle: cities cling to coasts, rivers, and confluences because everywhere else the price list is brutal. Rome is a ring around a sea because the Mediterranean was its highway — its landward frontiers are simply where cheap transport stopped."
+  },
+  {
+    "id": "his1_u06_l01_q02",
+    "type": "multiple_choice",
+    "question": "What is the honest formulation of geography’s role in history?",
+    "options": [
+      "Geography sets the price list, not the outcome",
+      "Geography determines the fate of civilizations",
+      "Geography is irrelevant once technology exists",
+      "Geography matters only for pre-modern societies"
+    ],
+    "correctAnswer": 0,
+    "hints": [
+      "Something is being made cheap or expensive, not being decided.",
+      "Who still chooses?"
+    ],
+    "explanation": "People choose; the landscape decides what the choices cost. Over centuries, a difference in cost shows up as a difference in what happened — which is not the same thing as the landscape having done it."
+  },
+  {
+    "id": "his1_u06_l01_q03",
+    "type": "multi_select",
+    "question": "What makes the Nile such an unusually favourable river?",
+    "options": [
+      "It floods predictably and deposits fertile silt annually",
+      "It flows north while the prevailing wind blows south, so it is navigable both ways",
+      "Desert on both sides walls the valley",
+      "Its course has never shifted in recorded history"
+    ],
+    "correctAnswers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Self-renewing agriculture, two-way navigation, and free flanking defences. Egypt’s three thousand years of political continuity is not a mystery — it is a river with unusually good terms."
+  },
+  {
+    "id": "his1_u06_l01_q04",
+    "type": "matrix_grid",
+    "question": "Match each soil or substrate to its historical consequence.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "Alluvial floodplain"
+      },
+      {
+        "id": "r2",
+        "label": "Loess"
+      },
+      {
+        "id": "r3",
+        "label": "Leached tropical soil"
+      },
+      {
+        "id": "r4",
+        "label": "Karst limestone"
+      }
+    ],
+    "columns": [
+      {
+        "id": "c1",
+        "label": "Renewed annually; dense settled populations"
+      },
+      {
+        "id": "c2",
+        "label": "Deep and soft; worked with primitive ploughs"
+      },
+      {
+        "id": "c3",
+        "label": "Nutrients wash out; burn, crop, and move on"
+      },
+      {
+        "id": "c4",
+        "label": "Water vanishes underground; arid despite rain"
+      }
+    ],
+    "correctMapping": {
+      "r1": "c1",
+      "r2": "c2",
+      "r3": "c3",
+      "r4": "c4"
+    },
+    "explanation": "A soil that will not hold nutrients for three seasons imposes a settlement pattern, which imposes a political ceiling — and nobody involved ever experiences it as a decision."
+  },
+  {
+    "id": "his1_u06_l01_q06",
+    "type": "category_sort",
+    "question": "Sort each site: **still a port** or **killed by sediment**?",
+    "categories": [
+      "Killed by sediment",
+      "Still a port"
+    ],
+    "items": [
+      {
+        "id": "u06l01q06_i0",
+        "label": "Ephesus",
+        "correctCategory": "Killed by sediment"
+      },
+      {
+        "id": "u06l01q06_i1",
+        "label": "Bruges",
+        "correctCategory": "Killed by sediment"
+      },
+      {
+        "id": "u06l01q06_i2",
+        "label": "Ostia",
+        "correctCategory": "Killed by sediment"
+      },
+      {
+        "id": "u06l01q06_i3",
+        "label": "Marseille",
+        "correctCategory": "Still a port"
+      },
+      {
+        "id": "u06l01q06_i4",
+        "label": "Alexandria",
+        "correctCategory": "Still a port"
+      },
+      {
+        "id": "u06l01q06_i5",
+        "label": "Istanbul",
+        "correctCategory": "Still a port"
+      }
+    ],
+    "explanation": "Three great ports that ended not through conquest but through silt. Nobody sacked Ephesus into being 5 km inland — the river simply kept arriving."
+  }
+]

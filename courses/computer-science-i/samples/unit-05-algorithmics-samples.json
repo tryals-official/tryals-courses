@@ -1,0 +1,158 @@
+[
+  {
+    "id": "cs_u05_l01_q01",
+    "type": "category_sort",
+    "question": "A set of instructions counts as a genuine algorithm only if it is finite (it always stops) and definite (every step is unambiguous). Sort each description.",
+    "categories": [
+      "Is a valid algorithm",
+      "Not an algorithm"
+    ],
+    "items": [
+      {
+        "id": "s1",
+        "label": "For each item in the list, swap it with its neighbour if larger, then stop",
+        "correctCategory": "Is a valid algorithm"
+      },
+      {
+        "id": "s2",
+        "label": "Keep guessing a number until it feels right",
+        "correctCategory": "Not an algorithm"
+      },
+      {
+        "id": "s3",
+        "label": "Repeat 'add 1 to x' forever",
+        "correctCategory": "Not an algorithm"
+      },
+      {
+        "id": "s4",
+        "label": "Double x, then subtract 3, then halt",
+        "correctCategory": "Is a valid algorithm"
+      },
+      {
+        "id": "s5",
+        "label": "Do something clever with the data",
+        "correctCategory": "Not an algorithm"
+      },
+      {
+        "id": "s6",
+        "label": "Compare the first two elements and return the larger",
+        "correctCategory": "Is a valid algorithm"
+      }
+    ],
+    "hints": [
+      "Test each one against two demands: does it terminate, and is every step precise?",
+      "A step that says 'somehow' or 'until it feels right' fails definiteness; a loop with no exit fails finiteness."
+    ],
+    "explanation": "A valid algorithm must be finite and definite. 'Guess until it feels right' and 'do something clever' are not definite, and 'repeat forever' is not finite. The others give an exact, terminating recipe."
+  },
+  {
+    "id": "cs_u05_l01_q02",
+    "type": "matrix_grid",
+    "question": "Classify each concern by which quality of a good algorithm it belongs to.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "The method returns the right answer even when the list is empty"
+      },
+      {
+        "id": "r2",
+        "label": "It runs in about n log n steps rather than n squared"
+      },
+      {
+        "id": "r3",
+        "label": "Another engineer can read it and check it has no bugs"
+      },
+      {
+        "id": "r4",
+        "label": "It gives a correct output for every valid input"
+      },
+      {
+        "id": "r5",
+        "label": "Its extra memory use stays small as the input grows"
+      }
+    ],
+    "columns": [
+      {
+        "id": "c1",
+        "label": "Correctness"
+      },
+      {
+        "id": "c2",
+        "label": "Efficiency"
+      },
+      {
+        "id": "c3",
+        "label": "Clarity"
+      }
+    ],
+    "correctMapping": {
+      "r1": "c1",
+      "r2": "c2",
+      "r3": "c3",
+      "r4": "c1",
+      "r5": "c2"
+    },
+    "hints": [
+      "Correctness is about the output being right; efficiency is about time and memory growth; clarity is about being easy to read and verify.",
+      "Handling an edge case and being right on every input are both about correctness, not two different things."
+    ],
+    "explanation": "Correctness covers right answers including edge cases; efficiency covers both time and space growth; clarity is about being easy to verify and maintain. Filing 'handles the empty list' under efficiency is the usual slip — an edge case is a correctness question."
+  },
+  {
+    "id": "cs_u05_l01_q03",
+    "type": "numerical_input",
+    "question": "Two correct algorithms solve the same task: one takes about n steps, the other about 2^n steps. For an input of size n = 10, how many steps does the 2^n algorithm take?",
+    "correctAnswer": 1024,
+    "tolerance": 0,
+    "hints": [
+      "Substitute n = 10 into 2^n.",
+      "That is 2 multiplied by itself ten times."
+    ],
+    "explanation": "2^10 = 1024, against just 10 for the linear method. This gulf is why efficiency can decide whether a large problem is solvable at all — the two are both correct, yet one is a hundredfold slower here and astronomically slower as n grows."
+  },
+  {
+    "id": "cs_u05_l01_q04",
+    "type": "multi_select",
+    "question": "The lesson says an algorithm must be finite and definite. Select every description that violates at least one of those two requirements.",
+    "options": [
+      "A procedure that may loop forever on some inputs",
+      "A step that says 'pick a good value somehow'",
+      "A procedure written in pseudocode rather than Python",
+      "A step that says 'if x > 0 print yes, else print no'",
+      "An instruction that says 'do whatever seems best'"
+    ],
+    "correctAnswers": [
+      0,
+      1,
+      4
+    ],
+    "hints": [
+      "Finiteness means it always stops; definiteness means every step is precise.",
+      "Being in pseudocode breaks neither rule — pseudocode is the normal way to state an algorithm."
+    ],
+    "explanation": "Looping forever breaks finiteness; 'somehow' and 'whatever seems best' break definiteness. Pseudocode and a clear if/else break neither — the lesson explicitly says algorithms are usually described in pseudocode."
+  },
+  {
+    "id": "cs_u05_l01_q05",
+    "type": "cloze_bank",
+    "question": "Complete the lesson's ordering of priorities.",
+    "correctAnswers": [
+      0
+    ],
+    "segments": [
+      "Of an algorithm's qualities, the lesson insists that ",
+      " be established before any effort is spent on speed."
+    ],
+    "wordBank": [
+      "correctness",
+      "efficiency",
+      "clarity",
+      "brevity"
+    ],
+    "hints": [
+      "The named pitfall is optimizing before something else is secured.",
+      "A fast algorithm that gives wrong answers is worthless; a correct slow one at least works."
+    ],
+    "explanation": "Correctness comes first. Premature optimization of an incorrect method wastes effort on the wrong thing — get it right and argue why, then make it fast."
+  }
+]

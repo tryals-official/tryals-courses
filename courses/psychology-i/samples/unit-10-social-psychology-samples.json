@@ -1,0 +1,181 @@
+[
+  {
+    "id": "psy_u10_l01_q01",
+    "type": "error_highlight",
+    "question": "A student summarises the two classic social-influence studies. Highlight the one incorrect statement.",
+    "tokens": [
+      {
+        "id": "t1",
+        "text": "Conformity is adjusting your behaviour or thinking to match a group standard. "
+      },
+      {
+        "id": "t2",
+        "text": "Obedience is complying with the direct command of an authority figure. "
+      },
+      {
+        "id": "t3",
+        "text": "Milgram's shock experiments are the classic demonstration of conformity to a group. "
+      },
+      {
+        "id": "t4",
+        "text": "Asch's participants gave an obviously wrong answer about line length after confederates gave it first. "
+      },
+      {
+        "id": "t5",
+        "text": "Obedience rose when the authority was close and legitimate, and fell when the victim was near."
+      }
+    ],
+    "incorrectTokenIds": [
+      "t3"
+    ],
+    "hints": [
+      "Ask, for each study, WHO is applying the pressure: a set of peers, or one person with authority?",
+      "In Milgram's setup nobody at the table was a peer giving a rival answer - a single experimenter issued orders."
+    ],
+    "explanation": "The error is t3. Milgram studied OBEDIENCE - a lone authority figure issuing direct commands - not conformity to a peer group. Asch is the conformity study. Collapsing the two is the most common confusion in this topic, because both involve 'going along with others'; what differs is whether the pressure is a group standard or an order."
+  },
+  {
+    "id": "psy_u10_l01_q02",
+    "type": "matrix_grid",
+    "question": "Each person below yields to social pressure. Decide which kind of influence is actually operating in each case.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "A new nurse is sure the dose written on the chart is too high, but the consultant tells her to administer it, and she does."
+      },
+      {
+        "id": "r2",
+        "label": "At a tasting you think the wine is ordinary, but everyone praises it, so you call it excellent while privately unconvinced."
+      },
+      {
+        "id": "r3",
+        "label": "Lost in an unfamiliar airport, you follow the stream of travellers heading to gate B, assuming they read a screen you missed."
+      },
+      {
+        "id": "r4",
+        "label": "An intern stays late every night - nobody has told her to, but every other intern does and she does not want to look uncommitted."
+      },
+      {
+        "id": "r5",
+        "label": "During an alarm you genuinely cannot tell whether it is a drill; the calm people around you seem to know, so you stay seated too."
+      }
+    ],
+    "columns": [
+      {
+        "id": "cA",
+        "label": "Normative influence (conformity)"
+      },
+      {
+        "id": "cB",
+        "label": "Informational influence (conformity)"
+      },
+      {
+        "id": "cC",
+        "label": "Obedience to authority"
+      }
+    ],
+    "correctMapping": {
+      "r1": "cC",
+      "r2": "cA",
+      "r3": "cB",
+      "r4": "cA",
+      "r5": "cB"
+    },
+    "hints": [
+      "First ask whether anyone issued an ORDER. If not, it is conformity, however senior the people around are.",
+      "Then split the conformity cases: does the person privately still disagree (normative), or has she actually accepted that the group knows better (informational)?"
+    ],
+    "explanation": "Only r1 involves a direct command from an authority, so only r1 is obedience. In r2 and r4 the person goes along publicly while privately unconvinced, in order to be accepted - normative influence. In r3 and r5 she genuinely believes the group has information she lacks - informational influence. Note r4: the workplace setting tempts you toward 'obedience', but nobody ordered anything."
+  },
+  {
+    "id": "psy_u10_l01_q03",
+    "type": "category_sort",
+    "question": "Milgram ran many variations of his procedure. Sort each variation by its effect on obedience, reasoning from the two levers the lesson identifies: how close and legitimate the authority is, and how close the victim is.",
+    "categories": [
+      "Raises obedience",
+      "Lowers obedience"
+    ],
+    "items": [
+      {
+        "id": "s1",
+        "label": "The experimenter sits at the participant's elbow in a lab coat",
+        "correctCategory": "Raises obedience"
+      },
+      {
+        "id": "s2",
+        "label": "The study is moved to a shabby office with no university name attached to it",
+        "correctCategory": "Lowers obedience"
+      },
+      {
+        "id": "s3",
+        "label": "The experimenter leaves and phones in his instructions from another building",
+        "correctCategory": "Lowers obedience"
+      },
+      {
+        "id": "s4",
+        "label": "The learner is shut in another room and cannot be seen or heard",
+        "correctCategory": "Raises obedience"
+      },
+      {
+        "id": "s5",
+        "label": "The participant must physically press the learner's hand onto the shock plate",
+        "correctCategory": "Lowers obedience"
+      },
+      {
+        "id": "s6",
+        "label": "The experimenter is introduced as the senior scientist running the project",
+        "correctCategory": "Raises obedience"
+      }
+    ],
+    "hints": [
+      "Two things push obedience UP: an authority who is present and looks legitimate, and a victim who is out of sight and out of mind.",
+      "Anything that makes the victim's suffering vivid, or makes the authority remote or unofficial, pushes obedience DOWN."
+    ],
+    "explanation": "Obedience rises with the authority's proximity and legitimacy (s1, s6) and with the victim's psychological distance (s4). It falls when the authority becomes remote or unofficial (s2, s3) or when the victim becomes vivid and physically present (s5). The pattern is the point: obedience tracks the SITUATION, not how cruel the participant is."
+  },
+  {
+    "id": "psy_u10_l01_q04",
+    "type": "cloze_bank",
+    "question": "Apply the distinction to a novel case.",
+    "correctAnswers": [
+      1
+    ],
+    "segments": [
+      "A juror privately believes the defendant is innocent, but when the other eleven vote guilty she votes guilty too, because she does not want to be the one person holding everyone up. Her behaviour is best described as ",
+      "."
+    ],
+    "wordBank": [
+      "obedience, because the jury foreman is an authority figure who directed the vote",
+      "normative conformity, because she yields to be accepted rather than because she has been persuaded",
+      "informational conformity, because she now genuinely believes the other eleven are right",
+      "not social influence at all, since she reached her verdict privately"
+    ],
+    "hints": [
+      "Nobody in the jury room outranks her or commanded her - so ask which of the two conformity motives fits.",
+      "The stem says she still privately believes he is innocent; that rules out any option claiming her belief changed."
+    ],
+    "explanation": "She is conforming, and specifically through NORMATIVE influence: her public answer shifts to avoid standing out while her private belief is unchanged. The 'obedience' option is the trap - a foreman coordinates a vote, he does not command one. The 'informational' option fails because informational influence changes what you actually believe."
+  },
+  {
+    "id": "psy_u10_l01_q05",
+    "type": "ordering",
+    "question": "Rank these four Milgram variations from the HIGHEST level of obedience down to the LOWEST, reasoning from how close the authority and the victim are in each.",
+    "items": [
+      "Experimenter present in the room; learner unseen and unheard in another room.",
+      "Experimenter present in the room; learner in the same room, visible and audible.",
+      "Experimenter present in the room; participant must force the learner's hand onto the shock plate.",
+      "Experimenter absent from the building, issuing all instructions by telephone."
+    ],
+    "correctOrder": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "hints": [
+      "Work down the victim-proximity ladder first: unseen, then seen, then touched.",
+      "Removing the authority from the room entirely is the biggest single drop of the four - larger even than the touch condition."
+    ],
+    "explanation": "Obedience is highest when the victim is remote and the authority is present, and falls step by step as the victim becomes vivid (seen, then touched). The steepest fall comes when the authority leaves and phones his orders in, because what holds the participant in place is the authority's physical presence - remove that and most of the obedience goes with it."
+  }
+]

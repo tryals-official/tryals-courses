@@ -1,0 +1,187 @@
+[
+  {
+    "id": "math_u01_l01_q01",
+    "type": "truth_table",
+    "question": "Complete the truth table for the INCLUSIVE or: P OR Q.",
+    "variables": [
+      "P",
+      "Q"
+    ],
+    "expression": "P OR Q",
+    "inputRows": [
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        true
+      ],
+      [
+        true,
+        false
+      ],
+      [
+        true,
+        true
+      ]
+    ],
+    "correctOutputs": [
+      false,
+      true,
+      true,
+      true
+    ],
+    "hints": [
+      "Mathematical 'or' is inclusive: it allows both to hold at once.",
+      "Only one row makes a disjunction false — the row where nothing holds."
+    ],
+    "explanation": "P OR Q is true whenever _at least one_ part is true, so it fails only in the row where both are false. Everyday English often uses an exclusive 'or' (soup or salad, not both); mathematics never does unless it says so."
+  },
+  {
+    "id": "math_u01_l01_q02",
+    "type": "category_sort",
+    "question": "A proposition must have a definite truth value. Sort each sentence.",
+    "categories": [
+      "Proposition",
+      "Not a proposition"
+    ],
+    "items": [
+      {
+        "id": "s1",
+        "label": "17 is prime",
+        "correctCategory": "Proposition"
+      },
+      {
+        "id": "s2",
+        "label": "Every even number above 2 is composite",
+        "correctCategory": "Proposition"
+      },
+      {
+        "id": "s3",
+        "label": "x + 1",
+        "correctCategory": "Not a proposition"
+      },
+      {
+        "id": "s4",
+        "label": "Is 12 divisible by 5?",
+        "correctCategory": "Not a proposition"
+      },
+      {
+        "id": "s5",
+        "label": "This sentence is false",
+        "correctCategory": "Not a proposition"
+      },
+      {
+        "id": "s6",
+        "label": "3 > 8",
+        "correctCategory": "Proposition"
+      }
+    ],
+    "hints": [
+      "Being FALSE is fine — a false claim is still a proposition.",
+      "Expressions, questions and self-contradictory sentences have no definite truth value."
+    ],
+    "explanation": "'17 is prime' (true), 'every even number above 2 is composite' (true) and '3 > 8' (false) all assert something definite. 'x + 1' names a number instead of claiming anything, a question asserts nothing, and 'this sentence is false' can be neither true nor false — the liar paradox."
+  },
+  {
+    "id": "math_u01_l01_q03",
+    "type": "matrix_grid",
+    "question": "Let p be TRUE and q be FALSE. Give the truth value of each compound statement.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "p AND q"
+      },
+      {
+        "id": "r2",
+        "label": "p OR q"
+      },
+      {
+        "id": "r3",
+        "label": "NOT p"
+      },
+      {
+        "id": "r4",
+        "label": "(NOT p) OR q"
+      },
+      {
+        "id": "r5",
+        "label": "NOT (p AND q)"
+      }
+    ],
+    "columns": [
+      {
+        "id": "cT",
+        "label": "True"
+      },
+      {
+        "id": "cF",
+        "label": "False"
+      }
+    ],
+    "correctMapping": {
+      "r1": "cF",
+      "r2": "cT",
+      "r3": "cF",
+      "r4": "cF",
+      "r5": "cT"
+    },
+    "hints": [
+      "Work outward: evaluate the inside of each bracket first.",
+      "Row 4 and row 5 differ only in where the NOT sits — that changes everything."
+    ],
+    "explanation": "With p true and q false: p AND q is false (q fails); p OR q is true (p holds); NOT p is false; (NOT p) OR q is false OR false = false; NOT (p AND q) is NOT false = true. Rows 4 and 5 show that negating a part is not the same as negating the whole."
+  },
+  {
+    "id": "math_u01_l01_q04",
+    "type": "memory_pairs",
+    "question": "Match each connective to the exact condition under which it is true.",
+    "pairs": [
+      {
+        "left": "NOT p",
+        "right": "True exactly when p is false"
+      },
+      {
+        "left": "p AND q",
+        "right": "True only when both hold"
+      },
+      {
+        "left": "p OR q",
+        "right": "True when at least one holds"
+      },
+      {
+        "left": "p if and only if q",
+        "right": "True when both have the same truth value"
+      }
+    ],
+    "hints": [
+      "Three of the four can be true in more than one row of a truth table.",
+      "The biconditional is about agreement, not about either part being true."
+    ],
+    "explanation": "Negation flips; conjunction demands everything; disjunction demands something; the biconditional demands agreement — it is true when p and q are both true AND when both are false."
+  },
+  {
+    "id": "math_u01_l01_q05",
+    "type": "cloze_bank",
+    "question": "Complete the rule for conjunction.",
+    "correctAnswers": [
+      1
+    ],
+    "segments": [
+      "The statement 'p AND q' is false as soon as ",
+      " of its parts is false."
+    ],
+    "wordBank": [
+      "neither",
+      "at least one",
+      "both",
+      "exactly one"
+    ],
+    "hints": [
+      "Ask what it takes to BREAK a conjunction, not to satisfy it.",
+      "If p alone fails, the conjunction has already failed."
+    ],
+    "explanation": "A conjunction is a chain: one broken link breaks it. So 'at least one' false part is enough to make p AND q false — it does not take both."
+  }
+]

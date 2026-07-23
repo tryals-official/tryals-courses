@@ -1,0 +1,142 @@
+[
+  {
+    "id": "biz1_u04_l01_q01",
+    "type": "interactive_scene",
+    "question": "Two branch sales tables are added element-wise. In cell $(2,1)$, January shows **30** and February shows **45**. **Set the total cell’s value** on the axis — no consistency hint appears until you send.",
+    "sceneId": "biz_u04_matrix_add",
+    "sceneParams": {
+      "a": 30,
+      "b": 45,
+      "min": 0,
+      "max": 120,
+      "start": 20
+    },
+    "correctAnswer": {
+      "v": 75
+    },
+    "tolerance": 2,
+    "hints": [
+      "Matrix addition is element-wise: add the two matching cells.",
+      "$30 + 45 = 75$."
+    ],
+    "explanation": "Matrix addition never mixes cells: $(A+B)_{21} = a_{21} + b_{21} = 30 + 45 = 75$. Each position of the total depends only on the same position in the summands — that locality is the whole rule."
+  },
+  {
+    "id": "biz1_u04_l01_q02",
+    "type": "matrix_grid",
+    "question": "Classify each pair of matrices: can they be added?",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "$2\\times 3$ and $2\\times 3$"
+      },
+      {
+        "id": "r2",
+        "label": "$2\\times 3$ and $3\\times 2$"
+      },
+      {
+        "id": "r3",
+        "label": "$4\\times 4$ and $4\\times 4$"
+      },
+      {
+        "id": "r4",
+        "label": "$1\\times 5$ and $5\\times 1$"
+      }
+    ],
+    "columns": [
+      {
+        "id": "c1",
+        "label": "Addable"
+      },
+      {
+        "id": "c2",
+        "label": "Not addable"
+      }
+    ],
+    "correctMapping": {
+      "r1": "c1",
+      "r2": "c2",
+      "r3": "c1",
+      "r4": "c2"
+    },
+    "explanation": "Same rows *and* same columns, or no addition: a $2\\times 3$ and a $3\\times 2$ hold the same six numbers in incompatible layouts."
+  },
+  {
+    "id": "biz1_u04_l01_q03",
+    "type": "category_sort",
+    "question": "Sort each business operation by the matrix operation it is.",
+    "categories": [
+      "Matrix addition",
+      "Scalar multiplication"
+    ],
+    "items": [
+      {
+        "id": "u04l01q03_i0",
+        "label": "Combining Q1 and Q2 sales tables into a half-year total",
+        "correctCategory": "Matrix addition"
+      },
+      {
+        "id": "u04l01q03_i1",
+        "label": "Raising every price in the catalog by 10%",
+        "correctCategory": "Scalar multiplication"
+      },
+      {
+        "id": "u04l01q03_i2",
+        "label": "Budgeting each department at 120% of last year",
+        "correctCategory": "Scalar multiplication"
+      },
+      {
+        "id": "u04l01q03_i3",
+        "label": "Merging two warehouses’ inventory counts",
+        "correctCategory": "Matrix addition"
+      },
+      {
+        "id": "u04l01q03_i4",
+        "label": "Converting a cost table from thousands to units of €",
+        "correctCategory": "Scalar multiplication"
+      }
+    ],
+    "explanation": "Adding tables = matrix addition; rescaling one table by a single factor = scalar multiplication. Most spreadsheet habits are one of these two in disguise."
+  },
+  {
+    "id": "biz1_u04_l01_q04",
+    "type": "matching",
+    "question": "Match each symbol to its meaning.",
+    "pairs": [
+      {
+        "left": "$a_{ij}$",
+        "right": "Entry in row $i$, column $j$"
+      },
+      {
+        "left": "$m \\times n$",
+        "right": "Dimension: rows by columns"
+      },
+      {
+        "left": "$A + B$",
+        "right": "Entry-by-entry sum of equal-shaped tables"
+      },
+      {
+        "left": "$kA$",
+        "right": "Every entry multiplied by the scalar $k$"
+      }
+    ],
+    "explanation": "Four symbols carry the whole lesson: position, shape, sum, and scale."
+  },
+  {
+    "id": "biz1_u04_l01_q05",
+    "type": "multiple_choice",
+    "question": "A retailer stores product-by-branch sales in matrix $S$ and wants next year’s targets: 25% growth everywhere. Which single expression produces the target table?",
+    "options": [
+      "$1.25\\,S$",
+      "$S + 0.25$",
+      "$S + S^2$",
+      "$25\\,S$"
+    ],
+    "correctAnswer": 0,
+    "hints": [
+      "Growth of 25% means each cell becomes 125% of itself.",
+      "One scalar rescales every entry at once."
+    ],
+    "explanation": "$1.25\\,S$ multiplies every cell by 1.25. Adding the *number* 0.25 to a matrix is not even defined entrywise growth — and $25S$ would demand 2,400% growth from the sales team."
+  }
+]

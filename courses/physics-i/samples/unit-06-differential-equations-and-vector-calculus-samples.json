@@ -1,0 +1,87 @@
+[
+  {
+    "id": "phys1_u06_l01_q01",
+    "type": "true_false",
+    "question": "A first-order ODE involves only the first derivative of the unknown function.",
+    "explanation": "By definition, the highest derivative in a first-order ODE is dy/dx.",
+    "correctAnswer": "True"
+  },
+  {
+    "id": "phys1_u06_l01_q02",
+    "explanation": "A slope field shows $y'$ at every point; a solution follows the arrows from its initial condition. Starting at $y(-4.4) = 1.2$ the flow bends down, flattens, then rises into the ring.",
+    "type": "interactive_scene",
+    "question": "Read the slope field — **no preview curve**. Choose the start height whose solution threads through the arrows to the marked exit ring.",
+    "sceneId": "u06_slope_field",
+    "sceneParams": {
+      "targetY0": 1.2,
+      "y0": -0.6
+    },
+    "correctAnswer": {
+      "y0": 1.2
+    },
+    "tolerance": 0.35,
+    "submitLabel": "Thread the curve",
+    "hints": [
+      "Trace the arrows forward with your eye from several candidate starts.",
+      "Starts that are too low get pulled down before they can recover."
+    ]
+  },
+  {
+    "type": "number_line_placement",
+    "id": "phys1_u06_l01_q03",
+    "question": "Solve dy/dx = 2x with $y(0)$ = 1. What is $y(3)$? **Place your answer on the number line.**",
+    "min": 5,
+    "max": 15,
+    "step": 1,
+    "tolerance": 0.49,
+    "markers": [
+      {
+        "id": "ans",
+        "label": "Answer",
+        "targetValue": 10
+      }
+    ],
+    "explanation": "$y = x^{2} + C$; $y(0)$=1 $\\to C=1$; $y(3)$ = 9 + 1 = 10."
+  },
+  {
+    "id": "phys1_u06_l01_q04",
+    "type": "matching",
+    "question": "Match each ODE type to its solution method.",
+    "pairs": [
+      {
+        "left": "Separable",
+        "right": "Separate variables and integrate both sides"
+      },
+      {
+        "left": "Linear (first-order)",
+        "right": "Integrating factor e^($\\int P dx$)"
+      },
+      {
+        "left": "Exact",
+        "right": "Find potential function F where dF = M dx + N dy"
+      },
+      {
+        "left": "Bernoulli",
+        "right": "Substitute $v = y^{1-n}$ to linearize"
+      }
+    ],
+    "explanation": "Each ODE type has a specific solution technique."
+  },
+  {
+    "id": "phys1_u06_l01_q05",
+    "type": "multi_select",
+    "question": "Which of the following are first-order ODEs?",
+    "options": [
+      "dy/dx + 2$y = x$",
+      "$d^{2} y/dx^{2}$ + $y = 0$",
+      "dy/$dx = y^{2}$",
+      "dy/$dx = \\sin(x)$"
+    ],
+    "explanation": "Option B has a second derivative, making it second-order.",
+    "correctAnswers": [
+      0,
+      2,
+      3
+    ]
+  }
+]

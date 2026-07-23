@@ -1,0 +1,177 @@
+[
+  {
+    "id": "cs_u09_l01_q01",
+    "type": "table_completion",
+    "question": "Let f(x) = (x^2 - 4) / (x - 2). The function is undefined at x = 2. Complete the table of values approaching 2 from both sides.",
+    "rows": [
+      [
+        {
+          "content": "1.9"
+        },
+        {
+          "content": "3.9"
+        }
+      ],
+      [
+        {
+          "content": "1.99"
+        },
+        {
+          "content": "___"
+        }
+      ],
+      [
+        {
+          "content": "2.01"
+        },
+        {
+          "content": "___"
+        }
+      ],
+      [
+        {
+          "content": "2.1"
+        },
+        {
+          "content": "___"
+        }
+      ]
+    ],
+    "headers": [
+      "x",
+      "f(x)"
+    ],
+    "answers": [
+      "3.99",
+      "4.01",
+      "4.1"
+    ],
+    "hints": [
+      "Factor the numerator: x^2 - 4 is a difference of two squares.",
+      "For every x other than 2 the fraction simplifies to x + 2, so just add 2 to each input."
+    ],
+    "explanation": "Away from x = 2 the expression equals x + 2, so the values are 3.99, 4.01 and 4.1. The table is the whole point of a limit: the function has no value at 2 at all, yet its behaviour on both sides is perfectly definite."
+  },
+  {
+    "id": "cs_u09_l01_q02",
+    "type": "numerical_input",
+    "question": "Using the same function f(x) = (x^2 - 4) / (x - 2), what is the limit of f(x) as x approaches 2?",
+    "correctAnswer": 4,
+    "tolerance": 0,
+    "hints": [
+      "The limit is what the values from the table are heading towards, not what happens at the point itself.",
+      "Both one-sided approaches close in on the same number."
+    ],
+    "explanation": "The limit is 4, even though f(2) does not exist. Answering 'undefined' is the classic trap: the limit deliberately ignores the single point x = 2 and looks only at nearby behaviour."
+  },
+  {
+    "id": "cs_u09_l01_q03",
+    "type": "matrix_grid",
+    "question": "Each row describes the behaviour of a function at the point x = 1. Classify each one.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "The graph is a single unbroken curve through the point"
+      },
+      {
+        "id": "r2",
+        "label": "The graph approaches 5 from both sides but the point itself is missing"
+      },
+      {
+        "id": "r3",
+        "label": "The graph approaches 2 from the left and 7 from the right"
+      },
+      {
+        "id": "r4",
+        "label": "The graph approaches 3 from both sides, but the value plotted there is 8"
+      },
+      {
+        "id": "r5",
+        "label": "The graph shoots off to infinity as x approaches 1"
+      }
+    ],
+    "columns": [
+      {
+        "id": "c1",
+        "label": "Continuous at x = 1"
+      },
+      {
+        "id": "c2",
+        "label": "Limit exists but continuity fails"
+      },
+      {
+        "id": "c3",
+        "label": "No limit at x = 1"
+      }
+    ],
+    "correctMapping": {
+      "r1": "c1",
+      "r2": "c2",
+      "r3": "c3",
+      "r4": "c2",
+      "r5": "c3"
+    },
+    "hints": [
+      "Ask the three continuity questions in order: is the value defined, does the limit exist, do they agree?",
+      "A limit can exist perfectly well while the value is missing or simply wrong."
+    ],
+    "explanation": "A hole (r2) and a misplaced value (r4) both have a limit but break condition 1 or 3, so continuity fails. A jump (r3) and an asymptote (r5) kill the limit itself, because the two sides never agree on a finite number."
+  },
+  {
+    "id": "cs_u09_l01_q04",
+    "type": "multi_select",
+    "question": "Select every condition that must hold for f to be continuous at the point a.",
+    "options": [
+      "f(a) is defined",
+      "the limit of f(x) as x approaches a exists",
+      "the limit of f(x) as x approaches a equals f(a)",
+      "f(a) = 0",
+      "f is a polynomial"
+    ],
+    "correctAnswers": [
+      0,
+      1,
+      2
+    ],
+    "hints": [
+      "The lesson lists exactly three requirements, and all three must hold together.",
+      "Two of the options describe particular functions rather than a general requirement."
+    ],
+    "explanation": "Continuity needs the value to exist, the limit to exist, and the two to agree. Polynomials happen to be continuous everywhere, but being a polynomial is not a requirement, and f(a) = 0 has nothing to do with it."
+  },
+  {
+    "id": "cs_u09_l01_q05",
+    "type": "error_highlight",
+    "question": "A student summarises limits and continuity. Highlight the one incorrect statement.",
+    "tokens": [
+      {
+        "id": "t1",
+        "text": "A limit describes what a function approaches, not necessarily what it equals there. "
+      },
+      {
+        "id": "t2",
+        "text": "The two-sided limit exists only when the left and right limits agree. "
+      },
+      {
+        "id": "t3",
+        "text": "If a function is undefined at a, then it cannot have a limit at a. "
+      },
+      {
+        "id": "t4",
+        "text": "A jump in the graph means no two-sided limit exists at that point. "
+      },
+      {
+        "id": "t5",
+        "text": "Polynomials are continuous at every point of the real line."
+      }
+    ],
+    "incorrectTokenIds": [
+      "t3"
+    ],
+    "hints": [
+      "Four statements are exactly as taught; one contradicts the very first line.",
+      "Recall the function (x^2 - 4) / (x - 2) at x = 2."
+    ],
+    "explanation": "The error is t3. A function can be undefined at a and still have a perfectly good limit there, which is exactly what a removable hole is. Confusing the limit with the value at the point erases the reason limits exist at all."
+  }
+]

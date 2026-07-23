@@ -1,0 +1,156 @@
+[
+  {
+    "id": "his1_u01_l01_q01",
+    "type": "interactive_scene",
+    "question": "Psychology studies the individual; sociology studies one society at a time. **Drag the zoom lens** to the scope anthropology claims for itself.",
+    "sceneId": "hist_u01_holism_zoom",
+    "sceneParams": {
+      "stops": 3,
+      "labels": [
+        "One mind",
+        "One society",
+        "All humanity, all time"
+      ]
+    },
+    "correctAnswer": {
+      "zoom": 3
+    },
+    "tolerance": 0.4,
+    "hints": [
+      "Anthropology compares across every society that has ever existed.",
+      "The widest setting on the lens."
+    ],
+    "explanation": "Anthropology stakes out the widest frame: every society, past and present. That scope is what makes its comparisons — and its claim to study _humankind_ — possible."
+  },
+  {
+    "id": "his1_u01_l01_q02",
+    "type": "matrix_grid",
+    "question": "File each research project under the right anthropological field.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "Comparing verb structures across 40 Amazonian languages"
+      },
+      {
+        "id": "r2",
+        "label": "Measuring femur robusticity in Neanderthal fossils"
+      },
+      {
+        "id": "r3",
+        "label": "Living a year with Mongolian herders to map hospitality rules"
+      },
+      {
+        "id": "r4",
+        "label": "Excavating a Bronze Age rubbish pit layer by layer"
+      }
+    ],
+    "columns": [
+      {
+        "id": "c1",
+        "label": "Cultural"
+      },
+      {
+        "id": "c2",
+        "label": "Biological"
+      },
+      {
+        "id": "c3",
+        "label": "Archaeology"
+      },
+      {
+        "id": "c4",
+        "label": "Linguistic"
+      }
+    ],
+    "correctMapping": {
+      "r1": "c4",
+      "r2": "c2",
+      "r3": "c1",
+      "r4": "c3"
+    },
+    "explanation": "Grammar → linguistic; fossils → biological; living with people → cultural; digging what they discarded → archaeology. Four toolkits, one species."
+  },
+  {
+    "id": "his1_u01_l01_q03",
+    "type": "category_sort",
+    "question": "Sort each question: is it framed the **anthropological** way, or the way a neighboring discipline would ask it?",
+    "categories": [
+      "Anthropological framing",
+      "Neighboring discipline"
+    ],
+    "items": [
+      {
+        "id": "u01l01q03_i0",
+        "label": "Do all known societies have marriage rules?",
+        "correctCategory": "Anthropological framing"
+      },
+      {
+        "id": "u01l01q03_i1",
+        "label": "How does grief work across cultures, from Bali to Brooklyn?",
+        "correctCategory": "Anthropological framing"
+      },
+      {
+        "id": "u01l01q03_i2",
+        "label": "What did Napoleon write to Josephine in 1796?",
+        "correctCategory": "Neighboring discipline"
+      },
+      {
+        "id": "u01l01q03_i3",
+        "label": "How does unemployment correlate with voting in modern Spain?",
+        "correctCategory": "Neighboring discipline"
+      },
+      {
+        "id": "u01l01q03_i4",
+        "label": "Why do some societies bury their dead and others burn them?",
+        "correctCategory": "Anthropological framing"
+      },
+      {
+        "id": "u01l01q03_i5",
+        "label": "What share of Germans own a car?",
+        "correctCategory": "Neighboring discipline"
+      }
+    ],
+    "explanation": "The anthropological signature is the comparative, whole-species frame. Single-archive questions belong to history; single-modern-society statistics to sociology."
+  },
+  {
+    "id": "his1_u01_l01_q04",
+    "type": "matching",
+    "question": "Match each field to the evidence it treats as its home ground.",
+    "pairs": [
+      {
+        "left": "Cultural anthropology",
+        "right": "What living people say and do"
+      },
+      {
+        "left": "Biological anthropology",
+        "right": "Bones, fossils, and genomes"
+      },
+      {
+        "left": "Archaeology",
+        "right": "Objects and layers left behind"
+      },
+      {
+        "left": "Linguistic anthropology",
+        "right": "Speech and grammar in use"
+      }
+    ],
+    "explanation": "Each field reads a different archive of the same species: behavior, bodies, debris, and talk."
+  },
+  {
+    "id": "his1_u01_l01_q05",
+    "type": "multiple_choice",
+    "question": "What does **holism** commit an anthropologist to?",
+    "options": [
+      "Explaining any practice by its connections to the rest of social life",
+      "Studying only whole continents rather than single villages",
+      "Preferring biological explanations over cultural ones",
+      "Treating every society as internally uniform"
+    ],
+    "correctAnswer": 0,
+    "hints": [
+      "Holism is about connections, not geographic size.",
+      "Diet links to ritual links to politics links to kinship."
+    ],
+    "explanation": "Holism means no institution stands alone: to explain a food taboo you may need the kinship system, the cosmology, and the economy. It is a claim about interconnection, not scale."
+  }
+]

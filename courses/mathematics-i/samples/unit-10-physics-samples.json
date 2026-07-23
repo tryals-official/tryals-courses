@@ -1,0 +1,177 @@
+[
+  {
+    "id": "math_u10_l01_q01",
+    "type": "numerical_input",
+    "question": "A car starts from rest and accelerates in a straight line at a constant 3 m/s squared. How far, in metres, has it travelled after 6 seconds?",
+    "correctAnswer": 54,
+    "tolerance": 0,
+    "hints": [
+      "Use the constant-acceleration position equation with the initial velocity equal to zero.",
+      "With v0 = 0 the whole displacement is one half times a times t squared."
+    ],
+    "explanation": "Starting from rest kills the $v_0 t$ term, leaving $x = \\tfrac{1}{2}at^{2} = \\tfrac{1}{2}(3)(36) = 54$ m. The classic slip is to compute a final velocity of 18 m/s and multiply by 6 — that would be right only if the car had travelled at 18 m/s the whole time, whereas its average speed was 9 m/s."
+  },
+  {
+    "id": "math_u10_l01_q02",
+    "type": "table_completion",
+    "question": "An object starts at x = 0 with velocity 4 m/s and accelerates constantly at 2 m/s squared. Complete the table of its motion.",
+    "rows": [
+      [
+        {
+          "content": "0"
+        },
+        {
+          "content": "4"
+        },
+        {
+          "content": "0"
+        }
+      ],
+      [
+        {
+          "content": "1"
+        },
+        {
+          "content": "6"
+        },
+        {
+          "content": "5"
+        }
+      ],
+      [
+        {
+          "content": "2"
+        },
+        {
+          "content": "___"
+        },
+        {
+          "content": "___"
+        }
+      ],
+      [
+        {
+          "content": "3"
+        },
+        {
+          "content": "___"
+        },
+        {
+          "content": "___"
+        }
+      ]
+    ],
+    "headers": [
+      "Time t (s)",
+      "Velocity v (m/s)",
+      "Position x (m)"
+    ],
+    "answers": [
+      "8",
+      "12",
+      "10",
+      "21"
+    ],
+    "hints": [
+      "Velocity follows v = v0 + at; position follows x = v0 t + one half a t squared.",
+      "At t = 2 the two terms of the position are 8 and 4; at t = 3 they are 12 and 9."
+    ],
+    "explanation": "Velocity climbs linearly (4, 6, 8, 10) because the acceleration is constant, but position climbs quadratically (0, 5, 12, 21) because it integrates a growing velocity. Reading the position column as if it grew by a fixed step is the standard error — the gaps themselves are widening by 2 each second."
+  },
+  {
+    "id": "math_u10_l01_q03",
+    "type": "ordering",
+    "question": "Order the steps that recover the position of a body from its constant acceleration.",
+    "items": [
+      "Start with the constant acceleration a",
+      "Integrate a with respect to time to get v = at + C",
+      "Fix the constant using the initial velocity: v = v0 + at",
+      "Integrate v with respect to time to get x = v0 t + one half a t squared + C",
+      "Fix the second constant using the initial position: x = x0 + v0 t + one half a t squared"
+    ],
+    "correctOrder": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "hints": [
+      "Each integration undoes one derivative and introduces one unknown constant.",
+      "The initial conditions are what pin down the constants, and they are used in the same order the integrations happen."
+    ],
+    "explanation": "Going from acceleration to position is two integrations, and each one produces a constant that only the initial conditions can fix. This is why the equations of motion need both $v_0$ and $x_0$: two integrations, two constants."
+  },
+  {
+    "id": "math_u10_l01_q04",
+    "type": "matrix_grid",
+    "question": "Velocity and acceleration are independent quantities. Classify each situation.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "A book lying still on a table"
+      },
+      {
+        "id": "r2",
+        "label": "A ball at the very top of its flight after being thrown up"
+      },
+      {
+        "id": "r3",
+        "label": "A car cruising at a steady 25 m/s on a straight road"
+      },
+      {
+        "id": "r4",
+        "label": "A car rounding a bend at a steady 25 m/s"
+      }
+    ],
+    "columns": [
+      {
+        "id": "c1",
+        "label": "v = 0, a = 0"
+      },
+      {
+        "id": "c2",
+        "label": "v = 0, a not 0"
+      },
+      {
+        "id": "c3",
+        "label": "v not 0, a = 0"
+      },
+      {
+        "id": "c4",
+        "label": "v not 0, a not 0"
+      }
+    ],
+    "correctMapping": {
+      "r1": "c1",
+      "r2": "c2",
+      "r3": "c3",
+      "r4": "c4"
+    },
+    "hints": [
+      "Ask two separate questions of each case: is it moving, and is its velocity changing?",
+      "Velocity is a vector, so a change of direction counts as a change of velocity."
+    ],
+    "explanation": "The ball at its peak is momentarily at rest yet still accelerating downward at g — 'not moving' is not 'not accelerating'. The car on the bend has constant _speed_ but changing _direction_, so its velocity is changing and it is accelerating. Both cases break the intuition that velocity and acceleration rise and fall together."
+  },
+  {
+    "id": "math_u10_l01_q06",
+    "type": "formula_builder",
+    "question": "Build the constant-acceleration equation for position as a function of time.",
+    "tokens": [
+      "x0",
+      "+ v0 t",
+      "+ one half a t squared"
+    ],
+    "correctOrder": [
+      0,
+      1,
+      2
+    ],
+    "hints": [
+      "Read it as three contributions: where it started, how far it would drift at the initial velocity, and the extra from accelerating.",
+      "The term produced by the second integration is the one carrying t squared."
+    ],
+    "explanation": "$x = x_0 + v_0 t + \\tfrac{1}{2}at^{2}$. Each term comes from a stage of the integration: the constant of the second integration, the velocity term, and the acceleration term. Dropping the $\\tfrac{1}{2}$ is the most common transcription error and it doubles the predicted displacement."
+  }
+]

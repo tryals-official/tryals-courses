@@ -1,0 +1,182 @@
+[
+  {
+    "id": "psy_u04_l01_q01",
+    "type": "category_sort",
+    "question": "Sort each factor influencing a person's health by its biopsychosocial domain.",
+    "categories": [
+      "Biological",
+      "Psychological",
+      "Social"
+    ],
+    "items": [
+      {
+        "id": "s1",
+        "label": "A virus infecting the lungs",
+        "correctCategory": "Biological"
+      },
+      {
+        "id": "s2",
+        "label": "The patient's belief that recovery is possible",
+        "correctCategory": "Psychological"
+      },
+      {
+        "id": "s3",
+        "label": "Low income limiting access to care",
+        "correctCategory": "Social"
+      },
+      {
+        "id": "s4",
+        "label": "A genetic predisposition to diabetes",
+        "correctCategory": "Biological"
+      },
+      {
+        "id": "s5",
+        "label": "A supportive spouse and close friends",
+        "correctCategory": "Social"
+      },
+      {
+        "id": "s6",
+        "label": "The patient's coping skills for stress",
+        "correctCategory": "Psychological"
+      }
+    ],
+    "hints": [
+      "Ask whether the factor is bodily, mental, or about the person's environment and relationships.",
+      "Genes and pathogens are biological; beliefs and coping are psychological; income and relationships are social."
+    ],
+    "explanation": "Pathogens and genes are biological, beliefs and coping are psychological, and income and relationships are social. The biopsychosocial model insists all three domains jointly shape health - not biology alone."
+  },
+  {
+    "id": "psy_u04_l01_q02",
+    "type": "matrix_grid",
+    "question": "Classify each contributor to health by its biopsychosocial domain.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "A person's optimism about their treatment"
+      },
+      {
+        "id": "r2",
+        "label": "Cultural beliefs about what illness means"
+      },
+      {
+        "id": "r3",
+        "label": "An inherited gene variant"
+      },
+      {
+        "id": "r4",
+        "label": "Whether the person has health insurance"
+      },
+      {
+        "id": "r5",
+        "label": "The physiological state of the immune system"
+      }
+    ],
+    "columns": [
+      {
+        "id": "cB",
+        "label": "Biological"
+      },
+      {
+        "id": "cP",
+        "label": "Psychological"
+      },
+      {
+        "id": "cS",
+        "label": "Social"
+      }
+    ],
+    "correctMapping": {
+      "r1": "cP",
+      "r2": "cS",
+      "r3": "cB",
+      "r4": "cS",
+      "r5": "cB"
+    },
+    "hints": [
+      "Optimism is mental; culture and insurance are social; genes and physiology are bodily.",
+      "Watch the culture item - it is a social factor, not a psychological one."
+    ],
+    "explanation": "Optimism is psychological; cultural beliefs and insurance are social; gene variants and immune state are biological. Culture is a social (not psychological) factor - a common misclassification the model helps sharpen."
+  },
+  {
+    "id": "psy_u04_l01_q03",
+    "type": "error_highlight",
+    "question": "A student explains the biopsychosocial model. Highlight the one incorrect statement.",
+    "tokens": [
+      {
+        "id": "t1",
+        "text": "Engel proposed the model in 1977 as a challenge to the biomedical model. "
+      },
+      {
+        "id": "t2",
+        "text": "It treats health as the joint product of biological, psychological, and social factors. "
+      },
+      {
+        "id": "t3",
+        "text": "It simply means biology with a little psychology added; the three factors do not really interact. "
+      },
+      {
+        "id": "t4",
+        "text": "A psychological state like chronic stress can alter biological processes such as cortisol. "
+      },
+      {
+        "id": "t5",
+        "text": "The WHO defines health as more than the mere absence of disease."
+      }
+    ],
+    "incorrectTokenIds": [
+      "t3"
+    ],
+    "hints": [
+      "Four statements are correct; one understates how the domains relate.",
+      "Does the model treat the three domains as merely side by side, or as genuinely interacting?"
+    ],
+    "explanation": "The error is t3. The model insists the three domains genuinely INTERACT - stress alters cortisol, isolation raises depression risk - not that biology simply has a little psychology attached. Treating them as merely side by side is the named pitfall."
+  },
+  {
+    "id": "psy_u04_l01_q04",
+    "type": "cloze_bank",
+    "question": "Complete the reasoning about how the domains interact.",
+    "correctAnswers": [
+      0
+    ],
+    "segments": [
+      "Under the biopsychosocial model, a psychological state such as chronic stress can ",
+      "."
+    ],
+    "wordBank": [
+      "alter biological processes, for example by raising cortisol",
+      "affect mood only, never the body",
+      "have no measurable effect on health",
+      "replace the need for any medical treatment"
+    ],
+    "hints": [
+      "The model's whole point is that the domains genuinely influence one another.",
+      "Chronic stress is a classic case of a psychological state producing a biological change."
+    ],
+    "explanation": "The domains interact, so a psychological state like chronic stress can change biology (e.g. raising cortisol). Claiming stress affects 'mood only, never the body' is exactly the non-interaction error the model rejects."
+  },
+  {
+    "id": "psy_u04_l01_q05",
+    "type": "multi_select",
+    "question": "Select every statement that is TRUE about these models of health.",
+    "options": [
+      "The biomedical model explained illness mainly by biological causes.",
+      "The biopsychosocial model treats the three domains as interacting.",
+      "The WHO defines health as more than the absence of disease.",
+      "The biopsychosocial model ranks biology as the only real cause.",
+      "Social factors are irrelevant to health outcomes."
+    ],
+    "correctAnswers": [
+      0,
+      1,
+      2
+    ],
+    "hints": [
+      "Two options contradict the biopsychosocial view of causation.",
+      "The model gives biology no monopoly, and it treats social factors as genuinely important."
+    ],
+    "explanation": "The biomedical model's biological focus, the interaction of domains, and the WHO's positive definition are all true. The biopsychosocial model does not privilege biology as the sole cause, and social factors matter greatly - so those two are false."
+  }
+]

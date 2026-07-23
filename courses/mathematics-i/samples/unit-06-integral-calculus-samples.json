@@ -1,0 +1,178 @@
+[
+  {
+    "id": "math_u06_l01_q01",
+    "type": "table_completion",
+    "question": "Complete the table of indefinite integrals. Write each answer with its constant of integration.",
+    "rows": [
+      [
+        {
+          "content": "x^2"
+        },
+        {
+          "content": "x^3/3 + C"
+        }
+      ],
+      [
+        {
+          "content": "x^5"
+        },
+        {
+          "content": "___"
+        }
+      ],
+      [
+        {
+          "content": "cos x"
+        },
+        {
+          "content": "___"
+        }
+      ],
+      [
+        {
+          "content": "1/x"
+        },
+        {
+          "content": "___"
+        }
+      ]
+    ],
+    "headers": [
+      "f(x)",
+      "Antiderivative"
+    ],
+    "answers": [
+      "x^6/6 + C",
+      "sin x + C",
+      "ln|x| + C"
+    ],
+    "hints": [
+      "The integration power rule raises the exponent by one and divides by the new exponent.",
+      "The power rule cannot handle 1/x, because that is the excluded case n = -1."
+    ],
+    "explanation": "Raising and dividing gives $x^{6}/6$ for $x^{5}$. Cosine integrates to sine (reversing the derivative of sine), and 1/x is the one power the rule cannot touch, so it integrates to ln|x|. Every line needs its own + C."
+  },
+  {
+    "id": "math_u06_l01_q02",
+    "type": "numerical_input",
+    "question": "F(x) = 2x^3 + C is an antiderivative of f(x) = 6x^2. Given that F(1) = 5, find the value of C.",
+    "correctAnswer": 3,
+    "tolerance": 0,
+    "hints": [
+      "Substitute x = 1 into F and set the result equal to 5.",
+      "2 times 1 cubed is 2, so the constant must supply the rest."
+    ],
+    "explanation": "F(1) = 2 + C = 5, so C = 3. The constant is not decoration: it is exactly the extra information an initial value supplies, selecting one curve out of the infinite vertical family that shares the derivative $6x^{2}$."
+  },
+  {
+    "id": "math_u06_l01_q03",
+    "type": "matrix_grid",
+    "question": "Sort each indefinite integral by which rule from this lesson evaluates it.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "integral of x^5 dx"
+      },
+      {
+        "id": "r2",
+        "label": "integral of 1/x dx"
+      },
+      {
+        "id": "r3",
+        "label": "integral of e^x dx"
+      },
+      {
+        "id": "r4",
+        "label": "integral of x^(-3) dx"
+      },
+      {
+        "id": "r5",
+        "label": "integral of cos x dx"
+      }
+    ],
+    "columns": [
+      {
+        "id": "c1",
+        "label": "Power rule"
+      },
+      {
+        "id": "c2",
+        "label": "The excluded case n = -1"
+      },
+      {
+        "id": "c3",
+        "label": "Standard reversed derivative"
+      }
+    ],
+    "correctMapping": {
+      "r1": "c1",
+      "r2": "c2",
+      "r3": "c3",
+      "r4": "c1",
+      "r5": "c3"
+    },
+    "hints": [
+      "The power rule applies to x^n for every n except one specific value.",
+      "A negative exponent is still a power: -3 is not the excluded exponent."
+    ],
+    "explanation": "$x^{5}$ and $x^{-3}$ both go through the power rule (giving $x^{6}/6$ and $x^{-2}/(-2)$). Only $x^{-1} = 1/x$ is excluded, because raising its exponent produces division by zero; it integrates to ln|x|. Exponential and cosine are memorised reversals."
+  },
+  {
+    "id": "math_u06_l01_q04",
+    "type": "error_highlight",
+    "question": "A student writes out four antiderivatives. Highlight the one incorrect line.",
+    "tokens": [
+      {
+        "id": "t1",
+        "text": "The integral of x^4 dx is x^5/5 + C. "
+      },
+      {
+        "id": "t2",
+        "text": "The integral of 3 dx is 3x + C. "
+      },
+      {
+        "id": "t3",
+        "text": "The integral of x^(-1) dx is x^0/0 + C. "
+      },
+      {
+        "id": "t4",
+        "text": "The integral of e^x dx is e^x + C. "
+      },
+      {
+        "id": "t5",
+        "text": "The integral of 4x^3 dx is x^4 + C."
+      }
+    ],
+    "incorrectTokenIds": [
+      "t3"
+    ],
+    "hints": [
+      "Differentiate each proposed answer and see whether you recover the integrand.",
+      "One line divides by the new exponent when that exponent happens to be zero."
+    ],
+    "explanation": "The error is t3. Applying the power rule to n = -1 would give $x^{0}/0$, which is meaningless — that is precisely why n = -1 is excluded, and the correct answer is ln|x| + C. The others check out on differentiation."
+  },
+  {
+    "id": "math_u06_l01_q05",
+    "type": "cloze_bank",
+    "question": "Complete the statement that explains why the constant of integration exists.",
+    "correctAnswers": [
+      0
+    ],
+    "segments": [
+      "Two functions on an interval have exactly the same derivative if and only if they differ by ",
+      "."
+    ],
+    "wordBank": [
+      "a constant",
+      "a linear function",
+      "nothing at all",
+      "a constant factor"
+    ],
+    "hints": [
+      "Ask which functions have derivative zero everywhere.",
+      "Subtracting the two functions must give something with zero slope at every point."
+    ],
+    "explanation": "If F' = G' then (F - G)' = 0, and only constants have zero derivative throughout an interval. That is the whole content of + C: antiderivatives are unique only up to an additive constant, not up to a factor."
+  }
+]

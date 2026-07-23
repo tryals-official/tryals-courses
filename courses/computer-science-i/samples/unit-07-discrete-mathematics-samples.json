@@ -1,0 +1,209 @@
+[
+  {
+    "id": "cs_u07_l01_q01",
+    "type": "venn_diagram",
+    "question": "Let A be the multiples of 2 in {1, 2, ..., 12} and let B be the multiples of 3 in the same range. Place each number where it belongs.",
+    "items": [
+      {
+        "id": "n1",
+        "label": "4"
+      },
+      {
+        "id": "n2",
+        "label": "6"
+      },
+      {
+        "id": "n3",
+        "label": "9"
+      },
+      {
+        "id": "n4",
+        "label": "12"
+      },
+      {
+        "id": "n5",
+        "label": "8"
+      },
+      {
+        "id": "n6",
+        "label": "3"
+      },
+      {
+        "id": "n7",
+        "label": "7"
+      },
+      {
+        "id": "n8",
+        "label": "5"
+      }
+    ],
+    "correctMapping": {
+      "n1": "a_only",
+      "n2": "both",
+      "n3": "b_only",
+      "n4": "both",
+      "n5": "a_only",
+      "n6": "b_only",
+      "n7": "neither",
+      "n8": "neither"
+    },
+    "setALabel": "Multiples of 2",
+    "setBLabel": "Multiples of 3",
+    "hints": [
+      "A number sits in the overlap only if BOTH tests pass, so check divisibility by 2 and by 3 separately for each one.",
+      "The numbers in the overlap are exactly the multiples of 6."
+    ],
+    "explanation": "6 and 12 are divisible by both 2 and 3, so they are in the intersection; 4 and 8 are even only; 3 and 9 are multiples of 3 only; 5 and 7 satisfy neither test. The intersection collects what is in both sets, so it is always the smaller region — putting a number in the overlap because it passes one test is the classic union-for-intersection slip."
+  },
+  {
+    "id": "cs_u07_l01_q02",
+    "type": "numerical_input",
+    "question": "A survey finds that 18 people read the news online, 13 read it in print, and 5 people do both. How many people read the news in at least one of the two ways?",
+    "correctAnswer": 26,
+    "tolerance": 0,
+    "hints": [
+      "This is the size of a union, so add the two group sizes and then correct for anyone counted more than once.",
+      "The 5 people who do both were counted in the 18 and again in the 13."
+    ],
+    "explanation": "By inclusion-exclusion, 18 + 13 - 5 = 26. Answering 31 forgets to subtract the overlap and counts the five dual readers twice; the union of two sets is never simply the sum of their sizes unless the sets are disjoint."
+  },
+  {
+    "id": "cs_u07_l01_q04",
+    "type": "matrix_grid",
+    "question": "Let A = {1, 2, {3, 4}} — a set with three elements, the third of which is itself a set. Decide whether each claim about A is true or false.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "1 is an element of A"
+      },
+      {
+        "id": "r2",
+        "label": "{1} is an element of A"
+      },
+      {
+        "id": "r3",
+        "label": "{1} is a subset of A"
+      },
+      {
+        "id": "r4",
+        "label": "{3, 4} is an element of A"
+      },
+      {
+        "id": "r5",
+        "label": "3 is an element of A"
+      },
+      {
+        "id": "r6",
+        "label": "the empty set is a subset of A"
+      }
+    ],
+    "columns": [
+      {
+        "id": "c1",
+        "label": "True"
+      },
+      {
+        "id": "c2",
+        "label": "False"
+      }
+    ],
+    "correctMapping": {
+      "r1": "c1",
+      "r2": "c2",
+      "r3": "c1",
+      "r4": "c1",
+      "r5": "c2",
+      "r6": "c1"
+    },
+    "hints": [
+      "List the three elements of A explicitly and check each claim against exactly that list.",
+      "Being an element means appearing in the list; being a subset means every one of your own elements appears in the list."
+    ],
+    "explanation": "A's elements are 1, 2 and the set {3, 4}. So 1 is an element but {1} is not — though {1} IS a subset, since its only element 1 is in A. The set {3, 4} is an element of A, yet 3 by itself is not, because it sits one level down inside that element. The empty set is a subset of every set. Confusing membership with inclusion is the single most common set-theory error."
+  },
+  {
+    "id": "cs_u07_l01_q05",
+    "type": "table_completion",
+    "question": "Let A = {1, 2, 3, 4, 5} and B = {4, 5, 6, 7}. Complete the table of cardinalities.",
+    "rows": [
+      [
+        {
+          "content": "A"
+        },
+        {
+          "content": "5"
+        }
+      ],
+      [
+        {
+          "content": "B"
+        },
+        {
+          "content": "___"
+        }
+      ],
+      [
+        {
+          "content": "A union B"
+        },
+        {
+          "content": "___"
+        }
+      ],
+      [
+        {
+          "content": "A intersect B"
+        },
+        {
+          "content": "___"
+        }
+      ],
+      [
+        {
+          "content": "A minus B"
+        },
+        {
+          "content": "___"
+        }
+      ]
+    ],
+    "headers": [
+      "Expression",
+      "Cardinality"
+    ],
+    "answers": [
+      "4",
+      "7",
+      "2",
+      "3"
+    ],
+    "hints": [
+      "Write out each resulting set element by element before counting it.",
+      "Check the union against inclusion-exclusion: it should equal 5 + 4 minus the size of the intersection."
+    ],
+    "explanation": "B has 4 elements; the union is {1,2,3,4,5,6,7} with 7; the intersection is {4,5} with 2; A minus B is {1,2,3} with 3. Note 5 + 4 - 2 = 7, which is inclusion-exclusion confirming the union. Answering 9 for the union double-counts the two shared elements."
+  },
+  {
+    "id": "cs_u07_l01_q06",
+    "type": "cloze_bank",
+    "question": "Complete the counting rule for the size of a union.",
+    "correctAnswers": [
+      0
+    ],
+    "segments": [
+      "Because the elements lying in both sets are counted once in each set, the size of A union B equals the size of A plus the size of B minus ",
+      "."
+    ],
+    "wordBank": [
+      "the size of the intersection",
+      "the size of the union",
+      "the size of A minus B",
+      "zero"
+    ],
+    "hints": [
+      "Ask which elements were counted twice when the two sizes were simply added.",
+      "Test your candidate on A = {1, 2, 3} and B = {3, 4}, where the union has 4 elements."
+    ],
+    "explanation": "The shared elements are counted in both totals, so the intersection must be subtracted exactly once. On A = {1,2,3} and B = {3,4}: 3 + 2 - 1 = 4, which is right, while subtracting zero would give 5. Subtracting nothing is only correct when the sets are disjoint."
+  }
+]

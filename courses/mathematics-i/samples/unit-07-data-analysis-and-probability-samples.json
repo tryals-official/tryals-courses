@@ -1,0 +1,163 @@
+[
+  {
+    "id": "math_u07_l01_q01",
+    "type": "numerical_input",
+    "question": "Compute the mean of the dataset 2, 4, 4, 5, 10.",
+    "correctAnswer": 5,
+    "tolerance": 0,
+    "hints": [
+      "Add every value, then divide by how many values there are.",
+      "The five values total 25."
+    ],
+    "explanation": "The sum is 25 and there are 5 values, so the mean is 5. Note that no data point equals 5 — the mean need not be a value that actually occurs, which is one reason it can misrepresent a skewed dataset."
+  },
+  {
+    "id": "math_u07_l01_q03",
+    "type": "table_completion",
+    "question": "Complete the summary table for the dataset 2, 4, 4, 5, 10.",
+    "rows": [
+      [
+        {
+          "content": "Mean"
+        },
+        {
+          "content": "5"
+        }
+      ],
+      [
+        {
+          "content": "Median"
+        },
+        {
+          "content": "___"
+        }
+      ],
+      [
+        {
+          "content": "Mode"
+        },
+        {
+          "content": "___"
+        }
+      ],
+      [
+        {
+          "content": "Range"
+        },
+        {
+          "content": "___"
+        }
+      ]
+    ],
+    "headers": [
+      "Statistic",
+      "Value"
+    ],
+    "answers": [
+      "4",
+      "4",
+      "8"
+    ],
+    "hints": [
+      "The data are already sorted, so the median is the value in the middle position.",
+      "The range is the largest value minus the smallest."
+    ],
+    "explanation": "Median 4 (the third of five sorted values), mode 4 (the only repeated value), range 10 - 2 = 8. The mean of 5 exceeds the median of 4 because the single large value 10 pulls the mean upward — the signature of a right-skewed dataset."
+  },
+  {
+    "id": "math_u07_l01_q05",
+    "type": "matrix_grid",
+    "question": "Classify each summary statistic by how it responds when one extreme outlier is added to a dataset.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "Mean"
+      },
+      {
+        "id": "r2",
+        "label": "Median"
+      },
+      {
+        "id": "r3",
+        "label": "Range"
+      },
+      {
+        "id": "r4",
+        "label": "Mode"
+      },
+      {
+        "id": "r5",
+        "label": "Standard deviation"
+      }
+    ],
+    "columns": [
+      {
+        "id": "c1",
+        "label": "Strongly affected by an outlier"
+      },
+      {
+        "id": "c2",
+        "label": "Barely affected"
+      }
+    ],
+    "correctMapping": {
+      "r1": "c1",
+      "r2": "c2",
+      "r3": "c1",
+      "r4": "c2",
+      "r5": "c1"
+    },
+    "hints": [
+      "Ask whether the statistic uses every value's magnitude or only positions and counts.",
+      "The range is built from the two most extreme values, so an outlier redefines it."
+    ],
+    "explanation": "Mean, range and standard deviation all use the actual magnitudes, so a single extreme value moves them a long way. Median and mode depend on position and frequency, so they hardly notice. This is exactly why the median is the honest summary of a skewed dataset."
+  },
+  {
+    "id": "math_u07_l01_q06",
+    "type": "cloze_bank",
+    "question": "Complete the statement about skewed data.",
+    "correctAnswers": [
+      0
+    ],
+    "segments": [
+      "In a dataset with a long tail to the right, the mean lies ",
+      " the median."
+    ],
+    "wordBank": [
+      "above",
+      "below",
+      "exactly at",
+      "unpredictably far from"
+    ],
+    "hints": [
+      "The mean is dragged toward extreme values; the median is not.",
+      "A long right tail contains large values, not small ones."
+    ],
+    "explanation": "The long right tail contains a few very large values, which pull the mean up while leaving the median in place. Income data are the standard example: mean income comfortably exceeds median income in almost every country."
+  },
+  {
+    "id": "math_u07_l01_q07",
+    "type": "ordering",
+    "question": "Order the steps for computing the standard deviation of a dataset.",
+    "items": [
+      "Compute the mean of the data",
+      "Subtract the mean from each value to get its deviation",
+      "Square each deviation",
+      "Average the squared deviations to get the variance",
+      "Take the square root to return to the data's own units"
+    ],
+    "correctOrder": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "hints": [
+      "Nothing can be measured against the centre until the centre is known.",
+      "Squaring comes before averaging, and the root comes last."
+    ],
+    "explanation": "Squaring before averaging is essential: raw deviations always average to exactly zero, since positive and negative deviations cancel. Squaring removes the cancellation, and the final square root undoes the inflation of the units."
+  }
+]

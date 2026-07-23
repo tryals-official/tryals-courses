@@ -1,0 +1,200 @@
+[
+  {
+    "id": "cs_u08_l01_q01",
+    "type": "table_completion",
+    "question": "Let u = (3, -1) and v = (-2, 5). Complete the table. Write each answer in the form (a, b).",
+    "rows": [
+      [
+        {
+          "content": "u"
+        },
+        {
+          "content": "(3, -1)"
+        }
+      ],
+      [
+        {
+          "content": "v"
+        },
+        {
+          "content": "(-2, 5)"
+        }
+      ],
+      [
+        {
+          "content": "u + v"
+        },
+        {
+          "content": "___"
+        }
+      ],
+      [
+        {
+          "content": "2u"
+        },
+        {
+          "content": "___"
+        }
+      ],
+      [
+        {
+          "content": "u + the zero vector"
+        },
+        {
+          "content": "___"
+        }
+      ],
+      [
+        {
+          "content": "-1 times v"
+        },
+        {
+          "content": "___"
+        }
+      ]
+    ],
+    "headers": [
+      "Expression",
+      "Value"
+    ],
+    "answers": [
+      "(1, 4)",
+      "(6, -2)",
+      "(3, -1)",
+      "(2, -5)"
+    ],
+    "hints": [
+      "Both operations act on one component at a time: add matching components, and multiply every component by the scalar.",
+      "The zero vector is (0, 0), and multiplying by -1 reverses the direction without changing the length."
+    ],
+    "explanation": "Addition is componentwise, so u + v = (3 - 2, -1 + 5) = (1, 4); doubling scales both entries to (6, -2); adding the zero vector changes nothing, which is exactly the axiom that defines it; and -1 times v is (2, -5), the negative of v. These two operations, not the entries themselves, are what make the object a vector."
+  },
+  {
+    "id": "cs_u08_l01_q02",
+    "type": "numerical_input",
+    "question": "Let u = (3, 4) and v = (-3, 4). Compute the norm of u + v.",
+    "correctAnswer": 8,
+    "tolerance": 0,
+    "hints": [
+      "Add the vectors first, componentwise, and only then take the length of the single vector you get.",
+      "u + v has a first component of 0, so its length is decided entirely by the second component."
+    ],
+    "explanation": "u + v = (0, 8), whose norm is the square root of 0 + 64, that is 8. Answering 10 adds the two lengths instead: the norm of u is 5 and so is the norm of v, but the length of a sum is generally NOT the sum of the lengths — that is the pitfall this lesson names, and here the two vectors partly cancel."
+  },
+  {
+    "id": "cs_u08_l01_q03",
+    "type": "number_line_placement",
+    "question": "Let w = (-6, 8). **Place the marker on the norm of w.**",
+    "min": 0,
+    "max": 12,
+    "step": 1,
+    "tolerance": 0.25,
+    "markers": [
+      {
+        "id": "m1",
+        "label": "Norm of w",
+        "targetValue": 10
+      }
+    ],
+    "hints": [
+      "The norm comes from the Pythagorean theorem: square the components, add, take the square root.",
+      "Squaring removes the minus sign, so the negative component contributes 36."
+    ],
+    "explanation": "The norm is the square root of 36 + 64, which is the square root of 100, so 10. A norm is never negative, because the components are squared before they are added — the sign of a component tells you direction, not length."
+  },
+  {
+    "id": "cs_u08_l01_q04",
+    "type": "matrix_grid",
+    "question": "Let u and v be vectors in the plane and c a scalar. Classify what each expression produces.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "u + v"
+      },
+      {
+        "id": "r2",
+        "label": "The norm of u"
+      },
+      {
+        "id": "r3",
+        "label": "c times v"
+      },
+      {
+        "id": "r4",
+        "label": "The first component of u"
+      },
+      {
+        "id": "r5",
+        "label": "The zero vector"
+      }
+    ],
+    "columns": [
+      {
+        "id": "c1",
+        "label": "A vector"
+      },
+      {
+        "id": "c2",
+        "label": "A single number"
+      }
+    ],
+    "correctMapping": {
+      "r1": "c1",
+      "r2": "c2",
+      "r3": "c1",
+      "r4": "c2",
+      "r5": "c1"
+    },
+    "hints": [
+      "The two vector-space operations both return vectors; anything that measures or extracts returns a number.",
+      "One row picks out a single entry and one row measures a length — both collapse a vector to one value."
+    ],
+    "explanation": "Adding vectors and scaling a vector both give vectors, and the zero vector is a vector like any other. A norm is one length and a component is one entry, so both are numbers. Confusing a vector's magnitude with its components is the pitfall the lesson names: the magnitude is a single number built from all of them."
+  },
+  {
+    "id": "cs_u08_l01_q05",
+    "type": "category_sort",
+    "question": "Sort each statement by whether the vector-space axioms guarantee it for every vector space.",
+    "categories": [
+      "An axiom of a vector space",
+      "Not required at all"
+    ],
+    "items": [
+      {
+        "id": "a1",
+        "label": "Adding the zero vector leaves a vector unchanged",
+        "correctCategory": "An axiom of a vector space"
+      },
+      {
+        "id": "a2",
+        "label": "u + v equals v + u",
+        "correctCategory": "An axiom of a vector space"
+      },
+      {
+        "id": "a3",
+        "label": "Every vector has a negative that adds with it to give zero",
+        "correctCategory": "An axiom of a vector space"
+      },
+      {
+        "id": "a4",
+        "label": "Scalar multiplication distributes over vector addition",
+        "correctCategory": "An axiom of a vector space"
+      },
+      {
+        "id": "a5",
+        "label": "Every vector has norm 1",
+        "correctCategory": "Not required at all"
+      },
+      {
+        "id": "a6",
+        "label": "The norm of u + v equals the norm of u plus the norm of v",
+        "correctCategory": "Not required at all"
+      }
+    ],
+    "hints": [
+      "The axioms only govern how addition and scaling behave; they never mention length.",
+      "Test the two length claims on a concrete pair, for example (3, 4) and (-3, 4)."
+    ],
+    "explanation": "Commutativity, a zero vector, negatives and distributivity are the axioms. Neither length claim is one: most vectors are not unit vectors, and the norm of a sum is generally smaller than the sum of the norms. Because the axioms say nothing about length, sets like polynomials and functions qualify as vector spaces too."
+  }
+]

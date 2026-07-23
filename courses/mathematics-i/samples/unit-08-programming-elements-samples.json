@@ -1,0 +1,162 @@
+[
+  {
+    "id": "math_u08_l01_q01",
+    "type": "category_sort",
+    "question": "An algorithm says HOW to compute; a specification says only WHAT the answer is. Sort each item.",
+    "categories": [
+      "Algorithm",
+      "Specification only"
+    ],
+    "items": [
+      {
+        "id": "a1",
+        "label": "Replace (a, b) by (b, a mod b) until b is 0, then report a",
+        "correctCategory": "Algorithm"
+      },
+      {
+        "id": "a2",
+        "label": "The gcd of a and b is their largest common divisor",
+        "correctCategory": "Specification only"
+      },
+      {
+        "id": "a3",
+        "label": "Test each of 2, 3, ..., n-1 as a divisor of n; if none divides, report n prime",
+        "correctCategory": "Algorithm"
+      },
+      {
+        "id": "a4",
+        "label": "The prime factorisation is the unique product of primes equal to n",
+        "correctCategory": "Specification only"
+      },
+      {
+        "id": "a5",
+        "label": "Scan the list keeping the largest value seen so far, then report it",
+        "correctCategory": "Algorithm"
+      }
+    ],
+    "hints": [
+      "Ask of each item: could a machine follow this and halt with an answer?",
+      "A perfectly precise description of the answer can still tell you nothing about producing it."
+    ],
+    "explanation": "a1, a3 and a5 give concrete terminating procedures. a2 and a4 characterise the answer without saying how to find it — the classic confusion of this lesson. A definition becomes an algorithm only when it is turned into steps."
+  },
+  {
+    "id": "math_u08_l01_q02",
+    "type": "matrix_grid",
+    "question": "Classify each move by the habit of computational thinking it shows.",
+    "rows": [
+      {
+        "id": "r1",
+        "label": "Split 'analyse this dataset' into load, clean, summarise, plot"
+      },
+      {
+        "id": "r2",
+        "label": "Notice every row is handled identically, so one loop suffices"
+      },
+      {
+        "id": "r3",
+        "label": "Model a city as points and connections, ignoring street names"
+      },
+      {
+        "id": "r4",
+        "label": "Treat the prices simply as a list of numbers"
+      }
+    ],
+    "columns": [
+      {
+        "id": "c1",
+        "label": "Decomposition"
+      },
+      {
+        "id": "c2",
+        "label": "Pattern recognition"
+      },
+      {
+        "id": "c3",
+        "label": "Abstraction"
+      }
+    ],
+    "correctMapping": {
+      "r1": "c1",
+      "r2": "c2",
+      "r3": "c3",
+      "r4": "c3"
+    },
+    "hints": [
+      "Decomposition makes a problem smaller; pattern recognition makes it uniform; abstraction makes it simpler.",
+      "Two of these rows throw information away deliberately."
+    ],
+    "explanation": "Breaking into subproblems is decomposition; spotting repeated structure is pattern recognition; discarding irrelevant detail (street names, the fact that the numbers are prices) is abstraction. r3 and r4 are both abstraction, which is why counting the habits, not matching the wording, is the only way through."
+  },
+  {
+    "id": "math_u08_l01_q03",
+    "type": "ordering",
+    "question": "Order the steps of the algorithm that finds the largest value in a list.",
+    "items": [
+      "Set best equal to the first element of the list",
+      "Look at the next element in the list",
+      "If that element is greater than best, set best to it",
+      "Repeat until no elements remain",
+      "Report best as the maximum"
+    ],
+    "correctOrder": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "hints": [
+      "An algorithm must start from a definite state before it can compare anything.",
+      "The comparison happens after you have an element in hand, and the report happens only once the list is exhausted."
+    ],
+    "explanation": "You must initialise before you can compare, compare before you can update, and exhaust the list before you can be sure. Starting best at zero instead of the first element is the usual bug — it fails on a list of negative numbers."
+  },
+  {
+    "id": "math_u08_l01_q04",
+    "type": "numerical_input",
+    "question": "Euclid's algorithm replaces the pair (a, b) with (b, a mod b) and stops when b is 0. Starting from (48, 18), how many replacement steps does it take?",
+    "correctAnswer": 3,
+    "tolerance": 0,
+    "hints": [
+      "Carry out the replacements one at a time and write down each pair.",
+      "48 mod 18 = 12, and the process continues from (18, 12)."
+    ],
+    "explanation": "The pairs are (48, 18), (18, 12), (12, 6), (6, 0) — three replacements, ending with gcd 6. The count of steps, not just the answer, is what distinguishes an algorithm from a definition: Euclid's method terminates, and you can say in how many steps."
+  },
+  {
+    "id": "math_u08_l01_q05",
+    "type": "error_highlight",
+    "question": "A student summarises the lesson. Highlight the one incorrect statement.",
+    "tokens": [
+      {
+        "id": "t1",
+        "text": "An algorithm must terminate after finitely many steps. "
+      },
+      {
+        "id": "t2",
+        "text": "Each step of an algorithm must be unambiguous. "
+      },
+      {
+        "id": "t3",
+        "text": "Any precise definition of the answer counts as an algorithm. "
+      },
+      {
+        "id": "t4",
+        "text": "Pseudocode expresses the logic without committing to a language. "
+      },
+      {
+        "id": "t5",
+        "text": "Euclid's method for the gcd is an algorithm, though it predates computers."
+      }
+    ],
+    "incorrectTokenIds": [
+      "t3"
+    ],
+    "hints": [
+      "Four of these restate the lesson's requirements exactly.",
+      "Think about a definition that is perfectly precise yet gives you no procedure."
+    ],
+    "explanation": "The error is t3. 'The gcd is the largest common divisor' is precise but is not an algorithm — it says what, not how. Precision and computability are different demands, and confusing them is this lesson's named pitfall."
+  }
+]

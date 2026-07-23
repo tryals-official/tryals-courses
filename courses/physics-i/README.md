@@ -19,6 +19,10 @@
 | 09 | [Principles of Laboratory Practice](unit-09-principles-of-laboratory-practice.md) |
 | 10 | [Principles of Waves, Fluids and Thermodynamics](unit-10-principles-of-waves-fluids-and-thermodynamics.md) |
 
+## Sample question data
+
+Each unit has sample questions in JSON format under [`samples/`](samples/) — see the [Question Format](../../docs/question-format.md) and [Question Types](../../docs/question-types.md) docs for the full schema.
+
 ---
 
 *Part of [Open University Courses by Tryals](../../README.md)*

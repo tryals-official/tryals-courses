@@ -1,0 +1,359 @@
+[
+  {
+    "type": "function_graph",
+    "question": "A cart moves with **constant velocity**. Which velocity–time graph describes it?",
+    "minX": 0,
+    "maxX": 10,
+    "minY": -1,
+    "maxY": 10,
+    "series": [
+      {
+        "id": "A",
+        "label": "A",
+        "isCorrect": false,
+        "points": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 0.5,
+            "y": 0.45
+          },
+          {
+            "x": 1,
+            "y": 0.9
+          },
+          {
+            "x": 1.5,
+            "y": 1.35
+          },
+          {
+            "x": 2,
+            "y": 1.8
+          },
+          {
+            "x": 2.5,
+            "y": 2.25
+          },
+          {
+            "x": 3,
+            "y": 2.7
+          },
+          {
+            "x": 3.5,
+            "y": 3.15
+          },
+          {
+            "x": 4,
+            "y": 3.6
+          },
+          {
+            "x": 4.5,
+            "y": 4.05
+          },
+          {
+            "x": 5,
+            "y": 4.5
+          },
+          {
+            "x": 5.5,
+            "y": 4.95
+          },
+          {
+            "x": 6,
+            "y": 5.4
+          },
+          {
+            "x": 6.5,
+            "y": 5.8500000000000005
+          },
+          {
+            "x": 7,
+            "y": 6.3
+          },
+          {
+            "x": 7.5,
+            "y": 6.75
+          },
+          {
+            "x": 8,
+            "y": 7.2
+          },
+          {
+            "x": 8.5,
+            "y": 7.65
+          },
+          {
+            "x": 9,
+            "y": 8.1
+          },
+          {
+            "x": 9.5,
+            "y": 8.55
+          },
+          {
+            "x": 10,
+            "y": 9
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "label": "B",
+        "isCorrect": false,
+        "points": [
+          {
+            "x": 0,
+            "y": 8
+          },
+          {
+            "x": 0.5,
+            "y": 7.65
+          },
+          {
+            "x": 1,
+            "y": 7.3
+          },
+          {
+            "x": 1.5,
+            "y": 6.95
+          },
+          {
+            "x": 2,
+            "y": 6.6
+          },
+          {
+            "x": 2.5,
+            "y": 6.25
+          },
+          {
+            "x": 3,
+            "y": 5.9
+          },
+          {
+            "x": 3.5,
+            "y": 5.550000000000001
+          },
+          {
+            "x": 4,
+            "y": 5.2
+          },
+          {
+            "x": 4.5,
+            "y": 4.85
+          },
+          {
+            "x": 5,
+            "y": 4.5
+          },
+          {
+            "x": 5.5,
+            "y": 4.15
+          },
+          {
+            "x": 6,
+            "y": 3.8000000000000007
+          },
+          {
+            "x": 6.5,
+            "y": 3.45
+          },
+          {
+            "x": 7,
+            "y": 3.1000000000000005
+          },
+          {
+            "x": 7.5,
+            "y": 2.75
+          },
+          {
+            "x": 8,
+            "y": 2.4000000000000004
+          },
+          {
+            "x": 8.5,
+            "y": 2.0500000000000007
+          },
+          {
+            "x": 9,
+            "y": 1.7000000000000002
+          },
+          {
+            "x": 9.5,
+            "y": 1.3500000000000005
+          },
+          {
+            "x": 10,
+            "y": 1
+          }
+        ]
+      },
+      {
+        "id": "C",
+        "label": "C",
+        "isCorrect": true,
+        "points": [
+          {
+            "x": 0,
+            "y": 5
+          },
+          {
+            "x": 0.5,
+            "y": 5
+          },
+          {
+            "x": 1,
+            "y": 5
+          },
+          {
+            "x": 1.5,
+            "y": 5
+          },
+          {
+            "x": 2,
+            "y": 5
+          },
+          {
+            "x": 2.5,
+            "y": 5
+          },
+          {
+            "x": 3,
+            "y": 5
+          },
+          {
+            "x": 3.5,
+            "y": 5
+          },
+          {
+            "x": 4,
+            "y": 5
+          },
+          {
+            "x": 4.5,
+            "y": 5
+          },
+          {
+            "x": 5,
+            "y": 5
+          },
+          {
+            "x": 5.5,
+            "y": 5
+          },
+          {
+            "x": 6,
+            "y": 5
+          },
+          {
+            "x": 6.5,
+            "y": 5
+          },
+          {
+            "x": 7,
+            "y": 5
+          },
+          {
+            "x": 7.5,
+            "y": 5
+          },
+          {
+            "x": 8,
+            "y": 5
+          },
+          {
+            "x": 8.5,
+            "y": 5
+          },
+          {
+            "x": 9,
+            "y": 5
+          },
+          {
+            "x": 9.5,
+            "y": 5
+          },
+          {
+            "x": 10,
+            "y": 5
+          }
+        ]
+      }
+    ],
+    "hints": [
+      "Constant velocity means the v-value must not change as time passes.",
+      "A sloped line on a v–t graph is acceleration; you want zero slope."
+    ],
+    "explanation": "Constant velocity is a horizontal line on a v–t plot: same speed at every instant, zero acceleration. The rising and falling lines depict speeding up and braking — the *slope* of v–t is the acceleration.",
+    "id": "phys1_u05_l01_q01"
+  },
+  {
+    "id": "phys1_u05_l01_q02",
+    "type": "interactive_scene",
+    "question": "A ball is dropped from rest. Set its speed after **1.5 s** of free fall — the speedometer runs only after you send.",
+    "sceneId": "u05_freefall",
+    "sceneParams": {
+      "t": 1.5,
+      "start": 5
+    },
+    "correctAnswer": {
+      "v": 14.7
+    },
+    "tolerance": 1,
+    "explanation": "Free fall gains $9.8$ m/s every second: $v = gt = 9.8 \\times 1.5 = 14.7$ m/s, independent of the ball's mass.",
+    "hints": [
+      "Gravity adds 9.8 m/s each second.",
+      "$v = 9.8 \\times 1.5$."
+    ]
+  },
+  {
+    "id": "phys1_u05_l01_q03",
+    "type": "numerical_input",
+    "question": "A car accelerates from rest at 3 $m/s^{2}$. What is its speed after 5 s (in m/s)?",
+    "tolerance": 0.1,
+    "explanation": "$v = v_{0} + at = 0 + 3 \\times 5 = 15 m/s$.",
+    "correctAnswer": 15
+  },
+  {
+    "id": "phys1_u05_l01_q04",
+    "type": "matching",
+    "question": "Match each kinematic variable to its SI unit.",
+    "pairs": [
+      {
+        "left": "Displacement",
+        "right": "m"
+      },
+      {
+        "left": "Velocity",
+        "right": "m/s"
+      },
+      {
+        "left": "Acceleration",
+        "right": "$m/s^{2}$"
+      },
+      {
+        "left": "Time",
+        "right": "s"
+      }
+    ],
+    "explanation": "These are the fundamental quantities in 1D kinematics."
+  },
+  {
+    "id": "phys1_u05_l01_q05",
+    "type": "multi_select",
+    "question": "Which of the following are valid kinematic equations for constant acceleration?",
+    "options": [
+      "$v = v_{0} + at$",
+      "$x = v_{0}t + \\frac{1}{2}at^{2}$",
+      "$v^{2}$ = $v_{0}$² + 2ax",
+      "$x = vt^{2}$"
+    ],
+    "explanation": "Options A, B, C are the three standard kinematic equations.",
+    "correctAnswers": [
+      0,
+      1,
+      2
+    ]
+  }
+]

@@ -1,0 +1,96 @@
+[
+  {
+    "type": "slider_estimate",
+    "question": "A wave has frequency **4 Hz** and wavelength **2 m**. Set the slider to its speed, using $v = f\\lambda$.",
+    "min": 0,
+    "max": 20,
+    "targetValue": 8,
+    "tolerance": 0.5,
+    "minLabel": "0 m/s",
+    "maxLabel": "20 m/s",
+    "hints": [
+      "Four crests pass per second, each 2 m apart.",
+      "$v = 4 \\times 2$."
+    ],
+    "explanation": "$v = 8$ m/s: crest spacing times crests-per-second is distance-per-second. This identity holds for every wave in nature — sound, light, ripples — because it is really just bookkeeping of crests.",
+    "id": "phys1_u10_l01_q01"
+  },
+  {
+    "id": "phys1_u10_l01_q02",
+    "explanation": "$v = f\\lambda \\Rightarrow \\lambda = v/f = 2 / 0.5 = 4$ m. With the wrong $\\lambda$, the same $f$ produces the wrong speed — watch your crest drift off the pace marker.",
+    "type": "interactive_scene",
+    "question": "This wave must travel at $v = 2$ m/s with $f = 0.5$ Hz. Stretch the frozen snapshot to the right wavelength — it starts moving when you send.",
+    "sceneId": "u10_wave",
+    "sceneParams": {
+      "v": 2,
+      "f": 0.5,
+      "lambda0": 2
+    },
+    "correctAnswer": {
+      "wavelength": 4
+    },
+    "tolerance": 0.3,
+    "submitLabel": "Crank it up",
+    "hints": [
+      "$v = f\\lambda$ — solve for $\\lambda$.",
+      "$2 \\div 0.5$."
+    ]
+  },
+  {
+    "type": "number_line_placement",
+    "id": "phys1_u10_l01_q03",
+    "question": "A wave has frequency $5 Hz$ and wavelength 2 m. What is its speed in m/s? **Place your answer on the number line.**",
+    "min": 5,
+    "max": 15,
+    "step": 1,
+    "tolerance": 0.49,
+    "markers": [
+      {
+        "id": "ans",
+        "label": "Answer",
+        "targetValue": 10
+      }
+    ],
+    "explanation": "$v = f\\lambda = 5 \\times 2 = 10 m/s$."
+  },
+  {
+    "id": "phys1_u10_l01_q04",
+    "type": "matching",
+    "question": "Match each wave quantity to its SI unit.",
+    "pairs": [
+      {
+        "left": "Frequency",
+        "right": "Hz"
+      },
+      {
+        "left": "Wavelength",
+        "right": "m"
+      },
+      {
+        "left": "Wave speed",
+        "right": "m/s"
+      },
+      {
+        "left": "Period",
+        "right": "s"
+      }
+    ],
+    "explanation": "Frequency in hertz, wavelength and speed in SI distance/time units, period in seconds."
+  },
+  {
+    "id": "phys1_u10_l01_q05",
+    "type": "multi_select",
+    "question": "Which of the following correctly describe transverse waves?",
+    "options": [
+      "The medium oscillates perpendicular to the direction of propagation",
+      "Electromagnetic waves in vacuum are transverse",
+      "The medium oscillates parallel to the direction of propagation",
+      "Sound waves in air are transverse waves"
+    ],
+    "explanation": "Transverse waves have displacement perpendicular to propagation; EM waves are transverse. Sound is longitudinal.",
+    "correctAnswers": [
+      0,
+      1
+    ]
+  }
+]
