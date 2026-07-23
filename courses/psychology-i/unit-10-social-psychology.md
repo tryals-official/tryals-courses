@@ -19,7 +19,7 @@ The Milgram obedience gradient: obedience shown high when the authority is close
 
 $$\text{obedience} \propto \text{authority proximity and legitimacy}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Error highlight)* A student summarises the two classic social-influence studies. Highlight the one incorrect statement.
 
@@ -39,7 +39,7 @@ Bibb **Latané and John Darley**, who ran the founding experiments after the 196
 
 > **Common pitfall:** thinking bystanders fail to help because they are callous or indifferent. The research shows the cause is _situational_, not a defect of character: diffusion of responsibility and pluralistic ignorance make ordinary, decent people freeze — the very same people would likely help if alone.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Ordering)* Latane and Darley describe helping as a chain of five decisions, any one of which can stop it. Put them in the order a would-be helper must pass through.
 
@@ -59,7 +59,7 @@ This reveals the engine of dissonance reduction. When behavior cannot be undone 
 
 > **Common pitfall:** predicting that the 20-dollar group would believe the lie more, on the logic that "more reward changes attitudes more." Dissonance theory predicts the reverse: the _larger_ reward provides ample external justification, so it produces _less_ attitude change. The small reward, lacking justification, forces the belief to shift.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Cloze bank)* Explain the counterintuitive result of Festinger and Carlsmith's study.
 
@@ -79,7 +79,7 @@ The theory explains why intergroup conflict is so easy to ignite: raising the st
 
 > **Common pitfall:** assuming in-group favoritism requires a real history of conflict, competition, or grievance between the groups. Tajfel's minimal group studies show the opposite: merely being _categorized_ into a group — even a meaningless one assigned at random — is enough to trigger favoritism. Categorization itself is the spark.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* Identify the process at work in each case.
 
@@ -109,7 +109,7 @@ A split panel: the SAME late-arrival event explained twice — for "them," an ar
 
 $$\text{others} \to \text{disposition}, \; \text{self} \to \text{situation}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* Each judgement below is biased. Identify which attribution bias it displays.
 
@@ -135,7 +135,7 @@ Biases persist through mental machinery. **Confirmation bias** makes us notice a
 
 > **Common pitfall:** using "stereotype," "prejudice," and "discrimination" as loose synonyms. They are the _belief_, the _feeling_, and the _action_ respectively. A person can hold a stereotype without acting on it, feel prejudice without a specific belief, or discriminate for reasons beyond personal feeling — keeping the three distinct is essential.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Category sort)* Sort each incident by which of the three components of bias it is: the belief, the feeling, or the action.
 
@@ -157,7 +157,7 @@ Group presence also changes _effort_. **Social facilitation** is the finding tha
 
 > **Common pitfall:** confusing social facilitation with social loafing. **Facilitation** concerns performance when others merely _watch_ you (an audience), and it typically _boosts_ simple tasks. **Loafing** concerns effort when you work _within_ a group on a pooled task, and it _reduces_ each person's effort. Watched vs. pooled — opposite effects.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* Identify the group process at work in each case.
 
@@ -179,7 +179,7 @@ Robert Cialdini catalogued the peripheral levers of everyday influence — six *
 
 > **Common pitfall:** assuming the central route is always "better" and the peripheral route always "worse." Which route a message travels depends on the _audience's_ motivation and ability to think, not on the message's virtue. For a distracted or uninterested audience, peripheral cues may be the only levers that work at all — the skill is matching the route to the listener.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Category sort)* The Elaboration Likelihood Model says the route a message takes is decided by the AUDIENCE, not the message. Sort each audience by the route their message will travel.
 
@@ -203,7 +203,7 @@ A decision balance beam with "reward of helping" and "cost of helping" pans; a c
 
 $$\text{help if } \text{reward} > \text{cost}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Venn diagram)* Place each act according to whether it counts as prosocial behaviour, as altruism in the strict sense, as both, or as neither.
 
@@ -225,7 +225,7 @@ Attraction feels mysterious and personal, but social psychology has mapped a han
 
 > **Common pitfall:** believing the popular idea that "opposites attract." The research consistently finds the reverse: _similarity_ — in attitudes, values, and interests — is a far stronger and more reliable predictor of attraction than difference. Complementary opposites make a memorable story but a weak rule.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Error highlight)* A student summarises the research on attraction. Highlight the one incorrect statement.
 

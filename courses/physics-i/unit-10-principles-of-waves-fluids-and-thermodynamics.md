@@ -37,7 +37,7 @@ Intensity drops as $1/r^{2}$ for a point source (inverse-square law).
 
 > **Common pitfall:** Wave speed is a property of the **medium** (tension, density, temperature), not of the source. Shaking a rope harder makes taller waves, not faster ones — only changing the rope itself changes $v$.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(Slider estimate)* A wave has frequency **4 Hz** and wavelength **2 m**. Set the slider to its speed, using $v = f\lambda$.
 
@@ -97,7 +97,7 @@ $$\lambda_n = \frac{2L}{n}, \quad f_n = \frac{nv}{2L}$$
 
 > Standing waves appear wherever boundaries reflect travelling waves — strings, pipes, and resonant cavities.
 
-> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(Interactive scene)* A string is clamped at both walls, $L = 6$ m. Set the wavelength of the **third harmonic** — the string is flat until you send, then it oscillates with YOUR λ.
 
@@ -158,7 +158,7 @@ where $v$ is the wave speed, $v_s$ the source speed, and $v_o$ the observer spee
 
 > The Doppler effect is used in radar, medical ultrasound, and measuring the expansion of the universe.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(Timeline ordering)* Order these milestones in the history of acoustics.
 
@@ -205,7 +205,7 @@ $$\frac{V_{\text{sub}}}{V_{\text{total}}} = \frac{\rho_{\text{object}}}{\rho_{\t
 
 > **Common pitfall:** Buoyancy depends on the **displaced fluid’s** weight, not the object’s. A steel ship floats because its hull displaces a huge volume of water; solid steel of the same mass, displacing only its own small volume, sinks instantly.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(Function graph)* How does **pressure** change with **depth** in a still lake? Pick the correct curve of $P$ versus depth $d$.
 
@@ -257,7 +257,7 @@ $$\text{Re} = \frac{\rho v D}{\eta}$$
 
 > **Common pitfall:** Bernoulli’s equation holds along a streamline of **smooth, steady** flow with negligible friction. Applying it across turbulent, viscous or unconnected regions — like directly comparing two different pipes — produces confident nonsense.
 
-> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(Interactive scene)* Water flows at 1 m/s where the pipe is 4 cm²; the throat narrows to 1 cm². Set the speed in the throat — the flow starts when you send.
 
@@ -313,7 +313,7 @@ $$\sum Q_i = 0 \implies m_1 c_1(T_f - T_1) + m_2 c_2(T_f - T_2) = 0$$
 
 > **Common pitfall:** Temperature and heat are different currencies. A sparkler at 1000 °C holds far less thermal energy than a bathtub at 40 °C — temperature is the average per molecule; heat depends on how many molecules are paying in.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(Timeline ordering)* Order these milestones in the history of thermometry and thermal physics.
 
@@ -362,7 +362,7 @@ $$\lambda_{\max} T = 2.898\times 10^{-3}\;\text{m K}$$
 
 > **Common pitfall:** "Cold" is not a thing that flows into you. There is only heat flowing **out**. Every heat-transfer analysis tracks energy moving from hot to cold; reversing the bookkeeping direction is the fastest way to sign errors.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(True false)* Thermal radiation can transfer heat through a vacuum because it travels as electromagnetic waves.
    - True / False
@@ -405,7 +405,7 @@ where $\gamma = C_P/C_V$.
 
 > **Common pitfall:** $Q = 0$ (no heat exchanged) does not mean $\Delta T = 0$. Adiabatic compression raises temperature purely through work — that is how a diesel engine ignites fuel with no spark plug at all.
 
-> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(Cloze bank)* Complete the following passage by choosing the correct terms from the word bank.
 
@@ -460,7 +460,7 @@ where $\Omega$ is the number of microstates. Systems evolve toward the macrostat
 
 > **Common pitfall:** Entropy can decrease locally — your freezer does it nightly — as long as more entropy is exported elsewhere (the warm air behind it). The law binds only the **total**: system plus surroundings, never a subsystem alone.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(Timeline ordering)* Order these milestones in the history of entropy and the second law.
 
@@ -503,7 +503,7 @@ One toolkit now spans an astonishing range: the same wave equation runs guitar s
 
 > **Common pitfall:** Real problems rarely announce their chapter. Before computing, classify: is this a wave phenomenon (interference? Doppler?), a fluid balance (continuity? buoyancy?), or an energy ledger (first law? Carnot limit?). A minute of classification saves an hour of wrong formulas.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(True false)* Bernoulli's equation P + $\frac{1}{2} \rho v^{2}$ + $\rho gh = constant$ applies to ideal, incompressible, steady, irrotational flow along a streamline.
    - True / False

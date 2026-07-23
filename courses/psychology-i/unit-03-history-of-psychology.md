@@ -15,7 +15,7 @@ Psychology's founding moment is usually dated to 1879, when **Wilhelm Wundt** �
 
 > **Common pitfall:** assuming structuralism and functionalism were about competing FACTS. They were really about competing QUESTIONS — one asking what the mind is made of, the other asking what the mind is for — and functionalism's question proved far more fruitful for psychology's later growth.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* Classify each research aim by the school it belongs to.
 
@@ -41,7 +41,7 @@ Freud's inner circle later split over his heavy emphasis on sexuality: **Carl Ju
 
 > **Common pitfall:** treating "defense mechanism" as a sign of weakness or dishonesty. In Freud's model, defense mechanisms are a normal, universal function of the ego — everyone uses them to manage anxiety; only their rigidity or extremity becomes a clinical concern.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* Classify each impulse or reaction by the part of Freud's psyche it expresses.
 
@@ -73,7 +73,7 @@ Classical conditioning itself was discovered not by a psychologist but by the Ru
 
 > **Common pitfall:** assuming Pavlov set out to study learning. He did not — he was a physiologist studying digestive secretions, and classical conditioning was an accidental discovery that redirected the course of an entire branch of psychology.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* In Pavlov's experiment, classify each element of the conditioning.
 
@@ -111,7 +111,7 @@ Two lamp icons: both lamps static and unlit; they alternate flashing at a slow i
 
 $$\text{Perceived whole} \neq \text{sum of static parts}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* Classify each perceptual effect by the Gestalt law responsible for it.
 
@@ -142,7 +142,7 @@ $$\text{Perceived whole} \neq \text{sum of static parts}$$
 
 > **Common pitfall:** treating Maslow's pyramid as a rigid staircase that must be climbed in strict lockstep. Maslow himself noted many exceptions — people regularly pursue esteem or self-actualization even amid unmet lower needs — the hierarchy describes a general tendency, not an iron law.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Ordering)* Order Maslow's hierarchy of needs from the base of the pyramid to its summit.
 
@@ -179,7 +179,7 @@ A memory slot-rack: an empty rack with numbered slots; items load in one at a ti
 
 $$\text{Short-term memory} \approx 5 \text{ to } 9 \text{ items}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Numerical input)* Miller's 'magical number seven, plus or minus two' sets short-term memory's typical span. A list has 12 unrelated digits. How many MORE items is this than the UPPER limit of short-term memory (seven plus two)?
 
@@ -204,7 +204,7 @@ Later, **Donald Hebb** proposed a cellular mechanism for how experience changes 
 
 > **Common pitfall:** assuming Lashley's failure to find a single engram meant memory has no physical basis at all. His conclusion was the opposite — memory has a distributed physical basis across many cortical regions working together, not a localized one.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* Classify each statement about emotion by the theory it expresses.
 
@@ -230,7 +230,7 @@ Buss's large cross-cultural studies across dozens of countries found broadly con
 
 > **Common pitfall:** treating every evolutionary psychology claim as automatically an "adaptation." Evolutionary psychologists are explicit that some traits are by-products or noise — the discipline requires positive evidence that a trait was shaped BY selection FOR its current function, not just a plausible-sounding story.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Truth table)* A trait counts as an adaptation only if it Raised ancestral fitness (R) AND was Selected specifically for that function (S). Fill the output column for 'Adaptation = R AND S'.
 
@@ -270,7 +270,7 @@ A shock-generator dial: a plain switch panel from "15 volts" to "450 volts DANGE
 
 $$\text{Obedience rate} \approx 0.65 \text{ (baseline)}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Numerical input)* In Asch's line study, participants conformed to the wrong majority on about 37% of the critical trials. Out of 100 critical trials, on about how many did the average participant NOT conform?
 
@@ -303,7 +303,7 @@ Two further developments have reshaped the field's methodology. The **WEIRD samp
 
 > **Common pitfall:** treating positive psychology as simply "optimism" or self-help. It is a research program using the same scientific methods as the rest of psychology, just aimed at strengths, resilience, and flourishing rather than exclusively at dysfunction.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* Classify each activity by the applied field of psychology it belongs to.
 

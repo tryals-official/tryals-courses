@@ -17,7 +17,7 @@ More elaborate integrals use **substitution** (reversing the chain rule) and **i
 
 > **Common pitfall:** forgetting the **constant of integration** $+C$, and misapplying the integration power rule. Every indefinite integral needs $+C$, because antiderivatives are unique only up to a constant. And the integration power rule **raises** the exponent and divides ($\int x^n = \frac{x^{n+1}}{n+1}$) — the reverse of the derivative rule; accidentally bringing the power _down_ (the derivative pattern) is a common slip.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Table completion)* Complete the table of indefinite integrals. Write each answer with its constant of integration.
 
@@ -53,7 +53,7 @@ The area under a curve approximated by rectangles that grow thinner and more num
 
 $$\int_a^b f(x)\, dx = \lim_{n \to \infty} \sum_{i=1}^n f(x_i)\,\Delta x$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Numerical input)* A function equals 3 on the interval from 0 to 2 and equals -3 on the interval from 2 to 5. Compute its definite integral from 0 to 5.
 
@@ -78,7 +78,7 @@ Conceptually, the FTC says **accumulation and rate-of-change are inverse operati
 
 > **Common pitfall:** in Part 2, subtracting the endpoints in the **wrong order**. The rule is $F(b) - F(a)$ — the _upper_ limit minus the _lower_ limit; reversing them flips the sign of the answer. And remember it evaluates the _definite_ integral: any antiderivative works (the $+C$ cancels), so do not fret over which one to choose.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Numerical input)* Use the evaluation rule to compute the definite integral of x squared from 1 to 4.
 
@@ -105,7 +105,7 @@ For a **definite** integral, either substitute back and use the original limits,
 
 > **Common pitfall:** substituting for $u$ but **forgetting to convert $dx$ into $du$** (i.e. neglecting the $g'(x)\,dx = du$ factor), and, in a definite integral, **using the old $x$-limits with the new $u$-variable**. Every $x$ (including the differential) must become $u$: if you change the variable, change the limits too — or substitute back before applying them. Leaving a stray $dx$ or mismatched limits is the defining error of substitution.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Table completion)* For each integral, complete the substitution you would make.
 
@@ -131,7 +131,7 @@ Substitution and parts are the two workhorses: substitution for **compositions**
 
 > **Common pitfall:** choosing $u$ and $dv$ **badly**, so the new integral $\int v\, du$ is _harder_ than the original. The goal is to make it simpler — pick $u$ to be the part that gets _simpler_ when differentiated (a polynomial eventually becomes a constant), following LIATE. Choosing $u = e^x$ in $\int x e^x\, dx$, for instance, leads nowhere; the right choice ($u = x$) makes the remaining integral trivial.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Formula builder)* Build the integration by parts formula: arrange the tokens to complete 'the integral of u dv equals ...'.
 
@@ -162,7 +162,7 @@ Two curves crossing to enclose a lens-shaped region filled with accent vertical 
 
 $$A = \int_a^b \big(f(x) - g(x)\big)\, dx$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Ordering)* Order the steps for finding the area of the region enclosed between two curves.
 
@@ -188,7 +188,7 @@ The unifying idea — **slice, approximate each slice's volume, integrate** — 
 
 > **Common pitfall:** forgetting to **square the radius** in the disk method, or confusing the disk and shell setups. A disk's cross-sectional area is $\pi r^2$ (area of a circle), so its volume element is $\pi [r(x)]^2\, dx$ — the radius is **squared**. And disks slice _perpendicular_ to the axis while shells slice _parallel_; mixing up which method matches the geometry (or dropping the $2\pi x$ factor in shells) produces the wrong integral.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Formula builder)* Build the disk method formula for a volume of revolution.
 
@@ -215,7 +215,7 @@ When an integral is hard to evaluate exactly, **comparison** settles convergence
 
 > **Common pitfall:** assuming that because the integrand **goes to zero**, the improper integral must **converge**. Decay to zero is necessary but not sufficient — $\frac{1}{x} \to 0$ yet $\int_1^{\infty}\frac{1}{x}\, dx$ **diverges**. Convergence depends on _how fast_ the function decays (for $\frac{1}{x^p}$, you need $p > 1$). Never conclude convergence from "the terms get small" alone; evaluate the limit or compare.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Matrix grid)* For each improper integral over the interval from 1 to infinity, decide whether it converges.
 
@@ -243,7 +243,7 @@ A slope field of little accent tangent segments with one solution curve threadin
 
 $$\frac{dy}{dx} = ky \;\Rightarrow\; y = y_0 e^{kx}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Numerical input)* What is the order of the differential equation y'' + 3y' = x?
 
@@ -269,7 +269,7 @@ The overarching lesson pairs with differential calculus: the **derivative** brea
 
 > **Common pitfall:** viewing these applications — displacement, work, probability, geometry — as separate formulas rather than one idea. They are all the **integral** (accumulation of infinitesimal pieces) applied to different quantities: force over distance, density over an interval, area over a width. Recognizing the common "sum up the little pieces" structure is what lets you set up any of them; missing it makes each look like a formula to memorize.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Numerical input)* A variable force F(x) = 6x newtons acts along a straight line from x = 0 to x = 4 metres. Compute the work done, in joules.
 

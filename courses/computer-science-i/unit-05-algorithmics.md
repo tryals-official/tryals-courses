@@ -14,7 +14,7 @@ An algorithm must also be **finite** (it terminates) and **definite** (each step
 
 > **Common pitfall:** optimizing for speed before establishing **correctness**. A fast algorithm that gives wrong answers is worthless; a correct-but-slow one at least works. Get it right first, prove or argue why it is correct, and only then make it efficient. Premature optimization of an incorrect method wastes effort on the wrong thing.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Category sort)* A set of instructions counts as a genuine algorithm only if it is finite (it always stops) and definite (every step is unambiguous). Sort each description.
 
@@ -45,7 +45,7 @@ This kind of reasoning catches **off-by-one** and boundary bugs that testing may
 
 > **Common pitfall:** confusing "the loop ran without crashing" with "the loop is correct." Only a well-chosen invariant, shown to hold at initialization and through every iteration, actually establishes correctness. Running a few cases can miss the boundary where an invariant silently breaks.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Ordering)* Order the three parts of a loop-invariant argument, which mirror mathematical induction.
 
@@ -82,7 +82,7 @@ A sorted array bar with binary search halving the highlighted range in accent at
 
 $$\text{binary search} = O(\log_2 n)$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Numerical input)* A sorted array has 1024 elements. Binary search halves the remaining range with each comparison. In the worst case, how many comparisons does it need to shrink the range to a single element?
 
@@ -116,7 +116,7 @@ A merge-sort recursion tree: a list splitting into halves down log n levels, the
 
 $$\text{merge sort} = O(n \log n)$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Category sort)* Sort each sorting algorithm by its typical asymptotic cost.
 
@@ -138,7 +138,7 @@ The pattern works when a problem has two features: it **decomposes** into indepe
 
 > **Common pitfall:** applying divide-and-conquer when the **combine** step is expensive, or the subproblems **overlap** (solve the same thing repeatedly). If subproblems overlap, plain divide-and-conquer redoes work exponentially — that is exactly the situation where **dynamic programming** (which stores subproblem answers) is the right tool instead.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Formula builder)* Arrange the three steps of the divide-and-conquer pattern in order.
 
@@ -166,7 +166,7 @@ The discipline, then, is: greedy is a tempting first idea, but you must **prove*
 
 > **Common pitfall:** assuming that because a greedy choice is locally optimal, the overall result is globally optimal. It frequently is not — as the coin example shows. To trust a greedy algorithm you must _prove_ its correctness; otherwise a single counterexample can demolish it.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Numerical input)* Making change for 30 using coins {1, 15, 20}, the greedy method takes the largest coin not exceeding the remaining amount at each step. How many coins does greedy use in total?
 
@@ -190,7 +190,7 @@ DP applies when a problem has two features: **overlapping subproblems** (the sam
 
 > **Common pitfall:** confusing dynamic programming with plain divide-and-conquer. Divide-and-conquer suits problems whose subproblems are **independent** (like merge sort's two halves). DP is for problems whose subproblems **overlap** — where the whole point is to _store_ and _reuse_ answers rather than recompute them.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Pattern sequence)* The Fibonacci sequence is F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1. Fill the gap.
 
@@ -218,7 +218,7 @@ One graph explored two ways: BFS rippling outward in numbered accent rings from 
 
 $$\text{BFS/DFS} = O(V + E)$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Grid path)* Each cell is a vertex; you may step only to an orthogonally adjacent cell, and blocked cells cannot be entered. Breadth-first search finds a fewest-step route. Trace a shortest path from the top-left cell to the bottom-right cell.
 
@@ -245,7 +245,7 @@ Do not forget **space complexity**: an algorithm may be fast but memory-hungry. 
 
 > **Common pitfall:** keeping constant factors and lower-order terms in a Big-O answer, writing "$O(3n^2 + 5n + 7)$." Asymptotic analysis drops constants and lower-order terms: that is simply $O(n^2)$. The whole point is to compare _growth shape_, not exact operation counts — the dominant term alone captures how the algorithm scales.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Ordering)* Order these complexity classes from slowest-growing to fastest-growing.
 
@@ -273,7 +273,7 @@ The mature lesson: these techniques are not separate exam topics but an **integr
 
 > **Common pitfall:** reaching for a complex technique (dynamic programming, an exotic data structure) when a simple approach meets the constraints — or, conversely, brute-forcing a problem whose size demands a better strategy. Good design matches the technique to the problem's actual size and structure, neither over- nor under-engineering.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Ordering)* Order the first five steps of the design workflow the lesson recommends.
 

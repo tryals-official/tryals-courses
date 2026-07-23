@@ -25,7 +25,7 @@ $$\vec{v} = v_x\,\hat{i} + v_y\,\hat{j} + v_z\,\hat{k}$$
 
 > **Common pitfall:** Vectors add tip-to-tail, not by adding lengths: walking 3 km east then 4 km north displaces you 5 km, not 7. Magnitudes only add when directions align.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(True false)* The zero vector has a well-defined direction.
    - True / False
@@ -62,7 +62,7 @@ $$(AB)_{ij} = \sum_k a_{ik}\,b_{kj}$$
 
 > **Common pitfall:** Matrix multiplication is not commutative: $AB \ne BA$ in general, because transformations compose in order — rotate-then-reflect differs from reflect-then-rotate. Never swap factors casually.
 
-> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(Interactive scene)* $A = \begin{pmatrix}3&1\\0&2\end{pmatrix}$. Set the **trace** — the diagonal highlights on send.
 
@@ -105,7 +105,7 @@ Back-substitution gives $y = 3$, $x = 1$.
 
 > **Common pitfall:** Row operations preserve the solution set, not the matrix: the echelon form is a different matrix telling the same story. And a row $0\;0\;|\;c$ with $c \ne 0$ ends that story — no solution, stop.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(Timeline ordering)* Order the steps of Gaussian elimination.
 
@@ -148,7 +148,7 @@ where $C_{ij} = (-1)^{i+j}M_{ij}$ and $M_{ij}$ is the minor.
 
 > **Common pitfall:** $\det(A+B) \ne \det A + \det B$. The determinant respects multiplication ($\det AB = \det A \det B$) but not addition — it is an area scale factor, and areas do not add across different maps.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(True false)* If det(A) = 0, then A is invertible.
    - True / False
@@ -204,7 +204,7 @@ Eigenvalues are found from the **characteristic equation** $\det(A - \lambda I) 
 
 > Eigenvectors reveal the intrinsic axes of a transformation — diagonalisation, stability analysis, and PCA all depend on them.
 
-> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(Interactive scene)* $A$ has columns $(1.2, 0.3)$ and $(0.6, 1.1)$. Place your prediction where $A$ sends $p = (2, 1)$ — the grid warps only after you send.
 
@@ -246,7 +246,7 @@ A **vector space** $V$ over $\mathbb{R}$ is a set equipped with **addition** and
 
 > **Common pitfall:** A subspace must contain the zero vector — that is the fastest test to run. The solutions of $Ax = b$ with $b \ne 0$ never form a subspace, however plane-like they look.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(Timeline ordering)* Order these steps to check if a set S is a subspace of ℝⁿ.
 
@@ -294,7 +294,7 @@ Common transformations: **rotations**, **reflections**, **scaling**, **shearing*
 
 > $|\det A|$ measures how the map scales areas. If $\det A < 0$, it reverses orientation.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(True false)* Every matrix multiplication Ax defines a linear transformation.
    - True / False
@@ -334,7 +334,7 @@ $$\vec{u}\times\vec{v} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ u_x & u_
 
 > **Common pitfall:** The dot product peaks for **parallel** vectors and dies at 90°; the cross product does the exact opposite. Picking the wrong product silently zeroes out the very geometry you meant to measure.
 
-> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(Interactive scene)* $\vec a = (3, 0)$, $\vec b = (1, 2)$. Set $|\vec a \times \vec b|$ — the area of the parallelogram they span (drawn only after you send).
 
@@ -378,7 +378,7 @@ $$\cos\theta = \frac{|\vec{n}_1\cdot\vec{n}_2|}{\|\vec{n}_1\|\,\|\vec{n}_2\|}$$
 
 > **Common pitfall:** A plane’s normal vector is perpendicular to every vector **in** the plane — the normal’s components come from the plane’s equation coefficients, not from points on the plane.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(Timeline ordering)* Order the steps to find the equation of a plane through 3 points.
 
@@ -428,7 +428,7 @@ print("Determinant:", np.linalg.det(A))
 
 > **Common pitfall:** Invertibility is all-or-nothing: one collapsed direction (one zero eigenvalue, $\det = 0$, dependent columns) breaks every equivalent property at once. Check the cheapest condition and conclude the rest.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(True false)* If A is a 3$\times3 matrix with rank 2, then the system$ $Ax = b$ has a unique solution for every b.
    - True / False

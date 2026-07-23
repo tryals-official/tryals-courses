@@ -2,7 +2,7 @@
 
 > A rigorous business administration course covering the economics of the firm, introductory economics, business law, mathematics, sociology, management, accounting, economic history, advanced mathematics, and microeconomics.
 
-**[Study this course interactively on Tryals →](https://tryals.app)**
+**[Study this course interactively on Tryals →](https://tryals.app/courses/business-i)**
 
 ## Units
 

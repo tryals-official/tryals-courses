@@ -24,7 +24,7 @@ A small standard deviation means data points cluster tightly around the mean; a 
 
 > **Common pitfall:** always defaulting to the mean without checking for outliers or skew first. A single extreme value (like one billionaire's income in a small sample) can drag the mean far from what most people would consider "typical" — the median is far more robust in exactly this situation.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Numerical input)* Seven employees' annual salaries, in thousands, are 32, 35, 38, 40, 42, 45, and 220. Find the MEDIAN salary (in thousands).
 
@@ -58,7 +58,7 @@ A bell curve: a bare symmetric curve; the ±1 SD band shades in with "68%"; the 
 
 $$z = \frac{x - \mu}{\sigma}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Numerical input)* On an exam with mean 70 and standard deviation 5, a student scores 85. Compute the z-score.
 
@@ -83,7 +83,7 @@ An increasingly favored companion (and, some argue, alternative) to the p-value 
 
 > **Common pitfall:** interpreting a 95% confidence interval as meaning "there is a 95% probability the true value falls within THIS SPECIFIC interval." The more precise interpretation is about the LONG-RUN PROCESS: if the study were repeated many times, about 95% of the resulting intervals (which would differ from sample to sample) would capture the true value — a subtle but real distinction from a probability statement about this one particular interval.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Truth table)* A Type I error occurs when a researcher rejects the null hypothesis (R) AND the null is actually true (T). Fill the output column for 'Type I error = R AND T'.
 
@@ -110,7 +110,7 @@ A key reason **ANOVA** exists, rather than just running many separate t-tests ac
 
 > **Common pitfall:** running many separate t-tests across multiple group pairs instead of one ANOVA, assuming this is equivalent and error-free. Each additional t-test compounds the overall Type I error rate across the full set of comparisons — which is exactly the statistical problem ANOVA is designed to solve.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* For each research question, choose the appropriate statistical tool.
 
@@ -136,7 +136,7 @@ Visualizations can also actively MISLEAD, even using accurate underlying data. A
 
 > **Common pitfall:** using a bar chart (with a truncated y-axis) to compare two very similar values, making a genuinely small difference look enormous. Always check where a chart's axis actually starts — a bar chart's height comparisons are only honestly interpretable when the axis begins at zero.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* For each data situation, choose the most appropriate chart.
 
@@ -166,7 +166,7 @@ Three small histograms: a right-skewed shape with mean-marker right of median-ma
 
 $$\text{Positive skew: mean} > \text{median}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* Classify each distribution by its skew.
 
@@ -194,7 +194,7 @@ Standard error shrinks as sample size ($n$) grows — larger samples produce mor
 
 > **Common pitfall:** confusing standard deviation (SD) with standard error (SE). Standard deviation describes the spread of INDIVIDUAL data points around the mean; standard error describes the spread of SAMPLE MEANS around the true population mean across many hypothetical samples — a related but distinct concept, and SE is always smaller than SD for the same data (since it shrinks further as sample size grows).
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Numerical input)* A population has standard deviation (sigma) = 20. A researcher draws a sample of n = 100. Compute the standard error of the mean.
 
@@ -227,7 +227,7 @@ Two overlapping bell curves: two curves heavily overlapping (small d); they sepa
 
 $$d = \frac{M_1 - M_2}{SD}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Numerical input)* Group 1 has a mean of 80, Group 2 a mean of 74, and the pooled standard deviation is 8. Compute Cohen's d.
 
@@ -255,7 +255,7 @@ Just as in quantitative research, qualitative analysis benefits from checking **
 
 > **Common pitfall:** assuming qualitative coding is a purely subjective, "anything goes" free-for-all with no rigor at all. Systematic procedures (explicit coding schemes, checking inter-rater reliability, actively searching for evidence that contradicts an emerging theme) are exactly what distinguish careful qualitative analysis from casual, unsystematic impression.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Ordering)* Put the stages of thematic analysis (Braun and Clarke) in order.
 
@@ -283,7 +283,7 @@ Developmental psychologists (and psychologists generally) also choose between tw
 
 > **Common pitfall:** treating a cross-sectional age difference as automatically proving something changes WITH AGE. Because different age groups in a cross-sectional study also grew up in different historical eras, an observed "age difference" could just as easily be a cohort effect — a longitudinal design, tracking the same people over time, is needed to cleanly separate true aging effects from cohort effects.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* Classify each described method or design.
 

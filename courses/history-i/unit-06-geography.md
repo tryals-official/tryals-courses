@@ -40,7 +40,7 @@ Geomorphology is the reminder that the stage is itself in motion, just slowly:
 
 **The methodological point:** you cannot read modern terrain back onto the past. The historian who looks at today's map and reasons about an ancient decision is analysing a stage that has since been rebuilt — and the actors were standing somewhere else.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* A cargo of grain, a Roman price list, and two routes. **Drag the shipment along each route** until the costs match — how far inland does a whole Mediterranean crossing buy you?
 
@@ -107,7 +107,7 @@ The final beat holds both columns side by side under one temperature line, and s
 
 Climate is a stressor, not a script. Nature ran the controlled experiment and the answer survived.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* Norse and Inuit, same Greenland, same century, same cold. **Drag the temperature down** and watch the two subsistence systems respond.
 
@@ -182,7 +182,7 @@ $$\text{Africa} \approx 14 \times \text{Greenland}$$
 
 The final movement is the argument. The Mercator sheet is re-framed as what it is — a navigational chart, superb at its job — and then a classroom wall assembles around it, four centuries of it, flattering exactly the latitudes where the maps were printed. The closing caption does not blame the projection: the scandal was promoting a specialized instrument to "what the world looks like", and forgetting there was ever a bargain at all.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* **Drag Greenland down the Mercator sheet** toward the equator and watch it shrink to its true size. How many Greenlands fit in Africa?
 
@@ -231,7 +231,7 @@ The push–pull frame is standard — famine, war, and persecution push; wages, 
 
 **Migration is also overwhelmingly normal.** The great named migrations get the attention, but most movement is short-range, circular, and repeated — seasonal labour, marriage, apprenticeship, return. The sedentary peasant who never left the village is largely a nineteenth-century fiction, and parish registers demolished it the moment anyone bothered to link the names.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* Two curves, one lag. **Drag the birth-rate curve’s fall earlier and later** relative to the death rate and watch the population respond.
 
@@ -272,7 +272,7 @@ Nothing diffuses unchanged. Adoption is a negotiation, and the receiver has term
 
 > **The cultural landscape is the residue of all this.** Field shapes, house forms, street grids, boundary hedges, the placement of the church — a landscape is a text written by everyone who ever made a decision on it and never erased by any of them. Carl Sauer's formulation still holds: culture is the agent, the natural area is the medium, the cultural landscape is the result. And that landscape is legible — a street plan can tell you about a colonial administration that fell two centuries ago, because street plans outlive the states that draw them.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* A new technology appears in a region’s four largest cities and nowhere in between. **Pick the diffusion mechanism** and watch it replay across the map.
 
@@ -327,7 +327,7 @@ Mackinder's Heartland thesis (1904) — that whoever controls the Eurasian inter
 
 The trouble with geopolitical laws is that they present a strategic argument as geography. Distance and terrain are real constraints; "he who controls X controls the world" is a policy dressed as a fact — and a theory that tells a state what it must do, in the language of inevitability, is a theory doing political work while claiming to be a map.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* The Prussian–Russian partition line vanished in 1918. **Slide the year forward to today** and watch what the abandoned border still does to the map.
 
@@ -371,7 +371,7 @@ All three are Chicago-shaped, and generalize badly — a European city with a me
 
 > **The deepest point about cities:** they are the densest artefact humans make, and the density is the point. Cities exist because proximity is productive — it lowers the cost of exchange, matching, and imitation, and it always has. This is also why cities have historically been demographic sinks: until sanitation, cities killed more people than they bore and grew _only_ by continuous in-migration from the countryside. A pre-modern city is a place that consumes people, and they came anyway, because it was still the best offer available.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* A country with one vast port, thousands of villages, and nothing in between. **Compare its city-size distribution to the rank-size curve** and read what the gap testifies to.
 
@@ -425,7 +425,7 @@ The effects were structural, not incremental:
 
 **The historical point is what this reveals:** almost everything that looked like a permanent law of economic geography — luxuries travel, bulk does not; industry clusters near markets; cities cling to natural harbours — was a statement about the price of moving things. Change the price and the "laws" evaporate within a generation. Geography did not change in 1956. The price list did, and it turned out the price list had been doing all the work.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* Load a caravan with grain and send it overland. **Push the distance out** until the arithmetic kills the trade.
 
@@ -481,7 +481,7 @@ The related trap is the **ecological fallacy**: an aggregate pattern does not li
 
 **The rule is the one from the digital-humanities lesson, restated:** the method changes the scale, not the epistemology. Ask the layer what you would ask a document — who made it, why, what is missing, at what precision. A crisp line is a claim about evidence, and GIS will render your assumptions beautifully.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* Straight lines mean nothing in real terrain. **Drop a cost surface under two towns** and compute where movement would actually go — then compare it to the Roman road.
 
@@ -529,7 +529,7 @@ Jared Diamond's continental-axis argument is the honourable modern version, and 
 
 So: **geography sets the price list. People choose. The choices compound.** All three clauses are load-bearing. Drop the first and you cannot explain the patterns; drop the second and you have an alibi with a map; drop the third and you cannot explain why small differences in cost became civilizational differences in outcome. That is not a compromise. It is the answer.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* Determinism dies wherever one environment yields two outcomes. **Place both peoples on the same island under the same cold** and run the century.
 

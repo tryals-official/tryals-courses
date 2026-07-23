@@ -27,7 +27,7 @@ $$y = \frac{1}{\mu}\int \mu\,Q\,dx, \quad \mu = e^{\int P\,dx}$$
 
 > **Common pitfall:** The general solution of a first-order ODE carries one arbitrary constant — forgetting "+C" (or fixing it with the wrong initial condition) yields *a* solution but not *your* solution.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(True false)* A first-order ODE involves only the first derivative of the unknown function.
    - True / False
@@ -79,7 +79,7 @@ The behaviour depends on the damping ratio $\zeta = b/(2\sqrt{mk})$:
 
 > Critical damping is used in door closers, shock absorbers, and galvanometers — it returns to equilibrium in minimum time.
 
-> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(Interactive scene)* $m = 1$ kg, $\omega_0 = 3.2$ rad/s. Dial the damping coefficient to the **critical** value — the response stays hidden until you send.
 
@@ -129,7 +129,7 @@ print("Eigenvectors:\n", vecs)
 
 > **Common pitfall:** In coupled systems, each equation’s rate depends on the **other** variable — solving them one at a time as if independent destroys exactly the interaction the system exists to model.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(Timeline ordering)* Order the steps for solving a 2$\times2 linear system$ $X' = AX$.
 
@@ -175,7 +175,7 @@ $$\mathcal{L}\{f(t)\} = F(s) = \int_0^\infty e^{-st}f(t)\,dt$$
 
 > **Common pitfall:** Laplace transforms absorb initial conditions at the very first step, via $\mathcal{L}\{y'\} = sY - y(0)$. Bolting the conditions on at the end, ODE-style, double-counts or drops them.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(True false)* The Laplace transform converts a differential equation into an algebraic equation.
    - True / False
@@ -231,7 +231,7 @@ A field like $\vec{F} = (-y, x)$ is **rotational**: streamlines form closed loop
 
 > Gradient, divergence, and curl are the building blocks of vector calculus.
 
-> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(Interactive scene)* $\vec F = (x^2,\ y)$. Compute the divergence at the marked point $P(1.5, 0)$ and set the dial.
 
@@ -280,7 +280,7 @@ This is path-independent because gravity is conservative with $\phi = mgh$.
 
 > **Common pitfall:** Path-independence is a privilege of conservative fields, not a general truth. Before replacing a line integral by endpoint values, verify $\vec{F} = \nabla f$ (e.g. check the curl vanishes on a simply connected region).
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(Timeline ordering)* Order the steps to evaluate a line integral $\int_C F \cdot dr$.
 
@@ -320,7 +320,7 @@ $$d\vec{S} = (-g_x\,\hat{i} - g_y\,\hat{j} + \hat{k})\,dx\,dy$$
 
 > **Common pitfall:** Flux integrals are orientation-sensitive: flipping the surface normal flips the sign. Fix the normal’s direction (outward? upward?) before integrating, or the "right" magnitude arrives with the wrong sign.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(True false)* A surface integral ∬_S F $\cdot dS measures the total flux of F through the surface S$.
    - True / False
@@ -365,7 +365,7 @@ where $S$ is the closed surface bounding the volume $V$, with outward-pointing n
 
 > **Common pitfall:** The divergence theorem needs a **closed** surface enclosing a volume where the field is smooth. An open surface, or a singularity inside (like $1/r^{2}$ at the origin), voids the equality.
 
-> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(Cloze bank)* Complete the following passage by choosing the correct terms from the word bank.
 
@@ -409,7 +409,7 @@ $$\oint_C (P\,dx + Q\,dy) = \iint_D \left(\frac{\partial Q}{\partial x} - \frac{
 
 > **Common pitfall:** In Stokes’ theorem, the curve’s direction and the surface’s normal are chained by the right-hand rule. Choosing them independently produces answers that are perfectly computed and off by a sign.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(Timeline ordering)* Order the steps to apply Stokes' theorem to evaluate a line integral.
 
@@ -460,7 +460,7 @@ print(sol)
 
 > **Common pitfall:** The big theorems (Green, Stokes, divergence) trade a boundary integral for an interior one — the win comes from picking whichever side is easier. If both sides look equally hard, you have not yet exploited the freedom to choose the surface or region.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(True false)* The superposition principle applies to all linear differential equations (homogeneous and nonhomogeneous).
    - True / False

@@ -2,7 +2,7 @@
 
 > A rigorous history degree course covering anthropology, archaeology, art history, historiography, historical sources, geography, ancient history, and prehistory.
 
-**[Study this course interactively on Tryals →](https://tryals.app)**
+**[Study this course interactively on Tryals →](https://tryals.app/courses/history-i)**
 
 ## Units
 

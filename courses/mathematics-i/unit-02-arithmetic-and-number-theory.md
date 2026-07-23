@@ -15,7 +15,7 @@ Each extension is driven by **closure**: we enlarge the number system precisely 
 
 > **Common pitfall:** assuming every real number is rational, or that the systems are separate rather than **nested**. Numbers like $\sqrt{2}$ and $\pi$ are real but **not** rational — their decimals never terminate or repeat. And the systems build on each other: every integer _is_ a rational (e.g. $5 = \frac{5}{1}$), so they are not disjoint categories but a chain of ever-larger sets.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Matrix grid)* Place each number in the SMALLEST number system that contains it.
 
@@ -46,7 +46,7 @@ A row of b unit blocks grouped into equal piles of size a; the q full piles form
 
 $$b = aq + r,\quad 0 \le r < a$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Table completion)* Apply the division algorithm b = a q + r with 0 <= r < a. Complete the quotients and remainders.
 
@@ -76,7 +76,7 @@ A factor tree for 60 branching 60 to 2 and 30, 30 to 2 and 15, 15 to 3 and 5, th
 
 $$n = p_1^{a_1} p_2^{a_2} \cdots p_k^{a_k}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Matrix grid)* Classify each integer.
 
@@ -100,7 +100,7 @@ A beautiful identity links gcd and lcm: $\gcd(a, b) \cdot \operatorname{lcm}(a, 
 
 > **Common pitfall:** confusing the **gcd** (greatest common _divisor_, a factor of both) with the **lcm** (least common _multiple_, a multiple of both). The gcd is _at most_ the smaller number; the lcm is _at least_ the larger. For 12 and 18, gcd = 6 (small) and lcm = 36 (large) — mixing them up inverts the relationship. Remember $\gcd \cdot \operatorname{lcm} = ab$.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Ordering)* Order the lines of the Euclidean algorithm computing gcd(1071, 462).
 
@@ -126,7 +126,7 @@ You may add, subtract, and multiply congruences just like equations — which me
 
 > **Common pitfall:** assuming you can **divide** or **cancel** in congruences as freely as you add and multiply. Addition, subtraction, and multiplication respect congruence, but cancellation does _not_ in general: $6 \equiv 2 \pmod 4$ but you cannot cancel the common factor 2 to get $3 \equiv 1 \pmod 4$ (which is false). Division mod $n$ requires a multiplicative inverse, available only for numbers coprime to $n$.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Table completion)* Reduce each integer modulo 7. Remember the result must lie between 0 and 6.
 
@@ -156,7 +156,7 @@ Two celebrated theorems make computation easy:
 
 > **Common pitfall:** trying to solve $ax \equiv b \pmod n$ by "dividing by $a$" when $a$ and $n$ are **not coprime**. The inverse $a^{-1}$ exists only when $\gcd(a, n) = 1$; without it you cannot simply divide. When $\gcd(a, n) > 1$ the congruence has either _no_ solution or _several_ (never a single unique one) — checking coprimality first tells you which case you are in.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Number line placement)* Solve the congruence 3x is congruent to 1 mod 7. **Place the marker on the solution x with 0 <= x < 7.
 
@@ -184,7 +184,7 @@ A surprising fact about how these mix: between _any_ two distinct real numbers l
 
 > **Common pitfall:** believing that any decimal that "looks endless" is irrational. A decimal is irrational only if it is both non-terminating _and_ non-repeating. $0.333\dots$ and $0.\overline{142857}$ run forever but **repeat**, so they are perfectly rational ($\frac{1}{3}$ and $\frac{1}{7}$). Endlessness alone does not make a number irrational — the absence of a repeating pattern does.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Table completion)* Complete the decimal expansions. Each of these fractions terminates.
 
@@ -209,7 +209,7 @@ Between the density of the rationals and the completeness of the reals lies the 
 
 > **Common pitfall:** confusing an **upper bound** with the **least** upper bound (supremum), or treating open and closed intervals as interchangeable. Any number above a set is _an_ upper bound; the supremum is the _smallest_ such number. And $[a, b]$ **includes** its endpoints while $(a, b)$ **excludes** them — a distinction that matters for whether a maximum is attained. Completeness guarantees the supremum exists in $\mathbb{R}$, but it need not be a member of the set.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Numerical input)* Compute the value of |3 - 11| + |-4|.
 
@@ -239,7 +239,7 @@ Two bar rows: an arithmetic sequence with equal accent steps added (a straight-l
 
 $$a_n = a_1 + (n-1)d \;;\; a_n = a_1 r^{n-1}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Table completion)* Work out the pattern in each sequence and supply the next term.
 
@@ -267,7 +267,7 @@ The lesson is that the unit's abstract tools — **divisibility, primes, gcd, co
 
 > **Common pitfall:** thinking cryptographic security comes from a _secret algorithm_ rather than a _hard mathematical problem_. RSA's method is completely public; its security rests on the number-theoretic fact that **factoring a large number into its prime factors is computationally hard**, while multiplying primes is easy. The secret is the _prime factors_, not the procedure — hiding the algorithm is neither necessary nor what protects the data.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Numerical input)* An ISBN-10 has digits d1 through d10 and must satisfy: 1 x d1 + 2 x d2 + ... + 10 x d10 is congruent to 0 mod 11. The first nine digits are 0, 3, 0, 6, 4, 0, 6, 1, 5. Find the check digit d10.
 

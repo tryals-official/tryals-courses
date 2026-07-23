@@ -21,7 +21,7 @@ A seesaw balance beam with "sympathetic" on one side and "parasympathetic" on th
 
 $$\text{arousal} = \text{sympathetic} - \text{parasympathetic tone}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* For each activity, which division of the nervous system is chiefly responsible? Classify each row.
 
@@ -41,7 +41,7 @@ The action potential obeys the **all-or-none principle**: it either fires comple
 
 > **Common pitfall:** believing a more intense stimulus makes a "bigger" action potential. It cannot. Because of the all-or-none principle, intensity is coded by how OFTEN the neuron fires, not by how large each spike is.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Ordering)* Order the path a signal travels through a single neuron.
 
@@ -65,7 +65,7 @@ A: an impulse arrives at the terminal; vesicles fuse and release dots of neurotr
 
 $$\text{net signal} = \text{excitatory} - \text{inhibitory input}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Ordering)* Order the events of chemical synaptic transmission.
 
@@ -85,7 +85,7 @@ Behind the brainstem sits the **cerebellum** ("little brain"), a densely folded 
 
 > **Common pitfall:** confusing the cerebellum with the cerebrum. The **cerebrum** is the large, wrinkled outer brain of higher thought; the **cerebellum** ("little brain") is the small structure tucked _behind and below_ it that coordinates movement and balance. Similar names, very different jobs.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* Each row is a clinical picture. Assign it to the structure whose damage would produce it.
 
@@ -116,7 +116,7 @@ The **amygdala** is the brain's threat detector and emotional core, central to _
 
 > **Common pitfall:** confusing the hippocampus and the hypothalamus because their names sound alike. The **hippo_campus_** makes new _memories_; the **hypo_thalamus_** regulates _drives_ (hunger, thirst, temperature) and hormones. Very different jobs.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* Each row is a deficit or behavior. Assign it to the limbic structure responsible.
 
@@ -149,7 +149,7 @@ Vast stretches of cortex are **association areas** — not tied to any single se
 
 > **Common pitfall:** assuming each lobe works in isolation. Complex behavior almost always draws on _multiple_ lobes and the association areas that link them — reading, for instance, engages occipital (vision), temporal (language), and frontal (attention) regions at once.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* Each row is a lesion deficit. Assign it to the lobe that was damaged.
 
@@ -179,7 +179,7 @@ A top-down head: left and right visual fields cross to the opposite hemispheres;
 
 $$\text{naming} \Rightarrow \text{signal reaches the left hemisphere}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* For most people, sort each task by the hemisphere that specializes in it.
 
@@ -211,7 +211,7 @@ The key trade-off is between **temporal** and **spatial** resolution. **EEG** re
 
 > **Common pitfall:** treating fMRI as a direct measure of neural firing. It measures **blood-oxygen changes** that _follow_ neural activity by a second or more — a proxy, not the electrical signal itself. That lag is exactly why fMRI has excellent spatial but poor temporal resolution.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* Classify each imaging technique by whether it primarily reveals structure or function.
 
@@ -237,7 +237,7 @@ The stress response runs along the **HPA axis**: the **h**ypothalamus signals th
 
 > **Common pitfall:** thinking the endocrine system is just a slower copy of the nervous system. Its messages are not only slower but _broader and longer-lasting_ — a single hormone released into the blood can affect many organs at once, for minutes, hours, or even years, in ways a brief targeted neural signal cannot.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Ordering)* Order the steps of the HPA axis, the body's slow stress pathway.
 
@@ -259,7 +259,7 @@ Plasticity is greatest in early development (the **critical** and **sensitive pe
 
 > **Common pitfall:** believing neuroplasticity ends in childhood. Plasticity is _greatest_ early in life, but it continues throughout adulthood — the adult brain keeps forming, strengthening, and pruning connections (and even growing some new neurons) as long as it keeps learning.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* Match each description to the neuroplasticity mechanism it names.
 

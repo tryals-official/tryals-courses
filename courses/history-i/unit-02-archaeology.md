@@ -30,7 +30,7 @@ $$\text{cut} \Rightarrow \text{younger than everything it cuts}$$
 
 Finally the layers lift out of the ground one by one and rearrange into the **Harris matrix** — boxes and lines, oldest at the bottom, the pit branching in at its true position. The section shows _where_ things are; the matrix shows _when_. Depth was never the clock — **sequence** is, and the pit that reaches deepest while dating youngest is the proof.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* A pit cuts down through three layers of this section. **Tap the context that must be the YOUNGEST** — the section will replay its formation to check you.
 
@@ -71,7 +71,7 @@ $$N(t) = N_0 \cdot (1/2)^{t / 5730}$$
 
 Watch the far end of the curve: by ten half-lives the remaining C-14 sinks into the measurement noise floor — the ~50,000-year ceiling appears on screen not as a rule but as a _consequence_. Then the calibration beat: raw radiocarbon years bend against the tree-ring curve, and the date steps from "radiocarbon age" to calendar age. The clock is elegant; reading it honestly is the craft.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* This bone retains **25% of its original carbon-14**. **Drag the time slider** until the decay curve matches the sample — the lab meter will grade your date.
 
@@ -101,7 +101,7 @@ Modern practice excavates in **single contexts**, peeling depositional events in
 
 > **Why not dig it all?** Even with perfect recording, excavation spends the site. Best practice leaves part of every site untouched — future archaeologists will bring questions and instruments we cannot imagine, and the unexcavated half is our gift to them. (Radiocarbon, DNA, and isotope analysis all arrived _after_ most of the world's great sites were already dug.)
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* The magnetometry map shows a buried anomaly. **Drag the 2-meter test trench onto the grid square that samples the anomaly’s edge** — cutting its heart wastes it; missing it learns nothing.
 
@@ -134,7 +134,7 @@ Flinders Petrie invented the method (**sequence dating**, 1890s) to order thousa
 
 > **Direction is the catch:** seriation delivers the _sequence_ but not its _polarity_ — the battleship curves look identical run forwards or backwards. An external anchor (one C-14 date, one stratified find, one historical link) tells you which end is early. Relative method, absolute anchor: the recurring partnership of the whole chapter.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* Five grave-assemblages sit in scrambled order, their pottery-type frequencies shown as bars. **Drag the rows until every type forms a smooth battleship curve** — the shape grades your sequence.
 
@@ -169,7 +169,7 @@ Bone chemistry preserves biography the bones' shape cannot:
 
 > **The survivorship trap — the "osteological paradox":** a skeleton with _healed_ disease lesions belonged to someone whose body fought the illness and lived long enough to remodel bone; a victim who died fast may show _no_ lesions at all. So a cemetery full of lesions can mean a _healthier_, more resilient population, not a sicker one. As always, the evidence needs an interpreter — the bone states a fact; the meaning is an argument.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* A skeleton’s tooth enamel carries a strontium signature from far away, but the bones match the local burial soil. **Drag the origin pin to where this person spent childhood** — the isotope map will confirm.
 
@@ -210,7 +210,7 @@ Zooarchaeology reads the bones of eaten animals: species ratios separate hunters
 
 > **Proxies are indirect — mind the filters.** Wind-pollinated trees (pine, oak) flood the pollen rain; insect-pollinated plants and many crops are badly under-represented, so raw pollen percentages are not a headcount of the vegetation. Bones face taphonomy — dogs, decay, and recovery bias reshape any assemblage before the archaeologist ever counts it. Reading proxies means reading through the filter that made them, not around it.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* A pollen core runs from deep (old) to surface (recent). **Drag the marker to the depth where the first farmers arrive** — the pollen spectrum will confirm the clearance signature.
 
@@ -247,7 +247,7 @@ Archaeologists test spacing with the **nearest-neighbour statistic**, which dist
 
 > **The visibility trap:** what survives to be mapped is not what once existed. Stone towns outlast timber hamlets; deep-plowed valleys erase sites that hilltops preserve; a Roman villa is easy to find and a laborer's hut is not. A settlement "pattern" is always partly a **preservation and discovery pattern** — the map of the found, not the map of the past.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* Place a market town to serve a plain of scattered villages with the least total travel. **Drag its hexagonal service area** so it tiles the plain with no gaps — the lattice will snap true when the spacing is right.
 
@@ -283,7 +283,7 @@ Magnetometry is the workhorse: it can sweep a field in a morning, and burnt feat
 
 > **A picture is not an interpretation.** Geophysics shows anomalies — differences. A rectangular high-resistance anomaly _might_ be a Roman building, or a modern sheepfold, or a geological quirk. The instrument tells you where to put the trench; only the trench tells you what it is, and only stratigraphy tells you when.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* This jungle hides a Maya city. **Drag the LiDAR filter to strip the canopy** and reveal the bare-earth model — stop where the causeways and platforms appear.
 
@@ -319,7 +319,7 @@ Experiment underwrites two forensic methods. Cut a replica blade through hide, t
 
 > **The limit — and the discipline:** archaeology recovers _behaviour_, and behaviour under-determines belief. A burial with grave goods proves that people treated the dead with care and expense; it cannot, by itself, prove a specific belief in an afterlife of a particular kind. Cognitive archaeology's honest claims are about **capabilities** — planning, symbolizing, measuring, abstracting — not about doctrines. The best practitioners state the inference and its ceiling in the same breath.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* A replica blade was used on one material. **Match the excavated blade’s edge polish to the job it did** — the microscope will compare your pick with the reference wear.
 
@@ -361,7 +361,7 @@ The Parthenon Marbles (removed by Lord Elgin, 1801–12, contested ever since), 
 
 > **The working consensus:** the past is not a scholarly commons free for the taking. Descendant communities have standing to speak for their ancestors, and consultation is not a courtesy extended to them — it is a condition of doing the work at all. Where the discipline once asked "what may we study?", it increasingly asks "with whom?"
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* A dealer offers a spectacular unprovenienced vase. **Drag the vase onto what buying it actually funds** — the consequence chain will play out.
 

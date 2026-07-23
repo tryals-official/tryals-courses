@@ -2,7 +2,7 @@
 
 > A rigorous mathematics course covering logical reasoning and set theory, arithmetic and number theory, matrices and vectors, linear algebra, differential calculus, integral calculus, data analysis and probability, programming elements, scientific programming, and physics.
 
-**[Study this course interactively on Tryals →](https://tryals.app)**
+**[Study this course interactively on Tryals →](https://tryals.app/courses/mathematics-i)**
 
 ## Units
 

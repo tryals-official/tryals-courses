@@ -15,7 +15,7 @@ Intuitively, you can draw a continuous function without lifting your pen. Polyno
 
 > **Common pitfall:** confusing the **limit** of a function at a point with its **value** at that point. $\lim_{x \to a} f(x)$ can exist even when $f(a)$ is undefined or different — the limit ignores the single point $a$ and looks only at nearby behavior. Continuity is precisely the special case where the limit and the value _agree_; assuming they always agree erases the whole point of a limit.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Table completion)* Let f(x) = (x^2 - 4) / (x - 2). The function is undefined at x = 2. Complete the table of values approaching 2 from both sides.
 
@@ -50,7 +50,7 @@ A curve with a secant line through two points; the second point slides toward th
 
 $$f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Numerical input)* For f(x) = x^2, compute the average rate of change between x = 3 and x = 3.5.
 
@@ -78,7 +78,7 @@ Standard derivatives round out the toolkit: $\frac{d}{dx}\sin x = \cos x$, $\fra
 
 > **Common pitfall:** thinking the derivative of a **product** is the product of the derivatives, or forgetting the **chain rule** on a composition. $(fg)' = f'g + fg'$, _not_ $f'g'$. And for $f(g(x))$ you must multiply by $g'(x)$ — e.g. $\frac{d}{dx}\sin(x^2) = \cos(x^2)\cdot 2x$, not just $\cos(x^2)$. Omitting the inner derivative is the single most common differentiation mistake.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Table completion)* Apply the power rule, the constant multiple rule and the sum rule. Complete the derivatives.
 
@@ -105,7 +105,7 @@ This is the mathematical core of a vast range of computing: training a machine-l
 
 > **Common pitfall:** assuming every point with $f'(x) = 0$ is a maximum or minimum, and forgetting the **endpoints**. A zero derivative marks a _critical point_, but it could be an **inflection point** (like $x^3$ at 0, which is neither a max nor a min) — you must classify it. And on a closed interval the true extreme may sit at an **endpoint**, where the derivative need not be zero, so checking only $f'(x)=0$ can miss the actual maximum.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Numerical input)* Let f(x) = x^2 - 6x + 5. At which value of x is the critical point?
 
@@ -132,7 +132,7 @@ More involved integrals use techniques like **substitution** (reversing the chai
 
 > **Common pitfall:** forgetting the **constant of integration** $+C$, and misapplying the integration power rule. Every indefinite integral needs $+C$, because antiderivatives are unique only up to a constant. And the integral power rule _raises_ the exponent and divides ($\int x^n = \frac{x^{n+1}}{n+1}$) — the reverse of the derivative rule; using the derivative pattern (bringing the power down) for integration is a common slip.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Table completion)* Reverse each differentiation rule. Complete the antiderivatives, omitting the constant of integration in the table.
 
@@ -168,7 +168,7 @@ The area under a curve approximated by rectangles that grow thinner and more num
 
 $$\int_a^b f(x)\, dx = \lim_{n \to \infty} \sum_{i=1}^n f(x_i)\,\Delta x$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Numerical input)* Approximate the area under f(x) = x^2 from x = 0 to x = 4 using four rectangles of width 1 whose heights are taken at the LEFT endpoint of each strip. What is the total?
 
@@ -193,7 +193,7 @@ Conceptually, the FTC says **accumulation and rate-of-change are inverse operati
 
 > **Common pitfall:** in Part 2, subtracting the endpoints in the **wrong order**, or forgetting it applies to the _definite_ integral only. The rule is $F(b) - F(a)$ — the _upper_ limit minus the _lower_ limit; reversing them flips the sign. And the $+C$ of the antiderivative does not matter here (it cancels in the subtraction), which is why _any_ antiderivative works.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Numerical input)* Use the evaluation rule to compute the definite integral of f(x) = x^2 from x = 0 to x = 3.
 
@@ -217,7 +217,7 @@ Series are foundational in computing: they define functions (next lesson's Taylo
 
 > **Common pitfall:** assuming that if the terms $a_n \to 0$ the series must converge. That is **false** — the harmonic series $\sum \frac{1}{n}$ has terms going to zero yet diverges. Terms shrinking to zero is _necessary_ but _not sufficient_ for convergence. (The valid one-way rule is the contrapositive: if the terms do _not_ go to zero, the series definitely diverges.)
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Pattern sequence)* The partial sums of the series 1 + 1/2 + 1/4 + 1/8 + ... are listed in order. Fill the gap.
 
@@ -243,7 +243,7 @@ The key idea for computing: **replace a hard function by an easy polynomial that
 
 > **Common pitfall:** expecting a truncated Taylor polynomial to be accurate _far_ from the expansion point. A Taylor polynomial matches the function best **near** the center $a$ and its error typically grows as $|x - a|$ increases — a few terms good near $a$ can be wildly wrong far away. More terms extend the accurate region but never make a finite polynomial match everywhere; the approximation is fundamentally _local_.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Numerical input)* The Maclaurin series for e^x begins 1 + x + x^2/2 + ... Keeping only those three terms, estimate e^1.
 
@@ -269,7 +269,7 @@ A contour map of a bowl with the accent gradient arrow at a point pointing uphil
 
 $$\nabla f = \left(\frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}\right)$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Numerical input)* Let f(x, y) = 3x^2 y + y^3. Compute the partial derivative with respect to x at the point (2, 1).
 

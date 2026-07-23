@@ -48,7 +48,7 @@ The closing frame kills the ladder. The march-of-progress silhouettes assemble, 
 
 $$\text{one surviving human species} = \text{recent} + \text{temporary} + \text{abnormal}$$
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* Two dials, six million years: posture and brain size. **Drag the timeline** and find how many millions of years we walked upright before the brain began to expand.
 
@@ -99,7 +99,7 @@ The cartoon Neanderthal — hunched, dumb, brutish — was partly built on one b
 
 > **The killer fact:** they are inside us. Most people outside Africa carry 1–4% Neanderthal DNA, which means the "replacement" was never total — it was absorption. They did not simply lose to us. They interbred with us and then, as a distinct population, disappeared into a larger one. Extinction is rarely as clean as the word makes it sound.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* A burnt layer in a cave is not proof of anything. **Add features to the evidence** until you can honestly claim humans controlled fire — and find the minimum that does it.
 
@@ -145,7 +145,7 @@ Three innovations of this period matter beyond art:
 
 The needle deserves the same respect as the flute. Fitted clothing is a **portable microclimate**, and it is what let our species walk into the coldest inhabited places on Earth and stay there. Between 45,000 and 15,000 years ago, humans reach Australia across open water, occupy Siberia, and cross into the Americas. The species goes global — carrying needles, beads, and stories.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* Lascaux’s painters mostly ate reindeer. **Compare what they painted with what they ate** and find how many of the top painted animals appear in their rubbish heaps.
 
@@ -191,7 +191,7 @@ Archaeologists call this the **broad-spectrum revolution**: instead of specializ
 
 > **And here is the part that upends the standard story.** In some rich places — estuaries, salmon rivers, the coasts — foraging was so productive that people **stopped moving before they started farming.** Sedentism came first. The **Natufians** of the Levant built stone-founded villages, ground wild cereals with heavy immovable mortars, and buried their dead beneath their houses — while remaining foragers. Nobody had to invent agriculture to settle down. Which means the famous causal arrow — farming produced villages — points, in these cases, exactly backwards: **villages came first, and farming was what people in villages eventually did.**
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* Standard story: farming → surplus → villages. **Reorder the Natufian evidence** and find which step actually comes first in the Levant.
 
@@ -255,7 +255,7 @@ The final act zooms out to the globe and drops seven pins — the Fertile Cresce
 
 The closing caption does not moralize. It just notes that the same trap, in seven places, caught everyone who walked near it — and that a species can make itself worse off and more numerous at the same time, which is exactly why "was it progress?" is the wrong question.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* Farming made people shorter, sicker, and busier. **Run the population ratchet** and find the generation after which going back to foraging becomes impossible.
 
@@ -300,7 +300,7 @@ The functional questions ("what did it do?") are mostly a dead end. The better q
 
 Which is why "before writing" does not mean "before history-making." These people were making claims about time — about ancestors, seasons, and the future — using the only medium that outlasts everything: rock, arranged on purpose, aimed at the sun.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* The textbook order runs farming → surplus → hierarchy → monuments. **Drop Göbekli Tepe onto the sequence** and find how many of those prerequisites its builders actually had.
 
@@ -348,7 +348,7 @@ $$\text{bronze} = \text{rare} + \text{imported} + \text{elite} \quad \text{vs} \
 
 Bronze arms an aristocracy; iron arms **a village**. A metal you can smelt from local ore, without a trade route through three kingdoms, cannot be monopolized by the people who control the routes. Historians argue about how directly this "democratization of metal" translated into political change — carefully, because technological determinism is a trap this course keeps warning about. But the direction is real: when the thing that makes a weapon stops being scarce, the people who controlled the scarcity lose their grip on it.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* A Mycenaean palace needs bronze swords. **Trace the supply chain** for one sword and count how many separate foreign sources it depends on.
 
@@ -394,7 +394,7 @@ Any one of these is survivable. Arriving together, they hit a system whose **int
 
 > **The uncomfortable mirror.** This is why the Bronze Age collapse is the most-cited episode in ancient history right now. It is the clearest case of a globalized, efficient, tightly-coupled system that worked beautifully until several stresses coincided — and then unravelled faster than anyone in it could understand. Historians are wary of drawing the obvious modern lesson too crisply, because "civilizations that look like ours collapsed" is a rhetorical move, not an argument. But the structural point survives the caution: **connection is a strength and a transmission medium for failure, and it is never one without the other.**
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* Egypt blamed the Sea Peoples. **Examine how they actually travelled** and decide whether they are the cause of the collapse or a symptom of it.
 
@@ -441,7 +441,7 @@ Worse, the line is drawn from the outside. Caesar makes Gaul "historical" by con
 
 > **So treat the boundary as what it is:** a fact about the availability of sources, not a fact about human achievement. The people on the far side of it built Göbekli Tepe, crossed to Australia, domesticated seven regions' worth of crops, and painted Chauvet. Prehistory is not the prologue to the human story. It is roughly 95% of it, and the only thing it lacks is a narrator.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* A Gallic village in 100 BCE. **Move the "history begins" marker** and find what actually has to change for that village to stop being prehistoric.
 
@@ -492,7 +492,7 @@ That is the point of the long view: it makes the present look **contingent**. Ev
 
 Which means it does not have to stay this way either. That is not a moral. It is just what six million years of evidence says.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* Four sequences from this course, four intuitions. **Flip each pair into the order the evidence supports** and see how many of your instincts survive.
 

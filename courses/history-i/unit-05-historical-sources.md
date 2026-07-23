@@ -33,7 +33,7 @@ Every source sits at the end of a chain, and each link is a chance for informati
 
 > **The distinction that actually does the work:** _witting_ versus _unwitting_ testimony. Witting testimony is what the source is trying to tell you — and it is where all the motives to distort are concentrated. Unwitting testimony is what it reveals without meaning to: the language it takes for granted, the categories it uses, the things it does not bother to explain because everyone knew them. A medieval charter's witting testimony is who owns the mill; its unwitting testimony is the entire social order it assumes and never mentions. **The witting testimony is what the author wanted; the unwitting is what they could not help. The second is often more reliable and almost always more interesting.**
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* One book — Gibbon’s _Decline and Fall_ (1776). **Rotate the question dial** and watch the same object change status. Find the question that makes Gibbon a primary source.
 
@@ -77,7 +77,7 @@ Reading old documents fails on four things, and only one of them is letterforms:
 
 **And the deviation from formula is itself evidence.** A charter that departs from the standard clause is telling you something happened here that the template could not handle.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* You need evidence of a 1750 grain shortage in one province. **Choose where to search** — the archive is not indexed by topic, so reason to the body that would have had to write something down.
 
@@ -143,7 +143,7 @@ $$\text{proclaimed value} \;\gg\; \text{metal value}$$
 
 Nobody advertises what they already have. The message is evidence of the anxiety; the metal is evidence of the crisis; the date tells you exactly when both were true.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* A denarius proclaims **CONCORDIA MILITVM** — "the harmony of the soldiers". **Drag the reading** to what this legend is actually evidence of.
 
@@ -203,7 +203,7 @@ Real forgeries share a signature, and it is psychological rather than technical:
 
 **And the crucial complication:** most medieval forgeries were made by people who believed the claim was _true_. A monastery whose genuine charter had burned would forge a replacement documenting rights it really held. So "forged" and "false" are not synonyms, and the historian's finding is about the _document_, not the claim. The forgery is still excellent evidence — of the moment of forging, of what was disputed then, and of what a claim needed to look like to be believed.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* The Donation of Constantine claims to be from 315 CE. **Run Valla’s internal tests** on it and find the date the document actually betrays.
 
@@ -260,7 +260,7 @@ The final movement makes the discovery visible. A marriage-age dial appears besi
 
 Nobody designed that control loop and nobody at the time noticed it. It was recovered four centuries later by re-linking records that had been kept for the salvation of souls.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* North-west Europe had no contraception, yet its population had a brake. **Drag the age at first marriage** and watch the births respond — find the pattern the reconstitution studies uncovered.
 
@@ -306,7 +306,7 @@ The rest of the cartographic arguments are less subtle: what is at the centre; w
 
 **The historian's payoff:** an image's _unwitting_ testimony is usually its best. A propaganda poster is unreliable about conditions and authoritative about anxieties — it shows exactly what the regime feared people believed. A painting's background — the tools on the wall, the food on the table, the clothes of the person nobody was looking at — was not what the painter was arguing about, and is therefore the part least distorted by the argument.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* One photograph of a demonstration, one negative, no manipulation. **Drag the crop frame** and see how many different events the same image can testify to.
 
@@ -358,7 +358,7 @@ His argument — and it is the founding insight of the field — is that **the e
 
 **The symmetry worth holding on to:** documents are strong on the verifiable and weak on the meant; testimony is weak on the verifiable and strong on the meant. Neither is a degraded version of the other, and a historian who dismisses oral history for unreliability has simply misunderstood which question it answers.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* Terni residents date a 1949 killing to 1953 — into the middle of the mass layoffs. **Drag the memory to where the community placed it**, then read what the displacement tells you.
 
@@ -404,7 +404,7 @@ Landscapes work the same way, at another scale: field boundaries, terraces, hedg
 
 **The historian's move is to read the silence as physics, not as absence.** "No textiles" means "the soil was acidic", not "they had no clothes". And the moment a waterlogged site turns up — a bog, a well, a shipwreck — the missing 90% reappears at once, and the picture built from the durable 10% usually turns out to have been wrong in exactly the direction the survival bias predicted.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* Two sites, identical in life: one built in timber and cloth, one in stone and ceramic. **Run them through the survival filter** and see how many of the timber site’s objects reach the archaeologist.
 
@@ -454,7 +454,7 @@ The specific traps:
 
 **The productive loop** is neither pure: distant reading finds the anomaly, close reading explains it, and the explanation suggests the next thing to count. The machine finds where to look. It does not know what it found.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* "We searched the complete digitized run." **Stack the filters** on the original archive and read off what the corpus actually contains.
 
@@ -509,7 +509,7 @@ State the evidence, its provenance, and the inference. Distinguish "the record s
 
 An argument that survives because its foundations were hidden is worth less than one that fails visibly. And the honest historian's final duty is the unglamorous one: say what the evidence cannot settle, rather than filling the gap with fluency. Most of the past is not recoverable, and a discipline that admits this is more trustworthy — not less — than one that always has an answer.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* Four chronicles agree on the battle’s outcome. **Trace each one back along its causal path** and count how many independent witnesses you actually have.
 

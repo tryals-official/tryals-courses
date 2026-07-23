@@ -47,7 +47,7 @@ for step in range(1000):
 
 > **Common pitfall:** The computer does exactly what the code says, never what you meant. Off-by-one boundaries in loops and conditions are where the gap between intention and instruction bites hardest.
 
-> **Practice preview** — try all 10 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 10 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(Truth table)* A loop runs while `A and not B` holds. **Fill in the truth table**: for each input row, does the loop keep running?
 
@@ -99,7 +99,7 @@ main_simulation()
 
 > **Common pitfall:** A function that **prints** a result and one that **returns** it look identical when run alone — but only the returner composes with other code. Printing is for humans; returning is for programs.
 
-> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(Interactive scene)* `fact(n)` returns 1 when $n \le 1$, else `n * fact(n-1)`. Calling `fact(5)`: set how many stack frames open before the base case stops the recursion.
 
@@ -158,7 +158,7 @@ s = str(99)        # int → str
 
 > **Common pitfall:** Floats are not real numbers: 0.1 + 0.2 ≠ 0.3 exactly. Compare numerical results with a tolerance, never with ==, or your simulation will "fail" for reasons that are pure representation.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(Timeline ordering)* Order the steps to convert the decimal number 13 to binary.
 
@@ -210,7 +210,7 @@ data[::2]    # → [10, 30, 50]   (every 2nd element)
 
 > **Common pitfall:** Assigning a list copies a **reference**, not the data: after `b = a`, mutating `b` mutates `a` too. Deliberate copies (`list(a)`, slicing) are how you actually fork data.
 
-> **Practice preview** — try all 10 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 10 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(True false)* Accessing an element by index in an array takes O(n) time.
    - True / False
@@ -275,7 +275,7 @@ The **lower bound** for comparison sorting is $\Omega(n \log n)$ — no comparis
 
 > Choosing the right algorithm can mean the difference between seconds and hours on large datasets.
 
-> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(Interactive scene)* 15 sorted cells, searching for 11. Mark the FIRST cell binary search inspects.
 
@@ -328,7 +328,7 @@ For large $n$, algorithms like **Barnes-Hut** ($O(n\log n)$) use spatial trees t
 
 > **Common pitfall:** Big-O hides constants: an $O(n^2)$ method can beat an $O(n\log n)$ one on small inputs. Complexity classes predict **scaling**, not which code wins today’s benchmark.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(Timeline ordering)* Order these complexity classes from fastest to slowest growth.
 
@@ -388,7 +388,7 @@ Accuracy improves as $O(1/\sqrt{N})$ — quadrupling points halves the error.
 
 > Monte Carlo methods are essential when analytical integration is intractable.
 
-> **Practice preview** — try all 10 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 10 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(True false)* A pseudorandom number generator produces truly unpredictable output.
    - True / False
@@ -437,7 +437,7 @@ assert abs(kinetic_energy(2.0, 3.0) - 9.0) < 1e-10
 
 > **Common pitfall:** Fixing the symptom where the crash occurred often leaves the cause upstream untouched. Trace the bad value back to where it was **born** — the crash site is usually just the victim.
 
-> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(Cloze bank)* Complete the description of debugging.
 
@@ -494,7 +494,7 @@ plt.show()
 
 > **Common pitfall:** Axis choices can manufacture or hide stories: truncated y-axes exaggerate trends, log scales linearize exponentials. Read (and label) the axes before believing any plot — including your own.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(Timeline ordering)* Order the steps to create a scientific plot from raw data.
 
@@ -555,7 +555,7 @@ plt.grid(True); plt.show()
 
 > **Common pitfall:** Premature optimization wastes more effort than slow code ever did: first make it correct and clear, then measure, and only then speed up the part the measurement actually indicts.
 
-> **Practice preview** — try all 10 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 10 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(True false)* Decomposition means breaking a complex problem into smaller, manageable sub-problems.
    - True / False

@@ -53,7 +53,7 @@ The rest follows fast: the shell flattens into a tablet, impressed shapes sharpe
 
 The closing caption sets the clock: literature arrives about a thousand years after the first tablet. Writing was invented to stop people stealing grain. Everything else it has ever done is a side effect.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* Thirty sheep, one sealed clay ball of tokens, and a merchant who cannot check the count without destroying the evidence. **Work the sequence forward** and find the step where writing appears.
 
@@ -111,7 +111,7 @@ Each Intermediate Period follows a similar shape: central authority fragments, p
 
 **That is the actual achievement.** Not that Egypt never collapsed, but that it kept re-forming into the same shape after collapsing. The pattern held because the pattern was carried in the temples and the scribal training, and those survived the state that funded them. A civilization that can lose its government three times and rebuild the identical institution has done something that a merely stable one has not.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* The inundation floods the fields and the farmers have nothing to do for months. **Route the grain surplus** through the options and see which one builds a pyramid.
 
@@ -161,7 +161,7 @@ Every monocausal explanation has been tried and each is inadequate alone: Sea Pe
 
 **And what the collapse reveals is how thin the writing was.** Linear B disappears completely, because it was only ever a palace accounting tool — perhaps a few dozen scribes, employed by an institution, recording inventories. Kill the institution and the skill goes with it, since nobody else had any use for it. Greece stays illiterate for four hundred years and then re-acquires writing from the Phoenicians, as an alphabet, in the eighth century — and that one gets used for poetry almost immediately, because this time it belonged to everybody rather than to a warehouse.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* Every palace needs tin from thousands of kilometres away to arm itself. **Cut the links one at a time** and find where the Bronze Age network stops being able to re-form.
 
@@ -229,7 +229,7 @@ $$\text{power} = \text{rotation} + \text{audit} + \text{lottery}$$
 
 The closing caption: Athens did not trust character. It trusted machinery — and for two centuries, the machinery held.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* Athens, mid-fifth century: about 270,000 residents. **Apply the citizenship filters one by one** and see who is actually left standing on the Pnyx when the Assembly votes.
 
@@ -269,7 +269,7 @@ The paradox of the age: Greek political freedom died, and Greek culture conquere
 
 > **The trade nobody voted for:** the classical polis had sovereignty and a small horizon; the Hellenistic world had a vast connected horizon and no sovereignty. Science, trade, and cosmopolitan culture flourished precisely as citizen self-rule withered into civic pageantry. Whether that was progress depends on which good you rank higher — and the ancient world never got to choose either.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* Babylon, 323 BCE: the king is dead, the generals are circling, and the empire runs from the Nile to the Indus. **Pull the empire apart** and find how many durable kingdoms the wars of the successors actually settle into.
 
@@ -317,7 +317,7 @@ The killing blow was not a battle but a personnel policy. **Marius**, facing rec
 
 The republic was not murdered by one ambitious man. It bled out through a single cut made seventy years earlier, when the soldier's loyalty moved from the state to the paymaster.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* The Republic is a machine with four brakes against one-man rule. **Cut them one at a time** and watch which single cut lets a general seize the state — even with all the others still holding.
 
@@ -358,7 +358,7 @@ So did Rome fall, and when, and what does "fall" even mean?
 
 > **The count that keeps historians honest:** a German scholar once catalogued the reasons proposed for Rome's fall — lead pipes, Christianity, taxes, slavery, bathhouses, climate. He found **210 of them**. When an event has two hundred and ten causes, the confident single-cause story you have heard is not history; it is a preference wearing a toga.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* Two halves of one empire, one famous "fall." **Scrub the timeline** and stop at the year the _last_ Roman emperor actually loses his throne.
 
@@ -399,7 +399,7 @@ The genius was in recruitment. Instead of aristocrats or pure enforcers, the Han
 
 > **Compare Rome, which was writing next door.** Rome's elite were landowners and generals; China's became scholars sitting exams. That single institutional choice — merit-by-examination — shaped Chinese governance more deeply and for far longer than any single Roman institution shaped the West. And it rests on an idea the Han made permanent: **the Mandate of Heaven.** Heaven backs a just ruler and withdraws its mandate from a cruel one, which conveniently explains every dynasty's fall as deserved and every founder's rise as earned. It is the most durable political theory in human history — and it is unfalsifiable, because you only ever learn a ruler lost the Mandate _after_ he has already fallen.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* A dynasty rises, governs, and falls; a rebel founds the next. **Run the cycle** and set the one thing the Mandate of Heaven theory can never do.
 
@@ -444,7 +444,7 @@ The **Gupta** period (c. 320–550 CE) is conventionally called India's "classic
 
 The zero deserves its own sentence. Treating "nothing" as a number you can compute with — rather than merely an empty space — is one of the most powerful abstractions any civilization ever produced, and the positional system built on it is the reason you can multiply large numbers on paper at all. It reached Europe through the Arabic world, which is why the digits are called "Arabic" and the mathematicians who first systematized them were Indian.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* You have four kinds of surviving evidence about Ashoka. **Weigh them** and find what his edicts most reliably prove — regret, or something subtler.
 
@@ -492,7 +492,7 @@ $$\text{no herd animals} \rightarrow \text{no crowd diseases} \rightarrow \text{
 
 Estimates vary and are contested, but the mainstream range holds that **on the order of 90%** of the population of the Americas died within a century of contact — the majority dying _ahead_ of the conquerors' arrival, killed by microbes that traveled faster than the men who carried them. Cortés and Pizarro did not defeat healthy empires. They walked into demographic collapse and finished it. The chain runs back to a fact about animals, not about courage or steel.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
 
 **1.** *(Interactive scene)* Steel, horses, guns, disease. **Rank the causes** of the American collapse by how many people each actually killed — and find the one that dwarfs the rest.
 

@@ -28,7 +28,7 @@ The **scientific method** is the systematic approach to acquiring reliable knowl
 
 > **Common pitfall:** An experiment that cannot fail is not an experiment. If no conceivable data would count against the hypothesis, the procedure tests nothing — build in the possibility of being wrong.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(True false)* A scientific hypothesis must be testable and falsifiable.
    - True / False
@@ -79,7 +79,7 @@ The **standard error of the mean** $\sigma_{\bar{x}} = \sigma/\sqrt{N}$ shrinks 
 
 > A result is reported as $\bar{x} \pm \sigma_{\bar{x}}$ — the uncertainty quantifies our confidence in the measurement.
 
-> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(Interactive scene)* True value 10.0, your measurement 9.6. Set the percent error.
 
@@ -120,7 +120,7 @@ $$v = 2.08 \pm 0.09\;\text{m/s}$$
 
 > **Common pitfall:** Independent uncertainties combine in quadrature ($\sqrt{a^{2}+b^{2}}$), not by addition — and powers multiply relative errors by the exponent. Adding everything linearly overstates the error; ignoring exponents understates it.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(Timeline ordering)* Order the steps for propagating uncertainty through a calculation.
 
@@ -162,7 +162,7 @@ $$\sigma_{\bar{x}} = \frac{s}{\sqrt{N}}$$
 
 > **Common pitfall:** The standard deviation describes the scatter of single readings; the standard error ($\sigma/\sqrt{N}$) describes the reliability of the **mean**. Quoting the wrong one misstates your precision by a factor of $\sqrt{N}$.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(Probability spinner)* Random measurement errors follow a normal distribution. **Set the spinner fractions** for where a single measurement lands relative to the mean.
 
@@ -219,7 +219,7 @@ The **correlation coefficient** $r^{2}$ quantifies fit quality (1 = perfect, 0 =
 
 > A poor fit may indicate systematic errors or an incorrect theoretical model.
 
-> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(Interactive scene)* Mass vs volume: (4 mL, 10 g), (8 mL, 20 g), (12 mL, 30 g). The density is the **slope** — set it.
 
@@ -272,7 +272,7 @@ A physics laboratory requires both **safety awareness** and **equipment competen
 
 > **Common pitfall:** Instrument placement is physics, not convention: an ammeter across a source is a short circuit; a voltmeter in series blocks the current it should measure. Know each meter’s internal resistance and the rule explains itself.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(Timeline ordering)* Order the correct response to a chemical spill on skin.
 
@@ -321,7 +321,7 @@ A scientific report communicates your experiment clearly and completely so other
 
 > **Common pitfall:** "The result was verified" is not a conclusion. Compare quantitatively: measured value ± uncertainty against the accepted value, discrepancy in sigmas, dominant error source named. Numbers, not adjectives.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(True false)* The abstract of a scientific report should be written last, after all other sections are complete.
    - True / False
@@ -369,7 +369,7 @@ A scientific report communicates your experiment clearly and completely so other
 
 > **Common pitfall:** Averaging cures only random error. A miscalibrated instrument delivers beautifully repeatable wrong numbers — precision without accuracy. Calibration against a known standard is the only cure for systematic bias.
 
-> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(Interactive scene)* A balance reads **0.3 N with nothing on it**. With your sample it reads **2.7 N**. Set the sample's true weight.
 
@@ -422,7 +422,7 @@ print(f"g = {g:.2f} m/s^{2}")
 
 > **Common pitfall:** Change one variable at a time. Varying mass and force together "to save runs" produces data from which neither effect can be untangled — a lost afternoon disguised as efficiency.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(Timeline ordering)* Order the steps for a free-fall experiment to measure g.
 
@@ -473,7 +473,7 @@ $$|A - B| \leq 2\sqrt{(\delta A)^2 + (\delta B)^2}$$
 
 > **Common pitfall:** Two results disagree only if their uncertainty intervals fail to overlap. Comparing bare central values — declaring 9.79 "wrong" because the handbook says 9.81 — ignores the very error analysis the lab exists to teach.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
 
 **1.** *(True false)* Systematic errors can be reduced by simply taking more measurements and averaging.
    - True / False

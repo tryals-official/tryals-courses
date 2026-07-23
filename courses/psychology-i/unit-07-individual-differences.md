@@ -20,7 +20,7 @@ Under this ratio formula, a 10-year-old with a mental age of 12 would score $12/
 
 > **Common pitfall:** assuming Binet's original test was designed to rank children from smartest to least smart for its own sake. It was explicitly practical and applied — commissioned to IDENTIFY students needing extra academic support, not to create a general-purpose ranking of intelligence.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Numerical input)* Under Terman's ratio formula, IQ = (mental age / chronological age) x 100. A child has a mental age of 9 and a chronological age of 12. What is the child's ratio IQ?
 
@@ -48,7 +48,7 @@ Modern psychometric models often synthesize these views hierarchically: a genera
 
 > **Common pitfall:** assuming fluid and crystallized intelligence age in the same direction. They diverge sharply: fluid intelligence (novel problem-solving) tends to DECLINE with age after early adulthood, while crystallized intelligence (accumulated knowledge) tends to REMAIN STABLE or even increase — which is why older adults often outperform younger adults on vocabulary and general-knowledge tasks while underperforming on novel, abstract reasoning puzzles.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* Assign each core claim to the theorist who made it.
 
@@ -71,7 +71,7 @@ Modern psychometric models often synthesize these views hierarchically: a genera
 
 > **Common pitfall:** assuming these theories claim traditional IQ tests are worthless. Both Gardner and Sternberg instead argue traditional tests are too NARROW — capturing only some facets of a broader mental landscape (Gardner's linguistic/logical-mathematical intelligences, or Sternberg's analytical component) while missing others entirely.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* Classify each described strength by Sternberg's triarchic component.
 
@@ -100,7 +100,7 @@ A bell curve: a bare symmetric curve peaking at 100; the ±1 SD band (85-115) sh
 
 $$\mu = 100, \sigma = 15$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Numerical input)* On the Wechsler scales, deviation IQ has a mean of 100 and a standard deviation of 15. What IQ score is exactly 2 standard deviations ABOVE the mean?
 
@@ -132,7 +132,7 @@ $$\mu = 100, \sigma = 15$$
 
 > **Common pitfall:** treating "trait" as meaning a rigid, all-or-nothing category a person either has or lacks entirely. Modern trait theory treats traits as CONTINUOUS DIMENSIONS — a person is more or less high on a trait like sociability, not simply "sociable" or "not sociable" as a fixed label.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* Classify each described trait by Allport's three levels.
 
@@ -164,7 +164,7 @@ A five-spoke radar chart: a bare pentagon outline with five unlabeled spokes; ea
 
 $$\text{Personality} = f(O, C, E, A, N)$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* Classify each described person by the Big Five trait they score HIGH on.
 
@@ -189,7 +189,7 @@ Several of Freud's followers extended this psychoanalytic tradition in influenti
 
 > **Common pitfall:** assuming the introversion-extraversion dimension originated with the modern Big Five model. It actually traces back to Jung's earlier psychoanalytic work — a clear example of how an idea from one theoretical tradition (psychoanalysis) can be absorbed and repurposed within a very different one (trait psychology).
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* Assign each idea to the theorist who proposed it.
 
@@ -215,7 +215,7 @@ The **social-cognitive perspective**, most closely associated with **Albert Band
 
 > **Common pitfall:** treating self-efficacy and self-esteem as the same concept. Self-esteem is a GLOBAL evaluation of one's overall worth, while self-efficacy is SPECIFIC to a particular task or domain — a person can feel confident (high self-efficacy) about one skill while still holding low overall self-esteem, or vice versa.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* Classify each described belief by the concept it illustrates.
 
@@ -240,7 +240,7 @@ While projective tests remain influential and still see some clinical use, they 
 
 > **Common pitfall:** assuming projective tests are simply an older, outdated curiosity with no modern relevance at all. They remain in some clinical use and retain some theoretical appeal, but the scientific consensus is that their reliability and validity are considerably weaker than objective self-report inventories, which is why objective tests are far more heavily used in contemporary research and much clinical assessment.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* Classify each described test as objective or projective.
 
@@ -270,7 +270,7 @@ Two twin silhouette pairs: an identical-twin pair connected by a thick accent bo
 
 $$\text{Heritability} \approx 2 \times (r_{identical} - r_{fraternal})$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Numerical input)* A rough estimate of heritability is 2 x (identical-twin correlation minus fraternal-twin correlation). If identical twins correlate 0.80 on a trait and fraternal twins correlate 0.50, what is the estimated heritability, as a percentage?
 

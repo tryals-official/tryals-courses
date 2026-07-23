@@ -22,7 +22,7 @@ An 8-cell binary ruler: each cell labelled with its power of 2 (128 down to 1). 
 
 $$d = \sum_{i=0}^{n-1} b_i \cdot 2^i$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Number base)* A file header stores the value 45. Write that value in binary.
 
@@ -49,7 +49,7 @@ Negative numbers use **two's complement**, the near-universal scheme for signed 
 
 > **Common pitfall:** assuming an integer can grow without bound. Machine integers have a fixed width, so they wrap on overflow — an 8-bit unsigned value silently goes $255 \to 0$, and a signed one goes $+127 \to -128$. Forgetting this fixed range is the source of countless real-world bugs.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Truth table)* When the machine adds bits A and B in one column, it writes a sum digit in that column and may pass a carry to the next. Complete the column for the SUM digit only.
 
@@ -71,7 +71,7 @@ The **buses** are the shared wires that move information between components. Con
 
 > **Common pitfall:** believing programs and data live in separate memories. In the von Neumann design they share the _same_ main memory — a program is just data that the CPU chooses to interpret as instructions. This unification is powerful (programs can even modify programs) but also the root of whole classes of security problems.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Numerical input)* An address bus has 12 lines. How many distinct memory cells can the CPU name using it?
 
@@ -103,7 +103,7 @@ A three-box loop labelled Fetch, Decode, Execute with an accent token circulatin
 
 $$\text{PC} \leftarrow \text{PC} + 1 \;\; \text{or} \;\; \text{PC} \leftarrow \text{target}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Flow chart)* This chart is one turn of the instruction cycle. Label the three empty boxes with the three phase names — Fetch, Decode and Execute — in the order the CPU performs them. Write one word in each box.
 
@@ -128,7 +128,7 @@ A key ISA distinction is between **register** operands (fast, on-chip) and **imm
 
 > **Common pitfall:** conflating the **opcode** (which operation) with the **operands** (what it acts on). "$\text{ADD } R1, R2$" has one opcode (ADD) and two operands (R1, R2). Reading the fields in the wrong roles is a classic decoding mistake — the opcode selects the operation; the operands feed it.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Logic gate)* The control unit can set the ALU to perform AND, OR or XOR bit by bit. In one column the two operand bits are 1 and 0. Give the ALU's output bit for each of the three settings, in the order AND, OR, XOR.
 
@@ -161,7 +161,7 @@ Caches work because real programs exhibit **locality of reference**. **Temporal 
 
 > **Common pitfall:** imagining the cache stores _different_ data than main memory. It does not — a cache holds fast **copies** of data that also lives in main memory. Its value is purely speed: keeping the data the program is likely to touch next in the layer closest to the CPU.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Ordering)* Order these storage layers from fastest to slowest.
 
@@ -183,7 +183,7 @@ For moving large blocks of data (say, from disk to memory), even interrupts-per-
 
 > **Common pitfall:** assuming polling is generally better because it is simpler. Polling wastes the CPU by busy-waiting; for anything but the most trivial or timing-critical cases, **interrupts** (and DMA for bulk transfers) are far more efficient, because they let the CPU do useful work instead of spinning.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Flow chart)* This chart shows the CPU reading a slow device by polling. Fill the two empty boxes, choosing from these four phrases: 'Ask the device if it is ready', 'Do other useful work', 'Transfer the byte', 'Send an interrupt'. One phrase is never used.
 
@@ -211,7 +211,7 @@ An Amdahl's-law speedup curve rising then flattening toward a horizontal ceiling
 
 $$S_{max} = \frac{1}{(1-p) + p/N}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Numerical input)* A program executes 2,000,000,000 instructions at an average of 2 cycles per instruction on a 2 GHz processor. How many seconds does it take?
 
@@ -233,7 +233,7 @@ The overriding principle is to **reason from evidence, not assumption**. Do not 
 
 > **Common pitfall:** "debugging by guessing" — changing code because you _think_ you know the cause, without observing the actual state. The reliable method is to inspect real register and memory values at breakpoints and narrow down where the state first goes wrong. Evidence, not intuition, finds the bug.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Matrix grid)* Assign each observed symptom to the family of machine-level bug it most likely belongs to.
 
@@ -255,7 +255,7 @@ This is also why the **abstractions** matter: each layer (bits, ISA, memory hier
 
 > **Common pitfall:** optimizing the wrong layer. Making the CPU arithmetic faster does nothing if the task spends almost all its time waiting on **I/O** or a **cache miss**. Always identify the actual bottleneck — the slowest stage on the critical path — before trying to speed a system up.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Flow chart)* This chart traces the task 'read a number from the keyboard, add one to it, and store the result'. Label the three empty boxes with the part of the machine that does that step, choosing from: 'I/O interrupt', 'ALU', 'Main memory', 'Cache'. One of the four is never used.
 

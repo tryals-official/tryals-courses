@@ -19,7 +19,7 @@ A truth table for p OR q with all four rows shown, the both-true row (p=1, q=1) 
 
 $$p \lor q \text{ is true} \iff p \text{ or } q \text{ (or both)}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Truth table)* Complete the truth table for the INCLUSIVE or: P OR Q.
 
@@ -55,7 +55,7 @@ A 3-element set with its 8 subsets drawn as a small lattice, the empty set at th
 
 $$|\mathcal{P}(A)| = 2^{|A|}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Venn diagram)* A = even numbers in {1..10}. B = multiples of 3 in {1..10}. Place each number where it belongs.
 
@@ -81,7 +81,7 @@ So the negation of "all are $P$" is "some is not $P$" — which is why a single 
 
 > **Common pitfall:** swapping the **order of mixed quantifiers** or negating them incorrectly. $\forall x\, \exists y$ is not interchangeable with $\exists y\, \forall x$. And $\neg \forall x\, P(x)$ is $\exists x\, \neg P(x)$ — "not all are $P$" means "at least one is not," **not** "none is $P$." Negation flips $\forall \leftrightarrow \exists$ while negating the inside.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Matrix grid)* The domain is the integers. Give the truth value of each quantified statement.
 
@@ -106,7 +106,7 @@ The **biconditional** $p \leftrightarrow q$ — "$p$ if and only if $q$" — ass
 
 > **Common pitfall:** treating an implication as equivalent to its **converse** (affirming the converse). $p \to q$ does **not** give you $q \to p$. It _is_ equivalent to its **contrapositive** $\neg q \to \neg p$. Also, when $p$ is false, $p \to q$ is **vacuously true** — a false hypothesis never makes an implication false; only a true hypothesis with a false conclusion does.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Truth table)* Complete the truth table for the implication: if P then Q.
 
@@ -128,7 +128,7 @@ The asymmetry is fundamental: **a universal statement is proved by a general arg
 
 > **Common pitfall:** trying to **prove a universal statement by examples**. Verifying a claim for several cases — even many — never establishes it for _all_ cases; you need a general argument covering an arbitrary element. (Examples _can_ disprove a universal, via one counterexample, but never prove it.) Confusing "true for the cases I checked" with "true in general" is a core reasoning error.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Ordering)* Order the steps of a direct proof that the sum of two even integers is even.
 
@@ -150,7 +150,7 @@ The two are related but distinct: contrapositive proves $p \to q$ by directly pr
 
 > **Common pitfall:** conflating **contradiction** with **contrapositive**. The contrapositive proves $p \to q$ by proving the _equivalent_ conditional $\neg q \to \neg p$ directly — no absurdity is sought. Proof by contradiction assumes the statement is _false_ and derives an impossibility. They begin with different assumptions and have different structures; mixing them up muddles the logic of the argument.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Ordering)* Order the steps of the classic proof by contradiction that the square root of 2 is irrational.
 
@@ -176,7 +176,7 @@ Induction is the natural proof method for anything defined recursively, and it r
 
 > **Common pitfall:** omitting the **base case** or misusing the **inductive hypothesis**. Without a base case, the inductive step proves nothing — "if $k$ then $k+1$" never starts the chain, so all cases could be false. And the inductive step must _use_ the assumption for $k$ to reach $k+1$; a step that ignores the hypothesis and re-proves $k+1$ from scratch is not a valid induction.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Ordering)* Order the parts of a proof by induction that 1 + 2 + ... + n = n(n+1)/2.
 
@@ -205,7 +205,7 @@ A domain column and codomain column of dots joined by arrows; an accent collisio
 
 $$f(a) = f(a') \Rightarrow a = a'$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Category sort)* A function assigns exactly one output to each input. Sort each correspondence.
 
@@ -230,7 +230,7 @@ A different combination — reflexive, **antisymmetric** ($a\,R\,b$ and $b\,R\,a
 
 > **Common pitfall:** confusing **symmetric** with **transitive**, or assuming a relation with one property has the others. Symmetry reverses a _single_ pair ($a\,R\,b \Rightarrow b\,R\,a$); transitivity chains _two_ pairs into a third. A relation can have one without the other — "is one step from" (on a number line) is symmetric but not transitive. Only relations with _all three_ of reflexive, symmetric, and transitive are equivalence relations.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Matrix grid)* Each relation is on the set of integers. Mark the ONE property that fails for each.
 
@@ -256,7 +256,7 @@ The logic of this unit is the connective tissue: **statements and connectives** 
 
 > **Common pitfall:** blurring the distinction between an **axiom** (assumed without proof) and a **theorem** (proved from axioms). Axioms are the accepted starting points; theorems are _earned_ by proof. Treating a theorem as if it needed no justification — or an axiom as if it required one — misunderstands the structure. Likewise, a definition is a _stipulation_ of meaning, not a claim to be proved.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Ordering)* Order the layers of mathematical architecture, from the assumed foundation upward.
 

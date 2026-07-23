@@ -2,7 +2,7 @@
 
 > A rigorous computer-science degree course: how computers represent and process information, programming in two languages, data structures and algorithms, algorithmic complexity, digital logic and design, and the discrete mathematics, algebra, calculus, and physics that underpin computing.
 
-**[Study this course interactively on Tryals →](https://tryals.app)**
+**[Study this course interactively on Tryals →](https://tryals.app/courses/computer-science-i)**
 
 ## Units
 

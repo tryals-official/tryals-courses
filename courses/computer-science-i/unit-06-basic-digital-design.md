@@ -29,7 +29,7 @@ The four basic gate symbols (AND, OR, NOT, XOR) each with input switches and an 
 
 $$A \oplus B = 1 \iff A \neq B$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Logic gate)* The same two wires, both carrying 1, are fed into three separate gates: an AND, an OR and an XOR. Give the output bit of each gate, in that order.
 
@@ -54,7 +54,7 @@ Each row of a truth table where the output is 1 is a **minterm**. Reading off th
 
 > **Common pitfall:** applying **De Morgan's law** incorrectly — writing $\overline{A \cdot B} = \overline{A} \cdot \overline{B}$ (wrong) instead of $\overline{A} + \overline{B}$ (right). De Morgan's law _flips the operator_: the negation of an AND is the OR of the negations, and the negation of an OR is the AND of the negations. Forgetting to flip the operator is one of the most common boolean-algebra mistakes.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Truth table)* De Morgan's laws claim that the negation of an AND equals the OR of the negations. Complete the output column for the expression on the right-hand side of that claim.
 
@@ -79,7 +79,7 @@ Two practical concerns shape real designs. **Fan-in** is how many inputs a singl
 
 > **Common pitfall:** treating a combinational circuit as if it had memory. Its output is a pure function of the _present_ inputs — the same inputs always give the same outputs, with no dependence on history. Anything that must _remember_ a previous value needs a _sequential_ element (a latch or flip-flop), not combinational logic.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Flow chart)* This chart is the standard recipe for turning a specification into a circuit. Fill the two empty boxes, choosing from these four phrases: 'Read off the minterms as a sum of products', 'Draw the gates for each term', 'Add a flip-flop to hold the result', 'Wait for the next clock edge'. Two phrases are never used.
 
@@ -103,7 +103,7 @@ The payoff is concrete: a function that naively needs a dozen gates may reduce t
 
 > **Common pitfall:** in a Karnaugh map, circling groups whose size is _not_ a power of two, or missing the map's **wrap-around** adjacency (the left and right edges, and top and bottom, are neighbors). Valid K-map groups must contain exactly $1, 2, 4, 8, \dots$ cells and may wrap around the edges — overlooking either yields a non-minimal or incorrect result.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Grid path)* This 4 by 4 grid is a Karnaugh map: neighbouring cells differ in exactly one variable, and the blocked cells are the ones where the function is 0. Trace a route of 1-cells from the top-left cell to the bottom-right cell, stepping only between neighbouring cells.
 
@@ -135,7 +135,7 @@ A 4-to-1 multiplexer with four data lines converging; the two select bits choose
 
 $$2^k \text{ inputs} \Rightarrow k \text{ select lines}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Logic gate)* A half adder is two gates fed by the same two bits: an XOR produces the sum and an AND produces the carry. The adder is given the bits 1 and 1. Give the output of each gate, XOR first.
 
@@ -161,7 +161,7 @@ A finite state machine drawn as labeled state circles with transition arrows; an
 
 $$\text{next state} = f(\text{state}, \text{input})$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Flow chart)* This chart is one tick of a synchronous sequential circuit. Fill the two empty boxes, choosing from these four phrases: 'Combinational logic computes the next state from the current state and the inputs', 'The computed next state waits at the register input until the following edge', 'The output changes the instant any input changes', 'The clock is paused until the logic has settled'. Two phrases are never used.
 
@@ -183,7 +183,7 @@ Feed a register's output back through combinational logic and you build stateful
 
 > **Common pitfall:** confusing an edge-triggered **flip-flop** with a level-sensitive **latch**. A latch is "transparent" while its enable is active — its output can follow the input continuously during that window. A flip-flop captures the input only at the clock _edge_ and then holds it. Using a latch where an edge-triggered flip-flop is needed causes subtle timing bugs.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Table completion)* A four-bit shift register moves every stored bit one place to the right on each clock edge; the bit shifted in enters at the left and the rightmost bit falls off the end. It starts holding 1011. Complete the trace.
 
@@ -207,7 +207,7 @@ Two reliability hazards arise from timing. A **glitch** (hazard) is a brief, unw
 
 > **Common pitfall:** assuming a circuit can be clocked arbitrarily fast just by raising the clock frequency. The clock period is bounded below by the **critical path** delay plus setup time — clock faster than that and signals will not have settled, causing setup violations and wrong results. To go faster you must shorten the critical path, not merely crank the clock.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Numerical input)* Between two registers, the launching flip-flop takes 2 ns to put a new value on its output, the combinational logic on the worst path takes 11 ns, and the capturing flip-flop needs its input stable for 2 ns before the edge. What is the shortest clock period the circuit can be run at, in nanoseconds?
 
@@ -229,7 +229,7 @@ The crucial mindset shift is that HDL is **not** sequential software. HDL statem
 
 > **Common pitfall:** reading a hardware description language like ordinary sequential code, where statements run one after another. HDL describes hardware that operates **concurrently** — all blocks act in parallel, on every clock edge. An HDL "assignment" is a persistent hardware connection or a clocked update, not a sequential instruction; missing this leads to fundamentally wrong designs.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Flow chart)* This chart shows what one behavioural HDL block describes happening at each clock edge. Fill the two empty boxes, choosing from these four phrases: 'Set count to 0', 'Set count to count plus 1', 'Run both assignments one after the other', 'Stop the clock until the logic settles'. Two phrases are never used.
 
@@ -256,7 +256,7 @@ The unifying lesson is that digital systems are built by **composition and abstr
 
 > **Common pitfall:** trying to reason about a whole digital system at the individual-gate level. Real design works by **composition** — think in terms of blocks (registers, adders, an FSM controller) and their interfaces, not thousands of gates. Descend to the gate level only when a specific block or timing path needs it; otherwise reason about the datapath and control abstractly.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Table completion)* A datapath holds a value in a register, adds a step of 7 to it on every clock tick, and its control machine leaves the Running state for Done as soon as the value reaches 30 or more. The register starts at 0. Complete the trace.
 

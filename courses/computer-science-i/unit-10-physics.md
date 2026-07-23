@@ -17,7 +17,7 @@ A crucial conceptual point: velocity and acceleration are **independent**. An ob
 
 > **Common pitfall:** conflating **velocity** with **acceleration**, or assuming zero velocity means zero acceleration. Velocity is _how fast_ you move; acceleration is _how fast the velocity changes_ — a body can be instantaneously at rest ($v = 0$) while strongly accelerating (the top of a toss). Likewise, constant velocity means _zero_ acceleration, not constant nonzero acceleration.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Numerical input)* An object starts with velocity 4 m/s and accelerates at a constant 3 m/s squared. What is its velocity after 5 seconds, in metres per second?
 
@@ -43,7 +43,7 @@ A block with two opposing force arrows; the accent net-force arrow (their vector
 
 $$F_{net} = m a$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Numerical input)* A net force acts on a 4 kg mass and gives it an acceleration of 3 m/s squared. What is the net force, in newtons?
 
@@ -71,7 +71,7 @@ A ball dropping: its accent potential-energy bar shrinks as the kinetic-energy b
 
 $$KE + PE = \text{constant}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Numerical input)* A force of 25 N pushes a box 4 metres in the direction of the force. How much work is done, in joules?
 
@@ -97,7 +97,7 @@ The crucial point: momentum is conserved in _all_ collisions (elastic and inelas
 
 > **Common pitfall:** assuming **kinetic energy** is conserved in every collision the way **momentum** is. Momentum is conserved in _all_ collisions with no external forces; kinetic energy is conserved _only_ in elastic collisions. Inelastic collisions (especially objects sticking together) _lose_ kinetic energy to heat and deformation while _still_ conserving momentum — treating them the same is the classic error.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Number line placement)* A 3 kg object moves at 8 m/s. **Place the marker on its momentum in kilogram metres per second.
 
@@ -126,7 +126,7 @@ A transverse wave with wavelength marked between crests and a single accent poin
 
 $$v = f\lambda,\quad f = 1/T$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Numerical input)* A wave has a frequency of 50 Hz and a wavelength of 4 metres. What is its speed, in metres per second?
 
@@ -150,7 +150,7 @@ Rather than think of charges reaching across empty space, physics uses the **ele
 
 > **Common pitfall:** getting the sign of the force wrong (**like charges repel**, opposites attract — not the reverse), and forgetting the **inverse-square** distance dependence. Coulomb's force falls off as $1/r^2$, so it drops _fast_ with distance — doubling the separation cuts the force to a _quarter_, not a half. And two positive (or two negative) charges push _apart_; attraction requires _opposite_ signs.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Numerical input)* Two point charges a certain distance apart repel with a force of 36 N. They are moved apart until the separation is three times as large. What is the force now, in newtons?
 
@@ -179,7 +179,7 @@ This is the foundation of every electronic device. A processor is, at bottom, an
 
 > **Common pitfall:** swapping the **series vs parallel** resistance rules, or misapplying **Ohm's law**. In _series_, resistances **add** (total goes _up_); in _parallel_, the total is _smaller_ than the smallest branch (adding paths _lowers_ resistance) — reversing these is the classic mistake. And $V = IR$ must be rearranged carefully: current is $I = V/R$ (voltage _over_ resistance), so more resistance means _less_ current, not more.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Numerical input)* A 12 volt supply is connected across a 4 ohm resistor. What current flows, in amperes?
 
@@ -208,7 +208,7 @@ So electricity and magnetism are deeply intertwined: currents make fields, chang
 
 > **Common pitfall:** thinking a **steady** magnetic field induces a current, when only a **changing** field does. Faraday's law of induction depends on the _rate of change_ of magnetic flux — a magnet sitting motionless near a coil induces _nothing_; the current appears only while the field is _changing_ (the magnet moving, or the current producing it varying). "Field present" is not enough; "field changing" is the requirement.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Matrix grid)* Faraday's law says a voltage is induced only while the magnetic flux through a loop is changing. Decide what each situation induces.
 
@@ -232,7 +232,7 @@ This is the bridge that makes computing physical. Billions of transistors, each 
 
 > **Common pitfall:** thinking a transistor is just a passive resistor or wire, rather than a **switch/amplifier** controlled by a third terminal. A transistor's defining feature is that a _small_ signal on its **gate** controls a _large_ current between its other terminals — turning it fully on or off. That controllability (not mere conduction) is what lets transistors compute; a plain resistor cannot switch or amplify.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Matrix grid)* Classify each material by how readily charge moves through it.
 
@@ -254,7 +254,7 @@ This closing lesson unites the physics and the computing halves of the course wi
 
 > **Common pitfall:** treating computation as purely abstract, divorced from physics. Every bit is _embodied_ — as a voltage, charge, or magnetic state — and every operation costs **energy** and **time** bounded by physical law (heat dissipation, the speed of light, thermodynamic limits). Ignoring this makes real constraints (why chips run hot, why clocks stopped getting faster, why signals need thresholds) inexplicable; computation is physical, not free-floating.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Number base)* An analog-to-digital converter measures a sensor voltage and assigns it to quantisation level 13 out of the 16 available levels. Levels are transmitted as 4-bit codes. Write the code sent for level 13.
 

@@ -132,7 +132,7 @@ function generateCourse(filename) {
 
 > ${description}
 
-**[Study this course interactively on Tryals →](https://tryals.app)**
+**[Study this course interactively on Tryals →](https://tryals.app/courses/${slug})**
 
 ## Units
 
@@ -172,7 +172,7 @@ Each unit has sample questions in JSON format under [\`samples/\`](samples/) —
 
       const sampleQs = pickQuestions(lesson.questions);
       if (sampleQs.length > 0) {
-        md += `> **Practice preview** — try all ${(lesson.questions || []).length} questions interactively on [Tryals](https://tryals.app)\n\n`;
+        md += `> **Practice preview** — try all ${(lesson.questions || []).length} questions interactively on [Tryals](https://tryals.app/courses/${slug})\n\n`;
         sampleQs.forEach((q, i) => {
           const formatted = formatQuestion(q, i + 1);
           if (formatted) md += formatted + '\n\n';
@@ -229,7 +229,7 @@ const readme = `# Open University Courses by Tryals
 Free, open-source educational content for university students.
 Covers STEM, humanities, and social sciences.
 
-**[Try the interactive learning experience on Tryals →](https://tryals.app)**
+**[Try the interactive learning experience on Tryals →](https://tryals.app/courses)**
 
 ## Courses
 

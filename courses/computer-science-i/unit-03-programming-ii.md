@@ -10,7 +10,7 @@ Good structure also means **top-down decomposition**: break a large task into sm
 
 > **Common pitfall:** believing that "it runs, so the structure is fine." A program can produce correct output while being an unmaintainable tangle. Structure is about _future_ change and _human_ understanding — measured by cohesion, coupling, and single-entry/single-exit blocks, not merely by whether today's output is right.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Flow chart)* This chart shows one of the three structured control constructs, used to add up a list of items. Fill the two empty boxes, choosing from these four phrases: 'Any items left?', 'Add the next item to the total', 'Sort the items', 'Set the total to zero'. Two phrases are never used.
 
@@ -43,7 +43,7 @@ A recursion call stack drawn as nested frames descending factorial→→→=1, t
 
 $$n! = n \times (n-1)!, \;\; 0! = 1$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Flow chart)* This chart is the body of the recursive factorial function from the lesson. Fill the three empty boxes, choosing from these five phrases: 'Is n equal to 0?', 'Return 1', 'Return n times factorial(n - 1)', 'Return 0', 'Set n to 0'. Two phrases are never used.
 
@@ -63,7 +63,7 @@ This is why you can use a language's built-in list, dictionary, or set without k
 
 > **Common pitfall:** reaching _through_ the abstraction barrier to depend on an ADT's internal representation. If your code relies on how a stack happens to store its elements today, it breaks when the implementation changes. Use only the published operations; that independence from internals is the whole point of the abstraction.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Numerical input)* A stack ADT starts empty. The operations performed are: push 4, push 9, pop, push 2, push 6, pop, pop. What value does the final pop return?
 
@@ -85,7 +85,7 @@ The discipline also supports **parallel development**: with clear module boundar
 
 > **Common pitfall:** copy-pasting the same block of logic into many places instead of factoring it into one reusable unit (violating DRY). Duplicated logic means every fix or change must be made in every copy — and the copies inevitably drift apart, becoming a source of subtle, inconsistent bugs.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Numerical input)* A program is built from 4 modules, and every module calls directly into every other module. Counting an unordered pair of modules once, how many coupled pairs are there?
 
@@ -107,7 +107,7 @@ The practical wisdom: **prefer pure functions and limit mutation** to where it i
 
 > **Common pitfall:** assuming that assigning one variable to another (`b = a` for a list) makes an independent copy. In many languages it makes both names refer to the _same_ object, so mutating `b` also changes `a`. To get an independent copy you must explicitly copy; otherwise you have two aliases of one shared, mutable object.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Numerical input)* In a language where assigning one list to another makes both names refer to the same list, the following runs: x is set to the list [1, 2]; y is set to x; 3 is appended to y; z is set to an explicit copy of x; 4 is appended to z. How many elements does x hold at the end?
 
@@ -142,7 +142,7 @@ A cost-vs-n plot with an accent curve set for each of O(log n), O(n), O(n log n)
 
 $$O(1) < O(\log n) < O(n) < O(n \log n) < O(n^2)$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Numerical input)* A loop runs i from 0 to n - 1, and inside it a second loop runs j from i + 1 to n - 1. With n = 10, how many times does the inner body run in total?
 
@@ -170,7 +170,7 @@ Two more principles: handle **errors explicitly** (through error codes or except
 
 > **Common pitfall:** trusting that inputs will always be valid ("no one would ever pass a negative here"). Unvalidated assumptions are exactly where programs break in production. Validate inputs at boundaries, assert your assumptions, and fail fast with clear errors — a bug caught at the boundary is far cheaper than one that corrupts data deep inside.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Flow chart)* This chart shows a division function written defensively. Fill the three empty boxes, choosing from these five phrases: 'Is b zero?', 'Report an error and stop', 'Return a divided by b', 'Return zero', 'Is a zero?'. Two phrases are never used.
 
@@ -192,7 +192,7 @@ Two enabling practices: **automated tests** can be re-run cheaply after every ch
 
 > **Common pitfall:** treating **high code coverage** as proof of correctness. Coverage only measures which code _ran_ during tests, not whether each result was actually _checked_ or every edge case exercised. A suite can hit 100% coverage while still asserting almost nothing meaningful — coverage is a floor, not a guarantee.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Matrix grid)* Classify each test by the level it belongs to.
 
@@ -218,7 +218,7 @@ A number line zoomed near 0.3 with 0.1+0.2 landing a hair off exact 0.3; an acce
 
 $$|a - b| < \varepsilon$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Numerical input)* A routine must reject any computed probability outside the range 0 to 1 inclusive. It is handed these values: -0.02, 0.0, 0.45, 1.0, 1.3 and 0.99. How many must it reject?
 
@@ -242,7 +242,7 @@ The lesson of synthesis is that these are not separate topics but **one interloc
 
 > **Common pitfall:** treating each concept as an isolated exam topic rather than a tool to combine. Real problems demand them _together_ — the right data structure to make the algorithm efficient, contained state to keep it understandable, and tests to make it trustworthy. Synthesis, not memorization of separate facts, is what distinguishes a capable programmer.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Numerical input)* A word-frequency counter folds every word to lower case before counting. It is given the text: The cat sat on the mat and The cat ate the mat. How many distinct words does it report?
 

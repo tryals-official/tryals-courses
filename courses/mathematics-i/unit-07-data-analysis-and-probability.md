@@ -18,7 +18,7 @@ The **mean-versus-median** distinction is the practical heart of this lesson. Fo
 
 > **Common pitfall:** using the **mean** as "the typical value" when data are **skewed or contain outliers**. The mean is pulled toward extreme values, so for a long-tailed distribution it can misrepresent the centre — the **median** is more robust and usually more representative. (Likewise, report the **standard deviation**, not the raw variance, when you want spread in the data's own units.)
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Numerical input)* Compute the mean of the dataset 2, 4, 4, 5, 10.
 
@@ -45,7 +45,7 @@ Good visualisation also means honest design: a truthful axis (usually starting a
 
 > **Common pitfall:** confusing a **histogram** with a **bar chart**. A histogram shows the **distribution of a numerical variable** (binned, bars touching, axis is a number line); a bar chart **compares categories** (distinct labels, bars separated by gaps). They look alike but answer different questions — using a bar chart for continuous data, or a histogram for categories, misrepresents what the data actually shows.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Matrix grid)* Choose the right display for each task.
 
@@ -77,7 +77,7 @@ From these follow all the rules, including the **complement rule**: $P(\text{not
 
 > **Common pitfall:** adding probabilities as $P(A) + P(B)$ when the events **can overlap**. Simple addition is valid only for **mutually exclusive** events. If $A$ and $B$ can both occur, you must subtract the overlap: $P(A \cup B) = P(A) + P(B) - P(A \cap B)$, or you double-count the shared outcomes and can even exceed 1.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Numerical input)* Two fair dice are rolled. How many of the 36 equally likely outcomes give a total of 7?
 
@@ -107,7 +107,7 @@ Two overlapping event regions A and B; conditioning greys out everything outside
 
 $$P(A \mid B) = \frac{P(A \cap B)}{P(B)}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Numerical input)* Events A and B satisfy P(A and B) = 0.12 and P(B) = 0.3. Compute P(A given B).
 
@@ -133,7 +133,7 @@ Expectation is **linear**: $E[aX + b] = a\,E[X] + b$, and $E[X + Y] = E[X] + E[Y
 
 > **Common pitfall:** thinking a **continuous** random variable has a positive probability at a **single exact value**. For a continuous distribution, $P(X = c) = 0$ for any specific $c$ — probability is the **area** under the density over an _interval_, and a single point has zero width, hence zero area. Only for **discrete** variables does an individual value carry positive probability.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Table completion)* Let X be the number of heads in two flips of a fair coin. Complete its probability mass function.
 
@@ -162,7 +162,7 @@ the number of standard deviations $x$ lies from the mean. This maps any $N(\mu, 
 
 > **Common pitfall:** confusing the **z-score** with a raw value or a probability. A z-score is the number of **standard deviations from the mean** ($z = \frac{x - \mu}{\sigma}$), not the value itself and not a probability. To get a probability you convert the z-score through the standard normal (table or function). Reading $z = 2$ as "probability 2" (impossible) or as the raw data value mistakes what standardisation produces.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Numerical input)* Exam scores are normally distributed with mean 70 and standard deviation 8. Compute the z-score of a score of 86.
 
@@ -186,7 +186,7 @@ The crowning result is the **Central Limit Theorem (CLT)**: for a large enough s
 
 > **Common pitfall:** thinking the Central Limit Theorem says the **raw data** become normal, or that larger samples make the population itself normal. The CLT is about the **sampling distribution of the mean** — the _averages_ become approximately normal as $n$ grows, even if the individual data are skewed. The population's shape does not change; it is the distribution of the _statistic_ (the mean), not the data, that turns normal.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Numerical input)* A population has standard deviation 20. A random sample of size 100 is drawn. Compute the standard error of the sample mean.
 
@@ -216,7 +216,7 @@ A vertical stack of accent confidence intervals from repeated samples around a f
 
 $$\bar{x} \pm z \cdot \frac{\sigma}{\sqrt{n}}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Numerical input)* A sample of size 25 from a population with standard deviation 10 has sample mean 50. Using the approximate 95% interval of the sample mean plus or minus 2 standard errors, find the upper endpoint.
 
@@ -244,7 +244,7 @@ A critical interpretive point: "fail to reject $H_0$" is **not** "prove $H_0$ tr
 
 > **Common pitfall:** reading a **p-value** as "the probability that $H_0$ is true," or treating "**fail to reject $H_0$**" as "$H_0$ is proven true." The p-value is the probability of data at least as extreme as observed **assuming $H_0$ holds** — a statement about the data, not about the hypothesis. And failing to reject means only that the evidence was insufficient, not that the null is established; you never _prove_ the null.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Matrix grid)* Assign each claim to the hypothesis it belongs to.
 
@@ -275,7 +275,7 @@ A scatter plot with the accent least-squares line minimising the vertical residu
 
 $$-1 \le r \le 1,\quad \hat{y} = mx + b$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Numerical input)* A regression line has equation y = 3x + 5. Predict the value of y when x = 4.
 

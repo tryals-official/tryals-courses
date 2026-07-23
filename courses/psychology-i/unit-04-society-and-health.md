@@ -16,7 +16,7 @@ This shift also reframed the GOAL of care. The **World Health Organization (WHO)
 
 > **Common pitfall:** treating the biopsychosocial model as simply "biology plus a little bit of psychology thrown in." The model insists the three domains genuinely INTERACT — a psychological state can alter biological processes (e.g. chronic stress raising cortisol), and social conditions can shape psychological states (e.g. isolation raising depression risk) — not that they merely sit side by side.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Category sort)* Sort each factor influencing a person's health by its biopsychosocial domain.
 
@@ -46,7 +46,7 @@ A resistance-capacity meter: a baseline needle at rest; a stressor icon appears 
 
 $$\text{Alarm} \to \text{Resistance} \to \text{Exhaustion}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Ordering)* Order the stages of Selye's General Adaptation Syndrome, from a stressor's onset onward.
 
@@ -83,7 +83,7 @@ Evidence broadly supports both models operating simultaneously, for different as
 
 > **Common pitfall:** assuming a large social network automatically means strong social support. Network SIZE and PERCEIVED support are distinct — a person with many acquaintances but no one they trust can feel more unsupported than a person with just one or two close, reliable relationships.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* Classify each supportive act by the type of social support it provides.
 
@@ -108,7 +108,7 @@ Both models converge on a similar practical lesson: simply telling someone a hea
 
 > **Common pitfall:** assuming perceived severity alone drives health behavior. A person can believe a disease is extremely severe and still not act, if they perceive themselves as not personally susceptible, or if perceived barriers (cost, time, discomfort) feel too high — the models require weighing several beliefs together, not just one.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* Classify each belief by the Health Belief Model component it represents.
 
@@ -135,7 +135,7 @@ A four-step staircase: four grey steps of equal height, unlabelled; each step ga
 
 $$\text{Health} \propto \text{SES, step by step}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* Classify each pathway example by whether it reflects material deprivation or psychosocial stress.
 
@@ -168,7 +168,7 @@ Evaluating treatments purely by clinical or survival metrics can miss what matte
 
 > **Common pitfall:** assuming HRQoL is just a fancy term for "how sick someone is" clinically. It specifically captures the patient's own SUBJECTIVE experience of functioning — which can diverge substantially from an objective clinical severity score.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Cloze bank)* Name the concept Bury used for the onset of serious chronic illness.
 
@@ -194,7 +194,7 @@ Effective communication requires exchanging both technical information and emoti
 
 > **Common pitfall:** treating low adherence as a purely individual failing of "difficult" or "unmotivated" patients. Most non-adherence research instead points toward SYSTEM and COMMUNICATION factors — cost, complexity, side effects, unclear instructions — as the dominant drivers, which is exactly why the collaborative model, built around understanding the patient's actual circumstances, tends to improve adherence more than paternalistic instruction alone.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* Classify each consultation by the decision-making model it follows.
 
@@ -221,7 +221,7 @@ A recurring theme across the whole lifespan is that health behavior is cumulativ
 
 > **Common pitfall:** treating adolescent risk-taking as simple recklessness or poor character. The maturational mismatch between an early-maturing reward system and a later-maturing control system is a normal developmental pattern seen across populations, not a personal failing unique to a "bad" individual.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* Classify each central health issue by the life stage it characterizes.
 
@@ -245,7 +245,7 @@ Beyond treating prevention as an individual medical matter, the World Health Org
 
 > **Common pitfall:** treating "prevention" as a single undifferentiated idea. The THREE levels intervene at genuinely different points in a disease's course and call for different strategies — confusing early screening (secondary) with stopping disease before it starts (primary) leads to very different, and non-interchangeable, public health policies.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* Classify each intervention by its level of prevention.
 
@@ -282,7 +282,7 @@ Four concentric rings: a bare center dot (the individual); rings expand outward 
 
 $$\text{Individual} \to \text{Interpersonal} \to \text{Community} \to \text{Societal}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* Classify each influence on health by its level in the social-ecological model.
 

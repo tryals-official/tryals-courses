@@ -7,7 +7,7 @@
 Free, open-source educational content for university students.
 Covers STEM, humanities, and social sciences.
 
-**[Try the interactive learning experience on Tryals →](https://tryals.app)**
+**[Try the interactive learning experience on Tryals →](https://tryals.app/courses)**
 
 ## Courses
 

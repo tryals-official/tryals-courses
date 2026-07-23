@@ -2,7 +2,7 @@
 
 > A rigorous psychology degree course covering behavioral biology, ethology, the history of psychology, society and health, research techniques, learning and emotion, individual differences, statistics, psychophysiology, and social psychology.
 
-**[Study this course interactively on Tryals →](https://tryals.app)**
+**[Study this course interactively on Tryals →](https://tryals.app/courses/psychology-i)**
 
 ## Units
 

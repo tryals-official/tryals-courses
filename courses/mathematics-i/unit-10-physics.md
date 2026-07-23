@@ -17,7 +17,7 @@ A conceptual essential: **velocity and acceleration are independent** quantities
 
 > **Common pitfall:** conflating **velocity** with **acceleration**, or assuming zero velocity means zero acceleration. Velocity is _how fast_ you move; acceleration is _how fast the velocity changes_ — a body can be instantaneously at rest ($v = 0$) while strongly accelerating (the top of a toss). And constant _speed_ around a curve still involves acceleration, because velocity is a vector whose _direction_ is changing.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Numerical input)* A car starts from rest and accelerates in a straight line at a constant 3 m/s squared. How far, in metres, has it travelled after 6 seconds?
 
@@ -51,7 +51,7 @@ A block with two opposing force arrows; the accent net-force arrow (their vector
 
 $$\vec{F}_{net} = m\vec{a}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Numerical input)* Two horizontal forces act on a 5 kg crate on frictionless ice: 18 N to the east and 8 N to the west. What is the magnitude of the crate's acceleration, in m/s squared?
 
@@ -85,7 +85,7 @@ A ball dropping: its accent potential-energy bar shrinks as the kinetic-energy b
 
 $$KE + PE = \text{constant}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Numerical input)* A 2 kg ball moves at 6 m/s. What is its kinetic energy, in joules?
 
@@ -111,7 +111,7 @@ Real oscillators experience **damping** (friction), which gradually shrinks the 
 
 > **Common pitfall:** thinking a larger **amplitude** makes an ideal oscillator take **longer** per cycle. For simple harmonic motion the **period is independent of amplitude** — a bigger swing also feels a proportionally bigger restoring force, so it covers the extra distance in the same time. (This holds for an ideal spring and a _small-angle_ pendulum; large-angle pendulums deviate, but the SHM idealisation does not.)
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Numerical input)* A mass on a spring completes 20 full oscillations in 5 seconds. What is its frequency, in hertz?
 
@@ -140,7 +140,7 @@ A crucial conceptual point already noted: a wave carries **energy, not matter**.
 
 > **Common pitfall:** thinking a wave carries **matter** along with it, and confusing **frequency** with **period**. A wave transports _energy_ — the medium oscillates in place (a cork bobs without drifting). And frequency and period are **reciprocals** ($f = 1/T$), not the same: high frequency means _short_ period, so a large frequency pairs with a small period, not a large one.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Numerical input)* A wave has a frequency of 50 Hz and a wavelength of 4 m. What is its speed, in m/s?
 
@@ -169,7 +169,7 @@ A box of particles evolving from an ordered corner cluster to an accent spread-o
 
 $$\Delta S_{isolated} \ge 0$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Numerical input)* A gas absorbs 500 J of heat and does 200 J of work on its surroundings. Using the first law, by how many joules does its internal energy change?
 
@@ -196,7 +196,7 @@ Electricity and magnetism, once thought separate, are two aspects of one **elect
 
 > **Common pitfall:** getting the sign of the Coulomb force wrong (**like charges repel**, opposites attract), and thinking a **steady** magnetic field induces a current. The force falls off as $1/r^2$, so doubling the distance quarters it — and two like charges push _apart_. For induction, Faraday's law depends on the _rate of change_ of the magnetic field: a motionless magnet near a coil induces **nothing**; current appears only while the field is _changing_.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Numerical input)* Two point charges exert a force of 36 N on each other. If the separation is tripled and the charges are unchanged, what is the new force, in newtons?
 
@@ -233,7 +233,7 @@ Classical physics remains an excellent approximation in its domain — everyday 
 
 > **Common pitfall:** thinking the **uncertainty principle** is about clumsy measurement disturbing the system, or that quantum mechanics gives **definite** predictions like classical physics. The uncertainty principle is a _fundamental limit of nature_ — position and momentum cannot _both_ have precise values simultaneously, regardless of measurement quality. And quantum mechanics is inherently **probabilistic**: it predicts the _probabilities_ of outcomes, not certain results — a deep departure from deterministic classical physics.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Numerical input)* Take the speed of light as 3 x 10^8 m/s. Fully converting 2 kg of matter to energy gives E = 1.8 x 10^n joules. Enter the value of n.
 
@@ -259,7 +259,7 @@ The unifying lesson: the abstract mathematics studied for its own structure turn
 
 > **Common pitfall:** viewing the mathematics of physics as a mere **calculation tool** bolted onto physical ideas, rather than the **language of the laws themselves**. Fundamental physical laws _are_ mathematical statements — differential equations, vector relations, symmetry principles — not physical intuitions later dressed in formulas. Symmetries _imply_ conservation laws (Noether), quantum states _are_ vectors, and a law _is_ its equation; treating the math as optional decoration misses that the structure of physics is inseparable from its mathematics.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Matching)* Match each physical object or law to the mathematical object it actually IS.
 
@@ -289,7 +289,7 @@ The overarching truth, voiced by Wigner as the "unreasonable effectiveness of ma
 
 > **Common pitfall:** treating physics and mathematics as **separate subjects** that merely happen to interact. Physics _is_ applied mathematics — its models are mathematical structures, its laws are equations, and understanding a physical system quantitatively _means_ analysing its mathematics. The "unreasonable effectiveness of mathematics" is not a coincidence to note in passing but the central fact: the abstract tools of this course are the very language in which the physical world is understood.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
 
 **1.** *(Ordering)* Order the stages of the modeling cycle described in this lesson.
 

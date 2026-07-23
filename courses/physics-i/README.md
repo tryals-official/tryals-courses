@@ -2,7 +2,7 @@
 
 > A rigorous physics course covering calculus, chemistry, computer science, linear algebra, mechanics, differential equations, electromagnetism, optics, laboratory practice, and waves.
 
-**[Study this course interactively on Tryals →](https://tryals.app)**
+**[Study this course interactively on Tryals →](https://tryals.app/courses/physics-i)**
 
 ## Units
 

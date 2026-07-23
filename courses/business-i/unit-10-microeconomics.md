@@ -32,7 +32,7 @@ The MRS typically **diminishes**: the more $x$ you have (relative to $y$), the l
 
 > **Tip:** Each indifference-curve property is an axiom made visible: downward slope comes from non-satiation, non-crossing from transitivity. If a drawn map violates one, an axiom has been broken somewhere.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
 
 **1.** *(Interactive scene)* An indifference curve through bundle $(4, 6)$ has $MRS = 2$. If the consumer gives up 1 unit of $y$, they need approximately **2 more units of $x$** to stay indifferent. **Drag the new bundle marker** to approximately $(6, 5)$.
 
@@ -98,7 +98,7 @@ $$\text{New } x\text{-intercept} = M / p_x' > M / p_x$$
 
 > **Tip:** Watch the intercepts, not the middle: an income change moves _both_ intercepts proportionally (slope fixed); a price change moves _one_ intercept only (slope changes). That single observation decodes any budget-line diagram.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
 
 **1.** *(Interactive scene)* Income is 100, $p_x = 5$, $p_y = 10$. The budget line has $x$-intercept $100/5 = 20$ and $y$-intercept $100/10 = 10$. **Drag the optimal bundle** to the tangency point where $MRS = p_x/p_y = 0.5$.
 
@@ -169,7 +169,7 @@ This is a parabola in $P$, maximised at $P^* = a/(2b)$ — exactly the midpoint 
 
 > **Common pitfall:** "Constant slope means constant elasticity." The ratio $P/Q$ silently changes as you slide down the line — elasticity runs from infinite at the choke price to zero where the curve hits the quantity axis.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
 
 **1.** *(Interactive scene)* Demand is $Q = 100 - 4P$. At $P = 15$, $Q = 40$. The elasticity is $\varepsilon = -4 \times 15/40$. **Drag the elasticity marker** to the correct value.
 
@@ -211,7 +211,7 @@ $$\Delta x^* = \underbrace{\Delta x^s}_{\text{substitution}} + \underbrace{\Delt
 
 > **Tip:** The substitution effect never betrays you — cheaper always pulls quantity up along the compensated curve. All the drama lives in the income effect: its sign (normal vs inferior) and its size (Giffen) decide the total.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
 
 **1.** *(Interactive scene)* Good $x$ is normal. Its price drops. The substitution effect increases $x$ by 5 units, and the income effect adds 3 more. **Drag the total-effect marker** to the correct value.
 
@@ -260,7 +260,7 @@ The **long-run average cost** (LRAC) curve is U-shaped: economies of scale at lo
 
 > **Tip:** The averages-and-marginal logic is universal: when the marginal is below the average, it drags the average down; above, it pulls it up — so $MC$ must cross $AC$ and $AVC$ exactly at their minimum points. Same reason one bad exam drags your GPA down.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
 
 **1.** *(Interactive scene)* A firm has $FC = 200$, $VC = 5Q + 0.1Q^2$. At $Q = 20$: $TC = 200 + 100 + 40 = 340$, $AC = 340/20 = 17$. **Drag the AC marker** to the correct value.
 
@@ -306,7 +306,7 @@ Firms produce at minimum average cost — the most efficient scale. Any profit a
 
 > **Common pitfall:** Shutting down as soon as profit turns negative. Between $AVC$ and $AC$, operating loses less than closing: revenue covers all variable costs plus a slice of the fixed costs you owe anyway.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
 
 **1.** *(Interactive scene)* A competitive firm has $MC = 2 + 0.5Q$. The market price is $P = 12$. Setting $P = MC$: $12 = 2 + 0.5Q$. **Drag the output marker** to the profit-maximising quantity.
 
@@ -354,7 +354,7 @@ $$\pi = (P - AC) \times Q$$
 
 > **Common pitfall:** Reading the monopoly price off the $MR$ curve. The sequence is: find $Q^*$ where $MR = MC$, then climb _up to the demand curve_ to read the price customers will pay for that quantity.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
 
 **1.** *(Interactive scene)* Demand is $P = 50 - 2Q$, so $MR = 50 - 4Q$. If $MC = 10$, the monopolist sets $MR = MC$: $50 - 4Q = 10$. **Drag the output marker** to $Q_m$.
 
@@ -404,7 +404,7 @@ The **Nash equilibrium** is where reaction functions intersect — neither firm 
 
 > **Tip:** The Cournot result is worth memorising as a scale: monopoly output < Cournot duopoly total < competitive output — and as the number of Cournot firms grows, the market glides smoothly toward the competitive benchmark.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
 
 **1.** *(Interactive scene)* In a Cournot duopoly with $P = 100 - Q$, $MC = 10$: each firm's reaction function is $q_i = 45 - q_j/2$. At Nash equilibrium, $q_1 = q_2 = 30$. **Drag the equilibrium marker** to the correct total output $Q$.
 
@@ -450,7 +450,7 @@ $$\text{NPV of education} = \sum \frac{w_{\text{skilled}} - w_{\text{unskilled}}
 
 > **Tip:** Monopsony is why a minimum wage can _raise_ employment — a floor above the monopsony wage but below $VMP_L$ removes the incentive to restrict hiring, moving the market toward the competitive outcome.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
 
 **1.** *(Interactive scene)* A firm sells output at $P = 20$ and has $MP_L = 10 - 0.5L$. The wage is $w = 100$. Setting $VMP_L = w$: $20(10 - 0.5L) = 100$. **Drag the hiring marker** to the optimal number of workers.
 
@@ -502,7 +502,7 @@ The social optimum requires the **vertical sum** of individual demand curves (be
 
 > **Common pitfall:** Setting the Pigouvian tax to eliminate the externality entirely. The efficient tax equals marginal external cost _at the optimum_ — some pollution is efficient when abating it costs more than the harm it does. The goal is the right quantity, not zero.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
 
 **1.** *(Interactive scene)* A factory produces widgets at $MPC = 10$ but imposes pollution damage $MEC = 5$ per widget. The socially optimal tax is $t = MEC = 5$. **Drag the Pigouvian tax marker** to the correct level.
 

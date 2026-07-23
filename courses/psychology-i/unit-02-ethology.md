@@ -17,7 +17,7 @@ A common error is treating one of the four as the "real" explanation and the oth
 
 > **Common pitfall:** treating a "how" answer (mechanism) as though it competes with a "why" answer (function). Asking how a bird's syrinx produces song and asking why singing evolved are both legitimate questions about the very same behavior — not rival explanations.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Category sort)* A red deer stag roars each autumn. Sort each explanation of the roar under the one Tinbergen question it answers.
 
@@ -47,7 +47,7 @@ A stickleback rival-response: a neutral grey model with no red mark evokes no lu
 
 $$\text{Response strength} \propto \text{sign stimulus intensity}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Ordering)* Order the causal chain of a Fixed Action Pattern, from trigger to completion.
 
@@ -78,7 +78,7 @@ The distinction between "critical" and "sensitive" period matters: a strict crit
 
 > **Common pitfall:** assuming imprinting needs food or some other reward to "stick," the way most learning does. It does not — a gosling will imprint on a bouncing ball with no food involved at all, purely from exposure during the sensitive window.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Category sort)* Sort each example by whether it is filial imprinting or sexual imprinting.
 
@@ -105,7 +105,7 @@ The **Handicap Principle**, proposed by Amotz Zahavi, explains why many signals 
 
 > **Common pitfall:** assuming a cheap, easily faked signal would work just as well as a costly one. It would not — the entire point of the handicap principle is that cost is what makes a signal trustworthy; a cost-free signal could be produced by anyone, honest or not, and receivers would quickly learn to ignore it.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Category sort)* Sort each signal by the modality (channel) it travels through.
 
@@ -130,7 +130,7 @@ The **Marginal Value Theorem (MVT)** extends this logic to patchy environments. 
 
 > **Common pitfall:** assuming a forager should stay in a patch until it is completely emptied. MVT says otherwise — leaving too late wastes time that could be spent gaining food faster elsewhere, so the optimal departure point is set by the environment's average, not by how much food is technically still left.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Numerical input)* Profitability is a prey item's energy content divided by its handling time. A prey item yields 30 kJ and takes 6 seconds to handle. What is its profitability, in kJ per second?
 
@@ -156,7 +156,7 @@ A small family tree: an actor node connects by accent-weighted lines to a full s
 
 $$\text{Altruism favored when } rb > c$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Numerical input)* Hamilton's Rule says altruism is favored when rb > c. An actor helps a full sibling (r = 0.5) at a cost of c = 2 offspring-equivalents. What is the smallest WHOLE-NUMBER benefit b to the sibling for which helping is favored?
 
@@ -181,7 +181,7 @@ Parental investment theory (Robert Trivers) predicts that the sex investing more
 
 > **Common pitfall:** assuming the higher-investing sex is always female. Investment, not sex per se, is what predicts choosiness — in species like seahorses and jacanas, where males carry the eggs or the primary parenting burden, it is the males who become the choosier, more selective sex.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* Classify each mating arrangement by the mating system it describes.
 
@@ -212,7 +212,7 @@ Robert Trivers' theory of **Parent-Offspring Conflict** explains why parents and
 
 > **Common pitfall:** framing parent-offspring conflict as one side being "selfish" and the other "generous." Both sides are simply favoring the reproductive strategy that maximizes their OWN inclusive fitness — the conflict is a mathematical consequence of relatedness asymmetry, not a moral failing on either part.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Numerical input)* An offspring is related to itself by r = 1.0 and to a future full sibling by r = 0.5. By what factor does the offspring value a unit of benefit to ITSELF over the same benefit to that sibling?
 
@@ -232,7 +232,7 @@ The **Red Queen Hypothesis** (Leigh Van Valen) captures why this arms race never
 
 > **Common pitfall:** assuming Batesian and Müllerian mimicry work the same way. They do not: Batesian mimicry involves a genuinely _harmless_ species free-riding on a dangerous one's reputation, while Müllerian mimicry involves multiple genuinely _dangerous_ species converging for mutual benefit — no free-riding involved.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Category sort)* Sort each anti-predator strategy as crypsis or aposematism.
 
@@ -254,7 +254,7 @@ A Hawk-versus-Dove contest: two silhouettes face off over a resource icon; if bo
 
 $$\text{ESS: no rare strategy can invade}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Ordering)* A Tit-for-Tat player faces a partner who defects on round 1 but cooperates on round 2. Order what Tit-for-Tat does across the interaction.
 

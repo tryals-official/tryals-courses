@@ -21,7 +21,7 @@ Membrane cross-section: resting ion gradient shown as dot-density outside (Na+/C
 
 $$V_{rest} \approx -70\text{ mV}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Numerical input)* The sodium-potassium pump ejects 3 Na+ and admits 2 K+ per cycle, so each cycle leaves a net of one extra positive charge outside the cell. Purely from this pumping, how many net positive charges are moved out of the cell over 12 complete cycles?
 
@@ -50,7 +50,7 @@ A single accent trace sweeping left to right on a voltage-vs-time axis: flat at 
 
 $$V_{rest} \approx -70\text{ mV}, V_{peak} \approx +40\text{ mV}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Truth table)* A spike fires only when the membrane reaches threshold (T) AND the neuron is not in its refractory period (R). Fill the output column for 'Fires = T AND NOT R'. (T = threshold reached; R = in refractory period.)
 
@@ -72,7 +72,7 @@ Once the signal has been passed on, neurotransmitter must be cleared quickly or 
 
 > **Common pitfall:** assuming every synaptic signal is excitatory. Roughly as much synaptic traffic is inhibitory (IPSPs) as excitatory (EPSPs) — cognition depends as much on well-timed inhibition as on excitation.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Ordering)* Put the events of chemical synaptic transmission in causal order.
 
@@ -97,7 +97,7 @@ An agonist can act _directly_ (binding and activating the receptor itself) or _i
 
 > **Common pitfall:** assuming "antagonist" always means "produces no effect." An antagonist has a very real effect — it is just the effect of _removing_ the neurotransmitter's normal action, which can itself be dramatic, as when naloxone rapidly reverses an opioid overdose.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* Match each clinical or functional clue to the neurotransmitter it points to.
 
@@ -117,7 +117,7 @@ The spinal cord also runs its own fast, local circuits called **reflex arcs**, w
 
 > **Common pitfall:** assuming a spinal reflex still involves the brain "just very quickly." It does not need to — the entire arc can complete inside the spinal cord, which is precisely why it is faster than any voluntary response.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Ordering)* Order the events of a withdrawal reflex, from stimulus to the moment you feel it.
 
@@ -148,7 +148,7 @@ The sympathetic branch mobilizes the body for an emergency: the **adrenal medull
 
 > **Common pitfall:** treating "sympathetic" and "parasympathetic" as switches for good and bad states. Both are essential and constantly active to different degrees; chronic sympathetic dominance from unrelieved stress — not sympathetic activation itself — is what damages health over time.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Category sort)* Sort each scenario by which autonomic branch is driving it.
 
@@ -170,7 +170,7 @@ Other glands run their own dedicated systems: the **thyroid** sets the body's ba
 
 > **Common pitfall:** confusing the fast adrenaline surge (adrenal medulla, seconds) with the slow cortisol response (adrenal cortex via the HPA axis, minutes to hours) — both come from the adrenal gland, but via entirely different control pathways and timescales.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Ordering)* Order the steps of the HPA axis, the body's central stress pathway.
 
@@ -188,7 +188,7 @@ The **midbrain**, a small relay region above the hindbrain, contains two key str
 
 > **Common pitfall:** mixing up the superior and inferior colliculus. _Superior_ handles seeing (visual); _inferior_ handles hearing (auditory) — and "superior" comes before "inferior" in that same order alphabetically, if that helps it stick.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* Each row is a clinical picture. Assign it to the structure whose damage would produce it.
 
@@ -220,7 +220,7 @@ The **limbic system** — most centrally the **hippocampus** and **amygdala** �
 
 > **Common pitfall:** assuming H.M.'s amnesia proves the hippocampus stores memories permanently. It does not — it is needed to _form_ new long-term memories, not to store old ones, which is why H.M. could still recall his childhood.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* Each row is a patient presentation. Assign it to the forebrain structure whose damage best explains it.
 
@@ -248,7 +248,7 @@ A brain viewed from above, split down the corpus callosum: intact callosum shown
 
 $$\text{Left hemisphere} \to \text{speech}, \text{Right hemisphere} \to \text{spatial}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
 
 **1.** *(Matrix grid)* Each row is what a lesion leaves impaired. Assign it to the lobe that was damaged.
 

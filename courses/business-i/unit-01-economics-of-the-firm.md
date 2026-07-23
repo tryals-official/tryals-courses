@@ -50,7 +50,7 @@ The pattern: activities with **high asset specificity**, frequent transactions, 
 
 > **Common pitfall:** Outsourcing an activity because it is cheap this year, even though it carries your value added. Cost comparisons capture today's price, not tomorrow's dependence.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
 
 **1.** *(Interactive scene)* A furniture maker buys wood for **40€** and sells a finished table for **150€**. Drag the value-added bar to show how much value the firm created — the split animates when you send.
 
@@ -97,7 +97,7 @@ The key trade-off: unlimited-liability forms are simple and cheap to create, but
 
 > **Common pitfall:** In news English a "public company" is one listed on a stock exchange; in this classification, public ownership means owned by the state. Same word, different axis.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
 
 **1.** *(Interactive scene)* The EU classifies firm size by headcount. **Drag the boundary marker** to the employee count where a firm stops being an SME and becomes large.
 
@@ -134,7 +134,7 @@ Economists have offered three great answers, each capturing a different face of 
 
 > **Tip:** Keep Knight's distinction sharp: **risk** has measurable probabilities and can be insured; **uncertainty** cannot. Only the second earns entrepreneurial profit.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
 
 **1.** *(Interactive scene)* A venture succeeds with probability **0.3**, paying **200k€**; otherwise it loses **40k€**. **Drag the expected-value marker** to where this gamble really sits — the split animates when you send.
 
@@ -185,7 +185,7 @@ A café with 3,000€ monthly fixed costs, selling coffee at 2.50€ with 1.00�
 
 > **Common pitfall:** Fixed is not the same as sunk. Rent next year is fixed but avoidable (close the shop); last year's failed ad campaign is sunk — and sunk costs must never drive decisions.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
 
 **1.** *(Interactive scene)* A print shop has **fixed costs 1,200€/month**, sells posters at **6€** with **2€** variable cost each. **Drag the output slider** until profit hits exactly zero — the cost and revenue bars animate as you move.
 
@@ -248,7 +248,7 @@ $$NPV(r) = -C_0 + \sum_{t=1}^{T} \frac{CF_t}{(1+r)^t}$$
 
 > **Common pitfall:** Ranking mutually exclusive projects by IRR. When profiles cross, the project with the higher IRR can have the *lower* NPV at your actual discount rate — and NPV, not IRR, measures value created.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
 
 **1.** *(Interactive scene)* A project costs **100k€** and pays **60k€** in year 1 and **60k€** in year 2. **Drag the discount-rate dial** until NPV hits exactly zero — you are finding the IRR. The cash-flow bars shrink as you raise the rate.
 
@@ -290,7 +290,7 @@ Simple and safe — but blind: it ignores what customers would _willingly_ pay a
 
 > **Common pitfall:** Cost-plus feels safe because it "guarantees" a margin — but if the marked-up price sits above what customers will pay, the margin is guaranteed on sales that never happen.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
 
 **1.** *(Interactive scene)* A gadget costs **40€** per unit to make. The firm wants a **35% markup** on cost. **Drag the price tag** to the correct cost-plus price — the margin band fills as you move.
 
@@ -336,7 +336,7 @@ The strategic consequence: in perfect competition you win by _cost_; under diffe
 
 > **Tip:** The real diagnostic is the entry barrier, not the current number of firms. A market with two firms and free entry behaves more competitively than one firm protected by a patent wall.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
 
 **1.** *(Interactive scene)* A monopolist faces demand $p = 100 - q$ with marginal cost **20€**. **Drag the quantity handle** to the profit-maximizing output where marginal revenue meets marginal cost — the profit rectangle grows and shrinks live.
 
@@ -374,7 +374,7 @@ In oligopoly, profits depend not just on your choice but on your rival's. **Game
 
 > **Common pitfall:** Assuming the equilibrium is the best outcome. The prisoner's dilemma's whole point is the opposite: individually rational moves lock both players into a collectively worse cell.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
 
 **1.** *(Interactive scene)* Two airlines choose High or Low fares. Payoffs (you, rival): HH (10,10) · HL (2,12) · LH (12,2) · LL (4,4). **Tap the cell that is the Nash equilibrium** — deviation arrows animate to show why no one moves.
 
@@ -411,7 +411,7 @@ In a large corporation, the people who _own_ the firm (shareholders) are not the
 
 > **Common pitfall:** Treating incentive pay as a cure-all. A bonus tied to this quarter's earnings buys this quarter's earnings — including via cut R&D, channel stuffing, and accounting games. Incentives work exactly as written, not as intended.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
 
 **1.** *(Interactive scene)* A manager privately chooses effort: shirking keeps their salary, while full effort costs them **20** but creates **100** in firm value. The payoff bars are hidden — **set the profit-share** to the smallest slice at which full effort first beats shirking.
 
@@ -458,7 +458,7 @@ Half of all M&A destroys acquirer value — through overpaid premiums (the **win
 
 > **Common pitfall:** Believing revenue synergies as readily as cost synergies. Eliminated duplicate warehouses are countable; "cross-selling opportunities" routinely evaporate after closing.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
 
 **1.** *(Interactive scene)* Firm A is worth **300M€**, firm B **200M€**, and merging saves **60M€** in duplicated costs. **Drag the combined-value bar** to what the merged firm is worth — the synergy band lights up when the parts and the whole are compared.
 

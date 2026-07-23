@@ -23,7 +23,7 @@ Two overlapping set circles A and B; the lens overlap flashes in accent as it is
 
 $$|A \cup B| = |A| + |B| - |A \cap B|$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Venn diagram)* Let A be the multiples of 2 in {1, 2, ..., 12} and let B be the multiples of 3 in the same range. Place each number where it belongs.
 
@@ -50,7 +50,7 @@ A **tautology** is a proposition true under _every_ assignment (like $p \lor \ne
 
 > **Common pitfall:** misreading **implication**. $p \to q$ is _not_ false when $p$ is false — it is **vacuously true**. The only way an implication fails is a true premise with a false conclusion ($p$ true, $q$ false). Also, $p \to q$ is _not_ the same as its converse $q \to p$; confusing the two is a classic logical error.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Truth table)* Complete the output column for the implication 'if p then q'. Remember that it fails in only one case.
 
@@ -76,7 +76,7 @@ In words: the negation of "all are $P$" is "some is not $P$" (one **counterexamp
 
 > **Common pitfall:** swapping the **order of quantifiers** or negating them incorrectly. $\forall x\, \exists y$ is not the same as $\exists y\, \forall x$. And $\neg \forall x\, P(x)$ is $\exists x\, \neg P(x)$ — "not all" means "at least one isn't," _not_ "none is." Negation flips $\forall$ to $\exists$ (and vice versa) while negating the inside.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Matrix grid)* The domain is {1, 2, 3, 4, 5, 6}. Decide whether each quantified statement is true or false over that domain.
 
@@ -100,7 +100,7 @@ Mathematics advances by **proof** — an airtight chain of logical steps from ac
 
 > **Common pitfall:** confusing **proof by contradiction** with **proof by contrapositive**, and misusing counterexamples. Contradiction assumes the whole statement is false and seeks _any_ absurdity; contrapositive proves the equivalent $\neg q \to \neg p$ directly. And a counterexample _disproves_ a universal but a single supporting example never _proves_ one — "it works for $n=1,2,3$" is not a proof.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Ordering)* Order the steps of a direct proof that if n is even then n squared is even.
 
@@ -126,7 +126,7 @@ Induction is not just a proof tool; it mirrors **recursion** in programming — 
 
 > **Common pitfall:** forgetting the **base case**, or misusing the **inductive hypothesis**. Without the base case, the inductive step proves nothing — you have shown "if $k$ then $k+1$" but never started the chain. And the inductive step must _use_ the assumption for $k$ to establish $k+1$; a step that re-proves $k+1$ from scratch, ignoring the hypothesis, is not an induction (and usually is circular).
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Ordering)* Order the parts of a proof by induction that the sum of the first n positive integers equals n(n+1)/2.
 
@@ -151,7 +151,7 @@ The power of these properties is that they let us reason about a relation abstra
 
 > **Common pitfall:** confusing **symmetric** with **transitive**, or assuming a relation with one property has the others. Symmetry is about reversing a _single_ pair ($a\,R\,b \Rightarrow b\,R\,a$); transitivity chains _two_ pairs into a third ($a\,R\,b, b\,R\,c \Rightarrow a\,R\,c$). A relation can easily have one without the other — "is one mile from" is symmetric but not transitive.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Matrix grid)* Classify each relation by whether it is an equivalence relation, a partial order, or neither.
 
@@ -180,7 +180,7 @@ A domain column and codomain column of dots with arrows; a collision (two arrows
 
 $$f(a) = f(a') \Rightarrow a = a'$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Matrix grid)* Each row describes a function by listing its values. Classify each one.
 
@@ -204,7 +204,7 @@ The single most important distinction is **order**. If rearranging the chosen it
 
 > **Common pitfall:** using a **permutation** where order does not matter (or vice versa), and mixing up the **sum vs product** rule. If order is irrelevant — a committee, a subset, a poker hand — use combinations $\binom{n}{k}$, not permutations. And "and" (sequential choices) _multiplies_ while "or" (alternative choices) _adds_ — reaching for the wrong one inflates or deflates the count by a lot.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Numerical input)* In how many different orders can 5 distinct books be arranged on a shelf?
 
@@ -230,7 +230,7 @@ The Fibonacci sequence as a row of values; each new term is drawn as the accent 
 
 $$F(n) = F(n-1) + F(n-2)$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Pattern sequence)* The Fibonacci sequence is defined by F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1. Fill the gap in its opening terms.
 
@@ -256,7 +256,7 @@ A **tree** is a special graph: **connected and acyclic** (no cycles). Trees have
 
 > **Common pitfall:** miscounting with the **handshaking lemma**, or forgetting a tree's defining constraints. The sum of degrees is $2|E|$, _twice_ the edge count, not the edge count itself — every edge is counted at both its endpoints. And a **tree** must be _both_ connected _and_ acyclic; a graph that is acyclic but disconnected is a forest, not a single tree, and a tree on $n$ vertices always has exactly $n-1$ edges (no more, no fewer).
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app)
+> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
 
 **1.** *(Grid path)* This grid is a graph: each open cell is a vertex, and edges join cells that touch horizontally or vertically. The blocked cells are vertices that have been deleted. Trace a path from the top-left vertex to the bottom-right vertex.
 
