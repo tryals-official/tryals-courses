@@ -1,6 +1,6 @@
 # Question Types
 
-Tryals supports 70+ interactive question types. This document shows the JSON format for each type found in the sample data.
+Tryals supports 70+ interactive question types. This document shows the JSON format for every type.
 
 For the overall course/unit/lesson structure, see [Question Format](question-format.md).
 
@@ -12,24 +12,29 @@ For the overall course/unit/lesson structure, see [Question Format](question-for
 - [`multi_select`](#multi-select) — Multiple correct options (student selects all that apply)
 - [`true_false`](#true-false) — Boolean question
 - [`numerical_input`](#numerical-input) — Student types a number
+- [`fill_blank`](#fill-blank) — Type in missing words or short phrases
 - [`cloze_bank`](#cloze-bank) — Fill multiple blanks from a shared word bank
 - [`matching`](#matching) — Drag to match left items with right items
 - [`ordering`](#ordering) — Arrange items in the correct sequence
+- [`sentence_builder`](#sentence-builder) — Build a sentence by arranging word tokens in order
 - [`matrix_grid`](#matrix-grid) — One choice per row in a grid/table
 - [`slider_estimate`](#slider-estimate) — Estimate a value using a slider
 - [`number_line_placement`](#number-line-placement) — Place one or more markers on a number line at target values
+- [`hotspot_image`](#hotspot-image) — Tap the correct region on an image
+- [`diagram_labeling`](#diagram-labeling) — Assign labels to anchor points on a diagram
+- [`coordinate_plot`](#coordinate-plot) — Choose the correct curve from a set of plotted options
+- [`formula_builder`](#formula-builder) — Build a formula by arranging tokens
+- [`unit_conversion`](#unit-conversion) — Convert between units using given conversion factors
+- [`venn_diagram`](#venn-diagram) — Sort items into Venn diagram regions: A-only, B-only, both, or neither
 - [`error_highlight`](#error-highlight) — Identify incorrect tokens in a passage
 - [`table_completion`](#table-completion) — Fill missing cells (marked `___`) in a table
+- [`memory_pairs`](#memory-pairs) — Memory card game — find matching pairs by flipping cards
 - [`category_sort`](#category-sort) — Drag items into the correct category bucket
 - [`pattern_sequence`](#pattern-sequence) — Complete missing elements in a sequence
 - [`timeline_ordering`](#timeline-ordering) — Order historical events chronologically
 - [`word_search`](#word-search) — Find hidden words in a letter grid
 - [`crossword`](#crossword) — Fill crossword answers from clues
 - [`annotation_text`](#annotation-text) — Select spans of text and assign labels from `availableLabels`
-- [`memory_pairs`](#memory-pairs) — Memory card game — find matching pairs
-- [`formula_builder`](#formula-builder) — Build a formula by arranging tokens in `correctOrder`
-- [`unit_conversion`](#unit-conversion) — Convert between units using given conversion factors
-- [`venn_diagram`](#venn-diagram) — Sort items into Venn diagram regions: A-only, B-only, both, or neither
 
 ### STEM
 
@@ -37,20 +42,49 @@ For the overall course/unit/lesson structure, see [Question Format](question-for
 - [`periodic_table`](#periodic-table) — Select elements on a periodic table matching `selectionCriteria`
 - [`data_analysis`](#data-analysis) — Compute statistics (mean, median, sum, etc
 - [`number_base`](#number-base) — Convert a number from `sourceBase` to `targetBase`
-- [`truth_table`](#truth-table) — Fill in the output column of a logic truth table for the given `expression`
+- [`truth_table`](#truth-table) — Fill in the output column of a logic truth table for a given `expression`
 - [`flow_chart`](#flow-chart) — Fill blank nodes in an algorithm flowchart
-- [`logic_gate`](#logic-gate) — Determine the outputs of a logic gate circuit
+- [`logic_gate`](#logic-gate) — Determine the outputs of a logic gate circuit given inputs
 - [`balance_scale`](#balance-scale) — Select items to place on a scale to match `targetWeight`
-- [`probability_spinner`](#probability-spinner) — Adjust pie-chart sections to match target probabilities
+- [`probability_spinner`](#probability-spinner) — Adjust pie-chart section sizes to match target probabilities
 - [`grid_path`](#grid-path) — Navigate a grid maze from `start` to `end`, avoiding `obstacles`
 - [`resistor_color`](#resistor-color) — Select the correct color bands for a given resistance value
-- [`thermometer_reading`](#thermometer-reading) — Set a thermometer slider to the target temperature
+- [`thermometer_reading`](#thermometer-reading) — Set a thermometer slider to a target temperature
 - [`function_graph`](#function-graph) — Adjust function parameters to match a target curve
-- [`graph_identification`](#graph-identification) — Choose the correct graph from options
+- [`graph_identification`](#graph-identification) — Choose the correct graph from multiple options
+- [`coordinate_transform`](#coordinate-transform) — Apply a geometric transformation (translate, rotate, reflect) to coordinate points
+- [`fraction_wall`](#fraction-wall) — Select fraction bars from a wall that sum to a target fraction
+- [`histogram_builder`](#histogram-builder) — Distribute raw data points into bins to build a histogram
+- [`tree_diagram`](#tree-diagram) — Fill in missing probability labels on a tree diagram
+- [`scale_drawing`](#scale-drawing) — Apply a scale ratio to calculate new dimensions
+
+### Arts & Creative
+
+- [`color_theory`](#color-theory) — Mix RGB sliders to match a target color within `tolerance`
+- [`music_rhythm`](#music-rhythm) — Compose a beat pattern on a multi-track grid
+- [`music_interval`](#music-interval) — Identify the musical interval between two notes
+- [`pixel_art`](#pixel-art) — Paint a grid with a color palette to match a target pattern
+- [`flag_builder`](#flag-builder) — Assign the correct colors to flag stripes
+- [`tangram`](#tangram) — Drag and rotate puzzle pieces on a grid to form a target shape
+- [`mirror_symmetry`](#mirror-symmetry) — Complete the mirrored half of a grid pattern across an axis
+
+### Games & Puzzles
+
+- [`chess_puzzle`](#chess-puzzle) — Find the best move on a chess board (FEN position)
+- [`estimation_jar`](#estimation-jar) — Estimate the quantity of items in a visual jar
+- [`clock_setting`](#clock-setting) — Set an analog clock to a target time
+- [`ingredient_ratio`](#ingredient-ratio) — Scale recipe ingredients by a `scaleFactor`
+
+### AI-Graded
+
+- [`media_input`](#media-input) — Upload an image or file for AI evaluation
+- [`open_answer`](#open-answer) — Free-text response graded by AI
+- [`speaking`](#speaking) — Spoken response with optional AI evaluation for fluency, grammar, pronunciation
+- [`listening`](#listening) — Listen to an audio clip and answer a comprehension question
 
 ### Interactive Scenes
 
-- [`interactive_scene`](#interactive-scene) — Custom visual scene — manipulate objects to find the answer
+- [`interactive_scene`](#interactive-scene) — Custom visual scene — drag, manipulate, and explore to find the answer
 
 ---
 
@@ -63,19 +97,19 @@ Single correct answer from a list of options.
 ```json
 {
   "type": "multiple_choice",
-  "question": "A function satisfies $f(2) = 5$, but $\\lim_{x\\to 2} f(x) = 3$. What does the graph look like near $x = 2$?",
+  "question": "According to Coase, why does production happen inside firms instead of through individual market contracts for every task?",
   "options": [
-    "The curve heads toward height 3, with a lone dot placed at height 5",
-    "The curve heads toward height 5, with a hole at height 3",
-    "The curve jumps from 3 up to 5 as $x$ crosses 2",
-    "Impossible — the limit must equal the value"
+    "Using the market has transaction costs that internal coordination can avoid",
+    "Firms can always produce at lower physical cost than individuals",
+    "Governments require production to be organized in firms",
+    "Workers refuse to sell services without long-term employment"
   ],
   "correctAnswer": 0,
   "hints": [
-    "The limit reports where the curve is **heading**; the value reports where the point was **placed**. They are independent pieces of data.",
-    "Approach from both sides along the curve — you drift toward 3. The definition $f(2)=5$ just parks a dot elsewhere."
+    "Think about what it costs just to *use* the price mechanism: searching, negotiating, enforcing.",
+    "The firm forms when doing a task internally is cheaper than contracting for it."
   ],
-  "explanation": "This is a removable discontinuity: the curve funnels toward 3, but someone stuck the actual point at 5. Continuity is precisely the demand that these two — the heading and the landing — agree."
+  "explanation": "Coase (1937): firms exist because market exchange itself is costly. When internal coordination beats the transaction costs of contracting, the task moves inside the firm."
 }
 ```
 
@@ -90,19 +124,19 @@ Multiple correct options (student selects all that apply). `correctAnswers` uses
 ```json
 {
   "type": "multi_select",
-  "question": "Which are properties of odd functions?",
+  "question": "Which of the following are transaction costs of using the market?",
   "options": [
-    "$f(-x) = -f(x)$",
-    "Graph is symmetric about the origin",
-    "$f(0)$ = 0 whenever 0 is in the domain",
-    "Graph is symmetric about the y-axis"
+    "Time spent searching for a reliable supplier",
+    "Lawyer fees for drafting the supply contract",
+    "The invoice price of the goods themselves",
+    "Monitoring whether the contract is honored"
   ],
   "correctAnswers": [
     0,
     1,
-    2
+    3
   ],
-  "explanation": "Symmetry about the y-axis defines even functions, not odd."
+  "explanation": "Transaction costs are the costs of *arranging* exchange — search, negotiation, enforcement. The price of the goods is the exchange itself, not a cost of organizing it."
 }
 ```
 
@@ -117,9 +151,9 @@ Boolean question. `correctAnswer` is `true` or `false`.
 ```json
 {
   "type": "true_false",
-  "question": "$\\int_a^a f(x) dx$ = 0 for any continuous function f.",
-  "correctAnswer": "True",
-  "explanation": "A definite integral over a degenerate interval [a, a] has zero width and hence zero area."
+  "question": "A firm’s value added equals its total revenue.",
+  "correctAnswer": "False",
+  "explanation": "Value added is revenue **minus** the intermediate inputs bought from other firms. Counting full revenue would double-count the mill’s flour inside the bakery’s bread."
 }
 ```
 
@@ -134,14 +168,31 @@ Student types a number. Graded within `tolerance` of `correctAnswer`.
 ```json
 {
   "type": "numerical_input",
-  "question": "Evaluate $f(4)$ where $f(x) = 3x - 7$.",
-  "correctAnswer": 5,
-  "tolerance": 0.01,
-  "explanation": "$f(4) = 3(4) - 7 = 12 - 7 = 5$."
+  "question": "A workshop buys raw steel for 3,000€, other materials for 1,200€, and sells its finished gates for 9,500€. Compute its value added in euros.",
+  "correctAnswer": 5300,
+  "tolerance": 0.5,
+  "explanation": "Value added $= 9500 - (3000 + 1200) = 5300$€ — the pool from which wages, rent, interest, and profit are all paid."
 }
 ```
 
 **Key fields:** `correctAnswer`, `tolerance`, `explanation`
+
+---
+
+### `fill_blank`
+
+Type in missing words or short phrases.
+
+```json
+{
+  "type": "fill_blank",
+  "question": "Cells with membrane-bound organelles are called ___ cells.",
+  "correctAnswer": "eukaryotic",
+  "explanation": "**Eukaryotic** organization includes compartmentalized organelles."
+}
+```
+
+**Key fields:** `correctAnswer`, `explanation`
 
 ---
 
@@ -152,21 +203,23 @@ Fill multiple blanks from a shared word bank. `segments` alternate between text 
 ```json
 {
   "type": "cloze_bank",
-  "question": "Complete the statement with the correct term.",
+  "question": "Complete Coase’s boundary rule for the firm.",
   "segments": [
-    "By the chain rule, $d/dx[\\sin(x^{2})] = \\cos(x^{2}) \\cdot$ ",
-    "."
+    "A firm keeps expanding until the cost of organizing one more task ",
+    " equals the ",
+    " cost of doing it through the market."
   ],
   "wordBank": [
-    "k",
-    "w",
-    "m",
-    "2x"
+    "internally",
+    "transaction",
+    "externally",
+    "production"
   ],
   "correctAnswers": [
-    3
+    0,
+    1
   ],
-  "explanation": "Let $u = x^{2}$. Then $d/dx[\\sin(u)]$ = $\\cos(u)$·$u' = \\cos(x^{2})\\cdot2x$."
+  "explanation": "The firm’s boundary sits where internal coordination cost equals market transaction cost at the margin."
 }
 ```
 
@@ -181,26 +234,26 @@ Drag to match left items with right items. All pairs must be correct.
 ```json
 {
   "type": "matching",
-  "question": "Match each function representation to its form.",
+  "question": "Match each core role of the firm to its description.",
   "pairs": [
     {
-      "left": "$y = 3x + 2$",
-      "right": "Explicit formula"
+      "left": "Coordination",
+      "right": "Directing production factors under one authority"
     },
     {
-      "left": "$x^{2}$ + $y^{2}$ = 9",
-      "right": "Implicit equation"
+      "left": "Value creation",
+      "right": "Making output worth more than the inputs"
     },
     {
-      "left": "{(1,2),(2,4),(3,6)}",
-      "right": "Set of ordered pairs"
+      "left": "Risk-bearing",
+      "right": "Paying factor incomes before revenue is known"
     },
     {
-      "left": "t↦(cos t, sin t)",
-      "right": "Parametric form"
+      "left": "Innovation",
+      "right": "Introducing new products and processes"
     }
   ],
-  "explanation": "Functions can be represented in multiple equivalent ways."
+  "explanation": "The firm replaces market haggling with managed coordination, and it earns its profit by bearing the risk that revenue may not cover committed costs."
 }
 ```
 
@@ -215,13 +268,13 @@ Arrange items in the correct sequence. `correctOrder` uses 0-based indices.
 ```json
 {
   "type": "ordering",
-  "question": "A farmer has 100 m of fence for a rectangular pen against a river (no fence needed on the river side). Order the optimization workflow.",
+  "question": "Order the steps for finding a Nash equilibrium in a 2×2 payoff matrix.",
   "items": [
-    "Name variables: width $x$, length $y$, area $A = xy$",
-    "Encode the constraint: $2x + y = 100$",
-    "Substitute to get one variable: $A(x) = x(100 - 2x)$",
-    "Set $A'(x) = 100 - 4x = 0$, giving $x = 25$",
-    "Confirm it is a maximum and report $25 \\times 50$ m"
+    "Write each player’s payoff in every cell",
+    "For each rival strategy, mark your best response",
+    "Repeat the marking from the rival’s perspective",
+    "Find cells where both payoffs carry a best-response mark",
+    "Declare those cells the Nash equilibria"
   ],
   "correctOrder": [
     0,
@@ -231,14 +284,42 @@ Arrange items in the correct sequence. `correctOrder` uses 0-based indices.
     4
   ],
   "hints": [
-    "Optimization is a pipeline: model → constraint → single-variable function → critical point → verify.",
-    "The constraint is what lets you eliminate $y$ — without it, \"maximize area\" has no answer."
+    "You can’t mark best responses before the payoffs exist.",
+    "An equilibrium needs *both* players’ marks on the same cell."
   ],
-  "explanation": "Every optimization problem walks these same five steps; only the story changes. Note the punchline $y = 2x$: the free river side lets the pen stretch twice as long as it is deep."
+  "explanation": "The best-response marking method turns equilibrium-hunting into a mechanical scan — doubly-marked cells are exactly the Nash equilibria."
 }
 ```
 
 **Key fields:** `items`, `correctOrder`, `hints`, `explanation`
+
+---
+
+### `sentence_builder`
+
+Build a sentence by arranging word tokens in order.
+
+```json
+{
+  "type": "sentence_builder",
+  "question": "Construct the rule for adding quantities.",
+  "correctOrder": [
+    "Physical quantities",
+    "can only be added",
+    "or subtracted if they",
+    "have the same dimensions."
+  ],
+  "explanation": "You cannot add a length to a mass.",
+  "tokens": [
+    "Physical quantities",
+    "can only be added",
+    "or subtracted if they",
+    "have the same dimensions."
+  ]
+}
+```
+
+**Key fields:** `correctOrder`, `explanation`, `tokens`
 
 ---
 
@@ -249,41 +330,46 @@ One choice per row in a grid/table. `correctMapping` maps row IDs to column IDs.
 ```json
 {
   "type": "matrix_grid",
-  "question": "Classify each function by its parity.",
+  "question": "Classify each resource used by a pizzeria as a production factor.",
   "rows": [
     {
       "id": "r1",
-      "label": "$f(x)$ = $x^{2}$"
+      "label": "The wood-fired oven"
     },
     {
       "id": "r2",
-      "label": "$f(x)$ = $x^{3}$"
+      "label": "The chef’s working hours"
     },
     {
       "id": "r3",
-      "label": "$f(x)$ = $x^{2}$ + x"
+      "label": "The rented street-corner plot"
+    },
+    {
+      "id": "r4",
+      "label": "The delivery scooter"
     }
   ],
   "columns": [
     {
       "id": "c1",
-      "label": "Even"
+      "label": "Land"
     },
     {
       "id": "c2",
-      "label": "Odd"
+      "label": "Labor"
     },
     {
       "id": "c3",
-      "label": "Neither"
+      "label": "Capital"
     }
   ],
   "correctMapping": {
-    "r1": "c1",
+    "r1": "c3",
     "r2": "c2",
-    "r3": "c3"
+    "r3": "c1",
+    "r4": "c3"
   },
-  "explanation": "$x^{2}$ is even; $x^{3}$ is odd; $x^{2}$+x is neither (not symmetric about y-axis or origin)."
+  "explanation": "Produced means of production (oven, scooter) are capital; human effort is labor; natural or spatial resources (the plot) are land."
 }
 ```
 
@@ -298,18 +384,18 @@ Estimate a value using a slider. Graded within `tolerance`.
 ```json
 {
   "type": "slider_estimate",
-  "question": "Numerically explore $\\dfrac{\\sin x}{x}$ as $x \\to 0$ (radians): compute it mentally for small $x$, then set the slider to the limit.",
-  "min": 0,
-  "max": 2,
-  "targetValue": 1,
-  "tolerance": 0.1,
-  "minLabel": "0",
-  "maxLabel": "2",
+  "question": "A founder invests 50k€. With probability 0.5 the venture returns 130k€; otherwise 0€. Set the slider to the expected **net gain** in k€.",
+  "min": -50,
+  "max": 80,
+  "targetValue": 15,
+  "tolerance": 4,
+  "minLabel": "-50k€",
+  "maxLabel": "+80k€",
   "hints": [
-    "Try $x = 0.1$: $\\sin(0.1) \\approx 0.0998$. Divide.",
-    "For tiny angles, the arc and its sine are nearly the same length — so their ratio approaches…"
+    "Expected revenue: $0.5 \\cdot 130 = 65$k€.",
+    "Subtract the 50k€ committed up front."
   ],
-  "explanation": "The ratio squeezes to exactly 1: for small angles, $\\sin x \\approx x$. This limit is the seed of all trigonometric calculus — the derivative of sine at 0 — and the reason pendulum formulas work for small swings."
+  "explanation": "Expected net gain $= 0.5(130) - 50 = 15$k€. A thin expected margin on a coin flip — the everyday arithmetic of Knightian judgment."
 }
 ```
 
@@ -324,27 +410,320 @@ Place one or more markers on a number line at target values.
 ```json
 {
   "type": "number_line_placement",
-  "question": "The function $f(x) = \\dfrac{1}{x-2}$ is defined for every real number except one. **Place the marker on the excluded value.**",
-  "min": -3,
-  "max": 7,
-  "step": 1,
-  "tolerance": 0.25,
+  "question": "Fixed costs 600€, price 8€, unit variable cost 5€. **Place the marker on the break-even quantity.**",
+  "min": 0,
+  "max": 400,
+  "step": 10,
+  "tolerance": 10,
   "markers": [
     {
       "id": "m1",
-      "label": "Excluded from domain",
-      "targetValue": 2
+      "label": "Break-even quantity",
+      "targetValue": 200
     }
   ],
   "hints": [
-    "A fraction breaks down exactly where its denominator becomes zero.",
-    "Solve $x - 2 = 0$."
+    "Contribution per unit: $8 - 5 = 3$€.",
+    "$600 / 3$."
   ],
-  "explanation": "At $x = 2$ the denominator vanishes and the value $1/0$ is undefined — a single puncture in an otherwise complete number line. Domains are about finding exactly these forbidden points."
+  "explanation": "$q^* = 600/3 = 200$ units. The number line is the firm’s runway: everything left of 200 burns cash."
 }
 ```
 
 **Key fields:** `min`, `max`, `step`, `tolerance`, `markers`, `hints`, `explanation`
+
+---
+
+### `hotspot_image`
+
+Tap the correct region on an image. Hotspot coordinates are normalized (0-1).
+
+```json
+{
+  "type": "hotspot_image",
+  "question": "Tap the region of the cell where the nucleus is located.",
+  "imageUrl": "https://example.com/cell-diagram.png",
+  "imageAspectRatio": 1.33,
+  "hotspots": [
+    {
+      "id": "h1",
+      "label": "Nucleus",
+      "left": 0.35,
+      "top": 0.3,
+      "width": 0.3,
+      "height": 0.4
+    },
+    {
+      "id": "h2",
+      "label": "Mitochondria",
+      "left": 0.7,
+      "top": 0.5,
+      "width": 0.15,
+      "height": 0.2
+    },
+    {
+      "id": "h3",
+      "label": "Cell membrane",
+      "left": 0,
+      "top": 0,
+      "width": 1,
+      "height": 1
+    }
+  ],
+  "correctHotspotId": "h1",
+  "explanation": "The nucleus is the large, centrally located organelle that contains the cell's DNA."
+}
+```
+
+**Key fields:** `imageUrl`, `imageAspectRatio`, `hotspots`, `correctHotspotId`, `explanation`
+
+---
+
+### `diagram_labeling`
+
+Assign labels to anchor points on a diagram.
+
+```json
+{
+  "type": "diagram_labeling",
+  "question": "Label the essential components of the eukaryotic cell diagram.",
+  "imageAsset": "procedural",
+  "renderVariant": "variant_b",
+  "imageAspectRatio": 1.2,
+  "anchors": [
+    {
+      "id": "nuc",
+      "left": 0.5,
+      "top": 0.5,
+      "label": "1"
+    },
+    {
+      "id": "mem",
+      "left": 0.2,
+      "top": 0.2,
+      "label": "2"
+    },
+    {
+      "id": "mit",
+      "left": 0.8,
+      "top": 0.7,
+      "label": "3"
+    }
+  ],
+  "labels": [
+    {
+      "id": "L1",
+      "text": "Nucleus"
+    },
+    {
+      "id": "L2",
+      "text": "Plasma Membrane"
+    },
+    {
+      "id": "L3",
+      "text": "Mitochondria"
+    }
+  ],
+  "correctAssignments": {
+    "L1": "nuc",
+    "L2": "mem",
+    "L3": "mit"
+  },
+  "explanation": "The nucleus houses the genome, the membrane defines the boundary, and mitochondria produce ATP."
+}
+```
+
+**Key fields:** `imageAsset`, `renderVariant`, `imageAspectRatio`, `anchors`, `labels`, `correctAssignments`, `explanation`
+
+---
+
+### `coordinate_plot`
+
+Choose the correct curve from a set of plotted options.
+
+```json
+{
+  "type": "coordinate_plot",
+  "question": "Which curve represents $y = x^2$?",
+  "minX": -5,
+  "maxX": 5,
+  "minY": -5,
+  "maxY": 25,
+  "curves": [
+    {
+      "id": "c1",
+      "label": "y = x²",
+      "sampleY": [
+        25,
+        16,
+        9,
+        4,
+        1,
+        0,
+        1,
+        4,
+        9,
+        16,
+        25
+      ],
+      "isCorrect": true
+    },
+    {
+      "id": "c2",
+      "label": "y = 2x",
+      "sampleY": [
+        -10,
+        -8,
+        -6,
+        -4,
+        -2,
+        0,
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "isCorrect": false
+    },
+    {
+      "id": "c3",
+      "label": "y = x³",
+      "sampleY": [
+        -125,
+        -64,
+        -27,
+        -8,
+        -1,
+        0,
+        1,
+        8,
+        27,
+        64,
+        125
+      ],
+      "isCorrect": false
+    }
+  ],
+  "explanation": "The parabola $y = x^2$ is symmetric about the y-axis and opens upward."
+}
+```
+
+**Key fields:** `minX`, `maxX`, `minY`, `maxY`, `curves`, `explanation`
+
+---
+
+### `formula_builder`
+
+Build a formula by arranging tokens. `correctOrder` gives the right sequence.
+
+```json
+{
+  "type": "formula_builder",
+  "question": "Build the **expenditure formula for GDP**: arrange the components in their standard order.",
+  "tokens": [
+    "C",
+    "+ I",
+    "+ G",
+    "+ NX"
+  ],
+  "correctOrder": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "hints": [
+    "Start with households’ spending.",
+    "Consumption, investment, government, and what foreigners buy net of what we import."
+  ],
+  "explanation": "$GDP = C + I + G + NX$: households consume, firms invest, government purchases, and net exports capture the border. Every euro of final spending lands in exactly one bucket."
+}
+```
+
+**Key fields:** `tokens`, `correctOrder`, `hints`, `explanation`
+
+---
+
+### `unit_conversion`
+
+Convert between units using given conversion factors.
+
+```json
+{
+  "type": "unit_conversion",
+  "question": "Under the gold standard, the French franc was defined as **0.2903 grams of gold** and the British pound as **7.322 grams**. Convert **100 francs** to the gold-standard equivalents.",
+  "expectedBaseValue": 100,
+  "unitFactors": {
+    "francs": 1,
+    "grams of gold": 3.4448,
+    "pounds": 25.22
+  },
+  "unitChoices": [
+    "francs",
+    "grams of gold",
+    "pounds"
+  ],
+  "tolerance": 0.05,
+  "givens": [
+    "100 French francs at gold parity"
+  ],
+  "resultLabel": "Value",
+  "hints": [
+    "100 francs = $100 \\times 0.2903$ grams of gold.",
+    "$29.03 / 7.322 \\approx 3.97$ pounds."
+  ],
+  "explanation": "100 francs = 29.03 grams of gold = 3.97 pounds. The gold content of each currency defined the exchange rate — no negotiation, no floating."
+}
+```
+
+**Key fields:** `expectedBaseValue`, `unitFactors`, `unitChoices`, `tolerance`, `givens`, `resultLabel`, `hints`, `explanation`
+
+---
+
+### `venn_diagram`
+
+Sort items into Venn diagram regions: A-only, B-only, both, or neither.
+
+```json
+{
+  "type": "venn_diagram",
+  "question": "Sort each firm by which conditions it meets.",
+  "setALabel": "Is an SME",
+  "setBLabel": "Has limited liability",
+  "items": [
+    {
+      "id": "i1",
+      "label": "S.L. with 30 employees"
+    },
+    {
+      "id": "i2",
+      "label": "Sole proprietor, 3 employees"
+    },
+    {
+      "id": "i3",
+      "label": "S.A. with 5,000 employees"
+    },
+    {
+      "id": "i4",
+      "label": "Partnership of 400 partners with unlimited liability"
+    }
+  ],
+  "correctMapping": {
+    "i1": "both",
+    "i2": "a_only",
+    "i3": "b_only",
+    "i4": "neither"
+  },
+  "hints": [
+    "Size and legal form are independent axes — check each separately.",
+    "SME means under 250 employees; limited liability comes from the incorporated forms."
+  ],
+  "explanation": "The two classifications cross freely: a tiny firm can have unlimited liability, and a giant corporation always has it. That independence is the point of the four-axis scheme."
+}
+```
+
+**Key fields:** `setALabel`, `setBLabel`, `items`, `correctMapping`, `hints`, `explanation`
 
 ---
 
@@ -355,29 +734,29 @@ Identify incorrect tokens in a passage. `incorrectTokenIds` lists which tokens a
 ```json
 {
   "type": "error_highlight",
-  "question": "Highlight the incorrect statement regarding the domain of $f(x) = \\sqrt{x - 3}$.",
+  "question": "A student computes a café’s value added. Highlight the incorrect step.",
   "tokens": [
     {
       "id": "t1",
-      "text": "Identify the expression under the radical. "
+      "text": "Annual revenue from coffee sales: 200,000€. "
     },
     {
       "id": "t2",
-      "text": "Require the radicand to be non-negative: x − $3 \\geq 0$. "
+      "text": "Purchases of beans, milk, and cups from suppliers: 80,000€. "
     },
     {
       "id": "t3",
-      "text": "Solve the inequality to get $x \\geq 3$. "
+      "text": "Value added = 200,000 − 80,000 = 120,000€. "
     },
     {
       "id": "t4",
-      "text": "Conclude that the domain includes all real numbers less than 3."
+      "text": "Therefore the café’s profit is 120,000€."
     }
   ],
   "incorrectTokenIds": [
     "t4"
   ],
-  "explanation": "The domain is [3, $\\infty), which means all real numbers greater than or equal to 3$."
+  "explanation": "Value added is not profit: out of the 120,000€ the café still pays wages, rent, and interest. Profit is what remains after *all* factor payments, not just intermediate inputs."
 }
 ```
 
@@ -392,19 +771,14 @@ Fill missing cells (marked `___`) in a table.
 ```json
 {
   "type": "table_completion",
-  "question": "A = {1, 2, 3} and B = {3, 4}. Complete the table of set operations.",
+  "question": "Complete the table of byte values. Write the hexadecimal entries using capital letters and no prefix.",
   "rows": [
     [
       {
-        "content": "A union B"
+        "content": "00001111"
       },
       {
-        "content": "{1, 2, 3, 4}"
-      }
-    ],
-    [
-      {
-        "content": "A intersect B"
+        "content": "15"
       },
       {
         "content": "___"
@@ -412,7 +786,21 @@ Fill missing cells (marked `___`) in a table.
     ],
     [
       {
-        "content": "A minus B"
+        "content": "10000000"
+      },
+      {
+        "content": "___"
+      },
+      {
+        "content": "80"
+      }
+    ],
+    [
+      {
+        "content": "11111111"
+      },
+      {
+        "content": "___"
       },
       {
         "content": "___"
@@ -420,22 +808,59 @@ Fill missing cells (marked `___`) in a table.
     ]
   ],
   "headers": [
-    "Operation",
-    "Result"
+    "Byte",
+    "Decimal",
+    "Hexadecimal"
   ],
   "answers": [
-    "{3}",
-    "{1, 2}"
+    "0F",
+    "128",
+    "255",
+    "FF"
   ],
   "hints": [
-    "The intersection keeps only what appears in BOTH lists.",
-    "A minus B strips out of A anything that also lies in B."
+    "For the hex column, split each byte into two groups of four bits.",
+    "For the decimal column, add the place values 128, 64, 32, 16, 8, 4, 2, 1 wherever a 1 appears."
   ],
-  "explanation": "Only 3 belongs to both sets, so the intersection is {3}. Removing B's elements from A deletes 3 and leaves {1, 2}. Note the union lists 3 once — sets never repeat an element."
+  "explanation": "00001111 is 0000 and 1111, so 0 and F, and 8 + 4 + 2 + 1 = 15. 10000000 has only the 128 column set. 11111111 sets every column, giving 128 + 64 + 32 + 16 + 8 + 4 + 2 + 1 = 255, which is FF — the largest value one byte can hold."
 }
 ```
 
 **Key fields:** `rows`, `headers`, `answers`, `hints`, `explanation`
+
+---
+
+### `memory_pairs`
+
+Memory card game — find matching pairs by flipping cards.
+
+```json
+{
+  "type": "memory_pairs",
+  "question": "Match each concept to its definition.",
+  "pairs": [
+    {
+      "left": "Value added",
+      "right": "Revenue minus intermediate inputs"
+    },
+    {
+      "left": "Transaction cost",
+      "right": "Cost of arranging a market exchange"
+    },
+    {
+      "left": "Production factors",
+      "right": "Land, labor, and capital"
+    },
+    {
+      "left": "Entrepreneur",
+      "right": "Coordinates factors and bears the risk"
+    }
+  ],
+  "explanation": "These four terms are the vocabulary of the theory of the firm."
+}
+```
+
+**Key fields:** `pairs`, `explanation`
 
 ---
 
@@ -446,50 +871,48 @@ Drag items into the correct category bucket.
 ```json
 {
   "type": "category_sort",
-  "question": "Categorize these relations based on whether they are functions.",
+  "question": "Sort each item: is it an **intermediate input** the firm buys, or **value the firm adds**?",
   "categories": [
-    "Is a Function",
-    "Not a Function"
+    "Intermediate input",
+    "Value added by the firm"
   ],
   "items": [
     {
-      "label": "$y = x^{2}$",
-      "correctCategory": "Is a Function",
-      "id": "u01l01q09_i0"
+      "id": "u01l01q03_i0",
+      "label": "Flour bought from the mill",
+      "correctCategory": "Intermediate input"
     },
     {
-      "label": "$x = y^{2}$",
-      "correctCategory": "Not a Function",
-      "id": "u01l01q09_i1"
+      "id": "u01l01q03_i1",
+      "label": "The baker’s kneading skill",
+      "correctCategory": "Value added by the firm"
     },
     {
-      "label": "$y = \\sin(x)$",
-      "correctCategory": "Is a Function",
-      "id": "u01l01q09_i2"
+      "id": "u01l01q03_i2",
+      "label": "Electricity from the grid",
+      "correctCategory": "Intermediate input"
     },
     {
-      "label": "A circle $x^{2}$ + $y^{2}$ = 1",
-      "correctCategory": "Not a Function",
-      "id": "u01l01q09_i3"
+      "id": "u01l01q03_i3",
+      "label": "The recipe perfected in-house",
+      "correctCategory": "Value added by the firm"
     },
     {
-      "label": "y = |x|",
-      "correctCategory": "Is a Function",
-      "id": "u01l01q09_i4"
+      "id": "u01l01q03_i4",
+      "label": "Packaging bought wholesale",
+      "correctCategory": "Intermediate input"
+    },
+    {
+      "id": "u01l01q03_i5",
+      "label": "The brand customers trust",
+      "correctCategory": "Value added by the firm"
     }
   ],
-  "explanation": "Vertical line test determines if it is a function.",
-  "correctAnswer": {
-    "u01l01q09_i0": "Is a Function",
-    "u01l01q09_i1": "Not a Function",
-    "u01l01q09_i2": "Is a Function",
-    "u01l01q09_i3": "Not a Function",
-    "u01l01q09_i4": "Is a Function"
-  }
+  "explanation": "Everything purchased from other firms is an intermediate input; skill, know-how, and reputation are how the firm transforms those inputs into something worth more."
 }
 ```
 
-**Key fields:** `categories`, `items`, `explanation`, `correctAnswer`
+**Key fields:** `categories`, `items`, `explanation`
 
 ---
 
@@ -542,30 +965,35 @@ Order historical events chronologically.
 ```json
 {
   "type": "timeline_ordering",
-  "question": "Order the steps in an epsilon-delta proof that $lim_{x\\to a} f(x)$ = L.",
+  "question": "Order the entrepreneurial process from first step to last.",
   "events": [
     {
       "id": "e1",
-      "label": "Let $\\varepsilon$ > 0 be given (arbitrarily small)",
+      "label": "Spot an unserved need in the market",
       "correctPosition": 0
     },
     {
       "id": "e2",
-      "label": "Express |$f(x)$ − L| in terms of |x − a|",
+      "label": "Design a product and business model to serve it",
       "correctPosition": 1
     },
     {
       "id": "e3",
-      "label": "Choose $\\delta$ > 0 in terms of $\\varepsilon$ to control |$f(x)$ − L|",
+      "label": "Commit resources: hire, rent, and invest",
       "correctPosition": 2
     },
     {
       "id": "e4",
-      "label": "Verify: |x − a| < $\\delta$ implies |$f(x)$ − L| < $\\varepsilon$",
+      "label": "Launch and face uncertain market response",
       "correctPosition": 3
+    },
+    {
+      "id": "e5",
+      "label": "Earn profit or absorb the loss",
+      "correctPosition": 4
     }
   ],
-  "explanation": "The epsilon-delta definition formalises the intuitive notion of a limit."
+  "explanation": "Discovery → design → commitment → uncertain launch → residual reward: Kirzner at the start, Knight at the end."
 }
 ```
 
@@ -580,249 +1008,249 @@ Find hidden words in a letter grid. `grid` is a 2D array of characters.
 ```json
 {
   "type": "word_search",
-  "question": "Find five key terms from the study of limits and continuity.",
-  "explanation": "These terms form the rigorous vocabulary of limit theory.",
-  "wordsToFind": [
-    "LIMIT",
-    "CONTINUITY",
-    "DELTA",
-    "EPSILON",
-    "SQUEEZE"
-  ],
+  "question": "Find five key terms from the theory of the firm.",
   "gridSize": 12,
   "grid": [
     [
-      "H",
-      "P",
-      "R",
-      "Y",
-      "I",
-      "H",
-      "Y",
-      "V",
+      "K",
+      "K",
+      "F",
+      "T",
+      "S",
       "X",
-      "O",
-      "L",
+      "V",
+      "Z",
+      "D",
+      "F",
+      "W",
       "W"
     ],
     [
-      "H",
-      "Y",
-      "F",
-      "W",
-      "W",
-      "D",
-      "S",
-      "T",
       "B",
-      "D",
-      "A",
-      "G"
-    ],
-    [
-      "O",
-      "N",
-      "A",
-      "H",
-      "C",
-      "J",
-      "O",
-      "Q",
-      "O",
-      "F",
-      "Z",
-      "R"
-    ],
-    [
-      "Z",
-      "C",
       "V",
+      "C",
       "K",
-      "U",
-      "K",
-      "N",
+      "Y",
       "M",
+      "C",
+      "S",
+      "A",
+      "S",
       "V",
-      "Q",
-      "D",
       "Q"
     ],
     [
       "Q",
-      "U",
-      "H",
-      "K",
-      "X",
-      "Y",
+      "P",
+      "A",
+      "O",
+      "G",
+      "Z",
+      "F",
       "S",
-      "M",
-      "L",
-      "W",
-      "Q",
-      "E"
+      "H",
+      "S",
+      "A",
+      "Y"
     ],
     [
-      "I",
-      "Y",
-      "T",
-      "I",
-      "U",
-      "N",
-      "I",
-      "T",
-      "N",
+      "G",
       "O",
-      "C",
+      "W",
+      "L",
+      "A",
+      "T",
+      "D",
+      "I",
+      "V",
+      "Z",
+      "O",
+      "B"
+    ],
+    [
+      "W",
+      "A",
+      "O",
+      "M",
+      "U",
+      "S",
+      "A",
+      "L",
+      "R",
+      "H",
+      "S",
       "V"
     ],
     [
       "N",
       "C",
-      "Z",
-      "N",
-      "O",
-      "L",
-      "I",
       "S",
-      "P",
-      "E",
-      "Y",
-      "E"
-    ],
-    [
-      "S",
-      "I",
-      "M",
-      "G",
-      "E",
-      "D",
-      "K",
-      "L",
-      "M",
-      "L",
-      "H",
-      "M"
-    ],
-    [
-      "V",
-      "M",
-      "L",
-      "E",
-      "Z",
-      "E",
-      "E",
-      "U",
-      "Q",
-      "S",
-      "M",
-      "G"
-    ],
-    [
-      "U",
+      "J",
       "W",
-      "U",
-      "I",
+      "E",
+      "E",
+      "W",
       "J",
-      "Z",
-      "K",
-      "Y",
-      "G",
-      "A",
-      "T",
-      "D"
-    ],
-    [
-      "B",
-      "R",
-      "P",
       "M",
-      "P",
-      "C",
-      "S",
-      "L",
-      "J",
-      "S",
-      "Y",
+      "D",
       "Q"
     ],
     [
-      "K",
-      "A",
-      "T",
-      "L",
+      "F",
+      "Q",
+      "J",
+      "Q",
+      "H",
+      "O",
+      "B",
       "E",
-      "D",
-      "G",
+      "A",
+      "J",
+      "P",
+      "U"
+    ],
+    [
+      "X",
+      "P",
+      "U",
+      "M",
+      "A",
+      "R",
+      "K",
+      "E",
       "T",
-      "I",
+      "Z",
+      "F",
+      "I"
+    ],
+    [
+      "Y",
+      "D",
+      "P",
+      "R",
       "M",
       "I",
-      "L"
+      "N",
+      "P",
+      "U",
+      "T",
+      "S",
+      "E"
+    ],
+    [
+      "P",
+      "B",
+      "R",
+      "D",
+      "M",
+      "D",
+      "J",
+      "O",
+      "K",
+      "P",
+      "D",
+      "O"
+    ],
+    [
+      "V",
+      "L",
+      "U",
+      "A",
+      "U",
+      "Z",
+      "U",
+      "K",
+      "D",
+      "P",
+      "Y",
+      "P"
+    ],
+    [
+      "Y",
+      "J",
+      "S",
+      "A",
+      "B",
+      "F",
+      "T",
+      "N",
+      "G",
+      "W",
+      "S",
+      "E"
     ]
   ],
+  "wordsToFind": [
+    "FIRM",
+    "VALUE",
+    "COASE",
+    "INPUTS",
+    "MARKET"
+  ],
   "definitions": {
-    "LIMIT": "The value that a function approaches as the input approaches some value.",
-    "CONTINUITY": "A property of a function with no breaks, holes, or jumps.",
-    "DELTA": "A small change or difference, often paired with epsilon.",
-    "EPSILON": "A strictly positive, usually very small real number.",
-    "SQUEEZE": "A theorem used in calculus to evaluate the limit of a function."
-  }
+    "FIRM": "Organization that coordinates production factors.",
+    "VALUE": "What the firm adds on top of its purchased inputs.",
+    "COASE": "Economist who explained why firms exist.",
+    "INPUTS": "Resources transformed into output.",
+    "MARKET": "The alternative to organizing production inside a firm."
+  },
+  "explanation": "These five words anchor the lesson: Coase explained when the firm beats the market at coordinating inputs into value."
 }
 ```
 
-**Key fields:** `explanation`, `wordsToFind`, `gridSize`, `grid`, `definitions`
+**Key fields:** `gridSize`, `grid`, `wordsToFind`, `definitions`, `explanation`
 
 ---
 
 ### `crossword`
 
-Fill crossword answers from clues. `clues` have direction, position, and answer.
+Fill crossword answers from clues. Clues have direction, position, and answer.
 
 ```json
 {
   "type": "crossword",
-  "question": "Solve the crossword using clues about limits.",
-  "explanation": "Mastery of this vocabulary is required for rigorous analysis.",
+  "question": "Solve the crossword on firm classification.",
+  "gridRows": 12,
+  "gridCols": 14,
   "clues": [
     {
       "direction": "across",
-      "answer": "CONTINUOUS",
-      "startRow": 2,
-      "startCol": 0,
+      "answer": "LIABILITY",
+      "startRow": 6,
+      "startCol": 2,
       "number": 1,
-      "clue": "Describes a function with no breaks or jumps."
+      "clue": "What \"limited\" limits in an S.L."
     },
     {
       "direction": "down",
-      "answer": "EPSILON",
-      "startRow": 0,
-      "startCol": 9,
+      "answer": "SHARES",
+      "startRow": 4,
+      "startCol": 4,
       "number": 2,
-      "clue": "Small positive constant in formal limit definition."
+      "clue": "Freely transferable units of S.A. capital."
     },
     {
-      "direction": "across",
-      "answer": "LIMIT",
-      "startRow": 4,
+      "direction": "down",
+      "answer": "SECTOR",
+      "startRow": 3,
       "startCol": 9,
       "number": 3,
-      "clue": "The value a function approaches."
+      "clue": "Primary, secondary, or tertiary."
     },
     {
-      "direction": "across",
-      "answer": "DELTA",
-      "startRow": 0,
-      "startCol": 8,
+      "direction": "down",
+      "answer": "MICRO",
+      "startRow": 5,
+      "startCol": 6,
       "number": 4,
-      "clue": "Small positive constant paired with epsilon."
+      "clue": "Size class of a firm with fewer than 10 employees."
     }
   ],
-  "gridRows": 8,
-  "gridCols": 15
+  "explanation": "Size, sector, ownership, and legal form — with liability as the sharpest legal consequence."
 }
 ```
 
-**Key fields:** `explanation`, `clues`, `gridRows`, `gridCols`
+**Key fields:** `gridRows`, `gridCols`, `clues`, `explanation`
 
 ---
 
@@ -858,152 +1286,6 @@ Select spans of text and assign labels from `availableLabels`.
 
 ---
 
-### `memory_pairs`
-
-Memory card game — find matching pairs.
-
-```json
-{
-  "type": "memory_pairs",
-  "question": "Match each term to its precise definition.",
-  "pairs": [
-    {
-      "left": "Domain",
-      "right": "Set of all valid input values"
-    },
-    {
-      "left": "Range",
-      "right": "Set of all output values"
-    },
-    {
-      "left": "Even function",
-      "right": "$f(-x) = f(x)$; y-axis symmetry"
-    },
-    {
-      "left": "Odd function",
-      "right": "$f(-x) = -f(x)$; origin symmetry"
-    }
-  ],
-  "explanation": "These four terms are foundational to the study of real-valued functions."
-}
-```
-
-**Key fields:** `pairs`, `explanation`
-
----
-
-### `formula_builder`
-
-Build a formula by arranging tokens in `correctOrder`.
-
-```json
-{
-  "type": "formula_builder",
-  "question": "Build the **product rule**: arrange the tokens to express $\\dfrac{d}{dx}\\left[f(x)\\,g(x)\\right]$.",
-  "tokens": [
-    "f'(x)·g(x)",
-    "+",
-    "f(x)·g'(x)"
-  ],
-  "correctOrder": [
-    0,
-    1,
-    2
-  ],
-  "hints": [
-    "Each factor takes a turn being differentiated while the other stands still.",
-    "The two turns are **added** — differentiation distributes over the product as a sum of turns."
-  ],
-  "explanation": "$(fg)' = f'g + fg'$: the product grows through both factors, so each contributes a term where only it is differentiated. Sanity check on $x \\cdot x$: $1\\cdot x + x\\cdot 1 = 2x$, matching $(x^{2})'$."
-}
-```
-
-**Key fields:** `tokens`, `correctOrder`, `hints`, `explanation`
-
----
-
-### `unit_conversion`
-
-Convert between units using given conversion factors.
-
-```json
-{
-  "type": "unit_conversion",
-  "question": "A digital caliper reads a rod’s diameter as **25.40 mm**. Convert this reading for the report table.",
-  "expectedBaseValue": 25.4,
-  "unitFactors": {
-    "mm": 1,
-    "cm": 10,
-    "m": 1000
-  },
-  "unitChoices": [
-    "mm",
-    "cm",
-    "m"
-  ],
-  "tolerance": 0.01,
-  "givens": [
-    "Caliper reading: 25.40 mm"
-  ],
-  "resultLabel": "Diameter",
-  "hints": [
-    "Pick any of the three units — just scale the number to match.",
-    "25.40 mm = 2.540 cm = 0.02540 m."
-  ],
-  "explanation": "All three express the same length; only the numeral changes with the unit. Keeping the four significant figures (25.40, not 25.4) preserves the caliper’s precision through the conversion — significant figures travel with the measurement."
-}
-```
-
-**Key fields:** `expectedBaseValue`, `unitFactors`, `unitChoices`, `tolerance`, `givens`, `resultLabel`, `hints`, `explanation`
-
----
-
-### `venn_diagram`
-
-Sort items into Venn diagram regions: A-only, B-only, both, or neither.
-
-```json
-{
-  "type": "venn_diagram",
-  "question": "Sort each function by its behaviour **at $x = 0$**.",
-  "setALabel": "Continuous at 0",
-  "setBLabel": "Differentiable at 0",
-  "items": [
-    {
-      "id": "i1",
-      "label": "$|x|$"
-    },
-    {
-      "id": "i2",
-      "label": "$x^{2}$"
-    },
-    {
-      "id": "i3",
-      "label": "$1/x$"
-    },
-    {
-      "id": "i4",
-      "label": "$\\sin x$"
-    }
-  ],
-  "correctMapping": {
-    "i1": "a_only",
-    "i2": "both",
-    "i3": "neither",
-    "i4": "both"
-  },
-  "hints": [
-    "Differentiability is the stronger club: every member is automatically continuous — so nothing can land in \"differentiable only\".",
-    "$|x|$ is unbroken at 0 but has a sharp corner there; $1/x$ is not even defined at 0."
-  ],
-  "explanation": "Differentiable ⟹ continuous, so the \"B only\" region must stay empty — the deep content of this diagram. $|x|$ shows the converse fails: continuity with a corner. $1/x$ fails both; $x^{2}$ and $\\sin x$ are smooth."
-}
-```
-
-**Key fields:** `setALabel`, `setBLabel`, `items`, `correctMapping`, `hints`, `explanation`
-
----
-
 ## STEM
 
 ### `code_snippet`
@@ -1013,30 +1295,26 @@ Fill in blanks in a code template. `bank` provides draggable options per blank.
 ```json
 {
   "type": "code_snippet",
-  "question": "Complete the loop so it sums only the EVEN numbers from 1 to 5, then predict the output.",
-  "explanation": "`i % 2 == 0` keeps the even values — 2 and 4 — and their sum is 6.",
+  "question": "Complete this Python NPV calculator for cash flows [−100, 60, 60] at r = 0.10, then predict the sign of the result.",
   "language": "python",
-  "codeTemplate": "total = 0
-for i in range(1, 6):
-    if i % 2 == {{0}}:
-        total += i
-print(total)   # prints {{1}}",
+  "codeTemplate": "r = 0.10\ncash_flows = [-100, 60, 60]\nnpv = 0\nfor t, cf in enumerate(cash_flows):\n    npv += cf / (1 + r) ** {{0}}\nprint(npv > 0)   # prints {{1}}",
   "blanks": [
-    "0",
-    "6"
+    "t",
+    "True"
   ],
   "bank": [
-    "0",
-    "1",
+    "t",
+    "r",
     "2",
-    "6",
-    "9",
-    "15"
-  ]
+    "True",
+    "False",
+    "cf"
+  ],
+  "explanation": "Each cash flow is discounted by $(1+r)^t$ using its own year index; t=0 leaves the outlay undiscounted. NPV ≈ +4.1 > 0, so it prints True."
 }
 ```
 
-**Key fields:** `explanation`, `language`, `codeTemplate`, `blanks`, `bank`
+**Key fields:** `language`, `codeTemplate`, `blanks`, `bank`, `explanation`
 
 ---
 
@@ -1074,62 +1352,62 @@ Compute statistics (mean, median, sum, etc.) from a data table.
 ```json
 {
   "type": "data_analysis",
-  "question": "You timed 5 oscillations of a pendulum, five times. Analyse the data.",
+  "question": "A bakery tracked monthly output and total cost. Analyse the cost structure.",
   "columns": [
     {
-      "id": "trial",
-      "label": "Trial"
+      "id": "q",
+      "label": "Output (thousand loaves)"
     },
     {
-      "id": "t5",
-      "label": "Time for 5 swings (s)"
+      "id": "tc",
+      "label": "Total cost (k€)"
     }
   ],
   "dataRows": [
     {
-      "trial": 1,
-      "t5": 10.2
+      "q": 1,
+      "tc": 7
     },
     {
-      "trial": 2,
-      "t5": 9.8
+      "q": 2,
+      "tc": 9
     },
     {
-      "trial": 3,
-      "t5": 10
+      "q": 3,
+      "tc": 11
     },
     {
-      "trial": 4,
-      "t5": 10.4
+      "q": 4,
+      "tc": 13
     },
     {
-      "trial": 5,
-      "t5": 9.6
+      "q": 5,
+      "tc": 15
     }
   ],
   "tasks": [
     {
       "id": "task_mean",
-      "description": "Compute the mean time for 5 swings (s)",
+      "description": "Compute the mean total cost across the five months (k€)",
       "operation": "mean",
-      "targetColumnId": "t5",
-      "correctValue": 10,
+      "targetColumnId": "tc",
+      "correctValue": 11,
       "tolerance": 0.05
     },
     {
       "id": "task_range",
-      "description": "Compute the range (max − min) of the timings (s)",
+      "description": "Compute the range of total cost (k€)",
       "operation": "range",
-      "targetColumnId": "t5",
-      "correctValue": 0.8,
+      "targetColumnId": "tc",
+      "correctValue": 8,
       "tolerance": 0.05
     }
   ],
   "hints": [
-    "Mean: add the five values, divide by five.",
-    "Range: subtract the smallest from the largest — a quick first look at scatter."
+    "Mean: sum the five costs, divide by five.",
+    "Range: highest minus lowest."
   ],
-  "explanation": "Mean 10.0 s (so one period is 2.0 s) with a 0.8 s spread. Timing five swings instead of one is deliberate: the same ±0.2 s human reflex error gets divided by 5 when you extract the period — a free 5× precision boost."
+  "explanation": "Cost rises by a constant 2k€ per extra thousand loaves — marginal cost 2€/loaf — and extrapolating back to zero output leaves 5k€ of fixed cost. A linear cost table quietly reveals the whole structure."
 }
 ```
 
@@ -1163,50 +1441,51 @@ Convert a number from `sourceBase` to `targetBase`.
 
 ### `truth_table`
 
-Fill in the output column of a logic truth table for the given `expression`.
+Fill in the output column of a logic truth table for a given `expression`.
 
 ```json
 {
   "type": "truth_table",
-  "question": "A loop runs while `A and not B` holds. **Fill in the truth table**: for each input row, does the loop keep running?",
+  "question": "Art. 1902 imposes liability only when **fault (F)**, **damage (D)**, and **causation (C)** all concur. Complete the liability column.",
   "variables": [
-    "A",
-    "B"
+    "F",
+    "D",
+    "C"
   ],
-  "expression": "A AND (NOT B)",
+  "expression": "F AND D AND C",
   "inputRows": [
     [
       true,
+      true,
       true
     ],
     [
       true,
+      true,
       false
     ],
     [
+      true,
       false,
       true
     ],
     [
       false,
-      false
+      true,
+      true
     ]
   ],
   "correctOutputs": [
-    false,
     true,
+    false,
     false,
     false
   ],
-  "hints": [
-    "`not B` flips B first; then `and` demands both sides true.",
-    "Only one row satisfies both requirements: A true **and** B false."
-  ],
-  "explanation": "The condition holds only for A = true, B = false. Truth tables are the microscope of control flow: they expose exactly which situations a compound condition really covers — often fewer than intuition guesses."
+  "explanation": "The elements work in series, not parallel: negligence without causation (row 2), carelessness that harmed nobody (row 3), and harm without fault (row 4) all output *no liability*. Only the full conjunction pays."
 }
 ```
 
-**Key fields:** `variables`, `expression`, `inputRows`, `correctOutputs`, `hints`, `explanation`
+**Key fields:** `variables`, `expression`, `inputRows`, `correctOutputs`, `explanation`
 
 ---
 
@@ -1286,7 +1565,7 @@ Fill blank nodes in an algorithm flowchart.
 
 ### `logic_gate`
 
-Determine the outputs of a logic gate circuit.
+Determine the outputs of a logic gate circuit given inputs.
 
 ```json
 {
@@ -1327,52 +1606,47 @@ Select items to place on a scale to match `targetWeight`.
 ```json
 {
   "type": "balance_scale",
-  "question": "The left pan holds **2.0 kg and 1.5 kg**. Select masses for the right pan to balance the scale.",
+  "question": "A deal creates **90M€ of synergy** (left pan). Select the acquirer’s costs for the right pan that exactly consume it — showing a deal that only breaks even.",
   "fixedLeft": [
     {
       "id": "L1",
-      "label": "2.0 kg",
-      "weight": 2
-    },
-    {
-      "id": "L2",
-      "label": "1.5 kg",
-      "weight": 1.5
+      "label": "Synergy 90M€",
+      "weight": 90
     }
   ],
   "availableItems": [
     {
       "id": "w1",
-      "label": "2.0 kg",
-      "weight": 2
+      "label": "Premium 60M€",
+      "weight": 60
     },
     {
       "id": "w2",
-      "label": "1.5 kg",
-      "weight": 1.5
+      "label": "Integration costs 30M€",
+      "weight": 30
     },
     {
       "id": "w3",
-      "label": "1.0 kg",
-      "weight": 1
+      "label": "Advisory fees 15M€",
+      "weight": 15
     },
     {
       "id": "w4",
-      "label": "0.5 kg",
-      "weight": 0.5
+      "label": "Rebranding 45M€",
+      "weight": 45
     },
     {
       "id": "w5",
-      "label": "0.25 kg",
-      "weight": 0.25
+      "label": "Severance 75M€",
+      "weight": 75
     }
   ],
-  "targetWeight": 3.5,
+  "targetWeight": 90,
   "hints": [
-    "Balance means equal total weight on both sides. What does the left side add up to?",
-    "Several combinations reach 3.5 kg — any of them balances."
+    "The scale balances when acquirer costs sum to the full 90M€ synergy.",
+    "Several combinations reach 90 — any of them means zero value created."
   ],
-  "explanation": "Equilibrium demands equal moments; with equal arms that reduces to equal weights: 3.5 kg on each side. On a real see-saw you could instead balance with *less* mass placed *farther out* — that trade of force for lever arm is torque."
+  "explanation": "When premium plus integration costs weigh as much as the synergy, the acquirer keeps nothing — balance here means break-even, and anything heavier on the right is value destruction."
 }
 ```
 
@@ -1382,28 +1656,28 @@ Select items to place on a scale to match `targetWeight`.
 
 ### `probability_spinner`
 
-Adjust pie-chart sections to match target probabilities.
+Adjust pie-chart section sizes to match target probabilities.
 
 ```json
 {
   "type": "probability_spinner",
-  "question": "Random measurement errors follow a normal distribution. **Set the spinner fractions** for where a single measurement lands relative to the mean.",
+  "question": "In a mobility study, children born in the **bottom quintile** have these destination chances. **Set the spinner**: 35% stay at the bottom, the rest escape it.",
   "sections": [
     {
-      "label": "Within ±1σ",
-      "correctFraction": 0.68
+      "label": "Stay in bottom quintile",
+      "correctFraction": 0.35
     },
     {
-      "label": "Beyond ±1σ",
-      "correctFraction": 0.32
+      "label": "Move up and out",
+      "correctFraction": 0.65
     }
   ],
   "tolerance": 0.05,
   "hints": [
-    "This is the famous 68–95–99.7 rule — you need its first number.",
-    "About two-thirds of normal data falls within one standard deviation."
+    "Perfect fluidity would mean 20% stay.",
+    "Here the floor is sticky: 35 stays, 65 escapes."
   ],
-  "explanation": "Roughly **68%** of normally distributed measurements fall within ±1σ of the mean — the working definition of a quoted uncertainty. Nearly a third of honest readings land outside it; a lone outlier is not a scandal."
+  "explanation": "Under pure fluidity a bottom-quintile child would stay with probability 20% — one quintile among five. The observed 35% is nearly double: the sticky floor made visible as a spinner slice."
 }
 ```
 
@@ -1479,7 +1753,7 @@ Select the correct color bands for a given resistance value.
 
 ### `thermometer_reading`
 
-Set a thermometer slider to the target temperature.
+Set a thermometer slider to a target temperature.
 
 ```json
 {
@@ -1511,21 +1785,20 @@ Adjust function parameters to match a target curve.
 ```json
 {
   "type": "function_graph",
-  "question": "Which graph shows the linear function $y = 2x$?",
-  "equation": "$y = m*x$",
+  "question": "A firm has fixed costs of 100 and constant unit variable cost of 2. Which graph shows its **total cost** $TC(q) = 100 + 2q$?",
+  "equation": "$TC(q) = FC + v \\cdot q$",
   "parameters": [
     {
-      "id": "m",
-      "min": -5,
-      "max": 5,
+      "id": "v",
+      "min": 0,
+      "max": 10,
       "correct": 2
     }
   ],
-  "explanation": "$m = 2$ since 2$\\cdot3 = 6. Linear functions are continuous on all of$ ℝ.",
-  "minX": -5,
-  "maxX": 5,
-  "minY": -10,
-  "maxY": 10,
+  "minX": 0,
+  "maxX": 100,
+  "minY": 0,
+  "maxY": 400,
   "series": [
     {
       "id": "A",
@@ -1533,328 +1806,208 @@ Adjust function parameters to match a target curve.
       "isCorrect": true,
       "points": [
         {
-          "x": -5,
-          "y": -10
-        },
-        {
-          "x": -4.875,
-          "y": -9.75
-        },
-        {
-          "x": -4.75,
-          "y": -9.5
-        },
-        {
-          "x": -4.625,
-          "y": -9.25
-        },
-        {
-          "x": -4.5,
-          "y": -9
-        },
-        {
-          "x": -4.375,
-          "y": -8.75
-        },
-        {
-          "x": -4.25,
-          "y": -8.5
-        },
-        {
-          "x": -4.125,
-          "y": -8.25
-        },
-        {
-          "x": -4,
-          "y": -8
-        },
-        {
-          "x": -3.875,
-          "y": -7.75
-        },
-        {
-          "x": -3.75,
-          "y": -7.5
-        },
-        {
-          "x": -3.625,
-          "y": -7.25
-        },
-        {
-          "x": -3.5,
-          "y": -7
-        },
-        {
-          "x": -3.375,
-          "y": -6.75
-        },
-        {
-          "x": -3.25,
-          "y": -6.5
-        },
-        {
-          "x": -3.125,
-          "y": -6.25
-        },
-        {
-          "x": -3,
-          "y": -6
-        },
-        {
-          "x": -2.875,
-          "y": -5.75
-        },
-        {
-          "x": -2.75,
-          "y": -5.5
-        },
-        {
-          "x": -2.625,
-          "y": -5.25
-        },
-        {
-          "x": -2.5,
-          "y": -5
-        },
-        {
-          "x": -2.375,
-          "y": -4.75
-        },
-        {
-          "x": -2.25,
-          "y": -4.5
-        },
-        {
-          "x": -2.125,
-          "y": -4.25
-        },
-        {
-          "x": -2,
-          "y": -4
-        },
-        {
-          "x": -1.875,
-          "y": -3.75
-        },
-        {
-          "x": -1.75,
-          "y": -3.5
-        },
-        {
-          "x": -1.625,
-          "y": -3.25
-        },
-        {
-          "x": -1.5,
-          "y": -3
-        },
-        {
-          "x": -1.375,
-          "y": -2.75
-        },
-        {
-          "x": -1.25,
-          "y": -2.5
-        },
-        {
-          "x": -1.125,
-          "y": -2.25
-        },
-        {
-          "x": -1,
-          "y": -2
-        },
-        {
-          "x": -0.875,
-          "y": -1.75
-        },
-        {
-          "x": -0.75,
-          "y": -1.5
-        },
-        {
-          "x": -0.625,
-          "y": -1.25
-        },
-        {
-          "x": -0.5,
-          "y": -1
-        },
-        {
-          "x": -0.375,
-          "y": -0.75
-        },
-        {
-          "x": -0.25,
-          "y": -0.5
-        },
-        {
-          "x": -0.125,
-          "y": -0.25
-        },
-        {
           "x": 0,
-          "y": 0
-        },
-        {
-          "x": 0.125,
-          "y": 0.25
-        },
-        {
-          "x": 0.25,
-          "y": 0.5
-        },
-        {
-          "x": 0.375,
-          "y": 0.75
-        },
-        {
-          "x": 0.5,
-          "y": 1
-        },
-        {
-          "x": 0.625,
-          "y": 1.25
-        },
-        {
-          "x": 0.75,
-          "y": 1.5
-        },
-        {
-          "x": 0.875,
-          "y": 1.75
-        },
-        {
-          "x": 1,
-          "y": 2
-        },
-        {
-          "x": 1.125,
-          "y": 2.25
-        },
-        {
-          "x": 1.25,
-          "y": 2.5
-        },
-        {
-          "x": 1.375,
-          "y": 2.75
-        },
-        {
-          "x": 1.5,
-          "y": 3
-        },
-        {
-          "x": 1.625,
-          "y": 3.25
-        },
-        {
-          "x": 1.75,
-          "y": 3.5
-        },
-        {
-          "x": 1.875,
-          "y": 3.75
+          "y": 100
         },
         {
           "x": 2,
-          "y": 4
-        },
-        {
-          "x": 2.125,
-          "y": 4.25
-        },
-        {
-          "x": 2.25,
-          "y": 4.5
-        },
-        {
-          "x": 2.375,
-          "y": 4.75
-        },
-        {
-          "x": 2.5,
-          "y": 5
-        },
-        {
-          "x": 2.625,
-          "y": 5.25
-        },
-        {
-          "x": 2.75,
-          "y": 5.5
-        },
-        {
-          "x": 2.875,
-          "y": 5.75
-        },
-        {
-          "x": 3,
-          "y": 6
-        },
-        {
-          "x": 3.125,
-          "y": 6.25
-        },
-        {
-          "x": 3.25,
-          "y": 6.5
-        },
-        {
-          "x": 3.375,
-          "y": 6.75
-        },
-        {
-          "x": 3.5,
-          "y": 7
-        },
-        {
-          "x": 3.625,
-          "y": 7.25
-        },
-        {
-          "x": 3.75,
-          "y": 7.5
-        },
-        {
-          "x": 3.875,
-          "y": 7.75
+          "y": 104
         },
         {
           "x": 4,
-          "y": 8
+          "y": 108
         },
         {
-          "x": 4.125,
-          "y": 8.25
+          "x": 6,
+          "y": 112
         },
         {
-          "x": 4.25,
-          "y": 8.5
+          "x": 8,
+          "y": 116
         },
         {
-          "x": 4.375,
-          "y": 8.75
+          "x": 10,
+          "y": 120
         },
         {
-          "x": 4.5,
-          "y": 9
+          "x": 12,
+          "y": 124
         },
         {
-          "x": 4.625,
-          "y": 9.25
+          "x": 14,
+          "y": 128
         },
         {
-          "x": 4.75,
-          "y": 9.5
+          "x": 16,
+          "y": 132
         },
         {
-          "x": 4.875,
-          "y": 9.75
+          "x": 18,
+          "y": 136
         },
         {
-          "x": 5,
-          "y": 10
+          "x": 20,
+          "y": 140
+        },
+        {
+          "x": 22,
+          "y": 144
+        },
+        {
+          "x": 24,
+          "y": 148
+        },
+        {
+          "x": 26,
+          "y": 152
+        },
+        {
+          "x": 28,
+          "y": 156
+        },
+        {
+          "x": 30,
+          "y": 160
+        },
+        {
+          "x": 32,
+          "y": 164
+        },
+        {
+          "x": 34,
+          "y": 168
+        },
+        {
+          "x": 36,
+          "y": 172
+        },
+        {
+          "x": 38,
+          "y": 176
+        },
+        {
+          "x": 40,
+          "y": 180
+        },
+        {
+          "x": 42,
+          "y": 184
+        },
+        {
+          "x": 44,
+          "y": 188
+        },
+        {
+          "x": 46,
+          "y": 192
+        },
+        {
+          "x": 48,
+          "y": 196
+        },
+        {
+          "x": 50,
+          "y": 200
+        },
+        {
+          "x": 52,
+          "y": 204
+        },
+        {
+          "x": 54,
+          "y": 208
+        },
+        {
+          "x": 56,
+          "y": 212
+        },
+        {
+          "x": 58,
+          "y": 216
+        },
+        {
+          "x": 60,
+          "y": 220
+        },
+        {
+          "x": 62,
+          "y": 224
+        },
+        {
+          "x": 64,
+          "y": 228
+        },
+        {
+          "x": 66,
+          "y": 232
+        },
+        {
+          "x": 68,
+          "y": 236
+        },
+        {
+          "x": 70,
+          "y": 240
+        },
+        {
+          "x": 72,
+          "y": 244
+        },
+        {
+          "x": 74,
+          "y": 248
+        },
+        {
+          "x": 76,
+          "y": 252
+        },
+        {
+          "x": 78,
+          "y": 256
+        },
+        {
+          "x": 80,
+          "y": 260
+        },
+        {
+          "x": 82,
+          "y": 264
+        },
+        {
+          "x": 84,
+          "y": 268
+        },
+        {
+          "x": 86,
+          "y": 272
+        },
+        {
+          "x": 88,
+          "y": 276
+        },
+        {
+          "x": 90,
+          "y": 280
+        },
+        {
+          "x": 92,
+          "y": 284
+        },
+        {
+          "x": 94,
+          "y": 288
+        },
+        {
+          "x": 96,
+          "y": 292
+        },
+        {
+          "x": 98,
+          "y": 296
+        },
+        {
+          "x": 100,
+          "y": 300
         }
       ]
     },
@@ -1864,328 +2017,208 @@ Adjust function parameters to match a target curve.
       "isCorrect": false,
       "points": [
         {
-          "x": -5,
-          "y": -2.5
-        },
-        {
-          "x": -4.875,
-          "y": -2.4375
-        },
-        {
-          "x": -4.75,
-          "y": -2.375
-        },
-        {
-          "x": -4.625,
-          "y": -2.3125
-        },
-        {
-          "x": -4.5,
-          "y": -2.25
-        },
-        {
-          "x": -4.375,
-          "y": -2.1875
-        },
-        {
-          "x": -4.25,
-          "y": -2.125
-        },
-        {
-          "x": -4.125,
-          "y": -2.0625
-        },
-        {
-          "x": -4,
-          "y": -2
-        },
-        {
-          "x": -3.875,
-          "y": -1.9375
-        },
-        {
-          "x": -3.75,
-          "y": -1.875
-        },
-        {
-          "x": -3.625,
-          "y": -1.8125
-        },
-        {
-          "x": -3.5,
-          "y": -1.75
-        },
-        {
-          "x": -3.375,
-          "y": -1.6875
-        },
-        {
-          "x": -3.25,
-          "y": -1.625
-        },
-        {
-          "x": -3.125,
-          "y": -1.5625
-        },
-        {
-          "x": -3,
-          "y": -1.5
-        },
-        {
-          "x": -2.875,
-          "y": -1.4375
-        },
-        {
-          "x": -2.75,
-          "y": -1.375
-        },
-        {
-          "x": -2.625,
-          "y": -1.3125
-        },
-        {
-          "x": -2.5,
-          "y": -1.25
-        },
-        {
-          "x": -2.375,
-          "y": -1.1875
-        },
-        {
-          "x": -2.25,
-          "y": -1.125
-        },
-        {
-          "x": -2.125,
-          "y": -1.0625
-        },
-        {
-          "x": -2,
-          "y": -1
-        },
-        {
-          "x": -1.875,
-          "y": -0.9375
-        },
-        {
-          "x": -1.75,
-          "y": -0.875
-        },
-        {
-          "x": -1.625,
-          "y": -0.8125
-        },
-        {
-          "x": -1.5,
-          "y": -0.75
-        },
-        {
-          "x": -1.375,
-          "y": -0.6875
-        },
-        {
-          "x": -1.25,
-          "y": -0.625
-        },
-        {
-          "x": -1.125,
-          "y": -0.5625
-        },
-        {
-          "x": -1,
-          "y": -0.5
-        },
-        {
-          "x": -0.875,
-          "y": -0.4375
-        },
-        {
-          "x": -0.75,
-          "y": -0.375
-        },
-        {
-          "x": -0.625,
-          "y": -0.3125
-        },
-        {
-          "x": -0.5,
-          "y": -0.25
-        },
-        {
-          "x": -0.375,
-          "y": -0.1875
-        },
-        {
-          "x": -0.25,
-          "y": -0.125
-        },
-        {
-          "x": -0.125,
-          "y": -0.0625
-        },
-        {
           "x": 0,
           "y": 0
         },
         {
-          "x": 0.125,
-          "y": 0.0625
-        },
-        {
-          "x": 0.25,
-          "y": 0.125
-        },
-        {
-          "x": 0.375,
-          "y": 0.1875
-        },
-        {
-          "x": 0.5,
-          "y": 0.25
-        },
-        {
-          "x": 0.625,
-          "y": 0.3125
-        },
-        {
-          "x": 0.75,
-          "y": 0.375
-        },
-        {
-          "x": 0.875,
-          "y": 0.4375
-        },
-        {
-          "x": 1,
-          "y": 0.5
-        },
-        {
-          "x": 1.125,
-          "y": 0.5625
-        },
-        {
-          "x": 1.25,
-          "y": 0.625
-        },
-        {
-          "x": 1.375,
-          "y": 0.6875
-        },
-        {
-          "x": 1.5,
-          "y": 0.75
-        },
-        {
-          "x": 1.625,
-          "y": 0.8125
-        },
-        {
-          "x": 1.75,
-          "y": 0.875
-        },
-        {
-          "x": 1.875,
-          "y": 0.9375
-        },
-        {
           "x": 2,
-          "y": 1
-        },
-        {
-          "x": 2.125,
-          "y": 1.0625
-        },
-        {
-          "x": 2.25,
-          "y": 1.125
-        },
-        {
-          "x": 2.375,
-          "y": 1.1875
-        },
-        {
-          "x": 2.5,
-          "y": 1.25
-        },
-        {
-          "x": 2.625,
-          "y": 1.3125
-        },
-        {
-          "x": 2.75,
-          "y": 1.375
-        },
-        {
-          "x": 2.875,
-          "y": 1.4375
-        },
-        {
-          "x": 3,
-          "y": 1.5
-        },
-        {
-          "x": 3.125,
-          "y": 1.5625
-        },
-        {
-          "x": 3.25,
-          "y": 1.625
-        },
-        {
-          "x": 3.375,
-          "y": 1.6875
-        },
-        {
-          "x": 3.5,
-          "y": 1.75
-        },
-        {
-          "x": 3.625,
-          "y": 1.8125
-        },
-        {
-          "x": 3.75,
-          "y": 1.875
-        },
-        {
-          "x": 3.875,
-          "y": 1.9375
+          "y": 4
         },
         {
           "x": 4,
-          "y": 2
+          "y": 8
         },
         {
-          "x": 4.125,
-          "y": 2.0625
+          "x": 6,
+          "y": 12
         },
         {
-          "x": 4.25,
-          "y": 2.125
+          "x": 8,
+          "y": 16
         },
         {
-          "x": 4.375,
-          "y": 2.1875
+          "x": 10,
+          "y": 20
         },
         {
-          "x": 4.5,
-          "y": 2.25
+          "x": 12,
+          "y": 24
         },
         {
-          "x": 4.625,
-          "y": 2.3125
+          "x": 14,
+          "y": 28
         },
         {
-          "x": 4.75,
-          "y": 2.375
+          "x": 16,
+          "y": 32
         },
         {
-          "x": 4.875,
-          "y": 2.4375
+          "x": 18,
+          "y": 36
         },
         {
-          "x": 5,
-          "y": 2.5
+          "x": 20,
+          "y": 40
+        },
+        {
+          "x": 22,
+          "y": 44
+        },
+        {
+          "x": 24,
+          "y": 48
+        },
+        {
+          "x": 26,
+          "y": 52
+        },
+        {
+          "x": 28,
+          "y": 56
+        },
+        {
+          "x": 30,
+          "y": 60
+        },
+        {
+          "x": 32,
+          "y": 64
+        },
+        {
+          "x": 34,
+          "y": 68
+        },
+        {
+          "x": 36,
+          "y": 72
+        },
+        {
+          "x": 38,
+          "y": 76
+        },
+        {
+          "x": 40,
+          "y": 80
+        },
+        {
+          "x": 42,
+          "y": 84
+        },
+        {
+          "x": 44,
+          "y": 88
+        },
+        {
+          "x": 46,
+          "y": 92
+        },
+        {
+          "x": 48,
+          "y": 96
+        },
+        {
+          "x": 50,
+          "y": 100
+        },
+        {
+          "x": 52,
+          "y": 104
+        },
+        {
+          "x": 54,
+          "y": 108
+        },
+        {
+          "x": 56,
+          "y": 112
+        },
+        {
+          "x": 58,
+          "y": 116
+        },
+        {
+          "x": 60,
+          "y": 120
+        },
+        {
+          "x": 62,
+          "y": 124
+        },
+        {
+          "x": 64,
+          "y": 128
+        },
+        {
+          "x": 66,
+          "y": 132
+        },
+        {
+          "x": 68,
+          "y": 136
+        },
+        {
+          "x": 70,
+          "y": 140
+        },
+        {
+          "x": 72,
+          "y": 144
+        },
+        {
+          "x": 74,
+          "y": 148
+        },
+        {
+          "x": 76,
+          "y": 152
+        },
+        {
+          "x": 78,
+          "y": 156
+        },
+        {
+          "x": 80,
+          "y": 160
+        },
+        {
+          "x": 82,
+          "y": 164
+        },
+        {
+          "x": 84,
+          "y": 168
+        },
+        {
+          "x": 86,
+          "y": 172
+        },
+        {
+          "x": 88,
+          "y": 176
+        },
+        {
+          "x": 90,
+          "y": 180
+        },
+        {
+          "x": 92,
+          "y": 184
+        },
+        {
+          "x": 94,
+          "y": 188
+        },
+        {
+          "x": 96,
+          "y": 192
+        },
+        {
+          "x": 98,
+          "y": 196
+        },
+        {
+          "x": 100,
+          "y": 200
         }
       ]
     },
@@ -2195,351 +2228,232 @@ Adjust function parameters to match a target curve.
       "isCorrect": false,
       "points": [
         {
-          "x": -5,
-          "y": -25
-        },
-        {
-          "x": -4.875,
-          "y": -24.375
-        },
-        {
-          "x": -4.75,
-          "y": -23.75
-        },
-        {
-          "x": -4.625,
-          "y": -23.125
-        },
-        {
-          "x": -4.5,
-          "y": -22.5
-        },
-        {
-          "x": -4.375,
-          "y": -21.875
-        },
-        {
-          "x": -4.25,
-          "y": -21.25
-        },
-        {
-          "x": -4.125,
-          "y": -20.625
-        },
-        {
-          "x": -4,
-          "y": -20
-        },
-        {
-          "x": -3.875,
-          "y": -19.375
-        },
-        {
-          "x": -3.75,
-          "y": -18.75
-        },
-        {
-          "x": -3.625,
-          "y": -18.125
-        },
-        {
-          "x": -3.5,
-          "y": -17.5
-        },
-        {
-          "x": -3.375,
-          "y": -16.875
-        },
-        {
-          "x": -3.25,
-          "y": -16.25
-        },
-        {
-          "x": -3.125,
-          "y": -15.625
-        },
-        {
-          "x": -3,
-          "y": -15
-        },
-        {
-          "x": -2.875,
-          "y": -14.375
-        },
-        {
-          "x": -2.75,
-          "y": -13.75
-        },
-        {
-          "x": -2.625,
-          "y": -13.125
-        },
-        {
-          "x": -2.5,
-          "y": -12.5
-        },
-        {
-          "x": -2.375,
-          "y": -11.875
-        },
-        {
-          "x": -2.25,
-          "y": -11.25
-        },
-        {
-          "x": -2.125,
-          "y": -10.625
-        },
-        {
-          "x": -2,
-          "y": -10
-        },
-        {
-          "x": -1.875,
-          "y": -9.375
-        },
-        {
-          "x": -1.75,
-          "y": -8.75
-        },
-        {
-          "x": -1.625,
-          "y": -8.125
-        },
-        {
-          "x": -1.5,
-          "y": -7.5
-        },
-        {
-          "x": -1.375,
-          "y": -6.875
-        },
-        {
-          "x": -1.25,
-          "y": -6.25
-        },
-        {
-          "x": -1.125,
-          "y": -5.625
-        },
-        {
-          "x": -1,
-          "y": -5
-        },
-        {
-          "x": -0.875,
-          "y": -4.375
-        },
-        {
-          "x": -0.75,
-          "y": -3.75
-        },
-        {
-          "x": -0.625,
-          "y": -3.125
-        },
-        {
-          "x": -0.5,
-          "y": -2.5
-        },
-        {
-          "x": -0.375,
-          "y": -1.875
-        },
-        {
-          "x": -0.25,
-          "y": -1.25
-        },
-        {
-          "x": -0.125,
-          "y": -0.625
-        },
-        {
           "x": 0,
-          "y": 0
-        },
-        {
-          "x": 0.125,
-          "y": 0.625
-        },
-        {
-          "x": 0.25,
-          "y": 1.25
-        },
-        {
-          "x": 0.375,
-          "y": 1.875
-        },
-        {
-          "x": 0.5,
-          "y": 2.5
-        },
-        {
-          "x": 0.625,
-          "y": 3.125
-        },
-        {
-          "x": 0.75,
-          "y": 3.75
-        },
-        {
-          "x": 0.875,
-          "y": 4.375
-        },
-        {
-          "x": 1,
-          "y": 5
-        },
-        {
-          "x": 1.125,
-          "y": 5.625
-        },
-        {
-          "x": 1.25,
-          "y": 6.25
-        },
-        {
-          "x": 1.375,
-          "y": 6.875
-        },
-        {
-          "x": 1.5,
-          "y": 7.5
-        },
-        {
-          "x": 1.625,
-          "y": 8.125
-        },
-        {
-          "x": 1.75,
-          "y": 8.75
-        },
-        {
-          "x": 1.875,
-          "y": 9.375
+          "y": 100
         },
         {
           "x": 2,
-          "y": 10
-        },
-        {
-          "x": 2.125,
-          "y": 10.625
-        },
-        {
-          "x": 2.25,
-          "y": 11.25
-        },
-        {
-          "x": 2.375,
-          "y": 11.875
-        },
-        {
-          "x": 2.5,
-          "y": 12.5
-        },
-        {
-          "x": 2.625,
-          "y": 13.125
-        },
-        {
-          "x": 2.75,
-          "y": 13.75
-        },
-        {
-          "x": 2.875,
-          "y": 14.375
-        },
-        {
-          "x": 3,
-          "y": 15
-        },
-        {
-          "x": 3.125,
-          "y": 15.625
-        },
-        {
-          "x": 3.25,
-          "y": 16.25
-        },
-        {
-          "x": 3.375,
-          "y": 16.875
-        },
-        {
-          "x": 3.5,
-          "y": 17.5
-        },
-        {
-          "x": 3.625,
-          "y": 18.125
-        },
-        {
-          "x": 3.75,
-          "y": 18.75
-        },
-        {
-          "x": 3.875,
-          "y": 19.375
+          "y": 100.08
         },
         {
           "x": 4,
-          "y": 20
+          "y": 100.32
         },
         {
-          "x": 4.125,
-          "y": 20.625
+          "x": 6,
+          "y": 100.72
         },
         {
-          "x": 4.25,
-          "y": 21.25
+          "x": 8,
+          "y": 101.28
         },
         {
-          "x": 4.375,
-          "y": 21.875
+          "x": 10,
+          "y": 102
         },
         {
-          "x": 4.5,
-          "y": 22.5
+          "x": 12,
+          "y": 102.88
         },
         {
-          "x": 4.625,
-          "y": 23.125
+          "x": 14,
+          "y": 103.92
         },
         {
-          "x": 4.75,
-          "y": 23.75
+          "x": 16,
+          "y": 105.12
         },
         {
-          "x": 4.875,
-          "y": 24.375
+          "x": 18,
+          "y": 106.48
         },
         {
-          "x": 5,
-          "y": 25
+          "x": 20,
+          "y": 108
+        },
+        {
+          "x": 22,
+          "y": 109.68
+        },
+        {
+          "x": 24,
+          "y": 111.52
+        },
+        {
+          "x": 26,
+          "y": 113.52
+        },
+        {
+          "x": 28,
+          "y": 115.68
+        },
+        {
+          "x": 30,
+          "y": 118
+        },
+        {
+          "x": 32,
+          "y": 120.48
+        },
+        {
+          "x": 34,
+          "y": 123.12
+        },
+        {
+          "x": 36,
+          "y": 125.92
+        },
+        {
+          "x": 38,
+          "y": 128.88
+        },
+        {
+          "x": 40,
+          "y": 132
+        },
+        {
+          "x": 42,
+          "y": 135.28
+        },
+        {
+          "x": 44,
+          "y": 138.72
+        },
+        {
+          "x": 46,
+          "y": 142.32
+        },
+        {
+          "x": 48,
+          "y": 146.08
+        },
+        {
+          "x": 50,
+          "y": 150
+        },
+        {
+          "x": 52,
+          "y": 154.08
+        },
+        {
+          "x": 54,
+          "y": 158.32
+        },
+        {
+          "x": 56,
+          "y": 162.72
+        },
+        {
+          "x": 58,
+          "y": 167.28
+        },
+        {
+          "x": 60,
+          "y": 172
+        },
+        {
+          "x": 62,
+          "y": 176.88
+        },
+        {
+          "x": 64,
+          "y": 181.92
+        },
+        {
+          "x": 66,
+          "y": 187.12
+        },
+        {
+          "x": 68,
+          "y": 192.48
+        },
+        {
+          "x": 70,
+          "y": 198
+        },
+        {
+          "x": 72,
+          "y": 203.68
+        },
+        {
+          "x": 74,
+          "y": 209.52
+        },
+        {
+          "x": 76,
+          "y": 215.52
+        },
+        {
+          "x": 78,
+          "y": 221.68
+        },
+        {
+          "x": 80,
+          "y": 228
+        },
+        {
+          "x": 82,
+          "y": 234.48
+        },
+        {
+          "x": 84,
+          "y": 241.12
+        },
+        {
+          "x": 86,
+          "y": 247.92
+        },
+        {
+          "x": 88,
+          "y": 254.88
+        },
+        {
+          "x": 90,
+          "y": 262
+        },
+        {
+          "x": 92,
+          "y": 269.28
+        },
+        {
+          "x": 94,
+          "y": 276.72
+        },
+        {
+          "x": 96,
+          "y": 284.32
+        },
+        {
+          "x": 98,
+          "y": 292.08
+        },
+        {
+          "x": 100,
+          "y": 300
         }
       ]
     }
-  ]
+  ],
+  "explanation": "Total cost starts at the fixed cost (intercept 100) and climbs at the constant variable rate (slope 2). Curve B forgets the fixed cost; curve C makes marginal cost rise."
 }
 ```
 
-**Key fields:** `equation`, `parameters`, `explanation`, `minX`, `maxX`, `minY`, `maxY`, `series`
+**Key fields:** `equation`, `parameters`, `minX`, `maxX`, `minY`, `maxY`, `series`, `explanation`
 
 ---
 
 ### `graph_identification`
 
-Choose the correct graph from options.
+Choose the correct graph from multiple options.
 
 ```json
 {
   "type": "graph_identification",
-  "question": "Which graph shows a function that is continuous at $x = 0$?",
-  "minX": -2,
-  "maxX": 2,
-  "minY": -2,
-  "maxY": 2,
+  "question": "Which graph shows **average total cost** falling as output spreads fixed costs — economies of scale?",
+  "minX": 1,
+  "maxX": 50,
+  "minY": 0,
+  "maxY": 60,
   "options": [
     {
       "id": "A",
@@ -2547,328 +2461,204 @@ Choose the correct graph from options.
       "isCorrect": true,
       "points": [
         {
-          "x": -2,
-          "y": -2
-        },
-        {
-          "x": -1.95,
-          "y": -1.95
-        },
-        {
-          "x": -1.9,
-          "y": -1.9
-        },
-        {
-          "x": -1.85,
-          "y": -1.85
-        },
-        {
-          "x": -1.8,
-          "y": -1.8
-        },
-        {
-          "x": -1.75,
-          "y": -1.75
-        },
-        {
-          "x": -1.7,
-          "y": -1.7
-        },
-        {
-          "x": -1.65,
-          "y": -1.65
-        },
-        {
-          "x": -1.6,
-          "y": -1.6
-        },
-        {
-          "x": -1.55,
-          "y": -1.55
-        },
-        {
-          "x": -1.5,
-          "y": -1.5
-        },
-        {
-          "x": -1.45,
-          "y": -1.45
-        },
-        {
-          "x": -1.4,
-          "y": -1.4
-        },
-        {
-          "x": -1.35,
-          "y": -1.35
-        },
-        {
-          "x": -1.3,
-          "y": -1.3
-        },
-        {
-          "x": -1.25,
-          "y": -1.25
-        },
-        {
-          "x": -1.2,
-          "y": -1.2
-        },
-        {
-          "x": -1.15,
-          "y": -1.15
-        },
-        {
-          "x": -1.1,
-          "y": -1.1
-        },
-        {
-          "x": -1.05,
-          "y": -1.05
-        },
-        {
-          "x": -1,
-          "y": -1
-        },
-        {
-          "x": -0.95,
-          "y": -0.95
-        },
-        {
-          "x": -0.9,
-          "y": -0.9
-        },
-        {
-          "x": -0.85,
-          "y": -0.85
-        },
-        {
-          "x": -0.8,
-          "y": -0.8
-        },
-        {
-          "x": -0.75,
-          "y": -0.75
-        },
-        {
-          "x": -0.7,
-          "y": -0.7
-        },
-        {
-          "x": -0.65,
-          "y": -0.65
-        },
-        {
-          "x": -0.6,
-          "y": -0.6
-        },
-        {
-          "x": -0.55,
-          "y": -0.55
-        },
-        {
-          "x": -0.5,
-          "y": -0.5
-        },
-        {
-          "x": -0.45,
-          "y": -0.45
-        },
-        {
-          "x": -0.4,
-          "y": -0.4
-        },
-        {
-          "x": -0.35,
-          "y": -0.35
-        },
-        {
-          "x": -0.3,
-          "y": -0.3
-        },
-        {
-          "x": -0.25,
-          "y": -0.25
-        },
-        {
-          "x": -0.2,
-          "y": -0.2
-        },
-        {
-          "x": -0.15,
-          "y": -0.15
-        },
-        {
-          "x": -0.1,
-          "y": -0.1
-        },
-        {
-          "x": -0.05,
-          "y": -0.05
-        },
-        {
-          "x": 0,
-          "y": 0
-        },
-        {
-          "x": 0.05,
-          "y": 0.05
-        },
-        {
-          "x": 0.1,
-          "y": 0.1
-        },
-        {
-          "x": 0.15,
-          "y": 0.15
-        },
-        {
-          "x": 0.2,
-          "y": 0.2
-        },
-        {
-          "x": 0.25,
-          "y": 0.25
-        },
-        {
-          "x": 0.3,
-          "y": 0.3
-        },
-        {
-          "x": 0.35,
-          "y": 0.35
-        },
-        {
-          "x": 0.4,
-          "y": 0.4
-        },
-        {
-          "x": 0.45,
-          "y": 0.45
-        },
-        {
-          "x": 0.5,
-          "y": 0.5
-        },
-        {
-          "x": 0.55,
-          "y": 0.55
-        },
-        {
-          "x": 0.6,
-          "y": 0.6
-        },
-        {
-          "x": 0.65,
-          "y": 0.65
-        },
-        {
-          "x": 0.7,
-          "y": 0.7
-        },
-        {
-          "x": 0.75,
-          "y": 0.75
-        },
-        {
-          "x": 0.8,
-          "y": 0.8
-        },
-        {
-          "x": 0.85,
-          "y": 0.85
-        },
-        {
-          "x": 0.9,
-          "y": 0.9
-        },
-        {
-          "x": 0.95,
-          "y": 0.95
-        },
-        {
           "x": 1,
-          "y": 1
-        },
-        {
-          "x": 1.05,
-          "y": 1.05
-        },
-        {
-          "x": 1.1,
-          "y": 1.1
-        },
-        {
-          "x": 1.15,
-          "y": 1.15
-        },
-        {
-          "x": 1.2,
-          "y": 1.2
-        },
-        {
-          "x": 1.25,
-          "y": 1.25
-        },
-        {
-          "x": 1.3,
-          "y": 1.3
-        },
-        {
-          "x": 1.35,
-          "y": 1.35
-        },
-        {
-          "x": 1.4,
-          "y": 1.4
-        },
-        {
-          "x": 1.45,
-          "y": 1.45
-        },
-        {
-          "x": 1.5,
-          "y": 1.5
-        },
-        {
-          "x": 1.55,
-          "y": 1.55
-        },
-        {
-          "x": 1.6,
-          "y": 1.6
-        },
-        {
-          "x": 1.65,
-          "y": 1.65
-        },
-        {
-          "x": 1.7,
-          "y": 1.7
-        },
-        {
-          "x": 1.75,
-          "y": 1.75
-        },
-        {
-          "x": 1.8,
-          "y": 1.8
-        },
-        {
-          "x": 1.85,
-          "y": 1.85
-        },
-        {
-          "x": 1.9,
-          "y": 1.9
-        },
-        {
-          "x": 1.95,
-          "y": 1.95
+          "y": 104
         },
         {
           "x": 2,
-          "y": 2
+          "y": 54
+        },
+        {
+          "x": 3,
+          "y": 37.33
+        },
+        {
+          "x": 4,
+          "y": 29
+        },
+        {
+          "x": 5,
+          "y": 24
+        },
+        {
+          "x": 6,
+          "y": 20.67
+        },
+        {
+          "x": 7,
+          "y": 18.29
+        },
+        {
+          "x": 8,
+          "y": 16.5
+        },
+        {
+          "x": 9,
+          "y": 15.11
+        },
+        {
+          "x": 10,
+          "y": 14
+        },
+        {
+          "x": 11,
+          "y": 13.09
+        },
+        {
+          "x": 12,
+          "y": 12.33
+        },
+        {
+          "x": 13,
+          "y": 11.69
+        },
+        {
+          "x": 14,
+          "y": 11.14
+        },
+        {
+          "x": 15,
+          "y": 10.67
+        },
+        {
+          "x": 16,
+          "y": 10.25
+        },
+        {
+          "x": 17,
+          "y": 9.88
+        },
+        {
+          "x": 18,
+          "y": 9.56
+        },
+        {
+          "x": 19,
+          "y": 9.26
+        },
+        {
+          "x": 20,
+          "y": 9
+        },
+        {
+          "x": 21,
+          "y": 8.76
+        },
+        {
+          "x": 22,
+          "y": 8.55
+        },
+        {
+          "x": 23,
+          "y": 8.35
+        },
+        {
+          "x": 24,
+          "y": 8.17
+        },
+        {
+          "x": 25,
+          "y": 8
+        },
+        {
+          "x": 26,
+          "y": 7.85
+        },
+        {
+          "x": 27,
+          "y": 7.7
+        },
+        {
+          "x": 28,
+          "y": 7.57
+        },
+        {
+          "x": 29,
+          "y": 7.45
+        },
+        {
+          "x": 30,
+          "y": 7.33
+        },
+        {
+          "x": 31,
+          "y": 7.23
+        },
+        {
+          "x": 32,
+          "y": 7.13
+        },
+        {
+          "x": 33,
+          "y": 7.03
+        },
+        {
+          "x": 34,
+          "y": 6.94
+        },
+        {
+          "x": 35,
+          "y": 6.86
+        },
+        {
+          "x": 36,
+          "y": 6.78
+        },
+        {
+          "x": 37,
+          "y": 6.7
+        },
+        {
+          "x": 38,
+          "y": 6.63
+        },
+        {
+          "x": 39,
+          "y": 6.56
+        },
+        {
+          "x": 40,
+          "y": 6.5
+        },
+        {
+          "x": 41,
+          "y": 6.44
+        },
+        {
+          "x": 42,
+          "y": 6.38
+        },
+        {
+          "x": 43,
+          "y": 6.33
+        },
+        {
+          "x": 44,
+          "y": 6.27
+        },
+        {
+          "x": 45,
+          "y": 6.22
+        },
+        {
+          "x": 46,
+          "y": 6.17
+        },
+        {
+          "x": 47,
+          "y": 6.13
+        },
+        {
+          "x": 48,
+          "y": 6.08
+        },
+        {
+          "x": 49,
+          "y": 6.04
+        },
+        {
+          "x": 50,
+          "y": 6
         }
       ]
     },
@@ -2878,808 +2668,204 @@ Choose the correct graph from options.
       "isCorrect": false,
       "points": [
         {
-          "x": -2,
-          "y": -1
-        },
-        {
-          "x": -1.98,
-          "y": -1
-        },
-        {
-          "x": -1.96,
-          "y": -1
-        },
-        {
-          "x": -1.94,
-          "y": -1
-        },
-        {
-          "x": -1.92,
-          "y": -1
-        },
-        {
-          "x": -1.9,
-          "y": -1
-        },
-        {
-          "x": -1.88,
-          "y": -1
-        },
-        {
-          "x": -1.86,
-          "y": -1
-        },
-        {
-          "x": -1.84,
-          "y": -1
-        },
-        {
-          "x": -1.82,
-          "y": -1
-        },
-        {
-          "x": -1.8,
-          "y": -1
-        },
-        {
-          "x": -1.78,
-          "y": -1
-        },
-        {
-          "x": -1.76,
-          "y": -1
-        },
-        {
-          "x": -1.74,
-          "y": -1
-        },
-        {
-          "x": -1.72,
-          "y": -1
-        },
-        {
-          "x": -1.7,
-          "y": -1
-        },
-        {
-          "x": -1.68,
-          "y": -1
-        },
-        {
-          "x": -1.66,
-          "y": -1
-        },
-        {
-          "x": -1.64,
-          "y": -1
-        },
-        {
-          "x": -1.62,
-          "y": -1
-        },
-        {
-          "x": -1.6,
-          "y": -1
-        },
-        {
-          "x": -1.58,
-          "y": -1
-        },
-        {
-          "x": -1.56,
-          "y": -1
-        },
-        {
-          "x": -1.54,
-          "y": -1
-        },
-        {
-          "x": -1.52,
-          "y": -1
-        },
-        {
-          "x": -1.5,
-          "y": -1
-        },
-        {
-          "x": -1.48,
-          "y": -1
-        },
-        {
-          "x": -1.46,
-          "y": -1
-        },
-        {
-          "x": -1.44,
-          "y": -1
-        },
-        {
-          "x": -1.42,
-          "y": -1
-        },
-        {
-          "x": -1.4,
-          "y": -1
-        },
-        {
-          "x": -1.38,
-          "y": -1
-        },
-        {
-          "x": -1.36,
-          "y": -1
-        },
-        {
-          "x": -1.34,
-          "y": -1
-        },
-        {
-          "x": -1.32,
-          "y": -1
-        },
-        {
-          "x": -1.3,
-          "y": -1
-        },
-        {
-          "x": -1.28,
-          "y": -1
-        },
-        {
-          "x": -1.26,
-          "y": -1
-        },
-        {
-          "x": -1.24,
-          "y": -1
-        },
-        {
-          "x": -1.22,
-          "y": -1
-        },
-        {
-          "x": -1.2,
-          "y": -1
-        },
-        {
-          "x": -1.18,
-          "y": -1
-        },
-        {
-          "x": -1.16,
-          "y": -1
-        },
-        {
-          "x": -1.14,
-          "y": -1
-        },
-        {
-          "x": -1.12,
-          "y": -1
-        },
-        {
-          "x": -1.1,
-          "y": -1
-        },
-        {
-          "x": -1.08,
-          "y": -1
-        },
-        {
-          "x": -1.06,
-          "y": -1
-        },
-        {
-          "x": -1.04,
-          "y": -1
-        },
-        {
-          "x": -1.02,
-          "y": -1
-        },
-        {
-          "x": -1,
-          "y": -1
-        },
-        {
-          "x": -0.98,
-          "y": -1
-        },
-        {
-          "x": -0.96,
-          "y": -1
-        },
-        {
-          "x": -0.94,
-          "y": -1
-        },
-        {
-          "x": -0.92,
-          "y": -1
-        },
-        {
-          "x": -0.9,
-          "y": -1
-        },
-        {
-          "x": -0.88,
-          "y": -1
-        },
-        {
-          "x": -0.86,
-          "y": -1
-        },
-        {
-          "x": -0.84,
-          "y": -1
-        },
-        {
-          "x": -0.82,
-          "y": -1
-        },
-        {
-          "x": -0.8,
-          "y": -1
-        },
-        {
-          "x": -0.78,
-          "y": -1
-        },
-        {
-          "x": -0.76,
-          "y": -1
-        },
-        {
-          "x": -0.74,
-          "y": -1
-        },
-        {
-          "x": -0.72,
-          "y": -1
-        },
-        {
-          "x": -0.7,
-          "y": -1
-        },
-        {
-          "x": -0.68,
-          "y": -1
-        },
-        {
-          "x": -0.66,
-          "y": -1
-        },
-        {
-          "x": -0.64,
-          "y": -1
-        },
-        {
-          "x": -0.62,
-          "y": -1
-        },
-        {
-          "x": -0.6,
-          "y": -1
-        },
-        {
-          "x": -0.58,
-          "y": -1
-        },
-        {
-          "x": -0.56,
-          "y": -1
-        },
-        {
-          "x": -0.54,
-          "y": -1
-        },
-        {
-          "x": -0.52,
-          "y": -1
-        },
-        {
-          "x": -0.5,
-          "y": -1
-        },
-        {
-          "x": -0.48,
-          "y": -1
-        },
-        {
-          "x": -0.46,
-          "y": -1
-        },
-        {
-          "x": -0.44,
-          "y": -1
-        },
-        {
-          "x": -0.42,
-          "y": -1
-        },
-        {
-          "x": -0.4,
-          "y": -1
-        },
-        {
-          "x": -0.38,
-          "y": -1
-        },
-        {
-          "x": -0.36,
-          "y": -1
-        },
-        {
-          "x": -0.34,
-          "y": -1
-        },
-        {
-          "x": -0.32,
-          "y": -1
-        },
-        {
-          "x": -0.3,
-          "y": -1
-        },
-        {
-          "x": -0.28,
-          "y": -1
-        },
-        {
-          "x": -0.26,
-          "y": -1
-        },
-        {
-          "x": -0.24,
-          "y": -1
-        },
-        {
-          "x": -0.22,
-          "y": -1
-        },
-        {
-          "x": -0.2,
-          "y": -1
-        },
-        {
-          "x": -0.18,
-          "y": -1
-        },
-        {
-          "x": -0.16,
-          "y": -1
-        },
-        {
-          "x": -0.14,
-          "y": -1
-        },
-        {
-          "x": -0.12,
-          "y": -1
-        },
-        {
-          "x": -0.1,
-          "y": -1
-        },
-        {
-          "x": -0.08,
-          "y": -1
-        },
-        {
-          "x": -0.06,
-          "y": -1
-        },
-        {
-          "x": -0.04,
-          "y": -1
-        },
-        {
-          "x": -0.02,
-          "y": -1
-        },
-        {
-          "x": 0,
-          "y": 1
-        },
-        {
-          "x": 0.02,
-          "y": 1
-        },
-        {
-          "x": 0.04,
-          "y": 1
-        },
-        {
-          "x": 0.06,
-          "y": 1
-        },
-        {
-          "x": 0.08,
-          "y": 1
-        },
-        {
-          "x": 0.1,
-          "y": 1
-        },
-        {
-          "x": 0.12,
-          "y": 1
-        },
-        {
-          "x": 0.14,
-          "y": 1
-        },
-        {
-          "x": 0.16,
-          "y": 1
-        },
-        {
-          "x": 0.18,
-          "y": 1
-        },
-        {
-          "x": 0.2,
-          "y": 1
-        },
-        {
-          "x": 0.22,
-          "y": 1
-        },
-        {
-          "x": 0.24,
-          "y": 1
-        },
-        {
-          "x": 0.26,
-          "y": 1
-        },
-        {
-          "x": 0.28,
-          "y": 1
-        },
-        {
-          "x": 0.3,
-          "y": 1
-        },
-        {
-          "x": 0.32,
-          "y": 1
-        },
-        {
-          "x": 0.34,
-          "y": 1
-        },
-        {
-          "x": 0.36,
-          "y": 1
-        },
-        {
-          "x": 0.38,
-          "y": 1
-        },
-        {
-          "x": 0.4,
-          "y": 1
-        },
-        {
-          "x": 0.42,
-          "y": 1
-        },
-        {
-          "x": 0.44,
-          "y": 1
-        },
-        {
-          "x": 0.46,
-          "y": 1
-        },
-        {
-          "x": 0.48,
-          "y": 1
-        },
-        {
-          "x": 0.5,
-          "y": 1
-        },
-        {
-          "x": 0.52,
-          "y": 1
-        },
-        {
-          "x": 0.54,
-          "y": 1
-        },
-        {
-          "x": 0.56,
-          "y": 1
-        },
-        {
-          "x": 0.58,
-          "y": 1
-        },
-        {
-          "x": 0.6,
-          "y": 1
-        },
-        {
-          "x": 0.62,
-          "y": 1
-        },
-        {
-          "x": 0.64,
-          "y": 1
-        },
-        {
-          "x": 0.66,
-          "y": 1
-        },
-        {
-          "x": 0.68,
-          "y": 1
-        },
-        {
-          "x": 0.7,
-          "y": 1
-        },
-        {
-          "x": 0.72,
-          "y": 1
-        },
-        {
-          "x": 0.74,
-          "y": 1
-        },
-        {
-          "x": 0.76,
-          "y": 1
-        },
-        {
-          "x": 0.78,
-          "y": 1
-        },
-        {
-          "x": 0.8,
-          "y": 1
-        },
-        {
-          "x": 0.82,
-          "y": 1
-        },
-        {
-          "x": 0.84,
-          "y": 1
-        },
-        {
-          "x": 0.86,
-          "y": 1
-        },
-        {
-          "x": 0.88,
-          "y": 1
-        },
-        {
-          "x": 0.9,
-          "y": 1
-        },
-        {
-          "x": 0.92,
-          "y": 1
-        },
-        {
-          "x": 0.94,
-          "y": 1
-        },
-        {
-          "x": 0.96,
-          "y": 1
-        },
-        {
-          "x": 0.98,
-          "y": 1
-        },
-        {
           "x": 1,
-          "y": 1
-        },
-        {
-          "x": 1.02,
-          "y": 1
-        },
-        {
-          "x": 1.04,
-          "y": 1
-        },
-        {
-          "x": 1.06,
-          "y": 1
-        },
-        {
-          "x": 1.08,
-          "y": 1
-        },
-        {
-          "x": 1.1,
-          "y": 1
-        },
-        {
-          "x": 1.12,
-          "y": 1
-        },
-        {
-          "x": 1.14,
-          "y": 1
-        },
-        {
-          "x": 1.16,
-          "y": 1
-        },
-        {
-          "x": 1.18,
-          "y": 1
-        },
-        {
-          "x": 1.2,
-          "y": 1
-        },
-        {
-          "x": 1.22,
-          "y": 1
-        },
-        {
-          "x": 1.24,
-          "y": 1
-        },
-        {
-          "x": 1.26,
-          "y": 1
-        },
-        {
-          "x": 1.28,
-          "y": 1
-        },
-        {
-          "x": 1.3,
-          "y": 1
-        },
-        {
-          "x": 1.32,
-          "y": 1
-        },
-        {
-          "x": 1.34,
-          "y": 1
-        },
-        {
-          "x": 1.36,
-          "y": 1
-        },
-        {
-          "x": 1.38,
-          "y": 1
-        },
-        {
-          "x": 1.4,
-          "y": 1
-        },
-        {
-          "x": 1.42,
-          "y": 1
-        },
-        {
-          "x": 1.44,
-          "y": 1
-        },
-        {
-          "x": 1.46,
-          "y": 1
-        },
-        {
-          "x": 1.48,
-          "y": 1
-        },
-        {
-          "x": 1.5,
-          "y": 1
-        },
-        {
-          "x": 1.52,
-          "y": 1
-        },
-        {
-          "x": 1.54,
-          "y": 1
-        },
-        {
-          "x": 1.56,
-          "y": 1
-        },
-        {
-          "x": 1.58,
-          "y": 1
-        },
-        {
-          "x": 1.6,
-          "y": 1
-        },
-        {
-          "x": 1.62,
-          "y": 1
-        },
-        {
-          "x": 1.64,
-          "y": 1
-        },
-        {
-          "x": 1.66,
-          "y": 1
-        },
-        {
-          "x": 1.68,
-          "y": 1
-        },
-        {
-          "x": 1.7,
-          "y": 1
-        },
-        {
-          "x": 1.72,
-          "y": 1
-        },
-        {
-          "x": 1.74,
-          "y": 1
-        },
-        {
-          "x": 1.76,
-          "y": 1
-        },
-        {
-          "x": 1.78,
-          "y": 1
-        },
-        {
-          "x": 1.8,
-          "y": 1
-        },
-        {
-          "x": 1.82,
-          "y": 1
-        },
-        {
-          "x": 1.84,
-          "y": 1
-        },
-        {
-          "x": 1.86,
-          "y": 1
-        },
-        {
-          "x": 1.88,
-          "y": 1
-        },
-        {
-          "x": 1.9,
-          "y": 1
-        },
-        {
-          "x": 1.92,
-          "y": 1
-        },
-        {
-          "x": 1.94,
-          "y": 1
-        },
-        {
-          "x": 1.96,
-          "y": 1
-        },
-        {
-          "x": 1.98,
-          "y": 1
+          "y": 4.8
         },
         {
           "x": 2,
-          "y": 1
+          "y": 5.6
+        },
+        {
+          "x": 3,
+          "y": 6.4
+        },
+        {
+          "x": 4,
+          "y": 7.2
+        },
+        {
+          "x": 5,
+          "y": 8
+        },
+        {
+          "x": 6,
+          "y": 8.8
+        },
+        {
+          "x": 7,
+          "y": 9.6
+        },
+        {
+          "x": 8,
+          "y": 10.4
+        },
+        {
+          "x": 9,
+          "y": 11.2
+        },
+        {
+          "x": 10,
+          "y": 12
+        },
+        {
+          "x": 11,
+          "y": 12.8
+        },
+        {
+          "x": 12,
+          "y": 13.6
+        },
+        {
+          "x": 13,
+          "y": 14.4
+        },
+        {
+          "x": 14,
+          "y": 15.2
+        },
+        {
+          "x": 15,
+          "y": 16
+        },
+        {
+          "x": 16,
+          "y": 16.8
+        },
+        {
+          "x": 17,
+          "y": 17.6
+        },
+        {
+          "x": 18,
+          "y": 18.4
+        },
+        {
+          "x": 19,
+          "y": 19.2
+        },
+        {
+          "x": 20,
+          "y": 20
+        },
+        {
+          "x": 21,
+          "y": 20.8
+        },
+        {
+          "x": 22,
+          "y": 21.6
+        },
+        {
+          "x": 23,
+          "y": 22.4
+        },
+        {
+          "x": 24,
+          "y": 23.2
+        },
+        {
+          "x": 25,
+          "y": 24
+        },
+        {
+          "x": 26,
+          "y": 24.8
+        },
+        {
+          "x": 27,
+          "y": 25.6
+        },
+        {
+          "x": 28,
+          "y": 26.4
+        },
+        {
+          "x": 29,
+          "y": 27.2
+        },
+        {
+          "x": 30,
+          "y": 28
+        },
+        {
+          "x": 31,
+          "y": 28.8
+        },
+        {
+          "x": 32,
+          "y": 29.6
+        },
+        {
+          "x": 33,
+          "y": 30.4
+        },
+        {
+          "x": 34,
+          "y": 31.2
+        },
+        {
+          "x": 35,
+          "y": 32
+        },
+        {
+          "x": 36,
+          "y": 32.8
+        },
+        {
+          "x": 37,
+          "y": 33.6
+        },
+        {
+          "x": 38,
+          "y": 34.4
+        },
+        {
+          "x": 39,
+          "y": 35.2
+        },
+        {
+          "x": 40,
+          "y": 36
+        },
+        {
+          "x": 41,
+          "y": 36.8
+        },
+        {
+          "x": 42,
+          "y": 37.6
+        },
+        {
+          "x": 43,
+          "y": 38.4
+        },
+        {
+          "x": 44,
+          "y": 39.2
+        },
+        {
+          "x": 45,
+          "y": 40
+        },
+        {
+          "x": 46,
+          "y": 40.8
+        },
+        {
+          "x": 47,
+          "y": 41.6
+        },
+        {
+          "x": 48,
+          "y": 42.4
+        },
+        {
+          "x": 49,
+          "y": 43.2
+        },
+        {
+          "x": 50,
+          "y": 44
         }
       ]
     },
@@ -3689,1625 +2875,210 @@ Choose the correct graph from options.
       "isCorrect": false,
       "points": [
         {
-          "x": -2,
-          "y": -0.5
-        },
-        {
-          "x": -1.98,
-          "y": -0.5051
-        },
-        {
-          "x": -1.96,
-          "y": -0.5102
-        },
-        {
-          "x": -1.94,
-          "y": -0.5155
-        },
-        {
-          "x": -1.92,
-          "y": -0.5208
-        },
-        {
-          "x": -1.9,
-          "y": -0.5263
-        },
-        {
-          "x": -1.88,
-          "y": -0.5319
-        },
-        {
-          "x": -1.86,
-          "y": -0.5376
-        },
-        {
-          "x": -1.84,
-          "y": -0.5435
-        },
-        {
-          "x": -1.82,
-          "y": -0.5495
-        },
-        {
-          "x": -1.8,
-          "y": -0.5556
-        },
-        {
-          "x": -1.78,
-          "y": -0.5618
-        },
-        {
-          "x": -1.76,
-          "y": -0.5682
-        },
-        {
-          "x": -1.74,
-          "y": -0.5747
-        },
-        {
-          "x": -1.72,
-          "y": -0.5814
-        },
-        {
-          "x": -1.7,
-          "y": -0.5882
-        },
-        {
-          "x": -1.68,
-          "y": -0.5952
-        },
-        {
-          "x": -1.66,
-          "y": -0.6024
-        },
-        {
-          "x": -1.64,
-          "y": -0.6098
-        },
-        {
-          "x": -1.62,
-          "y": -0.6173
-        },
-        {
-          "x": -1.6,
-          "y": -0.625
-        },
-        {
-          "x": -1.58,
-          "y": -0.6329
-        },
-        {
-          "x": -1.56,
-          "y": -0.641
-        },
-        {
-          "x": -1.54,
-          "y": -0.6494
-        },
-        {
-          "x": -1.52,
-          "y": -0.6579
-        },
-        {
-          "x": -1.5,
-          "y": -0.6667
-        },
-        {
-          "x": -1.48,
-          "y": -0.6757
-        },
-        {
-          "x": -1.46,
-          "y": -0.6849
-        },
-        {
-          "x": -1.44,
-          "y": -0.6944
-        },
-        {
-          "x": -1.42,
-          "y": -0.7042
-        },
-        {
-          "x": -1.4,
-          "y": -0.7143
-        },
-        {
-          "x": -1.38,
-          "y": -0.7246
-        },
-        {
-          "x": -1.36,
-          "y": -0.7353
-        },
-        {
-          "x": -1.34,
-          "y": -0.7463
-        },
-        {
-          "x": -1.32,
-          "y": -0.7576
-        },
-        {
-          "x": -1.3,
-          "y": -0.7692
-        },
-        {
-          "x": -1.28,
-          "y": -0.7812
-        },
-        {
-          "x": -1.26,
-          "y": -0.7937
-        },
-        {
-          "x": -1.24,
-          "y": -0.8065
-        },
-        {
-          "x": -1.22,
-          "y": -0.8197
-        },
-        {
-          "x": -1.2,
-          "y": -0.8333
-        },
-        {
-          "x": -1.18,
-          "y": -0.8475
-        },
-        {
-          "x": -1.16,
-          "y": -0.8621
-        },
-        {
-          "x": -1.14,
-          "y": -0.8772
-        },
-        {
-          "x": -1.12,
-          "y": -0.8929
-        },
-        {
-          "x": -1.1,
-          "y": -0.9091
-        },
-        {
-          "x": -1.08,
-          "y": -0.9259
-        },
-        {
-          "x": -1.06,
-          "y": -0.9434
-        },
-        {
-          "x": -1.04,
-          "y": -0.9615
-        },
-        {
-          "x": -1.02,
-          "y": -0.9804
-        },
-        {
-          "x": -1,
-          "y": -1
-        },
-        {
-          "x": -0.98,
-          "y": -1.0204
-        },
-        {
-          "x": -0.96,
-          "y": -1.0417
-        },
-        {
-          "x": -0.94,
-          "y": -1.0638
-        },
-        {
-          "x": -0.92,
-          "y": -1.087
-        },
-        {
-          "x": -0.9,
-          "y": -1.1111
-        },
-        {
-          "x": -0.88,
-          "y": -1.1364
-        },
-        {
-          "x": -0.86,
-          "y": -1.1628
-        },
-        {
-          "x": -0.84,
-          "y": -1.1905
-        },
-        {
-          "x": -0.82,
-          "y": -1.2195
-        },
-        {
-          "x": -0.8,
-          "y": -1.25
-        },
-        {
-          "x": -0.78,
-          "y": -1.2821
-        },
-        {
-          "x": -0.76,
-          "y": -1.3158
-        },
-        {
-          "x": -0.74,
-          "y": -1.3514
-        },
-        {
-          "x": -0.72,
-          "y": -1.3889
-        },
-        {
-          "x": -0.7,
-          "y": -1.4286
-        },
-        {
-          "x": -0.68,
-          "y": -1.4706
-        },
-        {
-          "x": -0.66,
-          "y": -1.5152
-        },
-        {
-          "x": -0.64,
-          "y": -1.5625
-        },
-        {
-          "x": -0.62,
-          "y": -1.6129
-        },
-        {
-          "x": -0.6,
-          "y": -1.6667
-        },
-        {
-          "x": -0.58,
-          "y": -1.7241
-        },
-        {
-          "x": -0.56,
-          "y": -1.7857
-        },
-        {
-          "x": -0.54,
-          "y": -1.8519
-        },
-        {
-          "x": -0.52,
-          "y": -1.9231
-        },
-        {
-          "x": -0.5,
-          "y": -2
-        },
-        {
-          "x": -0.48,
-          "y": -2.0833
-        },
-        {
-          "x": -0.46,
-          "y": -2.1739
-        },
-        {
-          "x": -0.44,
-          "y": -2.2727
-        },
-        {
-          "x": -0.42,
-          "y": -2.381
-        },
-        {
-          "x": -0.4,
-          "y": -2.5
-        },
-        {
-          "x": -0.38,
-          "y": -2.6316
-        },
-        {
-          "x": -0.36,
-          "y": -2.7778
-        },
-        {
-          "x": -0.34,
-          "y": -2.9412
-        },
-        {
-          "x": -0.32,
-          "y": -3.125
-        },
-        {
-          "x": -0.3,
-          "y": -3.3333
-        },
-        {
-          "x": -0.28,
-          "y": -3.5714
-        },
-        {
-          "x": -0.26,
-          "y": -3.8462
-        },
-        {
-          "x": -0.24,
-          "y": -4.1667
-        },
-        {
-          "x": -0.22,
-          "y": -4.5455
-        },
-        {
-          "x": -0.2,
-          "y": -5
-        },
-        {
-          "x": -0.18,
-          "y": -5.5556
-        },
-        {
-          "x": -0.16,
-          "y": -6.25
-        },
-        {
-          "x": -0.14,
-          "y": -7.1429
-        },
-        {
-          "x": -0.12,
-          "y": -8.3333
-        },
-        {
-          "x": -0.1,
-          "y": -10
-        },
-        {
-          "x": -0.08,
-          "y": -12.5
-        },
-        {
-          "x": -0.06,
-          "y": -16.6667
-        },
-        {
-          "x": -0.04,
-          "y": 20
-        },
-        {
-          "x": -0.02,
-          "y": 20
-        },
-        {
-          "x": 0,
-          "y": 20
-        },
-        {
-          "x": 0.02,
-          "y": 20
-        },
-        {
-          "x": 0.04,
-          "y": 20
-        },
-        {
-          "x": 0.06,
-          "y": 16.6667
-        },
-        {
-          "x": 0.08,
-          "y": 12.5
-        },
-        {
-          "x": 0.1,
-          "y": 10
-        },
-        {
-          "x": 0.12,
-          "y": 8.3333
-        },
-        {
-          "x": 0.14,
-          "y": 7.1429
-        },
-        {
-          "x": 0.16,
-          "y": 6.25
-        },
-        {
-          "x": 0.18,
-          "y": 5.5556
-        },
-        {
-          "x": 0.2,
-          "y": 5
-        },
-        {
-          "x": 0.22,
-          "y": 4.5455
-        },
-        {
-          "x": 0.24,
-          "y": 4.1667
-        },
-        {
-          "x": 0.26,
-          "y": 3.8462
-        },
-        {
-          "x": 0.28,
-          "y": 3.5714
-        },
-        {
-          "x": 0.3,
-          "y": 3.3333
-        },
-        {
-          "x": 0.32,
-          "y": 3.125
-        },
-        {
-          "x": 0.34,
-          "y": 2.9412
-        },
-        {
-          "x": 0.36,
-          "y": 2.7778
-        },
-        {
-          "x": 0.38,
-          "y": 2.6316
-        },
-        {
-          "x": 0.4,
-          "y": 2.5
-        },
-        {
-          "x": 0.42,
-          "y": 2.381
-        },
-        {
-          "x": 0.44,
-          "y": 2.2727
-        },
-        {
-          "x": 0.46,
-          "y": 2.1739
-        },
-        {
-          "x": 0.48,
-          "y": 2.0833
-        },
-        {
-          "x": 0.5,
-          "y": 2
-        },
-        {
-          "x": 0.52,
-          "y": 1.9231
-        },
-        {
-          "x": 0.54,
-          "y": 1.8519
-        },
-        {
-          "x": 0.56,
-          "y": 1.7857
-        },
-        {
-          "x": 0.58,
-          "y": 1.7241
-        },
-        {
-          "x": 0.6,
-          "y": 1.6667
-        },
-        {
-          "x": 0.62,
-          "y": 1.6129
-        },
-        {
-          "x": 0.64,
-          "y": 1.5625
-        },
-        {
-          "x": 0.66,
-          "y": 1.5152
-        },
-        {
-          "x": 0.68,
-          "y": 1.4706
-        },
-        {
-          "x": 0.7,
-          "y": 1.4286
-        },
-        {
-          "x": 0.72,
-          "y": 1.3889
-        },
-        {
-          "x": 0.74,
-          "y": 1.3514
-        },
-        {
-          "x": 0.76,
-          "y": 1.3158
-        },
-        {
-          "x": 0.78,
-          "y": 1.2821
-        },
-        {
-          "x": 0.8,
-          "y": 1.25
-        },
-        {
-          "x": 0.82,
-          "y": 1.2195
-        },
-        {
-          "x": 0.84,
-          "y": 1.1905
-        },
-        {
-          "x": 0.86,
-          "y": 1.1628
-        },
-        {
-          "x": 0.88,
-          "y": 1.1364
-        },
-        {
-          "x": 0.9,
-          "y": 1.1111
-        },
-        {
-          "x": 0.92,
-          "y": 1.087
-        },
-        {
-          "x": 0.94,
-          "y": 1.0638
-        },
-        {
-          "x": 0.96,
-          "y": 1.0417
-        },
-        {
-          "x": 0.98,
-          "y": 1.0204
-        },
-        {
           "x": 1,
-          "y": 1
-        },
-        {
-          "x": 1.02,
-          "y": 0.9804
-        },
-        {
-          "x": 1.04,
-          "y": 0.9615
-        },
-        {
-          "x": 1.06,
-          "y": 0.9434
-        },
-        {
-          "x": 1.08,
-          "y": 0.9259
-        },
-        {
-          "x": 1.1,
-          "y": 0.9091
-        },
-        {
-          "x": 1.12,
-          "y": 0.8929
-        },
-        {
-          "x": 1.14,
-          "y": 0.8772
-        },
-        {
-          "x": 1.16,
-          "y": 0.8621
-        },
-        {
-          "x": 1.18,
-          "y": 0.8475
-        },
-        {
-          "x": 1.2,
-          "y": 0.8333
-        },
-        {
-          "x": 1.22,
-          "y": 0.8197
-        },
-        {
-          "x": 1.24,
-          "y": 0.8065
-        },
-        {
-          "x": 1.26,
-          "y": 0.7937
-        },
-        {
-          "x": 1.28,
-          "y": 0.7813
-        },
-        {
-          "x": 1.3,
-          "y": 0.7692
-        },
-        {
-          "x": 1.32,
-          "y": 0.7576
-        },
-        {
-          "x": 1.34,
-          "y": 0.7463
-        },
-        {
-          "x": 1.36,
-          "y": 0.7353
-        },
-        {
-          "x": 1.38,
-          "y": 0.7246
-        },
-        {
-          "x": 1.4,
-          "y": 0.7143
-        },
-        {
-          "x": 1.42,
-          "y": 0.7042
-        },
-        {
-          "x": 1.44,
-          "y": 0.6944
-        },
-        {
-          "x": 1.46,
-          "y": 0.6849
-        },
-        {
-          "x": 1.48,
-          "y": 0.6757
-        },
-        {
-          "x": 1.5,
-          "y": 0.6667
-        },
-        {
-          "x": 1.52,
-          "y": 0.6579
-        },
-        {
-          "x": 1.54,
-          "y": 0.6494
-        },
-        {
-          "x": 1.56,
-          "y": 0.641
-        },
-        {
-          "x": 1.58,
-          "y": 0.6329
-        },
-        {
-          "x": 1.6,
-          "y": 0.625
-        },
-        {
-          "x": 1.62,
-          "y": 0.6173
-        },
-        {
-          "x": 1.64,
-          "y": 0.6098
-        },
-        {
-          "x": 1.66,
-          "y": 0.6024
-        },
-        {
-          "x": 1.68,
-          "y": 0.5952
-        },
-        {
-          "x": 1.7,
-          "y": 0.5882
-        },
-        {
-          "x": 1.72,
-          "y": 0.5814
-        },
-        {
-          "x": 1.74,
-          "y": 0.5747
-        },
-        {
-          "x": 1.76,
-          "y": 0.5682
-        },
-        {
-          "x": 1.78,
-          "y": 0.5618
-        },
-        {
-          "x": 1.8,
-          "y": 0.5556
-        },
-        {
-          "x": 1.82,
-          "y": 0.5495
-        },
-        {
-          "x": 1.84,
-          "y": 0.5435
-        },
-        {
-          "x": 1.86,
-          "y": 0.5376
-        },
-        {
-          "x": 1.88,
-          "y": 0.5319
-        },
-        {
-          "x": 1.9,
-          "y": 0.5263
-        },
-        {
-          "x": 1.92,
-          "y": 0.5208
-        },
-        {
-          "x": 1.94,
-          "y": 0.5155
-        },
-        {
-          "x": 1.96,
-          "y": 0.5102
-        },
-        {
-          "x": 1.98,
-          "y": 0.5051
+          "y": 20
         },
         {
           "x": 2,
-          "y": 0.5
-        }
-      ]
-    },
-    {
-      "id": "D",
-      "label": "Graph D",
-      "isCorrect": false,
-      "points": [
-        {
-          "x": -2,
-          "y": -2
-        },
-        {
-          "x": -1.98,
-          "y": -2
-        },
-        {
-          "x": -1.96,
-          "y": -2
-        },
-        {
-          "x": -1.94,
-          "y": -2
-        },
-        {
-          "x": -1.92,
-          "y": -2
-        },
-        {
-          "x": -1.9,
-          "y": -2
-        },
-        {
-          "x": -1.88,
-          "y": -2
-        },
-        {
-          "x": -1.86,
-          "y": -2
-        },
-        {
-          "x": -1.84,
-          "y": -2
-        },
-        {
-          "x": -1.82,
-          "y": -2
-        },
-        {
-          "x": -1.8,
-          "y": -2
-        },
-        {
-          "x": -1.78,
-          "y": -2
-        },
-        {
-          "x": -1.76,
-          "y": -2
-        },
-        {
-          "x": -1.74,
-          "y": -2
-        },
-        {
-          "x": -1.72,
-          "y": -2
-        },
-        {
-          "x": -1.7,
-          "y": -2
-        },
-        {
-          "x": -1.68,
-          "y": -2
-        },
-        {
-          "x": -1.66,
-          "y": -2
-        },
-        {
-          "x": -1.64,
-          "y": -2
-        },
-        {
-          "x": -1.62,
-          "y": -2
-        },
-        {
-          "x": -1.6,
-          "y": -2
-        },
-        {
-          "x": -1.58,
-          "y": -2
-        },
-        {
-          "x": -1.56,
-          "y": -2
-        },
-        {
-          "x": -1.54,
-          "y": -2
-        },
-        {
-          "x": -1.52,
-          "y": -2
-        },
-        {
-          "x": -1.5,
-          "y": -2
-        },
-        {
-          "x": -1.48,
-          "y": -2
-        },
-        {
-          "x": -1.46,
-          "y": -2
-        },
-        {
-          "x": -1.44,
-          "y": -2
-        },
-        {
-          "x": -1.42,
-          "y": -2
-        },
-        {
-          "x": -1.4,
-          "y": -2
-        },
-        {
-          "x": -1.38,
-          "y": -2
-        },
-        {
-          "x": -1.36,
-          "y": -2
-        },
-        {
-          "x": -1.34,
-          "y": -2
-        },
-        {
-          "x": -1.32,
-          "y": -2
-        },
-        {
-          "x": -1.3,
-          "y": -2
-        },
-        {
-          "x": -1.28,
-          "y": -2
-        },
-        {
-          "x": -1.26,
-          "y": -2
-        },
-        {
-          "x": -1.24,
-          "y": -2
-        },
-        {
-          "x": -1.22,
-          "y": -2
-        },
-        {
-          "x": -1.2,
-          "y": -2
-        },
-        {
-          "x": -1.18,
-          "y": -2
-        },
-        {
-          "x": -1.16,
-          "y": -2
-        },
-        {
-          "x": -1.14,
-          "y": -2
-        },
-        {
-          "x": -1.12,
-          "y": -2
-        },
-        {
-          "x": -1.1,
-          "y": -2
-        },
-        {
-          "x": -1.08,
-          "y": -2
-        },
-        {
-          "x": -1.06,
-          "y": -2
-        },
-        {
-          "x": -1.04,
-          "y": -2
-        },
-        {
-          "x": -1.02,
-          "y": -2
-        },
-        {
-          "x": -1,
-          "y": -1
-        },
-        {
-          "x": -0.98,
-          "y": -1
-        },
-        {
-          "x": -0.96,
-          "y": -1
-        },
-        {
-          "x": -0.94,
-          "y": -1
-        },
-        {
-          "x": -0.92,
-          "y": -1
-        },
-        {
-          "x": -0.9,
-          "y": -1
-        },
-        {
-          "x": -0.88,
-          "y": -1
-        },
-        {
-          "x": -0.86,
-          "y": -1
-        },
-        {
-          "x": -0.84,
-          "y": -1
-        },
-        {
-          "x": -0.82,
-          "y": -1
-        },
-        {
-          "x": -0.8,
-          "y": -1
-        },
-        {
-          "x": -0.78,
-          "y": -1
-        },
-        {
-          "x": -0.76,
-          "y": -1
-        },
-        {
-          "x": -0.74,
-          "y": -1
-        },
-        {
-          "x": -0.72,
-          "y": -1
-        },
-        {
-          "x": -0.7,
-          "y": -1
-        },
-        {
-          "x": -0.68,
-          "y": -1
-        },
-        {
-          "x": -0.66,
-          "y": -1
-        },
-        {
-          "x": -0.64,
-          "y": -1
-        },
-        {
-          "x": -0.62,
-          "y": -1
-        },
-        {
-          "x": -0.6,
-          "y": -1
-        },
-        {
-          "x": -0.58,
-          "y": -1
-        },
-        {
-          "x": -0.56,
-          "y": -1
-        },
-        {
-          "x": -0.54,
-          "y": -1
-        },
-        {
-          "x": -0.52,
-          "y": -1
-        },
-        {
-          "x": -0.5,
-          "y": -1
-        },
-        {
-          "x": -0.48,
-          "y": -1
-        },
-        {
-          "x": -0.46,
-          "y": -1
-        },
-        {
-          "x": -0.44,
-          "y": -1
-        },
-        {
-          "x": -0.42,
-          "y": -1
-        },
-        {
-          "x": -0.4,
-          "y": -1
-        },
-        {
-          "x": -0.38,
-          "y": -1
-        },
-        {
-          "x": -0.36,
-          "y": -1
-        },
-        {
-          "x": -0.34,
-          "y": -1
-        },
-        {
-          "x": -0.32,
-          "y": -1
-        },
-        {
-          "x": -0.3,
-          "y": -1
-        },
-        {
-          "x": -0.28,
-          "y": -1
-        },
-        {
-          "x": -0.26,
-          "y": -1
-        },
-        {
-          "x": -0.24,
-          "y": -1
-        },
-        {
-          "x": -0.22,
-          "y": -1
-        },
-        {
-          "x": -0.2,
-          "y": -1
-        },
-        {
-          "x": -0.18,
-          "y": -1
-        },
-        {
-          "x": -0.16,
-          "y": -1
-        },
-        {
-          "x": -0.14,
-          "y": -1
-        },
-        {
-          "x": -0.12,
-          "y": -1
-        },
-        {
-          "x": -0.1,
-          "y": -1
-        },
-        {
-          "x": -0.08,
-          "y": -1
-        },
-        {
-          "x": -0.06,
-          "y": -1
-        },
-        {
-          "x": -0.04,
-          "y": -1
-        },
-        {
-          "x": -0.02,
-          "y": -1
-        },
-        {
-          "x": 0,
-          "y": 0
-        },
-        {
-          "x": 0.02,
-          "y": 0
-        },
-        {
-          "x": 0.04,
-          "y": 0
-        },
-        {
-          "x": 0.06,
-          "y": 0
-        },
-        {
-          "x": 0.08,
-          "y": 0
-        },
-        {
-          "x": 0.1,
-          "y": 0
-        },
-        {
-          "x": 0.12,
-          "y": 0
-        },
-        {
-          "x": 0.14,
-          "y": 0
-        },
-        {
-          "x": 0.16,
-          "y": 0
-        },
-        {
-          "x": 0.18,
-          "y": 0
-        },
-        {
-          "x": 0.2,
-          "y": 0
-        },
-        {
-          "x": 0.22,
-          "y": 0
-        },
-        {
-          "x": 0.24,
-          "y": 0
-        },
-        {
-          "x": 0.26,
-          "y": 0
-        },
-        {
-          "x": 0.28,
-          "y": 0
-        },
-        {
-          "x": 0.3,
-          "y": 0
-        },
-        {
-          "x": 0.32,
-          "y": 0
-        },
-        {
-          "x": 0.34,
-          "y": 0
-        },
-        {
-          "x": 0.36,
-          "y": 0
-        },
-        {
-          "x": 0.38,
-          "y": 0
-        },
-        {
-          "x": 0.4,
-          "y": 0
-        },
-        {
-          "x": 0.42,
-          "y": 0
-        },
-        {
-          "x": 0.44,
-          "y": 0
-        },
-        {
-          "x": 0.46,
-          "y": 0
-        },
-        {
-          "x": 0.48,
-          "y": 0
-        },
-        {
-          "x": 0.5,
-          "y": 0
-        },
-        {
-          "x": 0.52,
-          "y": 0
-        },
-        {
-          "x": 0.54,
-          "y": 0
-        },
-        {
-          "x": 0.56,
-          "y": 0
-        },
-        {
-          "x": 0.58,
-          "y": 0
-        },
-        {
-          "x": 0.6,
-          "y": 0
-        },
-        {
-          "x": 0.62,
-          "y": 0
-        },
-        {
-          "x": 0.64,
-          "y": 0
-        },
-        {
-          "x": 0.66,
-          "y": 0
-        },
-        {
-          "x": 0.68,
-          "y": 0
-        },
-        {
-          "x": 0.7,
-          "y": 0
-        },
-        {
-          "x": 0.72,
-          "y": 0
-        },
-        {
-          "x": 0.74,
-          "y": 0
-        },
-        {
-          "x": 0.76,
-          "y": 0
-        },
-        {
-          "x": 0.78,
-          "y": 0
-        },
-        {
-          "x": 0.8,
-          "y": 0
-        },
-        {
-          "x": 0.82,
-          "y": 0
-        },
-        {
-          "x": 0.84,
-          "y": 0
-        },
-        {
-          "x": 0.86,
-          "y": 0
-        },
-        {
-          "x": 0.88,
-          "y": 0
-        },
-        {
-          "x": 0.9,
-          "y": 0
-        },
-        {
-          "x": 0.92,
-          "y": 0
-        },
-        {
-          "x": 0.94,
-          "y": 0
-        },
-        {
-          "x": 0.96,
-          "y": 0
-        },
-        {
-          "x": 0.98,
-          "y": 0
-        },
-        {
-          "x": 1,
-          "y": 1
-        },
-        {
-          "x": 1.02,
-          "y": 1
-        },
-        {
-          "x": 1.04,
-          "y": 1
+          "y": 20
         },
         {
-          "x": 1.06,
-          "y": 1
+          "x": 3,
+          "y": 20
         },
         {
-          "x": 1.08,
-          "y": 1
+          "x": 4,
+          "y": 20
         },
         {
-          "x": 1.1,
-          "y": 1
+          "x": 5,
+          "y": 20
         },
         {
-          "x": 1.12,
-          "y": 1
+          "x": 6,
+          "y": 20
         },
         {
-          "x": 1.14,
-          "y": 1
+          "x": 7,
+          "y": 20
         },
         {
-          "x": 1.16,
-          "y": 1
+          "x": 8,
+          "y": 20
         },
         {
-          "x": 1.18,
-          "y": 1
+          "x": 9,
+          "y": 20
         },
         {
-          "x": 1.2,
-          "y": 1
+          "x": 10,
+          "y": 20
         },
         {
-          "x": 1.22,
-          "y": 1
+          "x": 11,
+          "y": 20
         },
         {
-          "x": 1.24,
-          "y": 1
+          "x": 12,
+          "y": 20
         },
         {
-          "x": 1.26,
-          "y": 1
+          "x": 13,
+          "y": 20
         },
         {
-          "x": 1.28,
-          "y": 1
+          "x": 14,
+          "y": 20
         },
         {
-          "x": 1.3,
-          "y": 1
+          "x": 15,
+          "y": 20
         },
         {
-          "x": 1.32,
-          "y": 1
+          "x": 16,
+          "y": 20
         },
         {
-          "x": 1.34,
-          "y": 1
+          "x": 17,
+          "y": 20
         },
         {
-          "x": 1.36,
-          "y": 1
+          "x": 18,
+          "y": 20
         },
         {
-          "x": 1.38,
-          "y": 1
+          "x": 19,
+          "y": 20
         },
         {
-          "x": 1.4,
-          "y": 1
+          "x": 20,
+          "y": 20
         },
         {
-          "x": 1.42,
-          "y": 1
+          "x": 21,
+          "y": 20
         },
         {
-          "x": 1.44,
-          "y": 1
+          "x": 22,
+          "y": 20
         },
         {
-          "x": 1.46,
-          "y": 1
+          "x": 23,
+          "y": 20
         },
         {
-          "x": 1.48,
-          "y": 1
+          "x": 24,
+          "y": 20
         },
         {
-          "x": 1.5,
-          "y": 1
+          "x": 25,
+          "y": 20
         },
         {
-          "x": 1.52,
-          "y": 1
+          "x": 26,
+          "y": 20
         },
         {
-          "x": 1.54,
-          "y": 1
+          "x": 27,
+          "y": 20
         },
         {
-          "x": 1.56,
-          "y": 1
+          "x": 28,
+          "y": 20
         },
         {
-          "x": 1.58,
-          "y": 1
+          "x": 29,
+          "y": 20
         },
         {
-          "x": 1.6,
-          "y": 1
+          "x": 30,
+          "y": 20
         },
         {
-          "x": 1.62,
-          "y": 1
+          "x": 31,
+          "y": 20
         },
         {
-          "x": 1.64,
-          "y": 1
+          "x": 32,
+          "y": 20
         },
         {
-          "x": 1.66,
-          "y": 1
+          "x": 33,
+          "y": 20
         },
         {
-          "x": 1.68,
-          "y": 1
+          "x": 34,
+          "y": 20
         },
         {
-          "x": 1.7,
-          "y": 1
+          "x": 35,
+          "y": 20
         },
         {
-          "x": 1.72,
-          "y": 1
+          "x": 36,
+          "y": 20
         },
         {
-          "x": 1.74,
-          "y": 1
+          "x": 37,
+          "y": 20
         },
         {
-          "x": 1.76,
-          "y": 1
+          "x": 38,
+          "y": 20
         },
         {
-          "x": 1.78,
-          "y": 1
+          "x": 39,
+          "y": 20
         },
         {
-          "x": 1.8,
-          "y": 1
+          "x": 40,
+          "y": 20
         },
         {
-          "x": 1.82,
-          "y": 1
+          "x": 41,
+          "y": 20
         },
         {
-          "x": 1.84,
-          "y": 1
+          "x": 42,
+          "y": 20
         },
         {
-          "x": 1.86,
-          "y": 1
+          "x": 43,
+          "y": 20
         },
         {
-          "x": 1.88,
-          "y": 1
+          "x": 44,
+          "y": 20
         },
         {
-          "x": 1.9,
-          "y": 1
+          "x": 45,
+          "y": 20
         },
         {
-          "x": 1.92,
-          "y": 1
+          "x": 46,
+          "y": 20
         },
         {
-          "x": 1.94,
-          "y": 1
+          "x": 47,
+          "y": 20
         },
         {
-          "x": 1.96,
-          "y": 1
+          "x": 48,
+          "y": 20
         },
         {
-          "x": 1.98,
-          "y": 1
+          "x": 49,
+          "y": 20
         },
         {
-          "x": 2,
-          "y": 2
+          "x": 50,
+          "y": 20
         }
       ]
     }
   ],
   "correctOptionId": "A",
-  "explanation": "$y = x is a straight line continuous everywhere. The step function has a jump discontinuity at x $= 0."
+  "explanation": "With $ATC = 100/q + 4$, the fixed-cost share $100/q$ shrinks as output grows — the falling curve of scale economies. B rises (diseconomies); C is flat (constant returns)."
 }
 ```
 
@@ -5315,33 +3086,791 @@ Choose the correct graph from options.
 
 ---
 
-## Interactive Scenes
+### `coordinate_transform`
 
-### `interactive_scene`
-
-Custom visual scene — manipulate objects to find the answer. Scene logic is server-side.
+Apply a geometric transformation (translate, rotate, reflect) to coordinate points.
 
 ```json
 {
-  "type": "interactive_scene",
-  "question": "On the parabola $f(x)=x^2$ over $[1,3]$: the secant line is drawn. Find the point $c$ where the tangent is **parallel** to the secant — the tangent draws when you send.",
-  "sceneId": "u01_mvt",
-  "sceneParams": {
-    "start": 1.5
+  "type": "coordinate_transform",
+  "question": "Translate the triangle 3 units right and 2 units up.",
+  "originalPoints": [
+    [
+      1,
+      1
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      2,
+      3
+    ]
+  ],
+  "transformationType": "translate",
+  "transformParams": {
+    "dx": 3,
+    "dy": 2
   },
-  "correctAnswer": {
-    "c": 2
+  "correctResult": [
+    [
+      4,
+      3
+    ],
+    [
+      7,
+      3
+    ],
+    [
+      5,
+      5
+    ]
+  ],
+  "tolerance": 0.5,
+  "explanation": "Add (3,2) to each vertex: (1,1)→(4,3), (4,1)→(7,3), (2,3)→(5,5)."
+}
+```
+
+**Key fields:** `originalPoints`, `transformationType`, `transformParams`, `correctResult`, `tolerance`, `explanation`
+
+---
+
+### `fraction_wall`
+
+Select fraction bars from a wall that sum to a target fraction.
+
+```json
+{
+  "type": "fraction_wall",
+  "question": "Select fractions from the wall that add up to $\\frac{3}{4}$.",
+  "targetNumerator": 3,
+  "targetDenominator": 4,
+  "availableFractions": [
+    "1/2",
+    "1/4",
+    "1/8",
+    "1/3",
+    "1/6"
+  ],
+  "correctSelection": [
+    "1/2",
+    "1/4"
+  ],
+  "explanation": "$\\frac{1}{2} + \\frac{1}{4} = \\frac{2}{4} + \\frac{1}{4} = \\frac{3}{4}$."
+}
+```
+
+**Key fields:** `targetNumerator`, `targetDenominator`, `availableFractions`, `correctSelection`, `explanation`
+
+---
+
+### `histogram_builder`
+
+Distribute raw data points into bins to build a histogram.
+
+```json
+{
+  "type": "histogram_builder",
+  "question": "Build a histogram for these test scores.",
+  "rawData": [
+    45,
+    52,
+    67,
+    72,
+    78,
+    81,
+    85,
+    91,
+    93,
+    55,
+    63,
+    74
+  ],
+  "binLabels": [
+    "40-59",
+    "60-79",
+    "80-100"
+  ],
+  "correctCounts": [
+    3,
+    5,
+    4
+  ],
+  "explanation": "Count how many scores fall in each range: 3 in 40-59, 5 in 60-79, 4 in 80-100."
+}
+```
+
+**Key fields:** `rawData`, `binLabels`, `correctCounts`, `explanation`
+
+---
+
+### `tree_diagram`
+
+Fill in missing probability labels on a tree diagram.
+
+```json
+{
+  "type": "tree_diagram",
+  "question": "Fill in the missing probabilities in this coin-toss tree.",
+  "nodes": [
+    {
+      "id": "root",
+      "label": "Start",
+      "childIds": [
+        "h",
+        "t"
+      ]
+    },
+    {
+      "id": "h",
+      "label": "Heads",
+      "probability": 0.5,
+      "childIds": [
+        "hh",
+        "ht"
+      ]
+    },
+    {
+      "id": "t",
+      "label": "Tails",
+      "probability": 0.5,
+      "childIds": [
+        "th",
+        "tt"
+      ]
+    },
+    {
+      "id": "hh",
+      "label": "HH",
+      "childIds": []
+    },
+    {
+      "id": "ht",
+      "label": "HT",
+      "childIds": []
+    },
+    {
+      "id": "th",
+      "label": "TH",
+      "childIds": []
+    },
+    {
+      "id": "tt",
+      "label": "TT",
+      "childIds": []
+    }
+  ],
+  "correctProbabilities": {
+    "hh": 0.25,
+    "ht": 0.25,
+    "th": 0.25,
+    "tt": 0.25
   },
-  "tolerance": 0.2,
-  "explanation": "The secant slope is $(9-1)/(3-1)=4$. Setting $f'(c)=2c=4$ gives $c=2$ — the Mean Value Theorem guarantees this point exists.",
+  "explanation": "Each branch has probability 0.5, so each leaf is 0.5 × 0.5 = 0.25."
+}
+```
+
+**Key fields:** `nodes`, `correctProbabilities`, `explanation`
+
+---
+
+### `scale_drawing`
+
+Apply a scale ratio to calculate new dimensions.
+
+```json
+{
+  "type": "scale_drawing",
+  "question": "A room is 8m × 5m. Draw it at scale 1:100. What are the dimensions in cm?",
+  "originalDimensions": {
+    "width": 800,
+    "height": 500
+  },
+  "scaleRatio": "1:100",
+  "correctScaled": {
+    "width": 8,
+    "height": 5
+  },
+  "tolerance": 0.1,
+  "explanation": "Divide each dimension by 100: 800cm → 8cm, 500cm → 5cm."
+}
+```
+
+**Key fields:** `originalDimensions`, `scaleRatio`, `correctScaled`, `tolerance`, `explanation`
+
+---
+
+## Arts & Creative
+
+### `color_theory`
+
+Mix RGB sliders to match a target color within `tolerance`.
+
+```json
+{
+  "type": "color_theory",
+  "question": "Mix the RGB sliders to create the color orange.",
+  "targetR": 255,
+  "targetG": 165,
+  "targetB": 0,
+  "tolerance": 25,
+  "colorModel": "rgb",
+  "explanation": "Orange is made by combining full red with moderate green and no blue."
+}
+```
+
+**Key fields:** `targetR`, `targetG`, `targetB`, `tolerance`, `colorModel`, `explanation`
+
+---
+
+### `music_rhythm`
+
+Compose a beat pattern on a multi-track grid. `correctPattern` is `[track][beat]`.
+
+```json
+{
+  "type": "music_rhythm",
+  "question": "Create a basic rock beat pattern.",
+  "beats": 8,
+  "tracks": [
+    "Kick",
+    "Snare",
+    "Hi-hat"
+  ],
+  "correctPattern": [
+    [
+      true,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  ],
+  "bpm": 120,
+  "explanation": "A basic rock beat has the kick on beats 1 and 3, snare on 2 and 4, and hi-hat on every eighth note."
+}
+```
+
+**Key fields:** `beats`, `tracks`, `correctPattern`, `bpm`, `explanation`
+
+---
+
+### `music_interval`
+
+Identify the musical interval between two notes.
+
+```json
+{
+  "type": "music_interval",
+  "question": "What is the interval between C4 and E4?",
+  "note1": "C4",
+  "note2": "E4",
+  "correctInterval": "Major Third",
+  "options": [
+    "Minor Second",
+    "Major Second",
+    "Minor Third",
+    "Major Third",
+    "Perfect Fourth"
+  ],
+  "explanation": "C to E spans four semitones, which is a major third."
+}
+```
+
+**Key fields:** `note1`, `note2`, `correctInterval`, `options`, `explanation`
+
+---
+
+### `pixel_art`
+
+Paint a grid with a color palette to match a target pattern.
+
+```json
+{
+  "type": "pixel_art",
+  "question": "Paint the grid to create a smiley face.",
+  "gridSize": 8,
+  "palette": [
+    "#FFFFFF",
+    "#FFD700",
+    "#000000"
+  ],
+  "targetPattern": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0
+    ],
+    [
+      0,
+      0,
+      2,
+      0,
+      0,
+      2,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      2,
+      2,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "explanation": "The eyes are in rows 2-3 and the smile curves from row 5 to row 7."
+}
+```
+
+**Key fields:** `gridSize`, `palette`, `targetPattern`, `explanation`
+
+---
+
+### `flag_builder`
+
+Assign the correct colors to flag stripes.
+
+```json
+{
+  "type": "flag_builder",
+  "question": "Assign the correct colours to the French flag (left to right).",
+  "flagName": "France",
+  "stripes": [
+    {
+      "id": "Left stripe",
+      "correctColor": "#002395"
+    },
+    {
+      "id": "Middle stripe",
+      "correctColor": "#FFFFFF"
+    },
+    {
+      "id": "Right stripe",
+      "correctColor": "#ED2939"
+    }
+  ],
+  "colorPalette": [
+    "#002395",
+    "#FFFFFF",
+    "#ED2939",
+    "#000000"
+  ],
+  "explanation": "The French tricolour is blue, white, red from left to right."
+}
+```
+
+**Key fields:** `flagName`, `stripes`, `colorPalette`, `explanation`
+
+---
+
+### `tangram`
+
+Drag and rotate puzzle pieces on a grid to form a target shape.
+
+```json
+{
+  "type": "tangram",
+  "question": "Arrange the pieces to form a square.",
+  "gridSize": 8,
+  "targetShape": "square",
+  "pieces": [
+    {
+      "id": "p1",
+      "shape": "triangle_large",
+      "correctRotation": 0,
+      "correctCol": 0,
+      "correctRow": 0
+    },
+    {
+      "id": "p2",
+      "shape": "triangle_large",
+      "correctRotation": 180,
+      "correctCol": 4,
+      "correctRow": 4
+    },
+    {
+      "id": "p3",
+      "shape": "triangle_medium",
+      "correctRotation": 90,
+      "correctCol": 4,
+      "correctRow": 0
+    },
+    {
+      "id": "p4",
+      "shape": "triangle_small",
+      "correctRotation": 0,
+      "correctCol": 2,
+      "correctRow": 2
+    },
+    {
+      "id": "p5",
+      "shape": "square",
+      "correctRotation": 45,
+      "correctCol": 3,
+      "correctRow": 3
+    }
+  ],
+  "explanation": "The classic tangram square uses all seven pieces with no gaps."
+}
+```
+
+**Key fields:** `gridSize`, `targetShape`, `pieces`, `explanation`
+
+---
+
+### `mirror_symmetry`
+
+Complete the mirrored half of a grid pattern across an axis.
+
+```json
+{
+  "type": "mirror_symmetry",
+  "question": "Complete the pattern by filling in the mirror image across the vertical axis.",
+  "gridSize": 8,
+  "axisType": "vertical",
+  "filledCells": [
+    "0,1",
+    "1,2",
+    "2,3",
+    "3,3"
+  ],
+  "correctMirror": [
+    "0,6",
+    "1,5",
+    "2,4",
+    "3,4"
+  ],
+  "explanation": "Reflect each filled cell across the center column."
+}
+```
+
+**Key fields:** `gridSize`, `axisType`, `filledCells`, `correctMirror`, `explanation`
+
+---
+
+## Games & Puzzles
+
+### `chess_puzzle`
+
+Find the best move on a chess board (FEN position). `correctMove` uses algebraic notation.
+
+```json
+{
+  "type": "chess_puzzle",
+  "question": "White to move. Find the checkmate in one.",
+  "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 4 4",
+  "correctMove": "h5f7",
+  "acceptableMoves": [],
+  "playerToMove": "white",
+  "explanation": "Qxf7# — the queen captures on f7 with support from the bishop on c4, delivering checkmate (Scholar's Mate)."
+}
+```
+
+**Key fields:** `fen`, `correctMove`, `acceptableMoves`, `playerToMove`, `explanation`
+
+---
+
+### `estimation_jar`
+
+Estimate the quantity of items in a visual jar.
+
+```json
+{
+  "type": "estimation_jar",
+  "question": "How many marbles are in the jar?",
+  "imageDescription": "A glass jar filled with coloured marbles",
+  "correctValue": 84,
+  "tolerance": 10,
+  "unit": "marbles",
+  "explanation": "There are 84 marbles. Estimating by layers: ~7 per layer × 12 layers."
+}
+```
+
+**Key fields:** `imageDescription`, `correctValue`, `tolerance`, `unit`, `explanation`
+
+---
+
+### `clock_setting`
+
+Set an analog clock to a target time.
+
+```json
+{
+  "type": "clock_setting",
+  "question": "Set the clock to show 3:45 PM.",
+  "targetHour": 3,
+  "targetMinute": 45,
+  "is24Hour": false,
+  "explanation": "At 3:45 the hour hand is three-quarters of the way between 3 and 4, and the minute hand points at 9."
+}
+```
+
+**Key fields:** `targetHour`, `targetMinute`, `is24Hour`, `explanation`
+
+---
+
+### `ingredient_ratio`
+
+Scale recipe ingredients by a `scaleFactor`.
+
+```json
+{
+  "type": "ingredient_ratio",
+  "question": "A recipe serves 4. Scale it to serve 6.",
+  "ingredients": [
+    {
+      "id": "flour",
+      "name": "Flour",
+      "baseAmount": 200,
+      "unit": "g"
+    },
+    {
+      "id": "sugar",
+      "name": "Sugar",
+      "baseAmount": 100,
+      "unit": "g"
+    },
+    {
+      "id": "milk",
+      "name": "Milk",
+      "baseAmount": 250,
+      "unit": "ml"
+    }
+  ],
+  "scaleFactor": 1.5,
+  "tolerance": 0.1,
+  "explanation": "Multiply each amount by 1.5: 200g → 300g, 100g → 150g, 250ml → 375ml."
+}
+```
+
+**Key fields:** `ingredients`, `scaleFactor`, `tolerance`, `explanation`
+
+---
+
+## AI-Graded
+
+### `media_input`
+
+Upload an image or file for AI evaluation. Used for visual/creative tasks.
+
+```json
+{
+  "type": "media_input",
+  "question": "Take a photo of a plant leaf and identify its venation pattern.",
+  "correctAnswer": "The leaf shows parallel venation, typical of monocots.",
+  "rubric": "Look for the arrangement of veins: parallel, pinnate, or palmate.",
+  "acceptedFormats": [
+    "jpg",
+    "png"
+  ],
+  "maxFileSizeMB": 5,
   "hints": [
-    "Secant slope = (f(3)−f(1))/(3−1).",
-    "f'(c) = 2c = 4."
+    "Focus on whether the veins run parallel or branch out from a central midrib."
   ]
 }
 ```
 
-**Key fields:** `sceneId`, `sceneParams`, `correctAnswer`, `tolerance`, `explanation`, `hints`
+**Key fields:** `correctAnswer`, `rubric`, `acceptedFormats`, `maxFileSizeMB`, `hints`
+
+---
+
+### `open_answer`
+
+Free-text response graded by AI. `minWords`/`maxWords` set length bounds.
+
+```json
+{
+  "type": "open_answer",
+  "question": "Explain why the sky appears blue during the day.",
+  "correctAnswer": "Rayleigh scattering causes shorter blue wavelengths to scatter more than longer red wavelengths.",
+  "minWords": 30,
+  "maxWords": 150,
+  "rubric": "Should mention Rayleigh scattering and wavelength-dependent scattering.",
+  "keywords": [
+    "Rayleigh",
+    "scattering",
+    "wavelength",
+    "blue"
+  ],
+  "hints": [
+    "Think about what happens to sunlight as it enters the atmosphere."
+  ]
+}
+```
+
+**Key fields:** `correctAnswer`, `minWords`, `maxWords`, `rubric`, `keywords`, `hints`
+
+---
+
+### `speaking`
+
+Spoken response with optional AI evaluation for fluency, grammar, pronunciation.
+
+```json
+{
+  "type": "speaking",
+  "question": "Describe your daily morning routine in Spanish.",
+  "language": "es",
+  "durationSeconds": 60,
+  "keywords": [
+    "despertarse",
+    "desayunar",
+    "ducharse"
+  ],
+  "expectedTopics": [
+    "waking up",
+    "breakfast",
+    "getting ready"
+  ],
+  "sampleAnswer": "Me despierto a las siete, me ducho y desayuno cereales.",
+  "hints": [
+    "Use reflexive verbs for daily activities."
+  ]
+}
+```
+
+**Key fields:** `language`, `durationSeconds`, `keywords`, `expectedTopics`, `sampleAnswer`, `hints`
+
+---
+
+### `listening`
+
+Listen to an audio clip and answer a comprehension question.
+
+```json
+{
+  "type": "listening",
+  "question": "Listen to the audio clip and select what the speaker is describing.",
+  "language": "en",
+  "audioUrl": "https://example.com/audio/description.mp3",
+  "options": [
+    "A sunset over the ocean",
+    "A busy city street",
+    "A quiet forest path"
+  ],
+  "correctAnswer": "A quiet forest path",
+  "hints": [
+    "Pay attention to the natural sounds mentioned."
+  ]
+}
+```
+
+**Key fields:** `language`, `audioUrl`, `options`, `correctAnswer`, `hints`
+
+---
+
+## Interactive Scenes
+
+### `interactive_scene`
+
+Custom visual scene — drag, manipulate, and explore to find the answer. Scene logic is server-side.
+
+```json
+{
+  "type": "interactive_scene",
+  "question": "A furniture maker buys wood for **40€** and sells a finished table for **150€**. Drag the value-added bar to show how much value the firm created — the split animates when you send.",
+  "sceneId": "biz_u01_value_added",
+  "sceneParams": {
+    "inputCost": 40,
+    "revenue": 150,
+    "start": 60
+  },
+  "correctAnswer": {
+    "v": 110
+  },
+  "tolerance": 5,
+  "hints": [
+    "Value added is what the firm layered on top of what it bought in.",
+    "Revenue 150€ minus intermediate inputs 40€."
+  ],
+  "explanation": "Value added = $150 - 40 = 110$€: the wage, profit, rent, and interest the firm can pay out all come from this slice — not from the revenue total."
+}
+```
+
+**Key fields:** `sceneId`, `sceneParams`, `correctAnswer`, `tolerance`, `hints`, `explanation`
 
 ---
 
@@ -5351,7 +3880,7 @@ Some types have multiple valid keys that map to the same implementation:
 
 | Alias | Maps to |
 |-------|---------|
-| `code_editor, coding_snippet` | `code_snippet` |
+| `code_editor`, `coding_snippet` | `code_snippet` |
 | `element_select` | `periodic_table` |
 | `function_sketch` | `graph_sketch` |
 | `data_table` | `data_analysis` |
@@ -5361,7 +3890,7 @@ Some types have multiple valid keys that map to the same implementation:
 | `text_annotation` | `annotation_text` |
 | `maze_path` | `grid_path` |
 | `color_mixing` | `color_theory` |
-| `rhythm_pattern, beat_grid` | `music_rhythm` |
+| `rhythm_pattern`, `beat_grid` | `music_rhythm` |
 | `transformation` | `coordinate_transform` |
 | `symmetry` | `mirror_symmetry` |
 | `histogram` | `histogram_builder` |
