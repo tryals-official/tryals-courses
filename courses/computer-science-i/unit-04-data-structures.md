@@ -1,5 +1,7 @@
 # Unit 4: Data Structures
 
+**[Study this unit interactively on Tryals →](https://tryals.app/courses/computer-science-i)**
+
 ## Abstract Data Types and Interfaces
 
 A **data structure** is a concrete way of organizing data in memory; an **abstract data type (ADT)** is the _behavior_ that organization provides, described independently of how it is built. The distinction is the foundation of this whole unit: the ADT is the **interface** (a set of operations and their promised behavior), and a data structure is one **implementation** of it.
@@ -10,7 +12,7 @@ Choosing a data structure is really about which operations you need to be _fast_
 
 > **Common pitfall:** conflating the ADT with a particular implementation — thinking "a list _is_ an array." A list is an **interface**; an array is one way to implement it (a linked structure is another). Keeping the interface and implementation separate is what lets you reason about behavior first and performance second.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* A List ADT is implemented by a contiguous array holding 1000 elements. Removing the element at index 0 works by shifting every element after it one place towards the front. How many elements have to be moved?
 
@@ -38,7 +40,7 @@ The choice is a direct trade-off: arrays for fast indexing and cache-friendly sc
 
 > **Common pitfall:** assuming linked lists are always "faster" because insertion is $O(1)$. That $O(1)$ insertion assumes you _already hold_ the position; _finding_ it is still $O(n)$, and arrays' contiguous layout makes scanning far more cache-friendly in practice. Neither structure is universally better — it depends on which operations dominate.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* An array starts at memory address 1000 and each element occupies 4 bytes. At what address does the element at index 7 begin?
 
@@ -65,7 +67,7 @@ Both are ADTs and can be implemented with either an array or a linked list; when
 
 > **Common pitfall:** mixing up LIFO and FIFO — pushing to a stack and expecting to remove the _oldest_ item, or treating a queue like a stack. A stack always returns the most recently added element; a queue always returns the oldest. Match the structure to whether you need "newest first" or "oldest first."
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* A stack starts empty. The operations performed are: push 1, push 2, push 3, pop, push 4, pop, pop. What value does the last pop return?
 
@@ -97,7 +99,7 @@ A balanced binary search tree with an accent search path descending from root to
 
 $$\text{balanced height} \approx \log_2 n$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* The values 1, 2, 3, 4, 5, 6, 7, 8 are inserted into an empty binary search tree in that increasing order. Counting the nodes on the longest path from the root down to a leaf, what is the tree's height?
 
@@ -123,7 +125,7 @@ A key flowing through a hash-function box to a number, then modulo the bucket co
 
 $$\text{index} = \text{hash(key)} \bmod m$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* A hash table has 16 buckets, and a key's hash function returns 1000. Reducing that value modulo the number of buckets, which bucket does the key belong in?
 
@@ -147,7 +149,7 @@ A neat implementation detail: because the tree is complete, a heap is stored com
 
 > **Common pitfall:** expecting a heap to be _fully sorted_. It is only _partially_ ordered — the heap property relates each parent to its children, but siblings and cousins are unordered. A heap guarantees fast access to the single extreme element, not a sorted sequence; to get sorted output you must repeatedly remove the root.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* A binary heap is stored in an array, and the node at index i has children at indices 2i + 1 and 2i + 2. What is the index of the right child of the node at index 4?
 
@@ -178,7 +180,7 @@ A small graph beside its two representations: a V×V grid mostly empty with a fe
 
 $$\text{matrix } O(V^2), \;\; \text{list } O(V + E)$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* A graph with 1000 vertices is stored as an adjacency matrix. How many cells does the matrix contain?
 
@@ -215,7 +217,7 @@ The discipline generalizes the space–time trade-off: you often trade extra mem
 
 > **Common pitfall:** picking a data structure by habit or familiarity rather than by the workload. A hash table is a superb default for keyed lookup but is the _wrong_ choice when you need sorted order or range queries — there a balanced tree fits. Let the operations you perform most, not habit, drive the choice.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* A collection holds 100 items. You must remove the smallest item five times, each time by scanning every remaining item, at a cost of one comparison per remaining item. How many comparisons in total?
 
@@ -247,7 +249,7 @@ This is the structural version of "fail fast": rather than trusting that operati
 
 > **Common pitfall:** debugging a data structure by only inspecting the _output_ of operations, rather than checking the **invariant** directly. A corrupted structure may return correct-looking results for a while before failing bizarrely much later. Checking the invariant after each operation localizes the bug to the exact operation that broke it.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* A structure is claimed to be a binary search tree. Its root is 50; the root's left child is 30 and its right child is 70; node 30 has children 20 and 60. Exactly one value sits where the BST invariant forbids. Which value is it?
 
@@ -273,7 +275,7 @@ This is the mature skill the unit builds toward: given a workload, identify the 
 
 > **Common pitfall:** forcing a single data structure to serve a workload with several distinct access patterns, and paying $O(n)$ for the operations it does not support. When a problem needs fast keyed lookup _and_ fast extreme-extraction _and_ sorted iteration, the right answer is usually to **combine** structures — each doing what it is best at — not to compromise on one.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
+**Practice preview:**
 
 **1.** *(Matrix grid)* The task manager must support four things. Assign each to the structure the lesson uses for it.
 

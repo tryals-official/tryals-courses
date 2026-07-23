@@ -1,5 +1,7 @@
 # Unit 7: Accounting I
 
+**[Study this unit interactively on Tryals →](https://tryals.app/courses/business-i)**
+
 ## The Accounting Equation
 
 All of accounting rests on one equation:
@@ -44,7 +46,7 @@ The equation's deepest service is as an **error detector**: after any recorded e
 
 > **Common pitfall:** Reading equity as "cash the owners can take out." Equity is a residual _claim_, not a pile of money — it may be entirely embodied in machines and inventory, with not a euro of cash behind it.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A firm holds **assets of 500** financed partly by **liabilities of 300**. The beam is held level and will not weigh the sides for you — **set the equity block** to the value that makes Assets = Liabilities + Equity.
 
@@ -87,7 +89,7 @@ Both sides of the equation fall by 200. The entry is self-checking: if you only 
 
 > **Common pitfall:** Importing everyday meanings — "debit bad, credit good." In bookkeeping they are pure directions, left and right. A debit to Cash is money _arriving_; your bank statement's vocabulary is written from the bank's perspective, not yours.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A firm sells goods listed at **75** for cash with a **20% cash discount**. The cash debit — the net actually received — is hidden. **Set the revenue credit** so the entry balances.
 
@@ -123,7 +125,7 @@ The cycle's genius is separation of concerns: the journal captures _when_, the l
 
 > **Common pitfall:** Treating a balanced trial balance as proof the books are right. It only proves debits equal credits — a transaction posted to the wrong account, recorded twice, or omitted entirely balances perfectly and is still wrong.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* The trial balance shows total debits of **4,200** and total credits of **3,850**. **Drag the missing credit** to the amount that balances the trial balance.
 
@@ -177,7 +179,7 @@ Notice the accrual principle running through everything: revenue at sale (not co
 
 > **Tip:** The accrual principle decides the _when_: revenue at delivery, expense when incurred — cash movement is a separate, later story. Once that clicks, every entry above writes itself.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A firm sells goods on credit for **400**. Accounts Receivable shows a debit of 400 on the left. **Drag the revenue credit** to match.
 
@@ -245,7 +247,7 @@ The balance sheet is one frame; the income statement and cash flow statement sup
 
 > **Common pitfall:** Comparing mixes across industries. An airline's 80% PP&E and a consultancy's 80% receivables are both healthy — a mix is only "heavy" or "light" against the industry's normal skeleton.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A firm has current assets **180** and current liabilities **120**. **Drag the ratio marker** to the current ratio.
 
@@ -291,7 +293,7 @@ A firm with 40% gross margin and 5% net margin is saying: 40 cents of every reve
 
 > **Common pitfall:** Reading net profit as cash earned. Accrual revenue includes uncollected invoices; expenses include non-cash depreciation. Profitable firms die of cash starvation — that is why the cash flow statement exists.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Revenue is **1,000** and COGS is **600**. Operating expenses are **250** and interest + tax total **50**. **Drag the net-profit bar** to its correct height.
 
@@ -339,7 +341,7 @@ Straight-line charges the same amount each year — simple and stable. **Declini
 
 > **Tip:** Notice the asymmetry — conservatism recognizes probable losses immediately (write inventory down) but defers gains until realized (never write it up above cost). The books deliberately lean pessimistic, so surprises tend to be pleasant ones.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A machine costs **10,000** with salvage value **2,000** and useful life **4 years**. **Drag the depreciation bar** to the correct annual straight-line charge.
 
@@ -392,7 +394,7 @@ The capital-structure question — how much debt versus equity — is the most c
 
 > **Tip:** Accrued expenses are the easiest liability to forget and the easiest for an auditor to find: wages earned but unpaid at closing date exist whether or not an invoice does. Search for obligations by _events_, not by paperwork.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A firm has share capital **200**, retained earnings **150**, and reserves **50**. **Drag the total-equity bar** to its correct level.
 
@@ -435,7 +437,7 @@ After adjustments, the trial balance becomes the **adjusted trial balance** — 
 
 > **Tip:** One diagnostic sorts all four: _did the cash move before or after the economic event?_ Cash after → accrual. Cash before → deferral. Then the entry writes itself.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Annual insurance of **1,200** was prepaid on January 1. At March 31, **drag the expense bar** to the amount that should be recognised for Q1.
 
@@ -490,7 +492,7 @@ A firm can raise ROE by earning fatter margins, generating more sales per euro o
 
 > **Common pitfall:** Applauding a high ROE without opening the DuPont decomposition. Leverage inflates ROE mechanically — a mediocre business with heavy debt can out-ROE an excellent one, right up until the interest bill arrives in a bad year.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A firm has net profit **60**, equity **400**, assets **1,000**, and revenue **800**. DuPont decomposes ROE into margin, turnover, and leverage. **Drag the ROE marker** to the correct percentage.
 

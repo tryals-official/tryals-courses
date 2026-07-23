@@ -1,5 +1,7 @@
 # Unit 1: Anthropology
 
+**[Study this unit interactively on Tryals →](https://tryals.app/courses/history-i)**
+
 ## What is Anthropology?
 
 **Anthropology** is the study of humans — all of them. Not one nation, not one century, not one social class: every society that exists or has ever existed, from Paleolithic bands to hedge funds. What makes it a single discipline rather than a pile of curiosities is a commitment called **holism**: the idea that no part of human life can be understood in isolation from the rest. Diet connects to ritual, ritual to politics, politics to kinship, kinship to diet again.
@@ -27,7 +29,7 @@ Anthropology earns its generalizations by **comparison**. A claim like "all soci
 
 History asks what happened, mostly from written records. Sociology asks how modern societies work, mostly from surveys and statistics. Anthropology overlaps both but keeps two distinguishing habits: it insists on the **full range** of human societies (including those that left no writing), and it prefers to learn by **being there** — the fieldwork tradition you will meet in Lesson 3.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Psychology studies the individual; sociology studies one society at a time. **Drag the zoom lens** to the scope anthropology claims for itself.
 
@@ -67,7 +69,7 @@ Norms come in grades of seriousness. **Folkways** are everyday conventions (whic
 
 Immersion in another culture typically runs through recognizable stages — fascination, frustration when the rules stop making sense, gradual adjustment, and finally functional adaptation. The frustration stage is data, not failure: it marks exactly where the visitor's unspoken norms collide with the hosts'.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A guidebook sneers: "In Cambodia they eat fried tarantulas — disgusting!" **Drag the lens** the anthropologist looks through instead, and watch the caption change.
 
@@ -103,7 +105,7 @@ Ethnographers distinguish two kinds of description. The **emic** account renders
 
 > **Ethics before access:** modern fieldwork requires **informed consent**, protection of informants (anonymity where it matters), and honesty about the research role. Data obtained by deception is not a trophy; it is a violation — and it poisons the field for everyone who comes after.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* It is 1915. **Drag the anthropologist** from the mission veranda to where Malinowski said the work must happen.
 
@@ -145,7 +147,7 @@ $$\text{Matrilineal rule: child} \in \text{lineage}(\text{mother})$$
 
 The diagram makes the surprise visible: under matriliny, Ego's heir is not Ego's son — it is the **sister's son**, the closest younger male _inside_ the lineage. A rule about lines redraws inheritance, authority, and mourning.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* This society is **matrilineal**. On the kinship diagram, **tap the child who inherits Ego’s lineage membership and goods** — the descent line will light up to check you.
 
@@ -186,7 +188,7 @@ $$\text{soulava} \circlearrowright \quad \text{mwali} \circlearrowleft$$
 
 Then the camera follows what the shells leave behind: a lattice of partnerships spanning hundreds of kilometers of open water. The valuables are the moving parts; the **machine they drive is trust** — and on its rails, canoes full of ordinary goods travel safely between islands that share no chief and no law.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* You hold a kula necklace (_soulava_) on Kiriwina. **Drag it to the island it must travel to next** — the ring will animate your choice.
 
@@ -224,7 +226,7 @@ Stateless societies still have law. Disputes are settled by **mediation** (the N
 
 > **The historian's payoff:** when written sources say "king," always ask which machinery stood behind the word — a big man with a good year, a ranked chiefdom, or a taxing state. Misreading the type misreads every event that follows.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Feed the settlement more people. **Drag the population slider** until stored surplus and ranked lineages appear — the point where a _chiefdom_ becomes possible.
 
@@ -261,7 +263,7 @@ Frazer sorted magic by its logic: **imitative** (like produces like — stick pi
 
 > **Myth is not "false story":** in anthropological usage a myth is a _charter narrative_ — a story that grounds why the world, the ritual, or the clan's privileges are as they are. Malinowski: myth is not idle explanation but a "hard-worked active force," cited in disputes the way we cite constitutions.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* An initiation is underway. **Drag the initiate to the phase where ranks dissolve and communitas appears** — the ritual will play out your placement.
 
@@ -297,7 +299,7 @@ The supported cases are precise: languages with different color-term inventories
 
 Languages change lawfully. Latin _pater_ and English _father_ differ by regular sound shifts (Grimm's law: p becomes f), which is how comparativists reconstructed **Proto-Indo-European** — a language with no texts, recovered entirely by triangulation. An innovation spreads through a speech community along an **S-curve**: slowly among pioneers, then explosively, then slowly again among holdouts. For the historian, loanwords are receipts: English _beef_ (from French) beside _cow_ (Germanic) records exactly who raised the animal and who ate it after 1066.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* The evidence dial: **set the pointer to the version of the Sapir-Whorf hypothesis that experiments actually support** — the scene will test your setting against the data.
 
@@ -330,7 +332,7 @@ Benedict Anderson called the nation an **imagined community**: members will neve
 
 > **The historian's discipline:** never project modern nations backward. "France" in 1789 held millions who spoke no French; calling Vercingetorix a French patriot or ancient Macedon a modern nation-state is anachronism doing political work. Ask instead _when_ a given identity was assembled, by whom, and out of what.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Two villages have traded and intermarried for a century — watch their customs blend. **Tap the one thing Barth says persists** while everything else flows across.
 
@@ -362,7 +364,7 @@ Intervention raises questions pure research can defer:
 
 > **The cautionary tale:** the US Army's Human Terrain System (2007) embedded social scientists with combat units in Iraq and Afghanistan. The American Anthropological Association condemned it — when informants can be targeted, "do no harm" and counterinsurgency cannot be reconciled. The episode fixed the discipline's red line: ethnography must never become intelligence.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A donor funds a well for this village. **Tap who you consult first** — the project timeline will fast-forward to show the consequence of your choice.
 

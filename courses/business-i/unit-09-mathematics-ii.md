@@ -1,5 +1,7 @@
 # Unit 9: Mathematics II
 
+**[Study this unit interactively on Tryals →](https://tryals.app/courses/business-i)**
+
 ## Partial Derivatives
 
 When a function depends on several variables, the **partial derivative** asks: how does the output change when I nudge _one_ input, holding all others constant?
@@ -28,7 +30,7 @@ Partial derivatives are the calculus of _ceteris paribus_ — the economist's fa
 
 > **Common pitfall:** Forgetting what "holding others constant" costs you. A partial is a laboratory experiment, not a forecast — in the real economy, hiring more labour usually changes capital use too. For total effects, you need the total differential, not one partial.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* For $f(x,y) = x^2 y$, at $(x,y)=(3,2)$: the partial with respect to $x$ is $2xy = 12$. **Drag the tangent-slope marker** to the correct value of $\partial f / \partial x$.
 
@@ -99,7 +101,7 @@ This says: at the optimum, the marginal utility per euro spent is equalised acro
 
 > **Common pitfall:** Paying more than $\lambda$ to relax a constraint. If overtime capacity costs 40€/hour but the shadow price is 25€/hour, the expansion destroys value — the multiplier is the ceiling on what relaxation is worth.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A firm maximises output subject to a budget of **100**. The Lagrange multiplier is $\lambda = 3$. If the budget increases to **105**, output rises by approximately how much? **Drag the output-change marker.
 
@@ -143,7 +145,7 @@ $$D = f_{xx} f_{yy} - f_{xy}^2 \qquad \begin{cases} D>0, f_{xx}<0 \Rightarrow \t
 
 > **Common pitfall:** Checking $f_{xx} < 0$ and $f_{yy} < 0$ separately and declaring a maximum. The cross-term can betray you: with a large $f_{xy}$, the surface can still be a saddle. Only the determinant test sees the interaction.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* For $f(x,y) = -x^2 - y^2 + 4x + 6y$, the critical point is at $(2,3)$. The Hessian determinant is $D = (-2)(-2) - 0 = 4 > 0$ and $f_{xx} = -2 < 0$. **Drag the classification label** to the correct type.
 
@@ -192,7 +194,7 @@ where $|J| = |\partial(x,y)/\partial(u,v)|$ is the absolute value of the Jacobia
 
 > **Common pitfall:** Keeping constant limits when the region isn't a rectangle. Over the triangle below $y = x$, the inner limits must be functions ($y$ from $0$ to $x$) — copying rectangle limits silently integrates over the wrong region.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Demand is $P = 20 - 2Q$; the market price is $P^* = 8$ and the equilibrium quantity is $Q^* = 6$. The surplus triangle is hidden — **set the meter** to the consumer surplus you compute.
 
@@ -242,7 +244,7 @@ Eigenvalues answer the most fundamental question about a linear system: **does i
 
 > **Tip:** For any $2 \times 2$ matrix, skip the determinant expansion: write $\lambda^2 - (\text{trace})\lambda + \det = 0$ directly, then verify roots against trace and determinant. Twenty seconds, self-checking.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* The matrix $A = \begin{pmatrix} 3 & 0 \\ 0 & 1 \end{pmatrix}$ stretches the $x$-direction by 3 and leaves the $y$-direction unchanged. **Drag the eigenvalue markers** to the correct values.
 
@@ -308,7 +310,7 @@ Each term is an eigenvalue raised to a power times an eigenvector — the system
 
 > **Common pitfall:** Believing the starting distribution matters in the long run. It doesn't — the stationary distribution is a property of the transition matrix alone. Initial conditions only decide _how long_ the transient lasts.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A Markov chain has eigenvalues $\lambda_1 = 1$ and $\lambda_2 = 0.4$. After many iterations, $\lambda_2^n \to 0$. **Drag the convergence indicator** to show which eigenvalue dominates the long-run state.
 
@@ -361,7 +363,7 @@ This is a more general version of the Hessian test from Lesson 3, extended to an
 
 > **Tip:** Sylvester's criterion in two variables is quick: $\Delta_1 = a_{11}$ and $\Delta_2 = \det A$. Both positive → positive definite; signs alternating ($\Delta_1 < 0$, $\Delta_2 > 0$) → negative definite. Anything else, check further.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* For the matrix $A = \begin{pmatrix} 4 & 1 \\ 1 & 3 \end{pmatrix}$, $\Delta_1 = 4 > 0$ and $\Delta_2 = 12 - 1 = 11 > 0$. **Drag the classification** to the correct definiteness.
 
@@ -411,7 +413,7 @@ The steady state (equilibrium) is where $dy/dt = 0$ — the system stops changin
 
 > **Common pitfall:** Losing solutions when separating. Dividing by $h(y)$ assumes $h(y) \ne 0$ — the constant solutions where $h(y) = 0$ (often the equilibria you care most about) must be checked separately.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* An investment of 1,000 grows at continuous rate $r = 0.05$. After 10 years, $A = 1000 e^{0.5}$. **Drag the value marker** to the approximate final amount.
 
@@ -463,7 +465,7 @@ $$\mathbf{x}(t) = c_1 e^{\lambda_1 t} \mathbf{v}_1 + c_2 e^{\lambda_2 t} \mathbf
 
 > **Tip:** You rarely need the full solution — the eigenvalues alone classify the equilibrium. Real parts answer "stable or not"; imaginary parts answer "does it oscillate." That is usually the whole economic question.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A linear system has eigenvalues $\lambda_1 = -0.5$ and $\lambda_2 = -0.2$. Both are negative. **Drag the phase-diagram label** to the correct equilibrium type.
 
@@ -523,7 +525,7 @@ This is why $\lambda$ (the Lagrange multiplier) is the shadow price: it is the d
 
 > **Tip:** The envelope theorem is the great labour-saver: at an optimum, a small parameter change affects the optimised value only _directly_ — the induced re-optimisation contributes nothing to first order. That is exactly why $\lambda$ prices the constraint without further calculation.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Demand is $Q = 100 - 2P$. At $P = 20$, $Q = 60$. The elasticity is $\varepsilon = -2 \times 20/60$. **Drag the elasticity marker** to the correct value.
 

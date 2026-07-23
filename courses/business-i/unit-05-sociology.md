@@ -1,5 +1,7 @@
 # Unit 5: Sociology
 
+**[Study this unit interactively on Tryals →](https://tryals.app/courses/business-i)**
+
 ## The Sociological Perspective
 
 Sociology's founding move is a change of focal length: behind each individual story, find the **social pattern** producing thousands of similar stories.
@@ -31,7 +33,7 @@ The lenses are complements, not rivals: a supermarket is a food-distribution fun
 
 > **Tip:** Durkheim's test for a social fact: it is _external_ to you (you didn't invent the marriage rate) and _coercive_ on you (deviate and feel the pressure). If both hold, you are looking at structure, not psychology.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Career outcomes of thousands of individuals stream by as dots — until a hidden **structural break** (a labor-law reform) bends the whole pattern. **Drag the year marker** to where the _general_ changes beneath the particulars.
 
@@ -75,7 +77,7 @@ The lenses are complements, not rivals: a supermarket is a food-distribution fun
 
 > **Common pitfall:** Reading the culture off the values poster in reception. Espoused values are what the group _says_ it prizes; enacted values are what gets rewarded, promoted, and tolerated. When the two diverge, behavior follows the enacted ones — always.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A company’s culture floats like an iceberg: artifacts visible, values submerged. **Drag the waterline** until the visible share matches the classic iceberg proportion — about one tenth above water.
 
@@ -126,7 +128,7 @@ The managerial insight: onboarding is not paperwork — it is identity work. Fir
 
 > **Tip:** Onboarding a new hire is textbook socialization: symbols (badge, laptop), rituals (first stand-up), language (the acronyms), sanctions (the look when you're late). Design it deliberately — it happens anyway.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* The influence of socialization agents shifts across childhood: family dominates early, then school-and-peers climb. **Drag the age marker** to where the school-and-peers curve overtakes the family curve in this model.
 
@@ -197,7 +199,7 @@ The arithmetic is brutal and simple. Four more strong ties inside your own clust
 
 > **Common pitfall:** Reading 'weak' as 'unimportant.' The tie is weak in emotional intensity, not in value — for genuinely new information it is strictly stronger than your strongest bond.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Your dense cluster of strong ties already shares all its contacts with you. Each **weak tie** bridges into a fresh cluster of 12 strangers. **Drag to activate weak ties** until your two-step reach of _new_ contacts hits the count for 4 bridges.
 
@@ -242,7 +244,7 @@ The manager's double vision: every org chart (secondary, formal) runs on an invi
 
 > **Tip:** Size predicts dynamics before personality does: a dyad dies with one exit, a triad invents politics (two can outvote one), and past a dozen members every group grows formal roles whether it wants them or not.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Every pair in a team is a relationship to maintain: $ties = n(n-1)/2$. **Drag to add teammates** until the web holds exactly **45 ties** — the coordination load managers feel but rarely count.
 
@@ -307,7 +309,7 @@ If the odds ratio is 1, origins don't matter — pure fluidity. Real economies r
 
 > **Common pitfall:** Reading a full diagonal as proof of unfairness. Some immobility reflects inherited advantages, some reflects transmitted skills and preferences. The table shows the pattern; explaining it needs more than the table.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A Lorenz curve sags below the equality line. **Drag the marker along the curve** to read off the income share held by the **bottom 50%** of this population.
 
@@ -345,7 +347,7 @@ For business, the tiers are a strategy map: where the next middle class emerges,
 
 > **Tip:** Never compare living standards across countries without the PPP correction — a euro buys different amounts of life in Oslo and Nairobi, and uncorrected GNI figures overstate the gap by roughly half.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Economy A starts at \$4{,}000 per capita growing 7% a year (doubling every decade). Economy B sits static at \$32{,}000. **Drag the year marker** to when A catches B.
 
@@ -389,7 +391,7 @@ Managers live inside these currents: every automation decision, metric dashboard
 
 > **Common pitfall:** Hearing 'service economy' as 'knowledge economy.' The tertiary sector spans both the algorithm designer and the delivery rider — service work is the most _polarized_ of the three, not the most glamorous.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Employment shares since 1950: agriculture falling, industry humped, services climbing. **Drag the year marker** to where **services overtake industry** in this economy.
 
@@ -440,7 +442,7 @@ For business, demography is destiny with a lag: baby booms become housing demand
 
 > **Common pitfall:** Expecting growth to stop when fertility falls. **Demographic momentum** keeps a young population growing for decades — the large cohorts already born still have their children ahead of them.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A stage-2 country runs a birth rate of 35 and a death rate of 10 per 1,000 — natural increase of 2.5% a year. **Drag the marker** to the years this population needs to **double**.
 
@@ -479,7 +481,7 @@ The closing loop for this unit: the sociological imagination, pointed forward. E
 
 > **Tip:** Ogburn's cultural lag is a standing business alert: material change outruns norms and law by years. The gap between a new technology and its eventual regulation is both your window of opportunity and your compliance risk.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* An innovation spreads through a market along Rogers’ S-curve. **Drag the marker to the tipping point** — the cumulative adoption share where innovators and early adopters are all aboard and contagion jumps to the majority.
 

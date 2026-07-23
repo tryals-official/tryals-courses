@@ -1,5 +1,7 @@
 # Unit 2: Chemistry
 
+**[Study this unit interactively on Tryals →](https://tryals.app/courses/physics-i)**
+
 ## Atomic structure and quantized description
 
 Matter is built from **atoms**, each composed of a **nucleus** (protons + neutrons) surrounded by **electrons** in quantized energy levels.
@@ -39,7 +41,7 @@ Transitions between levels emit or absorb a photon of energy $\Delta E = E_f - E
 
 > Although superseded by quantum mechanics, the Bohr model correctly predicts hydrogen's emission spectrum.
 
-> **Practice preview** — try all 10 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(True false)* The atomic number of an element equals the number of protons in its nucleus.
    - True / False
@@ -83,7 +85,7 @@ where $S$ is the **shielding constant** from inner electrons.
 
 > **Common pitfall:** Periodic trends have two competing drivers — nuclear charge and shielding/distance. Across a period, charge wins (atoms shrink); down a group, distance wins (atoms grow). State which driver dominates, not just the trend.
 
-> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Period 2 with the sizes **hidden**: mark the element with the smallest atomic radius.
 
@@ -134,7 +136,7 @@ A **negative** $\Delta H$ means the reaction is **exothermic**.
 
 > **Common pitfall:** Molecular shape is set by **all** electron groups, including invisible lone pairs — but the named geometry describes only the atoms. Water has four tetrahedral electron groups yet is called "bent".
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Timeline ordering)* Order the steps to predict molecular geometry using VSEPR theory.
 
@@ -176,7 +178,7 @@ $$V(r) \propto -\frac{1}{r^{6}} \quad \text{(attractive at moderate } r \text{)}
 
 > **Common pitfall:** Hydrogen bonds are **between** molecules, not within them: they are attractions between an H bonded to N/O/F and a lone pair on a neighbouring molecule — about 20× weaker than the covalent bonds inside molecules.
 
-> **Practice preview** — try all 10 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Venn diagram)* Sort each substance by the intermolecular forces present **between its molecules**.
 
@@ -227,7 +229,7 @@ Phase transitions occur when thermal energy overcomes intermolecular forces. The
 
 > Temperature stays constant during a phase change — all added energy goes into breaking bonds.
 
-> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A sealed piston holds **4 L at 1 atm**, constant temperature. It is compressed to **1 L** — set the final pressure; the gauge turns on when you send.
 
@@ -274,7 +276,7 @@ $$\%\;\text{yield} = \frac{\text{actual yield}}{\text{theoretical yield}}\times 
 
 > **Common pitfall:** Balanced coefficients relate **moles**, never grams. Converting masses to moles before using the ratio — and back after — is the non-negotiable detour of every stoichiometry problem.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Timeline ordering)* Order the steps to balance a chemical equation by inspection.
 
@@ -319,7 +321,7 @@ A plot of $\ln k$ vs $1/T$ yields a straight line with slope $-E_a/R$.
 
 > **Common pitfall:** A catalyst speeds the journey but never moves the destination: it lowers the activation barrier for forward and reverse reactions equally, changing the rate, not the equilibrium.
 
-> **Practice preview** — try all 10 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(True false)* Increasing temperature increases reaction rate by providing more molecules with $energy \geq E$ₐ.
    - True / False
@@ -360,7 +362,7 @@ $$\text{pH} = \text{p}K_a + \log\frac{[\text{A}^-]}{[\text{HA}]}$$
 
 > **Common pitfall:** pH is logarithmic: each unit is a factor of 10 in $H^{+}$. pH 3 is not "a bit" more acidic than pH 5 — it is one hundred times more.
 
-> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* You need **100 mL of 1.5 M** acid from a **6 M** stock. Set how many mL of stock to pour before topping up with water.
 
@@ -409,7 +411,7 @@ Being able to move fluidly between these three levels is what separates formula 
 
 > **Common pitfall:** Same formula, different substance: isomers like ethanol and dimethyl ether share C₂H₆O but differ completely in properties. A molecular formula records composition, not identity.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Timeline ordering)* Order the levels of chemical representation from smallest (sub-atomic) to largest (macroscopic).
 
@@ -453,7 +455,7 @@ A positive $E^\circ_{\text{cell}}$ means the reaction is spontaneous as written.
 
 > **Common pitfall:** Chemical intuition lives at three levels at once — particles, symbols, and bulk observations. Most confusion comes from silently switching level mid-argument; name the level you are reasoning at.
 
-> **Practice preview** — try all 10 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(True false)* Le Chatelier's principle states that a system at equilibrium will shift to partially oppose any stress applied to it.
    - True / False

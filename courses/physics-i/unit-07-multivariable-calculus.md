@@ -1,5 +1,7 @@
 # Unit 7: Multivariable Calculus
 
+**[Study this unit interactively on Tryals →](https://tryals.app/courses/physics-i)**
+
 ## Functions of Several Variables
 
 A **function of several variables** maps a point in $\mathbb{R}^n$ to a real number:
@@ -28,7 +30,7 @@ If any two paths give different values, the limit **does not exist**.
 
 > **Common pitfall:** Level curves never cross: each point has exactly one function value. Densely packed contours mean steep terrain — reading contour spacing as "value" instead of "slope" inverts the map’s message.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(True false)* The domain of $f(x,y) = \sqrt{1 - x^{2} - y^{2}}$ is the closed unit disk $x^{2}$ + $y^{2} \leq 1$.
    - True / False
@@ -75,7 +77,7 @@ print("f_y =", diff(f, y))
 
 > **Common pitfall:** $\partial f/\partial x$ freezes every other variable — it answers a deliberately narrow question. The real-world change of $f$ when several inputs move at once is the chain rule’s job, not a single partial’s.
 
-> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Point the arrow in the direction of steepest **ascent** — exactly perpendicular to the contour through the point, uphill.
 
@@ -121,7 +123,7 @@ $$D_{\hat{u}}f = \nabla f \cdot \hat{u} = |\nabla f|\cos\theta$$
 
 > **Common pitfall:** The directional derivative needs a **unit** vector: $D_{\vec{u}}f = \nabla f \cdot \hat{u}$. Feeding it an unnormalized direction silently scales the answer by that vector’s length.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Timeline ordering)* Order the steps to compute a directional derivative Dᵤ$f(a,b)$.
 
@@ -170,7 +172,7 @@ At the optimum, the level curve of $f$ is **tangent** to the constraint curve $g
 
 > This method converts a constrained problem into a system of equations — no substitution or parameterisation needed.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(True false)* At a critical point of $f(x,y)$, both $f_{x} = 0$ and fᵧ = 0.
    - True / False
@@ -217,7 +219,7 @@ The base region $R$ determines the limits. Choosing the right order can greatly 
 
 > Double integrals generalize single-variable integrals to two variables — the key is correct limits.
 
-> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Evaluate $\iint_R x\, dA$ over $R = [0,2]\times[0,3]$ and set the volume dial.
 
@@ -260,7 +262,7 @@ $$\int_a^b\int_{g_1}^{g_2}\int_{h_1}^{h_2} f\,dz\,dy\,dx$$
 
 > **Common pitfall:** Reversing the order of integration is not swapping the limit expressions — the region must be re-described from scratch. The picture, not the algebra, dictates the new limits.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Timeline ordering)* Order the steps to evaluate a triple integral ∭_E f dV.
 
@@ -304,7 +306,7 @@ $$V = \int_0^{2\pi}\int_0^{\pi}\int_0^R \rho^2\sin\phi\,d\rho\,d\phi\,d\theta = 
 
 > **Common pitfall:** Spherical convention clash: mathematicians and physicists swap the names of $\theta$ and $\varphi$. Check which angle runs from the pole (0 to $\pi$) before copying any formula between sources.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(True false)* In cylindrical coordinates, the volume element is $dV = r$ dr d$\theta dz$.
    - True / False
@@ -340,7 +342,7 @@ The Jacobian measures how the transformation **scales area** (or volume).
 
 > **Common pitfall:** Changing variables without the Jacobian silently rescales all areas and volumes: polar needs $r$, spherical needs $\rho^{2}\sin\varphi$. If your disk integral came out as $2\pi R$ instead of $\pi R^{2}$, the missing $r$ is the culprit.
 
-> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A polar patch at $r = 2$ with $dr = 0.5$ and $d\theta = 0.5$ rad: set its area. Careful — it is NOT $dr \times d\theta$.
 
@@ -378,7 +380,7 @@ where $C$ is a positively oriented, simple, closed curve bounding $D$.
 
 > **Common pitfall:** Green’s theorem requires a **closed** curve, positive (counterclockwise) orientation, and a field smooth throughout the enclosed region. A single interior singularity — a vortex at the origin — breaks the equality outright.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Timeline ordering)* Order the steps to apply Green's theorem ∮_C (P dx + Q dy) = ∬_D ($\partial Q/\partial x$ − $\partial P/\partial y$) dA.
 
@@ -430,7 +432,7 @@ print(f"Integral of x^{2}+y^{2} over [0,1]x[0,1] = {result:.4f}")
 
 > **Common pitfall:** In multivariable problems, the decisive move happens before any integration: choosing coordinates that fit the region’s symmetry. Fighting a sphere with Cartesian limits is a self-inflicted wound.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(True false)* Fubini's theorem allows changing the order of integration in a double integral when the integrand is continuous.
    - True / False

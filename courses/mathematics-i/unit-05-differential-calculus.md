@@ -1,5 +1,7 @@
 # Unit 5: Differential Calculus
 
+**[Study this unit interactively on Tryals →](https://tryals.app/courses/mathematics-i)**
+
 ## Limits
 
 The **limit** is the foundational idea of calculus. It describes the value a function _approaches_ as its input approaches some point — regardless of, and often different from, the value _at_ that point. We write
@@ -14,7 +16,7 @@ Limits obey clean **algebraic rules**: the limit of a sum, product, or quotient 
 
 > **Common pitfall:** believing $\lim_{x \to a} f(x)$ must equal $f(a)$, or that a $\frac{0}{0}$ form means the limit does not exist. The limit ignores the point $a$ — it can exist even when $f(a)$ is undefined or different. And $\frac{0}{0}$ is **indeterminate**, not "no limit": it signals that algebra (factoring, cancelling) is needed to find the true limiting value, which often exists.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* Compute the limit of $(x^{2} - 9)/(x - 3)$ as x approaches 3.
 
@@ -52,7 +54,7 @@ These theorems fail without continuity, which is why continuity is a prerequisit
 
 > **Common pitfall:** thinking a function is continuous merely because its **limit exists** at a point. Continuity requires _all three_ conditions — the value $f(a)$ must exist _and equal_ the limit. A **removable discontinuity** (a hole) has a perfectly good limit yet is _not_ continuous, because $f(a)$ is missing or does not match. Existence of the limit is necessary but not sufficient.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* The function $(x^{2} - x - 6)/(x - 3)$ has a removable discontinuity at x = 3. What value must be assigned to it at x = 3 to make it continuous there?
 
@@ -89,7 +91,7 @@ A curve with a secant through two points; the second slides toward the first, th
 
 $$f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Table completion)* Let $f(x) = x^{2}$ and take the point x = 3. Complete the table of difference quotients, that is, of (f(3 + h) - f(3))/h.
 
@@ -117,7 +119,7 @@ Standard derivatives complete the toolkit: $\frac{d}{dx}\sin x = \cos x$, $\frac
 
 > **Common pitfall:** treating the derivative of a **product** as the product of derivatives, or dropping the inner factor in the **chain rule**. $(fg)' = f'g + fg'$, _not_ $f'g'$. And for $f(g(x))$ you must multiply by $g'(x)$: $\frac{d}{dx}\sin(x^2) = \cos(x^2)\cdot 2x$, not just $\cos(x^2)$. Forgetting the inner derivative is the single most common differentiation error.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Table completion)* Complete the table of standard derivatives.
 
@@ -152,7 +154,7 @@ Together, the first derivative (increasing/decreasing, critical points) and the 
 
 > **Common pitfall:** assuming that $f''(x) = 0$ **guarantees** an inflection point. A zero second derivative is only a _candidate_ — an inflection requires the concavity to actually **change sign** across the point. For example $f(x) = x^4$ has $f''(0) = 0$, yet it is concave up on both sides, so $x = 0$ is _not_ an inflection point. Always check that concavity switches.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Table completion)* Let $f(x) = x^{4} - 4x^{3}$. Complete the table of derivatives and their values at x = 1.
 
@@ -191,7 +193,7 @@ A curve on a closed interval with accent horizontal tangents at interior peaks a
 
 $$f'(x) = 0 \text{ at interior extrema; check endpoints too}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* Let $f(x) = x^{2} - 8x + 3$ on the closed interval from 0 to 6. What is the global MINIMUM value of f on that interval?
 
@@ -222,7 +224,7 @@ For example, if a balloon's volume $V = \frac{4}{3}\pi r^3$ inflates at a known 
 
 > **Common pitfall:** forgetting the **chain rule** on the dependent variable — differentiating $y^2$ as $2y$ instead of $2y\frac{dy}{dx}$, or a time-varying term without its $\frac{d}{dt}$ factor. Because $y$ (or every quantity in a related-rates problem) is itself changing, each such term carries an extra derivative factor ($\frac{dy}{dx}$ or $\frac{dr}{dt}$). Omitting it is the defining error of implicit and related-rate differentiation.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* For the circle $x^{2} + y^{2} = 25$, implicit differentiation gives dy/dx = -x/y. Compute dy/dx at the point (3, 4).
 
@@ -263,7 +265,7 @@ A smooth curve with successive Taylor polynomials (degree 1, 2, 3) overlaid, eac
 
 $$f(x) \approx f(a) + f'(a)(x-a) + \frac{f''(a)}{2!}(x-a)^2$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* Use the linear approximation of $f(x) = x^{2}$ at a = 2 to estimate f(2.1).
 
@@ -297,7 +299,7 @@ Curve sketching is not just an exercise — it is how one _understands_ a functi
 
 > **Common pitfall:** relying on the **first derivative alone** and ignoring the **second**. The first derivative tells you where the function rises and falls and locates the turning points, but only the second derivative reveals **concavity** and **inflection points** — the bending that distinguishes, say, a gentle rise from an accelerating one. A sketch built from $f'$ alone gets the up-and-down right but the _shape_ wrong; both derivatives are needed.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* Let $f(x) = x^{3} - 3x^{2}$. Apart from x = 0, at which x does the graph cross the x-axis?
 
@@ -329,7 +331,7 @@ The unifying insight is that the derivative converts a _static_ description (a f
 
 > **Common pitfall:** seeing these applications — motion, growth, optimization, marginal analysis — as separate topics rather than one idea. They are all the **derivative** (instantaneous rate of change) applied to different quantities: velocity is the rate of position, marginal cost is the rate of total cost, growth rate is the rate of a population. Missing the common thread makes each look like a new technique when it is one concept reused.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Table completion)* A particle has position $s(t) = t^{3} - 6t^{2} + 9t$, so its velocity is 3 t squared - 12t + 9 and its acceleration is 6t - 12. Complete the table.
 

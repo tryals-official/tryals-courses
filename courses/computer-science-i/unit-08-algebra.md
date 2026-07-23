@@ -1,5 +1,7 @@
 # Unit 8: Algebra
 
+**[Study this unit interactively on Tryals →](https://tryals.app/courses/computer-science-i)**
+
 ## Vectors and Vector Spaces
 
 A **vector** is an object that has both **magnitude** and **direction** — a displacement, a velocity, a force. In coordinates, a vector in the plane is a pair $(v_1, v_2)$ and in $n$ dimensions an $n$-tuple. But the deeper idea is structural: a **vector space** is any set of objects that can be **added** together and **scaled** by numbers (scalars), obeying a short list of natural rules.
@@ -18,7 +20,7 @@ Two vectors from the origin joined tip-to-tail, the accent resultant drawn from 
 
 $$\|v\| = \sqrt{v_1^2 + v_2^2}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
+**Practice preview:**
 
 **1.** *(Table completion)* Let u = (3, -1) and v = (-2, 5). Complete the table. Write each answer in the form (a, b).
 
@@ -45,7 +47,7 @@ The dot product also recovers length ($u \cdot u = \|u\|^2$) and lets you find t
 
 > **Common pitfall:** confusing the **dot product** (which returns a _number_) with scaling or componentwise multiplication that returns a _vector_, and forgetting that **orthogonal means dot product zero**. $u \cdot v$ is a single scalar $u_1 v_1 + u_2 v_2$, not a vector. And perpendicular vectors have $u \cdot v = 0$ — a positive or negative dot product means the angle is acute or obtuse, never a right angle.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* Let u = (3, -2) and v = (4, 6). Compute the dot product u dot v.
 
@@ -70,7 +72,7 @@ The number of solutions connects to the earlier idea of independence: a system w
 
 > **Common pitfall:** assuming every linear system has exactly one solution. A system can have **one, none, or infinitely many** solutions depending on whether the lines cross, are parallel, or coincide. Parallel-but-distinct equations are inconsistent (no solution), and duplicate equations are dependent (infinitely many) — jumping straight to "one solution" misses these cases.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
+**Practice preview:**
 
 **1.** *(Matrix grid)* Each 2x2 system is shown by its two lines. Classify how many solutions it has.
 
@@ -101,7 +103,7 @@ Why does this odd multiplication rule matter? Because a matrix _represents a lin
 
 > **Common pitfall:** assuming matrix multiplication is commutative, or multiplying entry-by-entry like addition. In general $AB \neq BA$ (order matters, and often only one order is defined). And the product is _not_ formed by multiplying corresponding entries — each result entry is a **dot product of a row and a column**, so shapes must match ($A$'s columns $=$ $B$'s rows).
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* Let A be the 2x2 matrix with rows (1, 2) and (3, 4), and B have rows (5, 6) and (7, 8). In A + B, what is the top-left entry?
 
@@ -129,7 +131,7 @@ A unit square mapped by a 2x2 matrix into a parallelogram whose accent-shaded ar
 
 $$\det \begin{pmatrix} a & b \\ c & d \end{pmatrix} = ad - bc$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* Compute the determinant of the 2x2 matrix with rows (3, 2) and (1, 4). Use det = ad - bc.
 
@@ -153,7 +155,7 @@ A basis is a minimal spanning set — just enough vectors, with none wasted, to 
 
 > **Common pitfall:** confusing **spanning** with **independence**, or thinking any spanning set is a basis. Spanning means the vectors _reach_ everything (possibly with redundancy); independence means _no redundancy_ (but possibly not reaching everything). A **basis** needs _both_ — a spanning set with extra, dependent vectors is not a basis, and neither is an independent set too small to span.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
+**Practice preview:**
 
 **1.** *(Matrix grid)* Classify each set of vectors in the plane as linearly independent or dependent.
 
@@ -177,7 +179,7 @@ Linear transformations are everywhere in computing: graphics pipelines are chain
 
 > **Common pitfall:** assuming _every_ function of vectors is linear, or forgetting that a linear transformation must **fix the origin** and preserve both operations. A transformation that adds a constant shift (like $T(v) = v + b$ with $b \neq 0$) is _not_ linear — it moves the origin and fails $T(u+v) = T(u)+T(v)$. Linearity is a strict requirement: both additivity and scaling must hold, which forces $T(\mathbf{0}) = \mathbf{0}$.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* A linear transformation has matrix with rows (2, 0) and (0, 3). Apply it to the vector (4, 1). What is the first component of the result?
 
@@ -203,7 +205,7 @@ Eigenvalues are among computing's most applied ideas: **PageRank** ranks web pag
 
 > **Common pitfall:** forgetting that an eigenvector must be **nonzero** and that it keeps its **direction** (only the length changes). The zero vector trivially satisfies $Av = \lambda v$ for any $\lambda$, so it is excluded by definition. And an eigenvector is not just any vector the matrix scales the length of — it must map to a **scalar multiple of itself** (same or exactly opposite direction), not merely change in size while rotating.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* The matrix A with rows (2, 0) and (0, 3) has eigenvector (1, 0). Since A(1,0) = (2, 0) = 2 times (1, 0), what is the corresponding eigenvalue?
 
@@ -226,7 +228,7 @@ Geometrically, a complex number is a **point in the plane** — real part on the
 
 > **Common pitfall:** mishandling $i^2$, or adding complex numbers as if the parts mix. Remember $i^2 = -1$ (not $+1$), so a product like $(bi)(di) = bd\,i^2 = -bd$ contributes to the _real_ part. And addition keeps the parts separate — real adds to real, imaginary to imaginary; you never add a real part to an imaginary part.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
+**Practice preview:**
 
 **1.** *(Multi select)* Let z = 3 + 2i and w = 1 + 5i. Select every TRUE statement about z + w.
    - [ ] The real part is 4
@@ -260,7 +262,7 @@ A point cloud flowing left to right through two matrix stages (rotation then sca
 
 $$v_{out} = M_2 (M_1 v)$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
+**Practice preview:**
 
 **1.** *(Matrix grid)* Match each computing application to the linear-algebra object it relies on most directly.
 

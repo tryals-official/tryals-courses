@@ -1,5 +1,7 @@
 # Unit 2: Programming I
 
+**[Study this unit interactively on Tryals →](https://tryals.app/courses/computer-science-i)**
+
 ## Variables, Expressions, and Types
 
 A **variable** is a named box that holds a value the program can read and change. **Assignment** puts a value into a variable, written in most languages as `x = 5` — read as "let x _become_ 5," not as a claim that x equals 5 forever. Crucially, assignment is directional: the right side is evaluated first, then stored into the name on the left. So `x = x + 1` reads the current x, adds one, and stores the result back — it is not a contradiction.
@@ -23,7 +25,7 @@ An expression tree for 3 + 4 * 2 drawn in beats: the multiply node (4, 2) evalua
 
 $$3 + 4 \times 2 = 11$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* In most languages multiplication binds tighter than addition. Evaluate the expression 3 + 4 * 2.
 
@@ -59,7 +61,7 @@ Conditions can be chained with `else if` (or `elif`) to test several cases in or
 
 > **Common pitfall:** writing `=` (assignment) where you mean `==` (comparison) in a condition. `if x = 5` tries to _assign_ rather than _compare_, and in many languages is a bug or error. The condition of an `if` must be a comparison or boolean, using `==`, not a single `=`.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
+**Practice preview:**
 
 **1.** *(Truth table)* The operator 'and' is true only when both sides are true. Complete the output column for A and B.
 
@@ -94,7 +96,7 @@ A counter stepping along a number line from 0, ticking 0,1,2,3,4 under a "< 5" g
 
 $$\text{range}(n): 0, 1, \ldots, n-1$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
+**Practice preview:**
 
 **1.** *(Table completion)* Trace the loop: total = 0; then for each i in 1, 2, 3, 4 do total = total + i. Complete total after each addition.
 
@@ -123,7 +125,7 @@ Functions enable **abstraction**: a caller uses `square(5)` without caring _how_
 
 > **Common pitfall:** confusing **parameters** (the names in the definition) with **arguments** (the actual values in the call). `def f(x)` declares a parameter `x`; `f(10)` passes the argument `10`. Also, expecting to use a function's _local_ variables from outside the function — they simply do not exist there.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* A function is defined as def sq(n): return n * n. What value does the call sq(sq(2)) produce?
 
@@ -154,7 +156,7 @@ A dictionary is unordered by position but gives fast lookup by key. The rule of 
 
 > **Common pitfall:** forgetting that indexing starts at **0**. In a list of length `n`, the valid indices are `0` through `n-1`; the last element is at index `n-1`, and accessing index `n` runs off the end. This off-by-one at the boundary is one of the most common beginner errors.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* Given ages = {"Ana": 30, "Ben": 25}, what value does ages["Ana"] return?
 
@@ -180,7 +182,7 @@ A crucial subtlety: input usually arrives as **text (a string)**, even when it r
 
 > **Common pitfall:** treating input as already numeric. Data read from a user or a file is text; `"5" + "3"` is `"53"`, not `8`. Convert the string to a number (`int(...)` or `float(...)`) _before_ doing arithmetic, and be ready for the conversion to fail if the text is not a valid number.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
+**Practice preview:**
 
 **1.** *(Cloze bank)* Complete the statement about input read from the user.
 
@@ -205,7 +207,7 @@ Testing famously **cannot prove a program correct** — you cannot try every pos
 
 > **Common pitfall:** testing only "happy path" typical inputs and skipping edge cases. Most real bugs surface at the boundaries — an empty list, a zero, the maximum value, the first or last index. A test suite without edge cases gives false confidence; deliberately probe the boundaries.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
+**Practice preview:**
 
 **1.** *(Category sort)* A function is meant to accept a whole number of items. Sort each test input by its kind.
 
@@ -231,7 +233,7 @@ The golden rule is to **reason from evidence, not assumption**: observe what the
 
 > **Common pitfall:** changing code randomly, hoping the bug disappears ("shotgun debugging"). Without reproducing the bug and observing the actual state, you cannot know whether a change fixed the real cause or just hid a symptom. Reproduce first, then narrow down using observed values.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
+**Practice preview:**
 
 **1.** *(Ordering)* Order the steps of the disciplined debugging routine.
 
@@ -253,7 +255,7 @@ Third, consider what can vary and what must hold — the **assumptions and const
 
 > **Common pitfall:** diving straight into writing code before modelling the problem — before deciding what the data is and sketching the algorithm. This almost always leads to tangled, buggy code. Model first: name the data and its types, write the steps in pseudocode, then translate to real code.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
+**Practice preview:**
 
 **1.** *(Grid path)* Model a warehouse robot as a marker on a grid; the blocked cells are shelves it cannot enter. Trace a route for the robot from the top-left cell to the bottom-right cell, moving one cell at a time and avoiding every shelf.
 
@@ -282,7 +284,7 @@ A bar chart of exam scores with a horizontal accent pass line at 50; bars at or 
 
 $$\text{average} = \frac{\text{total}}{\text{count}}, \;\; \text{count} > 0$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/computer-science-i)
+**Practice preview:**
 
 **1.** *(Ordering)* Order the structured approach to the task: read a list of exam scores and report how many passed and the class average.
 

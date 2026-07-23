@@ -1,5 +1,7 @@
 # Unit 9: Scientific Programming
 
+**[Study this unit interactively on Tryals →](https://tryals.app/courses/mathematics-i)**
+
 ## Floating-Point Numbers
 
 Scientific computing runs on **floating-point** numbers — the computer's approximation of the real numbers. Because a machine has finite memory, it cannot store infinitely many digits, so most reals are stored _approximately_. Understanding this is the foundation of trustworthy numerical work.
@@ -19,7 +21,7 @@ A zoomed number line with discrete floating-point ticks and gaps between them; a
 
 $$|a - b| < \epsilon \text{ (compare within tolerance)}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Matrix grid)* Classify what a floating-point machine produces for each computation.
 
@@ -45,7 +47,7 @@ An algorithm is **numerically stable** if small errors (round-off, input noise) 
 
 > **Common pitfall:** assuming that a **smaller step size always gives a more accurate answer**. Shrinking $h$ reduces _truncation_ error but eventually _increases_ round-off error (from subtracting nearly equal quantities), so accuracy improves only up to an optimal step size and then degrades. "Smaller is always better" ignores the round-off half of the trade-off — and, more broadly, an _unstable_ algorithm can amplify tiny errors regardless of step size.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Category sort)* Sort each source of error by its kind.
 
@@ -74,7 +76,7 @@ Bisection is slow but safe; Newton's is fast but needs a good start and a well-b
 
 > **Common pitfall:** assuming **Newton's method always converges** to a root. It converges _quadratically_ only when started **near** the root and where $f'$ is well-behaved; from a poor starting guess it can **diverge, cycle, or blow up** (especially if $f'(x_n) = 0$, dividing by zero). Bisection, by contrast, is guaranteed to converge given a sign change — the safety Newton's method trades away for speed.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* Bisection is applied to f(x) = x squared - 2 on the interval from 1 to 2, keeping the half where the sign change persists. The first midpoint tested is 1.5. What is the THIRD midpoint tested?
 
@@ -99,7 +101,7 @@ The subtlety that reconnects to Lesson 2: you cannot make $h$ arbitrarily small 
 
 > **Common pitfall:** assuming that **more subdivisions always give a better answer**, without limit. A smaller step size reduces the _truncation_ error of the rule, but summing ever more tiny contributions eventually lets _round-off_ error accumulate and dominate — so accuracy improves only up to an optimal $h$. Using a **higher-order rule** (Simpson's over trapezoidal) is usually the better path to accuracy than blindly shrinking $h$.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Number line placement)* Approximate the integral of x squared from 0 to 2 by the trapezoidal rule with two strips of width 1, using the heights at 0, 1 and 2. **Place the marker on the resulting estimate.
 
@@ -129,7 +131,7 @@ Two nearly parallel lines whose accent intersection point slides far along the l
 
 $$\text{large condition number} \Rightarrow \text{sensitive solution}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* Direct Gaussian elimination costs about two thirds of n cubed operations. If solving a 1000 by 1000 system takes 2 seconds, roughly how many seconds does a 2000 by 2000 system take?
 
@@ -159,7 +161,7 @@ Noisy scatter points with an accent wiggly high-degree interpolant threading eve
 
 $$\text{exact data: interpolate} \;;\; \text{noisy data: fit}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* Through a set of 5 data points there is a unique interpolating polynomial. What is its degree?
 
@@ -183,7 +185,7 @@ Monte Carlo methods also **simulate** stochastic systems directly: modeling part
 
 > **Common pitfall:** expecting Monte Carlo estimates to be **highly precise** or to improve quickly with more samples. The error shrinks only as $\frac{1}{\sqrt{N}}$, so each additional decimal digit of accuracy costs **100 times** more samples — Monte Carlo is inherently slow to converge. It is excellent for quick estimates and high-dimensional problems, but a poor choice when many accurate digits are needed; do not treat a Monte Carlo result as exact or assume doubling the samples halves the error (it only cuts it by $\sqrt{2}$).
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* In a Monte Carlo estimate of pi, 3140 of 4000 random points in the unit square land inside the quarter-circle. What estimate of pi does this give?
 
@@ -205,7 +207,7 @@ The professional principle: **do not reinvent the wheel.** A hand-coded linear s
 
 > **Common pitfall:** writing slow **explicit element-by-element loops** where a **vectorised array operation** would be far faster, and **reimplementing** numerical routines that robust libraries already provide. In array-based scientific computing, an explicit loop over elements can be orders of magnitude slower than the equivalent whole-array operation dispatched to optimized compiled code. And a hand-written solver rarely matches a library's speed or numerical robustness — prefer well-tested library routines to reinventing the wheel.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* An explicit element-by-element loop over 10 million values takes 8 seconds, while the vectorised version of the same computation takes 0.05 seconds. By what factor is the vectorised version faster?
 
@@ -230,7 +232,7 @@ The deeper point for a mathematician-turned-programmer: a computation that _runs
 
 > **Common pitfall:** treating code that **runs without error** as automatically **correct and trustworthy**. Running is not the same as being right — a program can execute flawlessly and still produce wrong answers from a logic bug, and an un-versioned, untested, seed-less script is not reproducible even if its output looks fine. Trustworthy computation requires **testing** (verify against known answers), **version control** (traceable changes), and **a fixed random seed** (reproducible randomness) — not merely the absence of crashes.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Category sort)* Sort each practice by its effect on reproducibility.
 
@@ -263,7 +265,7 @@ The unifying lesson — and the essential mindset — is that **numerical result
 
 > **Common pitfall:** treating a **simulation's output as reliable truth without validation**. A numerical model always produces numbers, but they are approximate and can be wrong from discretisation error, instability, ill-conditioning, or a modeling mistake. The scientific computing workflow **requires a validation step** — checking against known cases, conservation laws, or experiment, and assessing error and convergence. An unvalidated computation is not a scientific result; the numbers must be earned, not assumed.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Ordering)* Order the stages of the scientific computing workflow.
 

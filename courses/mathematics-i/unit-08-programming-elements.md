@@ -1,5 +1,7 @@
 # Unit 8: Programming Elements
 
+**[Study this unit interactively on Tryals →](https://tryals.app/courses/mathematics-i)**
+
 ## Algorithms and Computational Thinking
 
 An **algorithm** is a finite, precise sequence of unambiguous steps that solves a problem or computes a result. The word predates computers — Euclid's method for the gcd (Unit 2) is an algorithm — but programming is the art of expressing algorithms so a machine can carry them out. For a procedure to be a genuine algorithm it should be **finite** (it terminates), **definite** (each step is unambiguous), and **effective** (each step is actually doable).
@@ -16,7 +18,7 @@ A subtle but essential point: a mathematical _definition_ is not automatically a
 
 > **Common pitfall:** confusing a **definition** or a **specification** (what the answer _is_) with an **algorithm** (a step-by-step procedure for _computing_ it). "The prime factorisation is the unique product of primes" specifies the answer but is not an algorithm; you still need a concrete, terminating procedure (trial division, say) to actually produce it. An algorithm must tell you _how_, not merely _what_.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Category sort)* An algorithm says HOW to compute; a specification says only WHAT the answer is. Sort each item.
 
@@ -44,7 +46,7 @@ A subtle numerical caution for mathematicians: **floating-point** numbers are st
 
 > **Common pitfall:** reading assignment `x = x + 1` as a mathematical **equation** (which would be a contradiction), and testing **floating-point** values for **exact equality**. Assignment is a command that _updates_ the variable, not an equality claim. And floats are approximate — `0.1 + 0.2 != 0.3` exactly — so compare them within a tolerance, never with strict `==`.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Table completion)* The statements below run in order, starting from an empty variable x. Complete the value of x after each one.
 
@@ -71,7 +73,7 @@ Many languages use **short-circuit evaluation**: in `A and B`, if `A` is false t
 
 > **Common pitfall:** using `=` (assignment) where `==` (comparison) is meant. `if (x = 5)` **assigns** 5 to `x` (and is usually always-true or an error), whereas `if (x == 5)` **tests** whether `x` equals 5. The single-versus-double equals distinction — command versus question — is one of the most common bugs, and the two do completely different things.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Truth table)* Complete the truth table for the condition A and (not B).
 
@@ -101,7 +103,7 @@ A loop drawn as a circular arrow with an accent counter incrementing each pass a
 
 $$\text{for } i = 1 \text{ to } n:\ n \text{ iterations}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* A loop runs its counter over i = 3, 4, 5, ..., 17 inclusive. How many iterations does it perform?
 
@@ -128,7 +130,7 @@ Functions enable the whole discipline of **abstraction** in programming: once wr
 
 > **Common pitfall:** expecting a **local variable** to be visible **outside** the function where it is defined. A local variable exists only within its function's body and is gone once the function returns — this **encapsulation** is deliberate. Trying to read a function's internal variable from the outside (or assuming two functions' same-named locals are the same variable) misunderstands scope; functions communicate only through their **parameters and return value**.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Ordering)* Order what happens when the call f(3, 4) is evaluated.
 
@@ -154,7 +156,7 @@ Arrays pair perfectly with loops: iterating an index from `0` to `n - 1` visits 
 
 > **Common pitfall:** forgetting **zero-based indexing** and going **out of bounds**. In most languages the first element is `a[0]` and the last is `a[n-1]`, so a loop or access that reaches index `n` is one past the end — an out-of-bounds error. Off-by-one mistakes at the array boundary (using `n` instead of `n-1`, or starting at `1` instead of `0`) are among the most common bugs; always mind that valid indices run `0` to `n-1`.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* A list holds 40 elements and uses zero-based indexing. What is the index of its last element?
 
@@ -190,7 +192,7 @@ A stack of recursive call frames descending from 3! to 2! to 1! to the accent ba
 
 $$n! = n \times (n-1)!,\quad 0! = 1$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Ordering)* Order what happens when a recursive factorial computes 3 factorial.
 
@@ -218,7 +220,7 @@ Big-O describes **asymptotic** behaviour — the trend as $n \to \infty$ — del
 
 > **Common pitfall:** confusing an algorithm's **complexity class** (how it _scales_) with its **raw speed on small inputs**. Big-O is about _asymptotic_ growth as $n \to \infty$, so it drops constants — $O(n)$ beats $O(n^2)$ for _large_ $n$ even if the quadratic one is faster on tiny inputs. A lower complexity class is not automatically faster on _every_ input; it is guaranteed to win once $n$ is large enough, which is what scalability means.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Ordering)* Order these complexity classes from the slowest-growing to the fastest-growing.
 
@@ -244,7 +246,7 @@ Sorting is a workhorse subroutine: once data is sorted, searching, finding dupli
 
 > **Common pitfall:** applying **binary search to an unsorted list**. Binary search's speed comes entirely from the data being **sorted** — it discards half the list assuming order, so on unsorted data it will skip past the target and report it missing (or find the wrong thing). If the list is not sorted, either sort it first (then binary-search) or use linear search, which needs no ordering.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* A sorted list holds 64 items. Binary search halves the range at each comparison. In the worst case, how many halvings are needed to reduce it to one item?
 
@@ -274,7 +276,7 @@ Random accent points scattered in a square with an inscribed quarter-circle; the
 
 $$\pi \approx 4 \cdot \frac{\text{points inside}}{\text{total points}}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Category sort)* Sort each task by the kind of computation it needs.
 

@@ -1,5 +1,7 @@
 # Unit 6: Learning and Emotion
 
+**[Study this unit interactively on Tryals →](https://tryals.app/courses/psychology-i)**
+
 ## Classical Conditioning
 
 Beyond the basic acquisition of a conditioned response, classical conditioning has a full life cycle worth tracing in detail. **Acquisition** is the initial learning phase, when a neutral stimulus is repeatedly paired with an unconditioned stimulus until it becomes a conditioned stimulus; pairing works best when the neutral stimulus is presented shortly BEFORE the unconditioned stimulus, so it can serve as a predictive cue.
@@ -20,7 +22,7 @@ Finally, **higher-order conditioning** extends the chain: once a stimulus has be
 
 > **Common pitfall:** treating extinction as if the learned association is permanently erased. Spontaneous recovery demonstrates that extinction mainly suppresses the response rather than deleting the underlying association — which is also why relapse after successfully "extinguishing" a fear or craving remains a real clinical concern.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
+**Practice preview:**
 
 **1.** *(Ordering)* Trace the life cycle of one conditioned association, in order.
 
@@ -56,7 +58,7 @@ Four small cumulative-response graphs: fixed ratio shows a stair-step with flat 
 
 $$\text{Variable ratio} \to \text{highest, most persistent response rate}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
+**Practice preview:**
 
 **1.** *(Matrix grid)* Classify each consequence using the two dimensions: is something ADDED or REMOVED, and does the behavior INCREASE or DECREASE?
 
@@ -88,7 +90,7 @@ Both findings pushed psychology to acknowledge that INTERNAL cognitive represent
 
 > **Common pitfall:** assuming learned helplessness means an animal or person has simply "given up" out of laziness or low motivation. The mechanism is a learned EXPECTATION that outcomes are uncontrollable, generalized inappropriately to a new situation — not a general lack of effort or motivation as such.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
+**Practice preview:**
 
 **1.** *(Formula builder)* Arrange Tolman's latent-learning demonstration, from exploration to the reveal.
 
@@ -115,7 +117,7 @@ Bandura's broader concept of **reciprocal determinism** holds that behavior, per
 
 > **Common pitfall:** assuming observational learning requires the observer to be reinforced directly before any imitation can occur. Bandura's whole point was the opposite — imitation of the aggressive model occurred with NO direct reinforcement to the child at all; only vicarious (observed) consequences, or none, were needed to shape the behavior.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
+**Practice preview:**
 
 **1.** *(Ordering)* Order Bandura's four processes required for observational learning.
 
@@ -141,7 +143,7 @@ A related, widely cited demonstration is the **Capilano Suspension Bridge study*
 
 > **Common pitfall:** assuming the two-factor theory says the LABEL alone creates emotion, with arousal being unnecessary. Schachter and Singer's theory requires BOTH ingredients together — genuine physiological arousal plus a context-driven cognitive label — neither one is sufficient on its own.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
+**Practice preview:**
 
 **1.** *(Matrix grid)* Assign each core claim to the theory of emotion that makes it.
 
@@ -171,7 +173,7 @@ A branching pathway diagram: a shadow stimulus at the thalamus; a fast accent pu
 
 $$\text{Low road} \to \text{amygdala} \text{ (fast)}, \text{High road} \to \text{cortex} \to \text{amygdala} \text{ (slow)}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
+**Practice preview:**
 
 **1.** *(Matrix grid)* Classify each feature as belonging to LeDoux's low road or high road.
 
@@ -197,7 +199,7 @@ Drive-reduction theory explains a great deal of behavior focused on genuine phys
 
 > **Common pitfall:** treating drive-reduction theory as a complete account of all motivated behavior. It explains behaviors clearly tied to restoring a physiological deficit reasonably well, but struggles with sensation-seeking, curiosity, and reward-pursuit behaviors that are not obviously reducing any biological deficit at all — which is exactly the gap incentive theory was proposed to fill.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
+**Practice preview:**
 
 **1.** *(Ordering)* Order the drive-reduction cycle, from deficit to relief.
 
@@ -226,7 +228,7 @@ An inverted-U curve: a bare arousal-versus-performance axis; the curve for a sim
 
 $$\text{Performance peaks at moderate arousal, shifted by task difficulty}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
+**Practice preview:**
 
 **1.** *(Number line placement)* On the Yerkes-Dodson curve, performance is best at a MODERATE arousal level, not the lowest or highest. **On a 0-to-10 arousal scale, place the marker at the roughly optimal arousal level for performance on a typical task.
 
@@ -256,7 +258,7 @@ That final ability, emotion **regulation**, has been studied in particular depth
 
 > **Common pitfall:** assuming suppression is simply "self-control" and therefore healthy. Suppression specifically targets the outward EXPRESSION of an already-formed emotion, which tends to leave the internal arousal largely unresolved — reappraisal, by intervening EARLIER, before the emotion fully forms, tends to be the more effective regulation strategy.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
+**Practice preview:**
 
 **1.** *(Matrix grid)* Assign each described act to the Salovey-Mayer EI ability it exercises.
 
@@ -282,7 +284,7 @@ Burnout is distinct from Selye's General Adaptation Syndrome discussed earlier i
 
 > **Common pitfall:** treating burnout as simply "being very tired" or a synonym for ordinary stress. Burnout is a specific three-component syndrome — emotional exhaustion is only one piece, alongside depersonalization and a diminished sense of personal accomplishment, which do not necessarily track raw fatigue at all.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
+**Practice preview:**
 
 **1.** *(Matrix grid)* Assign each described experience to the burnout component it reflects.
 

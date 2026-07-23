@@ -1,5 +1,7 @@
 # Unit 4: Linear Algebra
 
+**[Study this unit interactively on Tryals →](https://tryals.app/courses/mathematics-i)**
+
 ## Vector Spaces
 
 Unit 3 treated vectors as arrows and tuples. **Linear algebra** abstracts away the picture and keeps only the _operations_. A **vector space** is any set $V$ of objects (called vectors) equipped with two operations — **addition** and **scalar multiplication** — satisfying a short list of **axioms**. Anything obeying the axioms _is_ a vector space, whatever its elements look like.
@@ -21,7 +23,7 @@ Because all these share the same axioms, _every_ theorem proved for abstract vec
 
 > **Common pitfall:** thinking "vector" must mean an **arrow** or a **tuple of numbers**. In linear algebra a vector is _any_ element of a set satisfying the vector-space axioms — a polynomial, a matrix, or a function all qualify. What matters is that you can **add** the objects and **scale** them consistently; the geometric arrow is just one example, not the definition.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Category sort)* A vector space must be closed under addition and scaling and must contain a zero vector. Sort each set, taken with its usual operations.
 
@@ -47,7 +49,7 @@ Subspaces arise everywhere: the solutions of a **homogeneous** system $A\mathbf{
 
 > **Common pitfall:** thinking a line or plane that does **not pass through the origin** is a subspace. Every subspace must contain the **zero vector** and be closed under scaling — so a line offset from the origin fails (scaling any of its points by 0 gives $\mathbf{0}$, which is not on the line). Only lines and planes _through the origin_ (plus $\{\mathbf{0}\}$ and the whole space) are subspaces.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Ordering)* Order the steps of the subspace test applied to a subset W of a vector space V, cheapest check first.
 
@@ -80,7 +82,7 @@ Determining whether a vector $w$ is in the span of others is exactly solving a *
 
 > **Common pitfall:** assuming that _more_ vectors always **span more**. Adding a vector that is already a linear combination of the others does **not** enlarge the span — two parallel vectors span only a line, not a plane. What grows the span is a vector pointing in a genuinely _new_ direction (one not already reachable). Redundant vectors expand the list without expanding the reach.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* Let v1 = (1, 2) and v2 = (3, -1). There are scalars c1 and c2 with c1 v1 + c2 v2 = (5, 3). Find c1.
 
@@ -111,7 +113,7 @@ Three vectors from the origin where the accent third vector is drawn as exactly 
 
 $$c_1 v_1 + \dots + c_k v_k = \mathbf{0} \Rightarrow \text{all } c_i = 0$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* The vectors (2, -1, 4) and (-6, 3, k) are linearly dependent. Find k.
 
@@ -143,7 +145,7 @@ Two convenient consequences in an $n$-dimensional space: any $n$ independent vec
 
 > **Common pitfall:** thinking any **spanning set** is a basis, or any **independent set** is a basis. A basis needs **both** properties. A spanning set with extra, dependent vectors is not a basis (too many); an independent set too small to reach everything is not a basis (too few). And every basis of the space has _exactly_ $\dim V$ vectors — no more, no fewer.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Table completion)* Complete the table of dimensions.
 
@@ -173,7 +175,7 @@ Because transformations are matrices, **composing** transformations corresponds 
 
 > **Common pitfall:** assuming _every_ map of vectors is linear, or forgetting that a linear map must **fix the origin**. Linearity is strict: _both_ $T(u+v) = T(u)+T(v)$ and $T(cv) = cT(v)$ must hold, which forces $T(\mathbf{0}) = \mathbf{0}$. A map that adds a nonzero constant ($T(v) = v + b$) moves the origin and is **not** linear — even though it looks simple.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Ordering)* Order the steps of finding the matrix of a linear transformation of the plane.
 
@@ -213,7 +215,7 @@ An input space split into an accent kernel band (collapsed to the zero point) an
 
 $$\dim(\ker T) + \dim(\operatorname{im} T) = \dim V$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* A linear map from 7-dimensional space into 4-dimensional space has a 3-dimensional kernel. What is its rank?
 
@@ -240,7 +242,7 @@ Eigenvalues reveal a transformation's behavior:
 
 > **Common pitfall:** forgetting that an eigenvector must be **nonzero** and keeps its **direction** (only length changes). The zero vector satisfies $A\mathbf{0} = \lambda\mathbf{0}$ for _every_ $\lambda$, so it is excluded by definition. And an eigenvector is not merely a vector whose _length_ the matrix changes — it must map to a **scalar multiple of itself** (same or exactly opposite direction), not one that rotates.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* Let A = [4, 1 ; 2, 3], written as rows separated by a semicolon. Its characteristic equation is lambda squared - 7 lambda + 10 = 0. What is the LARGER eigenvalue?
 
@@ -268,7 +270,7 @@ A skewed eigenvector grid straightened by P^{-1} into axis-aligned coordinates w
 
 $$A = P D P^{-1},\quad A^k = P D^k P^{-1}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* A = P D P inverse, where D is the diagonal matrix with entries 1 and 2. Compute the TRACE of A to the tenth power.
 
@@ -290,7 +292,7 @@ The **Gram–Schmidt process** turns any basis into an orthonormal one, systemat
 
 > **Common pitfall:** assuming an **orthogonal projection** is just "drop the extra coordinates," or that any set of vectors gives easy coordinates. Projection onto a subspace $W$ finds the **nearest** vector in $W$, with the residual $v - \operatorname{proj}_W v$ **orthogonal** to $W$ — it is a specific geometric construction, not mere truncation. And coordinates are trivial ($\langle v, e_i \rangle$) only in an **orthonormal** basis; in a general basis you must solve a linear system.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* Compute the inner product (the dot product) of u = (1, 2, -2) and v = (3, 0, 4).
 

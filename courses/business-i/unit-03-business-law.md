@@ -1,5 +1,7 @@
 # Unit 3: Business Law
 
+**[Study this unit interactively on Tryals →](https://tryals.app/courses/business-i)**
+
 ## Sources and Hierarchy of the Legal System
 
 A legal system is not a heap of rules but a **hierarchy** — every norm has a rank, and rank decides collisions. In the Spanish system, top to bottom:
@@ -61,7 +63,7 @@ The pyramid tells you _who wins_; these three criteria tell you _how to argue it
 
 > **Tip:** Apply the criteria in strict order and stop at the first that decides. Time never beats hierarchy: a brand-new regulation still loses to an old statute.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A **ministerial regulation** (rank 4 on the pyramid) contradicts a **parliamentary statute** (rank 2). **Drag the highlight up the pyramid** to the rank of the norm that prevails — the losing norm shatters when you commit.
 
@@ -101,7 +103,7 @@ A seven-year-old can _own_ an apartment (legal capacity) but cannot _sell_ it (c
 
 > **Common pitfall:** "A minor can't own property." Wrong capacity: a newborn can inherit a house (legal capacity) — what they cannot do is sell it themselves (capacity to act). Representatives fill the gap, they don't replace the ownership.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A person’s **capacity to act** grows through life. **Drag the age marker** to the point where full capacity to act arrives by default — watch the rights panel unlock as you move.
 
@@ -145,7 +147,7 @@ A law is not born the day politicians shake hands. It follows a strict life cycl
 
 > **Common pitfall:** Assuming every law waits 20 days. The _vacatio legis_ of 20 days is only the **default** — the norm itself can enter into force the day after publication or a year later. Always check the final provisions first.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A law is published in the Official Gazette and says nothing about when it starts applying. **Drag the calendar marker** to its entry into force — the "in force" lamp lights when you reach the right day.
 
@@ -185,7 +187,7 @@ For a business the registry is both **shield** (publish your facts, and the worl
 
 > **Tip:** Before signing with a company, pull its registry sheet: who holds powers of attorney, whether capital was reduced, whether dissolution began. The registry is the one source the law lets you rely on.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A company revokes its director’s powers on **day 4** but only registers the revocation on **day 10**. A supplier contracts with the ex-director in good faith. **Drag the contract date** to the first day the revocation actually protects the company — the shield icon activates when publicity exists.
 
@@ -256,7 +258,7 @@ Statute changes, mergers, or excluding preferential rights demand reinforced maj
 
 > **Common pitfall:** "Profit this year → dividend this year." The meeting decides whether to distribute or retain; a minority partner cannot demand a dividend the majority lawfully chose to reinvest — only abuse of majority opens the courtroom door.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Five founders create an S.L. with **equal shares**, funding exactly the **legal minimum capital**. The pot and its legal line stay hidden — **set each founder’s contribution** to the smallest amount that makes the company registrable.
 
@@ -298,7 +300,7 @@ The **sociedad anónima (S.A.)** is the form for gathering capital from people w
 
 > **Common pitfall:** Choosing S.A. "because it looks more serious." The 60,000€ minimum, heavier formalities, and open transferability only pay off when you actually need outside capital — for a family venture, the S.L.'s closed doors are usually the point.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Founders form an S.A. with subscribed capital of **60,000€**; the law requires at least **25% paid up** at signing. The gauge reads in euros (its height is not the capital), so **set the paid-up level** to the minimum cash that must actually enter on day one.
 
@@ -342,7 +344,7 @@ Knock any element out and the claim collapses: careless conduct that hurt no one
 
 > **Tip:** In practice courts increasingly ease the victim's burden: in risky activities, fault is _presumed_ and the defendant must prove diligence — a quiet shift toward objective liability.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Your firm’s delivery fleet faces a **20% probability** each year of causing an accident with **50k€ in damages**. **Drag the provision bar** to the expected annual liability cost — the risk gauge locks when provision matches exposure.
 
@@ -379,7 +381,7 @@ A firm's most valuable assets may weigh nothing: an invention, a name, a shape, 
 
 > **Common pitfall:** Keeping an invention as a trade secret and assuming it is protected like a patent. A secret has no exclusivity — a rival who reverse-engineers or independently invents it owes you nothing.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Your firm files a patent in **2010**. **Drag the year marker** to the moment the invention falls into the public domain — the fence animates down when the monopoly ends.
 
@@ -420,7 +422,7 @@ For a manager, labor law is the operating system under every hiring plan: headco
 
 > **Common pitfall:** Believing the contract's label decides. Courts apply the four notes to the _facts_: a "freelance" rider with fixed schedule, app-assigned routes, and company-set prices is an employee — the false self-employed doctrine exists precisely for this.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A logistics worker logs **47 hours** this week; the legal maximum is **40**. **Drag the divider** on the hours bar to split ordinary time from overtime — the overtime zone glows when the split is right.
 
@@ -467,7 +469,7 @@ For a manager, labor law is the operating system under every hiring plan: headco
 
 > **Common pitfall:** Directors waiting "one more quarter" to file. The two-month clock from knowing the insolvency is hard law — filing late risks a **culpable** classification, and with it the directors' personal patrimony covering the shortfall.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A liquidation gathers **100k€** of assets. The queue: secured **60k€**, privileged **30k€**, then **40k€** of ordinary claims. **Drag the recovery slider** to the percentage of their claims the ordinary creditors receive — the waterfall fills pan by pan as you watch.
 

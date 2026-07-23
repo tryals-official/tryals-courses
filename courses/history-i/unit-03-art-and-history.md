@@ -1,5 +1,7 @@
 # Unit 3: Art and History
 
+**[Study this unit interactively on Tryals →](https://tryals.app/courses/history-i)**
+
 ## Methodologies of Art History
 
 For a historian, a painting is not decoration but a **document** — one that records what a society could imagine, what it paid for, and what it wanted believed. Reading it takes method, because images lie differently from texts: they persuade without arguing, and they omit without admitting it.
@@ -25,7 +27,7 @@ A worked example: _a woman holding a wheel_ (pre-iconographic) is _Saint Catheri
 
 > **The historian's warning:** art shows the world its patrons wanted seen. Tomb paintings show abundant harvests and never famine; portraits show sitters at their most composed. Surviving art is also a **survival bias** — stone temples outlast wooden ones, and the art of the rich outlasts the art of everyone else. Read images as arguments, not as photographs.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A painting shows a woman holding a wheel. **Drag the analysis dial through Panofsky’s levels** until you reach the reading that explains why this saint, for this guild, in this year.
 
@@ -65,7 +67,7 @@ Every generation reads its own preoccupations into the caves:
 
 > **The honest position:** the caves are places where people went to great effort in the dark, repeatedly, for tens of thousands of years, and what they made there was serious. That much the evidence proves. Which story it served, no cave will ever say — and any interpretation that fits _all_ the art from Spain to Siberia across 30,000 years is almost certainly too loose to be wrong.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Test the hunting-magic hypothesis. **Drag the painted-species bars to match the animal bones excavated from the living site** — the mismatch will grade your theory, not your aim.
 
@@ -99,7 +101,7 @@ Egyptian figures look "wrong" to modern eyes and were meant to. The **canon of p
 
 > **Reading against the grain:** these works record the _claims_ of power, never its limits. Naram-Sin's stele shows an invincible god-king; his empire collapsed within a generation, and a later Elamite raid carried the stele off as loot — where archaeologists found it, in Susa. The historian's task is to notice both the claim and its fate, and never to confuse a monument's confidence with the world's compliance.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Size means rank here, not distance. **Drag the three figures to the heights their status demands** — the register will check your hierarchy.
 
@@ -144,7 +146,7 @@ $$\text{weight on one leg} \Rightarrow \text{hip} \uparrow \;,\; \text{shoulder}
 
 Then the axis lines overlay: the horizontal of the hips and the horizontal of the shoulders, once parallel in the rigid kouros, now cross. That crossing _is_ contrapposto — the visual proof that this body has a moment, a choice, and an interior. Sculpture stopped depicting a shape and started depicting a person standing.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* **Drag the figure’s weight onto one leg** and watch the body respond. Stop when the hip and shoulder axes cross — the pose the Greeks discovered around 480 BCE.
 
@@ -179,7 +181,7 @@ Roman portraiture inverts the Greek priority. Republican **verism** shows warts,
 
 > **The historian's use:** Roman art is state media of extraordinary quality. The Column of Trajan's 155-scene spiral is the most detailed visual account of a Roman campaign in existence — and it is also a monument by the victor, in his forum, showing his war as he wished it remembered. Read it for the equipment, the engineering, the ritual; distrust it for the reasons and the numbers.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Build the arch. **Drag the voussoirs into the ring, then set the keystone** — the load lines will show whether your arch stands or the span collapses.
 
@@ -211,7 +213,7 @@ Abbot Suger, rebuilding Saint-Denis around 1140, gave the movement its theology:
 
 > **A caution about "Gothic":** the name is an insult. Renaissance Italians coined it to mean _barbarian_ — the style of the Goths who destroyed Rome — and it stuck, long after the contempt faded. Half of art history's vocabulary is fossilized abuse (_Baroque_: misshapen pearl; _Impressionism_: a sneering review; _Fauves_: wild beasts). Style names record the winners of old arguments, not the makers' intentions.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* The nave vault is pushing the walls outward. **Drag the flying buttress into position** until the thrust line is caught and carried safely to the ground.
 
@@ -261,7 +263,7 @@ Then the camera pulls back to reveal what the geometry really is: a cone of visi
 
 The final beat sets a medieval panel beside it: there, size means holiness and space serves meaning. Here, size means distance and space serves the viewer. The same wall, two centuries apart, and the entire relocation of authority from heaven to the human standpoint, drawn in ruled lines.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* The orthogonals of this tiled floor are drawn but unfixed. **Drag the vanishing point onto the horizon line** where all of them converge — the tiles will snap into a coherent room.
 
@@ -301,7 +303,7 @@ Bernini pushed further — dissolving the boundary between sculpture, architectu
 
 > **The historian's read:** Baroque splendour is a religious argument _and_ a budget. Every diagonal, every shaft, every gilded ray was paid for by a Church that had just lost half of Europe and was buying the other half back with spectacle. Protestant Amsterdam, meanwhile, produced small, sober canvases for merchants' parlors — same century, opposite theology, opposite market. Style follows the client.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A Caravaggio chapel scene is lit flat and reads as nothing. **Drag the light beam** until the composition strikes — narrow the shaft until only the decisive gesture is lit.
 
@@ -348,7 +350,7 @@ Monet's serial paintings make the thesis explicit: thirty views of Rouen Cathedr
 
 > **The technology behind the revolt:** photography (1839) took over the jobs of documentation and likeness within a generation. Painting could compete on accuracy and lose, or ask what only paint can do — perception, sensation, the visible act of painting. Every modernist move for the next century runs through that fork.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Monet is painting Rouen Cathedral. **Drag the hour of the day** through the series and watch the façade change. Stop where the stone reads coldest and bluest.
 
@@ -382,7 +384,7 @@ Duchamp's move is stranger and, in the long run, larger. In 1917 he submits a fa
 
 > **Why it happened when it did:** the avant-gardes are not a fashion cycle. Photography had taken likeness; industrial modernity had shattered the pace and scale of experience; Freud had claimed the mind was not transparent to itself; and the First World War killed the Enlightenment story that reason and progress were carrying Europe somewhere good. Dada is not childishness — it is what art looks like when a generation concludes that reason produced Verdun. **Art history is not a parade of styles. It is a record of what people believed was real, and what happened when they stopped believing it.**
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A guitar sits on a table, painted in perfect Renaissance perspective. **Drag the number of viewpoints upward** until the picture tells the truth about how you actually know the object.
 

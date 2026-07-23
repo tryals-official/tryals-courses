@@ -154,6 +154,7 @@ Each unit has sample questions in JSON format under [\`samples/\`](samples/) —
     const uNum = String(unit.unitNumber).padStart(2, '0');
     const uSlug = `unit-${uNum}-${slugify(unit.title)}`;
     let md = `# Unit ${unit.unitNumber}: ${unit.title}\n\n`;
+    md += `**[Study this unit interactively on Tryals →](https://tryals.app/courses/${slug})**\n\n`;
 
     for (const lesson of unit.lessons) {
       md += `## ${lesson.title}\n\n`;
@@ -172,7 +173,7 @@ Each unit has sample questions in JSON format under [\`samples/\`](samples/) —
 
       const sampleQs = pickQuestions(lesson.questions);
       if (sampleQs.length > 0) {
-        md += `> **Practice preview** — try all ${(lesson.questions || []).length} questions interactively on [Tryals](https://tryals.app/courses/${slug})\n\n`;
+        md += `**Practice preview:**\n\n`;
         sampleQs.forEach((q, i) => {
           const formatted = formatQuestion(q, i + 1);
           if (formatted) md += formatted + '\n\n';

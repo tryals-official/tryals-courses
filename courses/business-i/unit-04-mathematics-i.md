@@ -1,5 +1,7 @@
 # Unit 4: Mathematics I
 
+**[Study this unit interactively on Tryals →](https://tryals.app/courses/business-i)**
+
 ## Matrix Addition
 
 A **matrix** is a rectangular array of numbers — and in business, matrices are everywhere before you notice them: a sales table (rows = products, columns = branches), a cost breakdown, a transition table of customers between plans.
@@ -30,7 +32,7 @@ The payoff of this notation is _compression_: one symbol carries a whole spreads
 
 > **Common pitfall:** Reading $a_{ij}$ column-first. The convention is rows first, always: $a_{23}$ lives in row 2, column 3 — mixing this up silently transposes every calculation that follows.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Two branch sales tables are added element-wise. In cell $(2,1)$, January shows **30** and February shows **45**. **Set the total cell’s value** on the axis — no consistency hint appears until you send.
 
@@ -73,7 +75,7 @@ $BA$ may have different dimensions, or not exist at all, or exist and simply dif
 
 > **Common pitfall:** Assuming $AB = BA$. Matrix multiplication is order-sensitive because it chains dependencies — applying "prices after quantities" is not "quantities after prices." Commuting matrices are the exception, never the rule.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Entry $(1,1)$ of the product $AB$ pairs row $(2, 3)$ with column $(4, 5)$. The pair-products are hidden — **set the result bar** to the $(1,1)$ entry by computing the dot product yourself.
 
@@ -147,7 +149,7 @@ When an economic model's matrix drifts toward singularity, its solution doesn't 
 
 > **Common pitfall:** Forgetting the absolute value. The parallelogram's _area_ is $|\det A|$; the sign is separate information about orientation, not a negative area.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* The matrix $\begin{pmatrix} 2 & k \\ 3 & 6 \end{pmatrix}$ maps the unit square to a parallelogram. **Drag $k$** until the parallelogram collapses to a line — the singular moment where the determinant hits zero.
 
@@ -189,7 +191,7 @@ where $A_i$ is $A$ with column $i$ replaced by $b$. Elegant for $2\times 2$ and 
 
 > **Common pitfall:** Declaring "no solution" the moment a row of zeros appears in elimination. A zero row of the form $0 = 0$ signals redundancy (infinitely many solutions); only $0 = c$ with $c \ne 0$ signals contradiction.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* The system $y = 2x + 1$ and $y = kx + 3$ is plotted live. **Drag $k$** until the system becomes _incompatible_ — the intersection point flees to infinity as the lines turn parallel.
 
@@ -230,7 +232,7 @@ A catalog of 40 mutual funds may live in a 5-dimensional space: five real bets d
 
 > **Common pitfall:** Confusing the number of vectors you _listed_ with the dimension of what they _span_. Three portfolios built from the same two funds still span only a two-dimensional space — dimension counts independent directions, not products in the catalogue.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Vectors $v = (2, 1)$ and $w = (4, c)$ are drawn from the origin, their span shading the plane. **Drag $c$** until the span collapses from the whole plane to a single line — the moment $w$ stops adding anything new.
 
@@ -278,7 +280,7 @@ Eigenvalues are the matrix's tempo markings: they tell you not what happens in o
 
 > **Tip:** Always run both checks — the eigenvalues must sum to the trace and multiply to the determinant. Thirty seconds of verification catches nearly every root-finding slip.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* The matrix $A = \begin{pmatrix} 3 & 1 \\ 0 & 2 \end{pmatrix}$ acts on a direction vector you control. **Rotate the vector** until $Av$ lands exactly on the same line as $v$ — then read off how much it stretched.
 
@@ -319,7 +321,7 @@ The mental upgrade this lesson installs: stop asking _what is the best level?_ a
 
 > **Common pitfall:** Solving a path problem by optimizing each instant separately. The Euler–Lagrange logic exists because the best path balances _across_ time — sprinting production today changes tomorrow's costs, and only the whole-path view sees it.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A path from $(0,0)$ to $(10,10)$ passes through a midpoint you control. **Drag the midpoint’s height** to minimize the total path length — the length meter reruns the integral live as you move.
 
@@ -399,7 +401,7 @@ Every one of these is the same crossing with different axis labels. When you can
 
 > **Common pitfall:** Maximizing revenue instead of profit. Revenue peaks where $MR = 0$ — well past the profit optimum at $MR = MC$. The units between those two quantities all sell, and all lose money.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Profit is $\pi(q) = -q^2 + 20q$ — a hill over output. **Drag the output marker** along the curve; the tangent line tilts as you move. Park it exactly where the tangent lies flat.
 
@@ -445,7 +447,7 @@ Producer surplus mirrors it below the price line, above supply. Markets create v
 
 > **Common pitfall:** Dropping the constant of integration. Marginal cost knows nothing about fixed costs — integrating it recovers total cost only _up to_ $FC$, and forgetting that constant understates every cost estimate by exactly the rent.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Demand is $p = 20 - q$ and the market price is **8€**. **Drag the shading boundary** to capture exactly the consumer-surplus region — the € counter integrates the shaded area live.
 
@@ -495,7 +497,7 @@ where $K$ is the market's capacity. Early on ($x \ll K$) it looks exponential; a
 
 > **Tip:** The doubling-time shortcut $t_2 = \ln 2 / r \approx 0.69/r$ is the continuous cousin of the rule of 70. A process growing at a continuous 7% doubles in about ten periods — no calculator needed.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A deposit grows by $dx/dt = rx$ (continuous compounding). **Drag the growth rate $r$** until the balance curve doubles the initial deposit in exactly **10 years** — the doubling flag snaps to the curve as you tune.
 

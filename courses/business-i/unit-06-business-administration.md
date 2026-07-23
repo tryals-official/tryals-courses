@@ -1,5 +1,7 @@
 # Unit 6: Business Administration
 
+**[Study this unit interactively on Tryals →](https://tryals.app/courses/business-i)**
+
 ## Functions and Roles of Management
 
 Management is getting work done **through others** — coordinating people and resources toward goals. A century of study compressed it into two complementary maps.
@@ -28,7 +30,7 @@ Management is getting work done **through others** — coordinating people and r
 
 > **Tip:** Hold both maps at once: Fayol tells you what the work must accomplish; Mintzberg tells you what the day will actually feel like. Neither alone survives contact with a Monday.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Katz: as a manager rises, **technical** skill matters less and **conceptual** skill more. **Drag the level marker** to where conceptual skill overtakes technical on this career ladder.
 
@@ -78,7 +80,7 @@ A 60% chance of 50 and a 40% chance of losing 20 is worth $0.6 \times 50 - 0.4 \
 
 > **Common pitfall:** Treating satisficing as a character flaw. When search is costly, stopping at good-enough _is_ the optimal policy — the error is pretending you maximized when you actually stopped early.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A project pays **50 with probability 0.6** and loses **20 with probability 0.4**. **Drag the marker** to the project’s expected value — the number that decides against the safe alternative of 15.
 
@@ -161,7 +163,7 @@ where $Q$ is _cumulative_ units ever produced (not this year's volume), and an '
 
 > **Common pitfall:** Plotting the curve against _annual_ volume. The x-axis is **cumulative output ever produced** — a firm that made 10M units over a decade sits far down the curve even in a slow sales year, and a fast-growing newcomer doubles its cumulative count (and cuts costs) far more often.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A factory rides an **80% experience curve**: each doubling of cumulative output leaves unit cost at 80%. First unit cost: 100. **Drag cumulative volume** until unit cost falls to **64**.
 
@@ -211,7 +213,7 @@ $$\text{layers} \approx \log_s N$$
 
 > **Common pitfall:** Calling the matrix's two bosses a design flaw. The matrix _deliberately_ breaks unity of command to force the function-project conversation — its failure mode is not the dual reporting itself but leaving the two bosses' conflicts unarbitrated.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A firm of **4,096 workers** rebuilds its hierarchy. Layers needed ≈ $\log_s 4096$ for span $s$. **Drag the span of control** until the tower collapses to just **4 layers**.
 
@@ -257,7 +259,7 @@ The strategic claim of modern HRM: in service and knowledge businesses, the peop
 
 > **Tip:** Judge every selection tool by its **validity** — how well it predicts actual job performance. Structured interviews and work samples rank high; the unstructured 'let's chat' interview, beloved everywhere, ranks near the bottom and mostly measures rapport.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A hiring funnel starts with **200 applicants**: 30% pass screening, 25% of those pass interviews, and 40% of offers are accepted. **Drag the marker** to the number of hires this pipeline produces.
 
@@ -326,7 +328,7 @@ The audit for any incentive plan is three questions asked of the people it targe
 
 > **Common pitfall:** Averaging the three factors. They _multiply_ — a zero anywhere zeroes everything, so a lavish bonus (V) attached to an impossible target (E = 0) motivates exactly no one.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A rep believes she can hit target with **E = 0.8** and that payment follows with **I = 0.6**. **Drag the valence slider** until her motivation score $E \times I \times V$ reaches **0.48** — the level the incentive plan was designed for.
 
@@ -375,7 +377,7 @@ Control's design paradox: too little and drift goes unseen; too much and the mea
 
 > **Common pitfall:** Investigating only unfavorable variances. A cost 20% _under_ budget can mean skipped maintenance or unbuilt safety stock — management by exception cuts both ways.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Monthly costs against a budget standard of **200**: management by exception flags variances beyond ±10%. **Drag the threshold band** to the flagging boundary on the cost axis — the upper line it draws.
 
@@ -420,7 +422,7 @@ with $D$ annual demand, $S$ cost per order, $H$ holding cost per unit-year. Tota
 
 > **Tip:** Utilization is nonlinear: queues explode as you approach 100% of capacity. The plant that schedules to 85% is not leaving money on the table — it is buying the slack that keeps promises deliverable.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A warehouse orders **D = 1,000 units/year**, at **S = 20 per order**, holding cost **H = 4 per unit-year**. **Drag the order quantity** to where total cost bottoms out — the EOQ.
 
@@ -464,7 +466,7 @@ Schumpeter put innovation at capitalism's core: **creative destruction** — new
 
 > **Common pitfall:** Expecting disruption to look dangerous. It looks _laughable_ — a worse product for customers you don't want. That is precisely why well-run incumbents, listening carefully to their best customers, walk into it.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* An old technology sits on its performance plateau at **80**; a new one climbs an S-curve from below. **Drag the year marker** to the crossover — where the challenger passes the incumbent and the basis of competition resets.
 
@@ -509,7 +511,7 @@ The managerial floor, whatever one's ideology: ethics scandals are governance fa
 
 > **Tip:** The stakeholder view's sharpest edge is the _license to operate_: any neglected stakeholder — regulator, community, workforce — can eventually revoke it. Reputation is built in years and spent in days.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A reputation program costs **100 upfront** and returns **25 per year** in reduced risk and cheaper capital. **Drag the year marker** to its payback point.
 

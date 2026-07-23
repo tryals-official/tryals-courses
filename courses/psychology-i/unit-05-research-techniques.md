@@ -1,5 +1,7 @@
 # Unit 5: Research Techniques
 
+**[Study this unit interactively on Tryals →](https://tryals.app/courses/psychology-i)**
+
 ## The Scientific Method
 
 The **scientific method** is a systematic procedure for building reliable knowledge: starting from an **observation**, formulating a **research question**, proposing a testable **hypothesis**, deriving a specific **prediction**, running a study to test it, **analyzing** the resulting data, and drawing a **conclusion** that other researchers can attempt to **replicate**. Psychology adopts this cycle from the natural sciences, distinguishing itself from purely philosophical speculation about the mind by insisting that claims be checked against evidence.
@@ -19,7 +21,7 @@ Scientific reasoning combines two directions of logic: **inductive reasoning** b
 
 > **Common pitfall:** treating "hypothesis" and "theory" as interchangeable, with theory meaning "just a guess." In science, a theory is a much STRONGER claim than a hypothesis — a broad framework already supported by extensive converging evidence, not a single untested guess.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
+**Practice preview:**
 
 **1.** *(Category sort)* Popper's criterion: a scientific hypothesis must be falsifiable - some possible observation could count against it. Sort each claim.
 
@@ -46,7 +48,7 @@ Neither approach is simply "better" — they answer different kinds of questions
 
 > **Common pitfall:** assuming qualitative research is simply "less rigorous" than quantitative research because it lacks numbers. Qualitative research has its own established rigor standards (systematic coding, checking for researcher bias, seeking disconfirming cases) — it trades statistical generalizability for a kind of depth and nuance that numbers alone cannot capture.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
+**Practice preview:**
 
 **1.** *(Category sort)* Sort each described study by its methodological tradition.
 
@@ -77,7 +79,7 @@ A two-arm flowchart: a pool of participant icons; a coin-flip icon randomly sort
 
 $$\text{IV manipulated} \to \text{DV measured}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
+**Practice preview:**
 
 **1.** *(Truth table)* A study can support a strong CAUSAL claim only when the researcher manipulates the independent variable (M) AND uses random assignment (R). Fill 'Supports causal claim = M AND R'.
 
@@ -102,7 +104,7 @@ Not every research question can be studied with a true experiment. Sometimes the
 
 > **Common pitfall:** treating a strong correlation as proof of causation. Even a very large, statistically robust correlation between two variables never, by itself, tells you which one (if either) causes the other — establishing that requires a true experiment with random assignment, or very careful additional evidence ruling out alternative explanations.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
+**Practice preview:**
 
 **1.** *(Matrix grid)* Classify each described study by its design.
 
@@ -132,7 +134,7 @@ Not every research question can be studied with a true experiment. Sometimes the
 
 > **Common pitfall:** assuming a well-designed survey simply captures what people "really" think or do. Self-report always passes through the filter of memory, self-presentation, and the exact wording used — which is exactly why researchers cross-check surveys against behavioral or observational data whenever possible.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
+**Practice preview:**
 
 **1.** *(Category sort)* Sort each described study by observation method.
 
@@ -164,7 +166,7 @@ The consequence of poor sampling is a threat to **external validity**: findings 
 
 > **Common pitfall:** assuming a LARGE sample automatically means a REPRESENTATIVE sample. Sample size and sampling method are separate issues — a huge convenience sample of, say, 50,000 self-selected online volunteers can still be badly biased, while a smaller, carefully drawn random sample can generalize far better.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
+**Practice preview:**
 
 **1.** *(Matrix grid)* Classify each recruitment strategy by sampling technique.
 
@@ -201,7 +203,7 @@ A dartboard: a tight cluster of darts far from the bullseye, labelled 'reliable,
 
 $$\text{Validity requires reliability, not the reverse}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
+**Practice preview:**
 
 **1.** *(Matrix grid)* Classify each described check as assessing RELIABILITY (consistency) or VALIDITY (accuracy).
 
@@ -230,7 +232,7 @@ A bell-curve distribution: a symmetric null-hypothesis curve centered at zero; a
 
 $$\text{Reject } H_0 \text{ when } p < 0.05$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
+**Practice preview:**
 
 **1.** *(Matrix grid)* For each situation, classify the outcome as a correct decision, a Type I error, or a Type II error.
 
@@ -258,7 +260,7 @@ These formal protections emerged largely in direct response to specific historic
 
 > **Common pitfall:** assuming ethical deception simply requires debriefing afterward, with no other constraints. Deception must ALSO be scientifically justified, involve no viable non-deceptive alternative, and expose participants to no more than minimal risk — debriefing does not retroactively justify an otherwise unjustified use of deception.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
+**Practice preview:**
 
 **1.** *(Matrix grid)* Each row is an ethical failing. Assign it to the Belmont principle it most directly violates.
 
@@ -288,7 +290,7 @@ Recent reforms directly target these problems: **preregistration** (publicly reg
 
 > **Common pitfall:** treating a peer-reviewed publication as automatically "proven true." Peer review checks for methodological soundness and improves overall quality, but it does not guarantee a finding is correct — replication, not the mere fact of publication, is what ultimately builds confidence in a result.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/psychology-i)
+**Practice preview:**
 
 **1.** *(Ordering)* Order the standard APA report sections as they appear in a paper.
 

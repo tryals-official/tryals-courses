@@ -1,5 +1,7 @@
 # Unit 8: Principles of Electromagnetism and Optics
 
+**[Study this unit interactively on Tryals →](https://tryals.app/courses/physics-i)**
+
 ## Electric Charge and Coulomb's Law
 
 Rub a balloon on your hair and it picks up roughly $10^{-9}$ of its electrons’ worth of imbalance — enough to defy the gravity of the entire planet. Electricity is astonishingly strong; we only fail to notice because matter is almost perfectly neutral, positive and negative cancelling to exquisite precision.
@@ -30,7 +32,7 @@ $$\vec{F}_{\text{net}} = \sum_i \vec{F}_i = \sum_i k_e\frac{qq_i}{r_i^2}\hat{r}_
 
 > **Common pitfall:** Coulomb’s law gives the force between **point** charges. For extended objects, each piece pulls on each piece — you may only treat a sphere as a point at its centre because of a deep theorem, not because it is obvious.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Slider estimate)* Two charges repel with **36 N**. You move them to **half** the original separation. Predict the new force.
 
@@ -86,7 +88,7 @@ $$\vec{E} = \frac{q}{4\pi\varepsilon_0 r^2}\hat{r}$$
 
 > Gauss's Law is one of **Maxwell's four equations** and is equivalent to Coulomb's law for electrostatics.
 
-> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* $I = 3$ A through $R = 4$ Ω: set the power dissipated — the bulb lights on send.
 
@@ -138,7 +140,7 @@ $$C = \varepsilon_0\frac{A}{d}$$
 
 > **Common pitfall:** Zero potential does not mean zero field, and zero field does not mean zero potential. The field is the **slope** of the potential: midway between two equal positive charges the field vanishes while the potential is large.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Timeline ordering)* Order the steps to find the potential difference between two points due to a point charge.
 
@@ -187,7 +189,7 @@ print(f"Current = {I:.4f} A, Power = {P:.4f} W")
 
 > **Common pitfall:** Current is not "used up" around a circuit. The same current that leaves the battery returns to it; what gets spent is **energy per charge** (voltage). Series bulbs share voltage, not diminishing current.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Resistor color)* Read this resistor’s colour bands and enter its resistance in ohms. (Digit values: red = 2, violet = 7; multiplier brown = ×10.)
 
@@ -237,7 +239,7 @@ The time constant $\tau = RC$ is the time to reach $\approx 63\%$ of the final v
 
 > **Common pitfall:** Sign errors kill more circuit solutions than concept errors. Fix a travel direction around each loop first, then let the algebra decide: a negative answer just means the true current flows opposite your guess — it is not a mistake.
 
-> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A 12 V battery drives $R_1 = 2\ \Omega$ in series with $R_2$. Choose $R_2$ so the loop current is exactly **2 A** — the ammeter is off until you send.
 
@@ -288,7 +290,7 @@ Parallel currents attract; antiparallel currents repel.
 
 > **Common pitfall:** Because $\vec{F} = q\vec{v}\times\vec{B}$ is perpendicular to $\vec{v}$, a magnetic field can never change a particle’s **speed** or kinetic energy — only its direction. If a problem needs energy added, some electric field must be doing it.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Timeline ordering)* Order the steps to find the magnetic field using Ampere's law.
 
@@ -346,7 +348,7 @@ For a coil of $N$ turns: $\mathcal{E} = -N\,d\Phi_B/dt$.
 
 > Faraday's law is the principle behind generators, transformers, and wireless charging.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(True false)* Faraday's law states that a changing magnetic flux through a loop induces an EMF.
    - True / False
@@ -389,7 +391,7 @@ $$c = \frac{1}{\sqrt{\mu_0\varepsilon_0}} = 3.00\times 10^8\;\text{m/s}$$
 
 > **Common pitfall:** An electromagnetic wave needs no medium — the fields sustain each other. The $E$ and $B$ fields are in phase, mutually perpendicular, and both perpendicular to the travel direction; a common error is drawing them out of phase like energy-trading oscillators.
 
-> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Cloze bank)* Complete the following passage by choosing the correct terms from the word bank.
 
@@ -439,7 +441,7 @@ $$m = -\frac{d_i}{d_o}$$
 
 > **Common pitfall:** Total internal reflection happens only when light tries to leave a **slower** (denser) medium for a faster one, beyond the critical angle. Going the other way — air into glass — light always enters, no matter the angle.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Timeline ordering)* Order the steps for tracing a ray through a converging lens.
 
@@ -477,7 +479,7 @@ Phase shifts come from path difference $\Delta = 2nt$ and reflection at a higher
 
 > **Common pitfall:** Interference does not create or destroy energy — dark fringes are matched by doubly-bright ones; energy is redistributed, never lost. If your fringe accounting seems to delete energy, the analysis (not physics) has a bug.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(True false)* In Young's double-slit experiment, bright fringes occur where the path difference is an integer multiple of the wavelength.
    - True / False

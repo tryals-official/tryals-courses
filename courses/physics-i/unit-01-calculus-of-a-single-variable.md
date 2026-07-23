@@ -1,5 +1,7 @@
 # Unit 1: Calculus of a Single Variable
 
+**[Study this unit interactively on Tryals →](https://tryals.app/courses/physics-i)**
+
 ## Functions, domains, and representations
 
 A **function** assigns exactly one output to every input in its **domain**.
@@ -26,7 +28,7 @@ $$f : D \subseteq \mathbb{R} \;\longrightarrow\; \mathbb{R}$$
 
 > **Common pitfall:** A formula without its domain is only half a function. $f(x) = 1/x$ and "$1/x$ for $x > 0$" are different mathematical objects with different properties.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Number line placement)* The function $f(x) = \dfrac{1}{x-2}$ is defined for every real number except one. **Place the marker on the excluded value.
 
@@ -60,7 +62,7 @@ $$\lim_{x \to a} f(x) = L \;\;\Longleftrightarrow\;\; \forall\,\varepsilon>0,\;\
 
 > **Common pitfall:** $\lim_{x\to a} f(x)$ is about the journey, not the destination: the limit can exist where $f(a)$ is undefined, and can differ from $f(a)$ where it is defined. Continuity is exactly the promise that they agree.
 
-> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* $\lim_{x\to 2} \frac{x^2-4}{x-2}$: the graph is hidden and the function is undefined AT $x=2$. Factor, then place the marker at the limit $L$.
 
@@ -117,7 +119,7 @@ Where $f'(x) > 0$ the function is increasing; where $f'(x) < 0$ it is decreasing
 
 > The tangent line is the best linear approximation to $f$ near the point of tangency.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Timeline ordering)* Order the steps to compute f'(x) from the limit definition.
 
@@ -161,7 +163,7 @@ provided the right-hand limit exists.
 
 > **Common pitfall:** $(fg)' \ne f'g'$ and $(f/g)' \ne f'/g'$. Test any tempting rule on a trivial example like $f = g = x$ before trusting it — the fake product rule fails instantly.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Formula builder)* Build the **product rule**: arrange the tokens to express $\dfrac{d}{dx}\left[f(x)\,g(x)\right]$.
 
@@ -199,7 +201,7 @@ $$f'(c) = \frac{f(b)-f(a)}{b-a}$$
 
 > **Common pitfall:** $f'(c) = 0$ makes $c$ a candidate, not a winner: $x^{3}$ pauses flat at 0 mid-climb. And on closed intervals, the true extremes may hide at the **endpoints**, where the derivative never vanishes.
 
-> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* The curve $f(x) = 0.14x^3 - 1.05x$ is **hidden**. Solve $f'(x) = 0$ and place the marker at the local **maximum** — the curve is drawn only after you send.
 
@@ -246,7 +248,7 @@ $$f_{\text{avg}} = \frac{1}{b-a}\int_a^b f(x)\,dx$$
 
 > **Common pitfall:** A definite integral is a signed number, not an area: regions below the axis count negative. "Total area enclosed" questions require splitting at the zero crossings first.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Timeline ordering)* Order the steps in constructing a Riemann sum to define the definite integral.
 
@@ -298,7 +300,7 @@ where $F$ is any antiderivative of $f$.
 
 > This theorem shows that differentiation and integration are **inverse operations** — the central idea of calculus.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(True false)* FTC Part 1 states: if $F(x)$ = $\int_a^x f(t) dt$ then $F'(x) = f(x)$.
    - True / False
@@ -344,7 +346,7 @@ Solution: $T(t) = T_{\text{env}} + (T_0 - T_{\text{env}})\,e^{-\lambda t}$.
 
 > **Common pitfall:** "Grows at a rate proportional to itself" gives $e^{kt}$ — but "grows at a constant rate" gives a straight line. Translating words to the wrong rate law dooms a model before any calculus happens.
 
-> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Cloze bank)* Complete the description of a separable first-order ODE.
 
@@ -389,7 +391,7 @@ A complex number $z = a + bi$ can be written in **polar form** as $z = r\,e^{i\t
 
 > **Common pitfall:** Linear approximation is a **local** promise: $\sqrt{16.4} \approx 4.05$ works beautifully, while using the same tangent line for $\sqrt{25}$ fails badly. Always ask how far you have drifted from the anchor point.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Timeline ordering)* Order the steps in one iteration of Newton's method for root-finding.
 
@@ -429,7 +431,7 @@ $$L = \int_{a}^{b}\sqrt{1+\bigl(f'(x)\bigr)^{2}}\,dx$$
 
 > **Common pitfall:** In applied problems the hardest step is not the calculus but the setup: naming variables, writing the constraint, identifying what is being extremized or accumulated. If the setup is wrong, perfect differentiation cannot save it.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Venn diagram)* Sort each function by its behaviour **at $x = 0$**.
 

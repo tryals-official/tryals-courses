@@ -1,5 +1,7 @@
 # Unit 8: Economic History
 
+**[Study this unit interactively on Tryals →](https://tryals.app/courses/business-i)**
+
 ## The Pre-industrial Economy
 
 For most of human history, economies were **organic**: all energy came from recent photosynthesis — human muscle, animal muscle, wood, wind, water. This imposed a ceiling: as population grew, land per person fell, yields per person fell, and living standards fell back to subsistence. Thomas **Malthus** formalised the trap in 1798.
@@ -28,7 +30,7 @@ $$\text{Pre-industrial GDP growth} \approx \text{population growth} \qquad (\tex
 
 > **Common pitfall:** Reading Malthus as a theory of poverty caused by laziness or bad policy. In the organic economy the trap was arithmetic: fixed land, energy from photosynthesis, and fertility responding to income. No virtue escaped it — only a new energy source did.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* In the Malthusian model, a better plough raises income temporarily. **Drag the population curve** to show what happens next — population rises until income falls back to subsistence.
 
@@ -94,7 +96,7 @@ The honest answer is that no monocausal explanation works. The revolution was a 
 
 > **Common pitfall:** Treating "why Britain first" as a story of British genius. Inventors existed everywhere; what differed was the reward structure — wages, energy prices, and institutions that let a tinkerer keep the upside.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* British GDP per capita roughly tripled from 1700 to 1870. **Drag the 1870 marker** on the income axis to show the approximate level (starting from about 1,000 in 1700).
 
@@ -140,7 +142,7 @@ $$\text{Currency A} \xrightarrow{\text{fixed gold weight}} \text{gold} \xrightar
 
 > **Common pitfall:** Assuming globalisation, once achieved, persists. The first global economy was dismantled in a few years by war and tariffs — integration is a policy choice, reversible at any time, not a law of nature.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* The pound is defined as **113 grains of gold** and the dollar as **23.22 grains**. **Drag the exchange-rate marker** to the implied dollars-per-pound rate.
 
@@ -214,7 +216,7 @@ Ben Bernanke, studying the Depression as an academic, later applied its lessons 
 
 > **Tip:** This is why 2008 was not 1929: the Fed flooded the system with liquidity within weeks — the exact move Friedman and Schwartz showed the 1930s Fed fatally withheld.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* US GDP fell roughly **30%** from 1929 to 1933. Starting from an index of **100** in 1929, **drag the 1933 marker** to the approximate level.
 
@@ -255,7 +257,7 @@ The Golden Age was not a natural state — it was the product of specific condit
 
 > **Common pitfall:** Projecting the Golden Age forward as normal. Much of its growth was one-off catch-up — rebuilding and copying the frontier is fast; pushing the frontier itself is slow. When catch-up completed, growth had to slow.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Under Bretton Woods, the dollar was pegged to gold at **35 dollars per ounce**, and the French franc was pegged at **4.94 francs per dollar**. **Drag the marker** to the implied francs-per-ounce rate.
 
@@ -295,7 +297,7 @@ $$\text{Supply shock: they move together, the Phillips curve shifts}$$
 
 > **Tip:** Stagflation's lesson in one line: demand tools cannot fix a supply shock. Stimulating demand into an oil shortage buys more inflation, not more output — the diagnosis must precede the medicine.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Oil prices quadrupled in 1973 from about **3 to 12 dollars per barrel**. **Drag the price bar** to the post-shock level.
 
@@ -339,7 +341,7 @@ $$\text{Trade in tasks} > \text{Trade in goods}$$
 
 > **Tip:** The container is the unsung hero: cutting handling costs by 90% made it profitable to ship _parts_, not just finished goods — and that is what let firms slice production into global value chains.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Container shipping cut handling costs by over **90%**. If pre-container handling cost **100 per tonne**, **drag the post-container cost bar** to its approximate level.
 
@@ -384,7 +386,7 @@ The GFC was not a repeat of the Great Depression — _because_ the Depression's 
 
 > **Common pitfall:** Blaming subprime borrowers for a systemic crisis. The losses on subprime alone were absorbable; leverage and opacity turned a housing correction into a global cardiac arrest.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A bank has assets of **1,000** and equity of **30** (leverage ratio 33:1). If assets fall by **3%**, **drag the equity bar** to the new level.
 
@@ -429,7 +431,7 @@ $$\text{Conditional convergence (within peer groups)} \neq \text{Unconditional c
 
 > **Tip:** Solow's arithmetic says capital-poor countries should offer the highest returns — the fact that capital doesn't flow there (the Lucas paradox) is the strongest evidence that institutions, not just capital scarcity, bind development.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* The income gap between richest and poorest countries widened from roughly **3:1** in 1820 to about **20:1** today. **Drag the ratio marker** to the modern gap.
 
@@ -479,7 +481,7 @@ The euro is an experiment in progress — economically incomplete by design, pol
 
 > **Common pitfall:** Reading the euro as purely economic. Each step traded sovereignty for interdependence _by design_ — the project's founding logic is that economies woven together do not go to war.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* The Maastricht deficit criterion requires government deficits below **3%** of GDP. A country with GDP of **500 billion** must keep its deficit below what amount? **Drag the limit bar.
 

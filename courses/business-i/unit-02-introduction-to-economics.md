@@ -1,5 +1,7 @@
 # Unit 2: Introduction to Economics
 
+**[Study this unit interactively on Tryals →](https://tryals.app/courses/business-i)**
+
 ## Scarcity
 
 **Scarcity** is the founding fact of economics: human wants are effectively unlimited, but the resources to satisfy them — time, labor, land, capital, raw materials — are not. Scarcity is not poverty: a billionaire's day still has 24 hours. It is the _universal_ gap between what we want and what the world can supply.
@@ -32,7 +34,7 @@ Everything inside the line is affordable; everything beyond it is wishful thinki
 
 > **Common pitfall:** Treating the three questions (what, how, for whom) as government-only decisions. In a market economy, prices answer all three — silently, millions of times a day.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* You have **100€**. Books cost **10€**, games **20€**, and you already grabbed **2 games**. **Drag the book counter** to spend the budget exactly — the spending bar fills to the line, never past it.
 
@@ -75,7 +77,7 @@ Economists' quiet slogan: _there is no such thing as a free lunch_ — someone, 
 
 > **Common pitfall:** Adding up every alternative you gave up. You could only have done _one_ other thing with the evening — opportunity cost is the value of the best one, not the total of all of them.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* You’re deciding how long to stay at a festival instead of working your **12€/hour** job. **Drag the hours slider** until the forgone-earnings bar exactly matches the festival’s **60€** ticket price — the point where the _hidden_ cost equals the visible one.
 
@@ -131,7 +133,7 @@ That steepening _is_ the bow. The curvature of the PPF is a portrait of how spec
 
 > **Common pitfall:** Explaining the bow by "diminishing returns." The bow comes from resource _heterogeneity_ — reassigning ever-less-suitable resources — which operates even when each sector alone has constant returns.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* An economy’s PPF for butter and guns is a quarter-circle of radius 100. Its people demand **60 units of butter**. **Drag the production point along the frontier** to the maximum guns output still possible — inside is waste, outside is fantasy.
 
@@ -200,7 +202,7 @@ The most common error in first-year economics is confusing two completely differ
 
 > **Tip:** One question settles every exam item: _did the good's own price change, or something else?_ Own price → along the curve. Anything else → the whole curve moves.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* The market demand for a snack is $q = 120 - 2p$. **Drag the price line** until the market absorbs exactly **40 units** — the quantity marker slides along the curve as you move.
 
@@ -238,7 +240,7 @@ The subtlety is the denominator: students, retirees, and _discouraged workers wh
 
 > **Common pitfall:** "Unemployment fell — the economy improved." Check the labor force first: if searchers gave up and dropped out, the rate can fall while the job market worsens.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A country has **20 million** people in its labor force; **1.5 million** are unemployed. **Drag the gauge needle** to the unemployment rate — the crowd diagram splits as you move it.
 
@@ -285,7 +287,7 @@ times its value in total deposits. A 10% ratio turns 1,000€ of base money into
 
 > **Common pitfall:** Treating the money multiplier $1/r$ as a prediction. It is an upper bound — if banks hold excess reserves or borrowers stay away, actual money creation falls well short of it.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A bank system starts with **1,000€** of new deposits. **Drag the reserve-ratio slider** until the deposit cascade multiplies the money supply to exactly **5,000€** — watch each lending round stack up.
 
@@ -331,7 +333,7 @@ An $MPC$ of 0.75 gives a multiplier of 4 in the textbook case — real-world lea
 
 > **Common pitfall:** Quoting the textbook multiplier $1/(1-MPC)$ as the real-world effect. Imports, taxes, and saving all leak demand out of the spending loop — measured multipliers are far smaller than the formula's 4.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Households spend **75%** of each extra euro (MPC = 0.75). The government injects **50M€** of new spending. **Drag the output bar** to the total demand created once every round of re-spending settles.
 
@@ -376,7 +378,7 @@ Both sides then consume _beyond_ their own production frontiers — the **gains 
 
 > **Common pitfall:** Judging a tariff by its visible winners (protected producers, treasury revenue). The losses — consumer prices and deadweight loss — are diffuse and invisible, and they exceed the gains.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A small country imports grain at the world price of **10€**. Domestic demand and supply close their gap as prices rise, meeting at **16€**. **Drag the tariff lever** until imports shrink to exactly zero — the import gap closes as the domestic price climbs.
 
@@ -420,7 +422,7 @@ Growth is not a windfall; it is what happens when a society makes accumulation a
 
 > **Tip:** Run the rule of 70 on any headline: 2% growth doubles living standards in ~35 years; 7% in ~10. Over a generation, nothing else in economics competes with a percentage point of growth.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* An economy grows at **7%** per year. **Drag the year marker** along the GDP curve to where output has **doubled** — the doubling line glows when you reach it.
 
@@ -458,7 +460,7 @@ A **minimum wage** set above equilibrium raises pay for those who keep jobs but 
 
 > **Tip:** Labor demand is _derived_ demand — firms hire because customers buy. When you forecast employment in a sector, look first at the demand for its products, not at the workers.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/business-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A labor market has demand $L_d = 60 - 2w$ and supply $L_s = 4w - 30$ (thousands of workers, wage in €/hour). Equilibrium sits at **15€**. **Drag the minimum-wage bar** until the surplus of job-seekers over jobs reaches exactly **30 thousand** — the gap opens live between the curves.
 

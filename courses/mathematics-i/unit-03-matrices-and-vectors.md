@@ -1,5 +1,7 @@
 # Unit 3: Matrices and Vectors
 
+**[Study this unit interactively on Tryals →](https://tryals.app/courses/mathematics-i)**
+
 ## Vectors in the Plane and Space
 
 A **vector** is a quantity with both **magnitude** and **direction**, pictured as an arrow. In coordinates, a vector in the plane is an ordered pair $(v_1, v_2)$ and in space an ordered triple $(v_1, v_2, v_3)$; in general $\mathbb{R}^n$ has $n$-component vectors. The **components** are the signed displacements along each axis, and a vector is unchanged by sliding it (position does not matter — only length and direction).
@@ -14,7 +16,7 @@ These operations obey the same axioms across all dimensions: addition is commuta
 
 > **Common pitfall:** adding vectors by adding their **magnitudes**, or confusing a vector's magnitude with its components. Vectors add **componentwise** — the length of a sum is generally _not_ the sum of the lengths ($\|u + v\| \le \|u\| + \|v\|$, with equality only when they point the same way). And the magnitude is a single number $\sqrt{v_1^2 + v_2^2}$, not the list of components.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* Compute the magnitude of the vector u = (3, -4).
 
@@ -47,7 +49,7 @@ Two vectors from the origin with the angle theta marked; the accent dot-product 
 
 $$u \cdot v = \|u\|\,\|v\|\cos\theta$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* Let u = (3, -1, 2) and v = (4, 2, -1). Compute the dot product u . v.
 
@@ -75,7 +77,7 @@ Two vectors spanning a parallelogram, the accent cross-product vector rising per
 
 $$\|u \times v\| = \|u\|\,\|v\|\sin\theta$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* Let u = (2, 1, 0) and v = (1, 3, 0). Compute the third component of the cross product u x v.
 
@@ -108,7 +110,7 @@ Row i of A sweeping across column j of B, each pair multiplied and summed into t
 
 $$(AB)_{ij} = \sum_k A_{ik} B_{kj}$$
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Table completion)* Give the shape of each product, or write 'undefined' if the product does not exist.
 
@@ -133,7 +135,7 @@ The number of solutions connects to independence: a system with as many _indepen
 
 > **Common pitfall:** assuming every linear system has a **unique** solution. Depending on the geometry, a system can have **one, none, or infinitely many** solutions. Parallel-but-distinct equations are inconsistent (none); duplicate or dependent equations leave free variables (infinitely many). A row reducing to $0 = 1$ signals no solution, while a row of all zeros signals a free variable — jumping straight to "one solution" misses both.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Matrix grid)* Classify each system of two equations by how many solutions it has.
 
@@ -158,7 +160,7 @@ Rank also governs solution counts precisely (the **Rank–Nullity** picture): va
 
 > **Common pitfall:** confusing the presence of a **zero row** with the system having **no solution**. A row of all zeros in the coefficient part just signals a **dependent equation** (a free variable, hence infinitely many solutions). "No solution" comes instead from an **inconsistent** row — zeros in the coefficients but a nonzero constant, i.e. $0 = 1$. A zero row means _redundancy_; a $0 = 1$ row means _contradiction_.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* A consistent system has a 3 by 5 coefficient matrix of rank 2. How many free variables does it have?
 
@@ -182,7 +184,7 @@ Useful properties: $\det(AB) = \det(A)\det(B)$ (the determinant of a product is 
 
 > **Common pitfall:** getting the $2 \times 2$ determinant wrong ($ad - bc$, **not** $ab - cd$ or $ad + bc$), and reversing the **invertibility** rule. A matrix is invertible when its determinant is **nonzero**; a **zero** determinant means singular (no inverse). Thinking "zero determinant means invertible" is exactly backwards — zero is precisely the non-invertible case.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* Compute the determinant of the matrix with rows (3, 5) and (2, 4).
 
@@ -208,7 +210,7 @@ Key algebraic facts: the inverse is **unique** when it exists; $(A^{-1})^{-1} = 
 
 > **Common pitfall:** thinking every square matrix has an inverse, or writing $(AB)^{-1} = A^{-1}B^{-1}$. Only matrices with **nonzero determinant** are invertible; singular matrices have none. And the inverse of a product **reverses the order**: $(AB)^{-1} = B^{-1}A^{-1}$, not $A^{-1}B^{-1}$ — because multiplication is non-commutative, the undoing must happen in the opposite sequence.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* Let A have rows (3, 1) and (5, 2). What is the entry in row 1, column 1 of the inverse of A?
 
@@ -234,7 +236,7 @@ These descriptions turn geometry into vector algebra. The **angle between two pl
 
 > **Common pitfall:** confusing a plane's **normal vector** with a direction lying **in** the plane. The normal is **perpendicular** to the plane — and it is exactly the coefficient vector $(a, b, c)$ in $ax + by + cz = d$, _not_ a vector pointing along the plane. Two planes are parallel when their **normals** are parallel; using a within-plane direction instead of the normal inverts the geometry.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* The plane 2x - 3y + z = 7 has normal vector (a, b, c). What is b?
 
@@ -258,7 +260,7 @@ The deeper message is one of **abstraction and reuse**: wildly different problem
 
 > **Common pitfall:** viewing these applications as unrelated tricks instead of one framework. Graphics transformations, circuit equations, network path-counting, and data operations are _all_ the same core operations — **matrix–vector products, matrix multiplication, and solving $A\mathbf{x} = \mathbf{b}$** — applied to different data. Missing the common structure makes each look like a separate topic when they are one reusable toolkit.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/mathematics-i)
+**Practice preview:**
 
 **1.** *(Numerical input)* A three-node network has adjacency matrix with rows (0, 1, 1), (1, 0, 1) and (1, 1, 0). The entry in row 1, column 1 of the square of that matrix counts the walks of length 2 from node 1 back to itself. Compute it.
 

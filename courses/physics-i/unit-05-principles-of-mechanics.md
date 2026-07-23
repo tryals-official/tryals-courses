@@ -1,5 +1,7 @@
 # Unit 5: Principles of Mechanics
 
+**[Study this unit interactively on Tryals →](https://tryals.app/courses/physics-i)**
+
 ## Kinematics in One Dimension
 
 Close your eyes in a smoothly cruising train and you cannot tell how fast you are going — but the slightest braking, you feel instantly. That asymmetry is the heart of kinematics: **position** is where you are, **velocity** is how position changes, **acceleration** is how velocity changes. Each layer is the rate of change of the one above.
@@ -31,7 +33,7 @@ $$v = \frac{dx}{dt}, \qquad a = \frac{dv}{dt} = \frac{d^2x}{dt^2}$$
 
 > **Common pitfall:** "Negative acceleration" does not automatically mean slowing down. A ball falling faster and faster has $a < 0$ (downward) while its speed grows. Slowing down means $v$ and $a$ point in **opposite** directions — check signs, not words.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Function graph)* A cart moves with **constant velocity**. Which velocity–time graph describes it?
 
@@ -84,7 +86,7 @@ $$x = v_0 \cos\theta \cdot t, \quad y = v_0 \sin\theta \cdot t - \tfrac{1}{2}gt^
 
 > Maximum range occurs at $\theta = 45^{\circ}$ (in vacuum). Air resistance reduces this angle in practice.
 
-> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Cloze bank)* Complete the following passage by choosing the correct terms from the word bank.
 
@@ -127,7 +129,7 @@ Newton’s deepest insight is what does **not** need explaining: steady motion n
 
 > **Common pitfall:** Action–reaction pairs never cancel, because they act on **different** bodies. The book’s weight and the table’s normal force on it are NOT such a pair — both act on the book; its true partner forces act on the Earth and the table.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Timeline ordering)* Order the steps for solving a Newton's second law problem.
 
@@ -173,7 +175,7 @@ $$P = \frac{dW}{dt} = \vec{F}\cdot\vec{v}$$
 
 > **Common pitfall:** A force does zero work when it is perpendicular to the motion — no matter how large it is. String tension in circular motion and the normal force on a sliding block are hard at work holding geometry, yet transfer no energy.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Slider estimate)* You drag a crate 2.0 m with a 10 N force at **60°** above the horizontal. Set the slider to the work done, using $W = Fd\cos\theta$ ($\cos 60° = 0.5$).
 
@@ -235,7 +237,7 @@ When friction is present: $\Delta E = -F_f \cdot d$.
 
 > Energy is never created or destroyed — only converted between kinetic, potential, and thermal forms.
 
-> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Cloze bank)* Complete the following passage by choosing the correct terms from the word bank.
 
@@ -283,7 +285,7 @@ The centre of mass moves as if all external forces act on a single particle of t
 
 > **Common pitfall:** Momentum is conserved in **every** collision, elastic or not — as long as no external force intervenes. What inelastic collisions lose is kinetic **energy**, never momentum. Conserve $p$ always; conserve $KE$ only when told the collision is elastic.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Timeline ordering)* Order the stages of a perfectly inelastic collision between two objects.
 
@@ -332,7 +334,7 @@ where $I = \sum m_i r_i^{2}$ is the **moment of inertia**.
 
 > **Common pitfall:** Moment of inertia is not just "how much mass" but "**where** the mass sits": $I = \sum m r^{2}$. A hoop and a disk of equal mass and radius have different $I$ — the $r^{2}$ weighting makes rim mass count far more than hub mass.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Balance scale)* The left pan holds **2.0 kg and 1.5 kg**. Select masses for the right pan to balance the scale.
 
@@ -383,7 +385,7 @@ $$KE_{\text{total}} = \frac{1}{2}mv_{\text{cm}}^2 + \frac{1}{2}I\omega^2$$
 
 > **Common pitfall:** Conserving $L$ does not conserve rotational kinetic energy. The skater’s $KE = L^{2}/2I$ **increases** as she pulls her arms in — her muscles supply the difference. One conservation law never implies another.
 
-> **Practice preview** — try all 13 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Shape the orbit so aphelion is exactly **3×** the perihelion distance. Only $e$ is displayed — the two distances stay hidden until you send.
 
@@ -437,7 +439,7 @@ At $x=0$: all kinetic. At $x=\pm A$: all potential.
 
 > **Common pitfall:** The period of a mass–spring oscillator does not depend on amplitude. A bigger swing travels farther but moves proportionally faster, and the two effects cancel exactly — that is what makes harmonic oscillators good clocks.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(Timeline ordering)* Order the phases of one full cycle of a mass on a spring (starting from maximum compression).
 
@@ -494,7 +496,7 @@ print(f"Range = {R:.2f} m")
 
 > **Common pitfall:** Applying energy conservation **across** a sticking collision. Perfectly inelastic impacts always destroy kinetic energy; only momentum bridges that moment. Split the problem at the collision and switch tools.
 
-> **Practice preview** — try all 11 questions interactively on [Tryals](https://tryals.app/courses/physics-i)
+**Practice preview:**
 
 **1.** *(True false)* When solving mechanics problems, choosing the right coordinate system can simplify the equations significantly.
    - True / False

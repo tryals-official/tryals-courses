@@ -1,5 +1,7 @@
 # Unit 4: Thinking History
 
+**[Study this unit interactively on Tryals →](https://tryals.app/courses/history-i)**
+
 ## What is History?
 
 English hides an ambiguity that German splits cleanly. _Geschehen_ is what happened; _Geschichte_ is the account of it. "History" means both — and every argument in this unit lives in the gap between them.
@@ -25,7 +27,7 @@ Most practitioners land on **craft**: a disciplined skill with rules, apprentice
 
 > **Selection is unavoidable, and it is not a flaw.** Every second of the past contained billions of events; a history of the French Revolution that recorded everything would take longer than the Revolution and teach nothing. The historian must select — and selection requires a criterion, and a criterion comes from the historian's questions, which come from the historian's present. There is no view from nowhere. **The honest response is not to pretend to neutrality but to make your criteria explicit enough that others can argue with them.**
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* The past is delivering millions of events per second. **Drag the selection filter** until what survives is actually a history — not a transcript, and not a slogan.
 
@@ -69,7 +71,7 @@ His famous phrase — history should show _wie es eigentlich gewesen_, "how it e
 
 > **The method encodes a politics.** Ranke did not decide to exclude anyone; he decided to follow the documents, and the documents were made by power. Every methodological rule silently determines who is visible. The Annales School and Subaltern Studies are, in their different ways, both answers to this one problem.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* You are Ranke, and only state archives are open. **Drag the source base wider** and watch who appears in the history you can write.
 
@@ -109,7 +111,7 @@ It is a magnificent theory of unintended consequences — and a moral evasion. I
 
 > **Why it still matters:** Marx read Hegel closely, kept the dialectic and the stages, and replaced Spirit with the mode of production — "standing Hegel on his head". Fukuyama's _End of History_ (1989) is Hegel again, with liberal democracy as the synthesis. Every claim that history is "moving toward" something, that a people is "on the wrong side of history", that some society is "not yet ready" for democracy, is speaking Hegel's grammar. **The teleology was discredited a century ago and the sentence structure survives everywhere, which is exactly what makes it worth being able to recognize.**
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Hegel’s dialectic is stalled. **Drag the antithesis into collision with the thesis** and watch what the synthesis does with the wreckage — cancel, preserve, or both?
 
@@ -164,7 +166,7 @@ When the strain crosses the threshold the relations snap, the superstructure tha
 
 The last beat is the honest one. The animation replays the model against the record: the sequence predicted industrial Britain and the revolutions arrived in agrarian Russia and China. The predictive staircase breaks on the evidence; the _question_ — how did material arrangements shape what people here could think and do — survives it and remains one of the most productive in the discipline.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* The forces of production are advancing while the relations of production stay legally frozen. **Drag the forces upward** until the arrangement becomes a fetter and something has to give.
 
@@ -207,7 +209,7 @@ Spengler's problem is that "civilizations are organisms" is a **metaphor doing t
 
 > **Why Ibn Khaldun is different, and still cited.** He is not an ornament in this list; he is the reason the list is worth teaching. His model names a variable (cohesion), a cause of its decay (the comfort that success buys), a tempo (four generations), and a testable domain (dynastic succession on a steppe or desert margin) — so it can actually be wrong, and historians of the Maghreb still use it. Spengler and Toynbee produce sweeping unfalsifiable poetry; Ibn Khaldun produced social science in 1377 and had to wait five hundred years for Europe to catch up enough to notice.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A desert-margin group has conquered the city. **Drag the generations forward** and watch asabiyyah do what Ibn Khaldun said it would. Stop where the dynasty falls.
 
@@ -262,7 +264,7 @@ Then the composition makes Braudel's argument physically. Lepanto flares on the 
 
 The final beat gives the other side its due. The tracks reset and the caption reads: Marc Bloch, who taught historians to look beneath events, was shot by the Gestapo in 1944 — an event, on a single day, that ended everything he would have written. The three speeds are a tool for asking which clock a question runs on, not a proof that only the slow one matters.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Lepanto has just been won on the surface of Mediterranean history. **Drag the shockwave downward** through Braudel’s three layers and find out how far a great battle actually reaches.
 
@@ -317,7 +319,7 @@ The naive picture — the historian as a mirror, with no standpoint — is impos
 
 **Objectivity is a procedure, not a position.** It means: state your criteria; seek disconfirming evidence rather than favorable evidence; represent your sources' arguments in their strongest form; distinguish what the evidence shows from what you infer; and publish so others can check. It is not the absence of a standpoint. It is the discipline of holding one accountable.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A century of lives is about to become an archive. **Run the three survival filters** and see who is left in the box a historian opens.
 
@@ -361,7 +363,7 @@ The resolution the discipline reached is worth stating exactly. Denial is not a 
 
 > **The settlement, and why it is not a cop-out.** Constructedness is not the same as arbitrariness. A cathedral is constructed; you cannot build one out of soup. The evidence genuinely underdetermines the story — several honest histories of the Revolution are available, and choosing among them is a real intellectual act with real consequences. But it does not underdetermine it infinitely. **The lesson historians kept: interrogate your own emplotment, because your narrative shape is smuggling in claims your footnotes never made. The lesson they refused: that footnotes therefore do not matter.**
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Here is the French Revolution — the same verified events, every one of them true. **Rotate the emplotment dial** through White’s four forms and watch the meaning change without a single fact moving.
 
@@ -411,7 +413,7 @@ He calls the effect the **waiting room of history**: colonized peoples are told 
 
 **The practical yield is a working method:** ask who is the subject of this history; what archive is it built from and who made that archive; whose categories are supplying the questions; and what is being measured as absence rather than described as presence. Those four questions improve a history of Yorkshire as much as a history of Bengal.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* A peasant uprising survives only in a magistrate’s report calling it "criminal madness". **Drag the reading angle** from with-the-grain to against-the-grain and see what the hostile document yields.
 
@@ -451,7 +453,7 @@ The answer is the Braudelian one, and it is a speed error to ignore it in either
 
 > **The honest formulation:** widening the frame is not a way of relieving anyone of responsibility. It is a way of seeing which causes were operating at which speed, so that agency can be located precisely rather than assumed everywhere or dissolved entirely. That is why environmental history sits so naturally beside Braudel — both are asking the same question, which is _at what scale does this cause operate_, and both refuse the two easy answers.
 
-> **Practice preview** — try all 12 questions interactively on [Tryals](https://tryals.app/courses/history-i)
+**Practice preview:**
 
 **1.** *(Interactive scene)* Two continents, two axes. **Drag a domesticated crop package outward from its origin** along each axis and watch how far it survives before the climate kills it.
 
